@@ -1,0 +1,45 @@
+# Core AI Logic - 06_animation_setup.py (Final Animation Pipeline Setup)
+
+# Install necessary stable libraries for image-to-video diffusion
+!pip install diffusers transformers accelerate torch Pillow imageio[ffmpeg]
+
+import torch
+from diffusers import StableVideoDiffusionPipeline
+from PIL import Image
+
+# --- Step 1: Define the Animation Pipeline ---
+def setup_svd_pipeline():
+    """
+    Sets up the Stable Video Diffusion (SVD) pipeline for image-to-video.
+    This model is known to be public and stable.
+    """
+    
+    # Using the Stable Video Diffusion model (SVD)
+    model_id = "stabilityai/stable-video-diffusion-img2vid-xt"
+    
+    # Load the pipeline
+    if torch.cuda.is_available():
+        device = "cuda"
+    else:
+        device = "cpu"
+        print("Warning: Running on CPU. This will be extremely slow.")
+
+    try:
+        pipeline = StableVideoDiffusionPipeline.from_pretrained(model_id, torch_dtype=torch.float16, variant="fp16")
+        pipeline.to(device)
+        print("\n--- Animation Pipeline Status: SUCCESS ---")
+        print("Stable Video Diffusion model loaded successfully. Ready to animate.")
+        return pipeline
+        
+    except Exception as e:
+        print("\n--- Animation Pipeline Status: FAILED ---")
+        print(f"FATAL ERROR: Could not load SVD model. Error: {e}")
+        return None
+
+
+# --- Step 2: Run the Setup ---
+svd_pipeline = setup_svd_pipeline()
+
+if svd_pipeline:
+    print("\nAnimation Node is fully functional and ready to generate video!")
+
