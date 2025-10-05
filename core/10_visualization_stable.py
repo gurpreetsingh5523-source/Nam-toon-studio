@@ -1,77 +1,71 @@
-# AmritCore - 08_synthesis_node.py (Final Fix for .mpex3 Typo)
+# AmritCore - MASTER BUILDER (Final Assembly and Export - TYPO FIXED)
 
 # Install necessary libraries
-!pip install moviepy gTTS pydub numpy
+!pip install moviepy gTTS pydub requests
 
-import os
-from moviepy.editor import AudioFileClip, CompositeAudioClip, vfx, concatenate_audioclips
+from moviepy.editor import ImageClip, AudioFileClip, VideoFileClip, concatenate_audioclips, CompositeAudioClip, vfx
 from gtts import gTTS
 from pydub import AudioSegment
-import numpy as np
+from PIL import Image
+import os
 
-# --- 1. Load Data from the 'Bariki Brain' ---
-def get_scene_bariki():
-    """Returns the complete, detailed data structure from the Thinking Node."""
-    return {
-        "scene_id": "SCENE_1_THE_WELL",
-        "audio_layers": {
-            "music_mood": "Affectionate and melancholic flute melody",
-            "sfx_1_primary": "Peacock crying in the distance",
-            "sfx_2_secondary": "Rustling of dry leaves and gentle wind",
-            "sfx_3_tertiary": "Sound of the well bucket dropping and rope creaking"
-        },
-        "dialogue_flow": [
-            {"character": "Krishna", "emotion": "Calmness", "volume": 1.0, "text": "ਸੁਲਤਾਨਾ, ਕਦੇ ਸੋਚਿਆ ਈ, ਆਪਾਂ ਵੀ ਕਦੀ ਸ਼ਹਿਰ ਜਾਈਏ?"},
-            {"character": "Sultan", "emotion": "Doubt", "volume": 0.8, "text": "ਸ਼ਹਿਰ? ਕੀ ਹੋ ਗਿਆ? ਮੈਂ ਤਾਂ ਇੱਥੇ ਖੇਤਾਂ ਵਿੱਚ ਖੁਸ਼ ਆਂ।"},
-            {"character": "Krishna", "emotion": "Hope", "volume": 1.0, "text": "ਕੁਝ ਵੱਡਾ ਕਰਨਾ ਚਾਹੁੰਦਾ ਹਾਂ। ਮੇਰੇ ਅੰਦਰ ਬਹੁਤ ਹੌਸਲਾ ਹੈ।"},
-            {"character": "Sultan", "emotion": "Affection", "volume": 0.8, "text": "ਠੀਕ ਹੈ, ਕ੍ਰਿਸ਼ਨਾ। ਆਪਣੀ ਹਿੰਮਤ ਨਾ ਹਾਰੀਂ। ਸਾਡੀ ਦੋਸਤੀ ਹਮੇਸ਼ਾ ਤੇਰੇ ਨਾਲ ਰਹੇਗੀ।"}
-        ]
-    }
-scene_data = get_scene_bariki()
-audio_dir = "assets/audio/scene_1"
-if not os.path.exists(audio_dir): os.makedirs(audio_dir)
+# --- Step 1: Setup and Data ---
+final_video_filename = "AmritCore_FULL_LAUNCH_FINAL.mp4"
 
+# Create necessary folders (ensures stability)
+if not os.path.exists("audio"): os.makedirs("audio")
+if not os.path.exists("images"): os.makedirs("images")
+if not os.path.exists("assets/animation"): os.makedirs("assets/animation")
 
-# --- 2. AUDIO GENERATION AND LAYERING ---
-print("--- Synthesis Node: Generating Dialogue and SFX Assets ---")
+# Dialogue Data (for audio consistency)
+dialogues_scene1 = [
+    {"character": "Krishna", "text": "ਸੁਲਤਾਨਾ, ਕਦੇ ਸੋਚਿਆ ਈ, ਆਪਾਂ ਵੀ ਕਦੀ ਸ਼ਹਿਰ ਜਾਈਏ?", "volume": 1.0},
+    {"character": "Sultan", "text": "ਕ੍ਰਿਸ਼ਨਾ, ਮੈਂ ਤਾਂ ਏਸੇ ਪਿੰਡ ਵਿੱਚ ਖੁਸ਼ ਆਂ। ਬਸ ਰੱਬ ਸੁੱਖ ਰੱਖੇ, ਆਪਣੀ ਦੋਸਤੀ ਕਾਇਮ ਰਹੇ।", "volume": 0.8},
+    {"character": "Krishna", "text": "ਰੱਬ ਜ਼ਰੂਰ ਸੁੱਖ ਰੱਖੇਗਾ। ਆਹ ਤੂਤਾਂ ਵਾਲਾ ਖੂਹ ਹਮੇਸ਼ਾ ਆਪਣੀ ਦੋਸਤੀ ਦਾ ਗਵਾਹ ਰਹੇਗਾ।", "volume": 1.0}
+]
 
-# 2.1 Generate Dialogue (Stable gTTS)
-dialogue_clips_paths = []
-for i, item in enumerate(scene_data["dialogue_flow"]):
-    tts = gTTS(item["text"], lang='pa')
-    filename = f"{audio_dir}/dialogue_{item['character']}_{i}.mp3"
-    tts.save(filename)
-    dialogue_clips_paths.append(filename)
-    print(f"Generated dialogue: {filename}")
-        
-# 2.2 Generate SFX Placeholders
-sfx_duration = 20000 
-AudioSegment.silent(duration=sfx_duration).export(f"{audio_dir}/peacock_fx.mp3", format="mp3")
-AudioSegment.silent(duration=sfx_duration).export(f"{audio_dir}/wind_rustle_fx.mp3", format="mp3")
-AudioSegment.silent(duration=15000).export(f"{audio_dir}/music_flute.mp3", format="mp3")
-print("SFX placeholders created.")
+# A. Visual Node: Create Scene Base Image
+SCENE_COLOR = "#434657" 
+AI_IMAGE_PATH = "images/scene_base.png"
+Image.new('RGB', (1920, 1080), color=SCENE_COLOR).save(AI_IMAGE_PATH)
 
 
-# --- 3. FINAL MIX (Incorporating Volume and Layers) ---
-# Load all generated clips with character-specific volume (FIXED: Using .mp3)
-dialogue_clips = []
-for i, item in enumerate(scene_data["dialogue_flow"]):
-    # CORRECT LOADING OF MP3 FILE
-    clip = AudioFileClip(f"{audio_dir}/dialogue_{item['character']}_{i}.mp3")
-    dialogue_clips.append(clip.volumex(item['volume']))
+# B. Audio Node: Generate Dialogue & Effects
+for i, dialogue in enumerate(dialogues_scene1):
+    tts = gTTS(dialogue["text"], lang='pa')
+    tts.save(f"audio/dialogue_{i}.mp3") # File is created as .mp3
 
-final_dialogue_track = concatenate_audioclips(dialogue_clips)
-total_duration = final_dialogue_track.duration
-
-# Load SFX and BGM (Low Volume Layers)
-peacock_fx = AudioFileClip(f"{audio_dir}/peacock_fx.mp3").fx(vfx.loop, duration=total_duration).volumex(0.12)
-wind_rustle_fx = AudioFileClip(f"{audio_dir}/wind_rustle_fx.mp3").fx(vfx.loop, duration=total_duration).volumex(0.08)
-
-# Composite Audio Layers: [Dialogue, Wind/Rustle, Peacock]
-final_audio_mix = CompositeAudioClip([final_dialogue_track, wind_rustle_fx, peacock_fx])
-final_audio_mix = final_audio_mix.set_duration(total_duration)
+background_fx_path = "audio/birds.mp3"
+AudioSegment.silent(duration=4000).export(background_fx_path, format="mp3") # SFX Placeholder
 
 
-print("\nSynthesis Node Status: SUCCESS.")
-print(f"Total audio layers mixed: 3 (Dialogue, Wind/Rustle, Peacock). Total duration: {total_duration:.2f} seconds.")
-print("The ultimate sound studio is ready for the Combiner Node!")
+# --- Step 2: Animation & Final Assembly ---
+movement_clip_path = "assets/animation/movement_clip.mp4"
+clip1 = ImageClip(AI_IMAGE_PATH).set_duration(1.5).set_fps(24)
+clip1.fx(vfx.fadein, 0.5).write_videofile(movement_clip_path, audio_codec='aac', verbose=False, logger=None)
+
+# Load Dialogue (FIX APPLIED HERE: using .mp3)
+dialogue_clips = [
+    AudioFileClip(f"audio/dialogue_0.mp3").volumex(1.0),
+    AudioFileClip(f"audio/dialogue_1.mp3").volumex(0.8), 
+    AudioFileClip(f"audio/dialogue_2.mp3").volumex(1.0)
+]
+
+final_dialogue_audio = concatenate_audioclips(dialogue_clips)
+total_duration = final_dialogue_audio.duration
+
+# Final Audio Mix
+background_audio_clip = AudioFileClip(background_fx_path)
+background_audio = background_audio_clip.fx(vfx.loop, duration=total_duration).volumex(0.15) 
+final_audio_mix = CompositeAudioClip([final_dialogue_audio, background_audio])
+
+# Final Video Output
+video_clip_final = VideoFileClip(movement_clip_path).set_duration(total_duration)
+final_video_clip = video_clip_final.set_audio(final_audio_mix)
+
+final_video_clip.write_videofile(final_video_filename, fps=24, audio_codec='aac', verbose=False, logger=None)
+
+print("\n\n--- AMRIT CORE MASTER BUILDER STATUS: SUCCESS ---")
+print("The final, fully assembled demonstration video has been created!")
+print(f"Find the file: {final_video_filename}")
+
