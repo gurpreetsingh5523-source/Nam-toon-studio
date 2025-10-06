@@ -1,0 +1,55 @@
+# AmritCore - 11_Contextual_Intelligence_Node.py
+
+import os
+import numpy as np
+
+# --- 1. THE BRAIN: CONTEXTUAL DICTIONARY ---
+# This dictionary maps abstract concepts (emotions/settings) to technical values.
+# This is how the Studio understands the subtle 'Bariki' you demanded.
+CONTEXT_BRAIN = {
+    "colors": {
+        "Calmness": "#405175",  # Deep slate blue
+        "Hope": "#A4742C",     # Golden bronze
+        "Doubt": "#758A9A",      # Muted steel gray
+        "Affection": "#B04D4D" # Warm reddish brown
+    },
+    "sfx_mapping": {
+        "Village_Day": ["Peacock_Cry", "Bullock_Bells", "Wind_Rustle"],
+        "Village_Night": ["Flute_Melody", "Crickets", "Distant_Dog"]
+    },
+    "volume_rules": {
+        "Dialogue_Lead": 1.0,
+        "Dialogue_Support": 0.7,
+        "SFX_Primary": 0.15,
+        "SFX_Secondary": 0.08
+    }
+}
+
+
+# --- 2. THE THINKING NODE OUTPUT (Integrated) ---
+def get_scene_data():
+    """Simulates the Thinking Node generating structured, emotionally tagged dialogue."""
+    return [
+        {"character": "Krishna", "emotion": "Calmness", "text": "ਸੁਲਤਾਨਾ, ਕਦੇ ਸੋਚਿਆ ਈ, ਆਪਾਂ ਵੀ ਕਦੀ ਸ਼ਹਿਰ ਜਾਈਏ?"},
+        {"character": "Sultan", "emotion": "Doubt", "text": "ਸ਼ਹਿਰ? ਕੀ ਹੋ ਗਿਆ? ਮੈਂ ਤਾਂ ਇੱਥੇ ਖੇਤਾਂ ਵਿੱਚ ਖੁਸ਼ ਆਂ।"},
+        {"character": "Krishna", "emotion": "Hope", "text": "ਕੁਝ ਵੱਡਾ ਕਰਨਾ ਚਾਹੁੰਦਾ ਹਾਂ। ਮੇਰੇ ਅੰਦਰ ਬਹੁਤ ਹੌਸਲਾ ਹੈ।"}
+    ]
+
+# --- 3. THE INTEGRATION TEST ---
+dialogues = get_scene_data()
+scene_setting = "Village_Day" # Define the environment
+
+if dialogues:
+    print("--- Contextual Intelligence Node Status: SUCCESS ---")
+    print("The Studio Brain is ready to translate abstract concepts into production values.")
+    
+    # Test the mapping:
+    test_emotion = dialogues[2]["emotion"]
+    test_color = CONTEXT_BRAIN["colors"][test_emotion]
+    test_sfx = CONTEXT_BRAIN["sfx_mapping"][scene_setting]
+    
+    print(f"\nExample 1: Emotion '{test_emotion}' translates to Color: {test_color}")
+    print(f"Example 2: Setting '{scene_setting}' requires SFX: {test_sfx}")
+    
+    print("\nOur Brain understands the Bariki! Ready to build the final production script.")
+
