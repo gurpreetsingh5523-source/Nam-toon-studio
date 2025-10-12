@@ -1,62 +1,91 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pa">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Amrit-core — Naam Tone Studio</title>
-  <link rel="manifest" href="/manifest.json" />
-  <link rel="stylesheet" href="/styles.css" />
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ਅੰਮ੍ਰਿਤ ਕੋਰ — Naam Toon Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1C1C1C">
+    </head>
 <body>
-  <header>
-    <h1>ਅੰਮ੍ਰਿਤ ਕੋਰ — Naam Toon Studio</h1>
-    <p>ਇਹ ਇੱਕ ਸਧਾਰਣ Naam-resonance ਟੋਨ ਜੈਨਰੇਟਰ ਹੈ — donate/ਸਹਾਇਤਾ ਲਈ "Studio" ਵਰਤ ਸਕਦੇ ਹੋ।</p>
-  </header>
 
-  <main>
-    <section id="studio">
-      <h2>Naam Toon Studio</h2>
-      <div class="controls">
-        <label>ਫ੍ਰਿਕਵੈਂਸੀ: <span id="freqVal">440</span> Hz</label>
-        <input id="freq" type="range" min="100" max="2000" value="440" />
-        <label>ਵਾਲਯੂਮ: <span id="volVal">0.5</span></label>
-        <input id="vol" type="range" min="0" max="1" step="0.01" value="0.5" />
-        <label>Waveform:</label>
-        <select id="wave">
-          <option value="sine">sine</option>
-          <option value="square">square</option>
-          <option value="sawtooth">sawtooth</option>
-          <option value="triangle">triangle</option>
-        </select>
-      </div>
+    <div id="studio-app">
+        <aside id="visual-panel">
+            <h2>🖼️ ਦ੍ਰਿਸ਼ ਅਤੇ ਕਿਰਦਾਰ (Visuals)</h2>
+            <div class="panel-group">
+                <h3>ਕਿਰਦਾਰ (Toon)</h3>
+                <input type="file" id="character-upload" accept="image/*" disabled>
+                <p>ਹਰਕਤ (Animation Logic):</p>
+                <div class="control-grid">
+                    <button class="action-btn" data-action="walk">ਤੁਰੋ</button>
+                    <button class="action-btn" data-action="sit">ਬੈਠੋ</button>
+                    <button class="action-btn" data-action="jump">ਛਾਲ ਮਾਰੋ</button>
+                    <button class="action-btn" data-action="gaze">ਵੇਖੋ</button>
+                </div>
+            </div>
+            
+            <div class="panel-group">
+                <h3>ਬੈਕਗ੍ਰਾਊਂਡ</h3>
+                <button class="action-btn" data-action="bg-upload">ਤਸਵੀਰ ਅਪਲੋਡ ਕਰੋ</button>
+                <p>ਸੈਟਿੰਗ (AI Presets):</p>
+                <select id="background-preset">
+                    <option value="khu">ਤੂਤਾਂ ਵਾਲਾ ਖੂਹ</option>
+                    <option value="talab">ਪਿੰਡ ਦਾ ਤਲਾਅ</option>
+                    <option value="field">ਕਣਕ ਦਾ ਖੇਤ</option>
+                </select>
+            </div>
+        </aside>
 
-      <div class="buttons">
-        <button id="play">ਚਲਾਓ</button>
-        <button id="stop" disabled>ਰੋਕੋ</button>
-        <button id="record">Record (save .webm)</button>
-      </div>
+        <main id="master-core">
+            <header>
+                <h1>ਅੰਮ੍ਰਿਤ ਕੋਰ — Naam Toon Studio</h1>
+            </header>
 
-      <p id="status">ਦਰਸ: ਤਗੜੀ ਘੜੀ</p>
-      <audio id="preview" controls style="display:none"></audio>
-    </section>
+            <div id="preview-screen">
+                <div id="intro-visual">
+                    <h1 class="logo-text">ਸਤਿ ਕਰਤਾਰ</h1>
+                    <span class="flower-icon">🌺</span>
+                </div>
+                
+                <div id="video-display" style="display: none;">
+                    </div>
+            </div>
 
-    <section id="about">
-      <h3>ਕਿਵੇਂ ਵਰਤਣਾ</h3>
-      <ol>
-        <li>ਫ੍ਰਿਕਵੈਂਸੀ ਅਤੇ waveform ਚੁਣੋ।</li>
-        <li>"ਚਲਾਓ" ਬਟਨ ਦਬਾਓ।</li>
-        <li>ਚਾਹੋ ਤਾਂ Record ਦਬਾ ਕੇ ਆਪਣਾ ਟੋਨ ਸੇਵ ਕਰੋ।</li>
-      </ol>
-      <p>ਇਹ ਸਿਰਫ਼ initial studio ਹੈ — ਅਗੇ ਹੋਰ features add ਕੀਤੇ ਜਾ ਸਕਦੇ ਹਨ।</p>
-      <p>ਸਹਾਇਤਾ/ਦਾਨ ਲਈ, GitHub 'ਤੇ project host ਕਰੋ ਜਾਂ donate link ਜੋੜੋ।</p>
-    </section>
-  </main>
+            <div id="control-area">
+                <h2>🧠 1. ਕਹਾਣੀ ਦਾ ਦਿਮਾਗ਼</h2>
+                <textarea id="story-input" rows="8" placeholder="ਇੱਥੇ PDF ਤੋਂ ਕਾਪੀ ਕੀਤਾ ਪਾਠ ਜਾਂ ਡਾਇਲਾਗ ਦਰਜ ਕਰੋ... (AI ਵਿਸ਼ਲੇਸ਼ਣ ਲਈ)"></textarea>
+                <button id="process-story" class="big-run-btn">▶️ ਸਟੂਡੀਓ ਪ੍ਰੋਸੈੱਸ ਸ਼ੁਰੂ ਕਰੋ (AI ਨੂੰ ਚਲਾਓ)</button>
+            </div>
 
-  <footer>
-    <small>Amrit-core • Naam Resonance Studio — prototype • Created with care</small>
-  </footer>
+            <div id="status-box">
+                <p id="status-message">ਸਥਿਤੀ: ਉਡੀਕ (ਕਿਰਪਾ ਕਰਕੇ ਨਵਾਂ ਪਾਠ ਦਰਜ ਕਰੋ)</p>
+            </div>
+        </main>
 
-  <script src="/app.js"></script>
+        <aside id="audio-panel">
+            <h2>🎧 ਆਵਾਜ਼ ਅਤੇ ਡਬਿੰਗ (Audio)</h2>
+            <div class="panel-group">
+                <h3>ਡਾਇਲਾਗ ਕੰਟਰੋਲ</h3>
+                <p>ਕਿਰਦਾਰ ਦੀ ਵੌਲਿਊਮ:</p>
+                <input type="range" id="dialogue-volume" min="0" max="100" value="80">
+                <button class="action-btn" data-action="dub-start">🎤 ਬੋਲ ਕੇ ਡਬਿੰਗ ਕਰੋ</button>
+            </div>
+            
+            <div class="panel-group">
+                <h3>ਸਪੈਸ਼ਲ ਇਫੈਕਟਸ (SFX)</h3>
+                <p>ਆਵਾਜ਼ਾਂ ਦੀ 'ਅਲਮਾਰੀ':</p>
+                <select id="sfx-selector">
+                    <option value="peacock">ਮੋਰ ਦੀ ਆਵਾਜ਼</option>
+                    <option value="tinds">ਖੂਹ ਦੀਆਂ ਟਿੰਡਾਂ</option>
+                    <option value="flute">ਬੰਸਰੀ ਦੀ ਧੁਨ</option>
+                </select>
+                <button class="action-btn" data-action="add-sfx">ਆਵਾਜ਼ ਜੋੜੋ</button>
+            </div>
+        </aside>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="styles.css"></script>
 </body>
 </html>
