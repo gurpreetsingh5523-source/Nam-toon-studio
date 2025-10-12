@@ -1,11 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1C1C1C; /* Dark Background */
+    color: #f0f0f0; /* Light Text */
+    min-height: 100vh;
+}
 
-:root{font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial; color:#fff; background:#0b1020;}
-body{margin:0;padding:18px}
-header h1{margin:0 0 6px 0;font-size:20px}
-.controls{display:grid;gap:8px;max-width:640px}
-.controls label{font-size:14px}
-.buttons{margin-top:12px}
-button{padding:8px 12px;margin-right:8px;border-radius:6px;border:0;background:#2b6cb0;color:#fff;cursor:pointer}
-section{margin-top:18px;background:rgba(255,255,255,0.03);padding:12px;border-radius:8px}
-footer{margin-top:18px;font-size:12px;color:#cbd5e1}
-#status{margin-top:10px;color:#9ae6b4}
+#studio-app {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+/* --- SIDE PANELS (LEFT & RIGHT) --- */
+aside {
+    width: 20%;
+    padding: 20px;
+    background-color: #2A2D43; /* Dark Blue/Purple for panels */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    height: fit-content;
+}
+
+aside h2 {
+    color: #90EE90; /* Light green for headers */
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+.panel-group {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px dashed #3A3D54;
+}
+
+.action-btn {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: #3B82F6; /* Blue action color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.action-btn:hover {
+    background-color: #2563EB;
+}
+
+/* --- CENTER CORE (MAIN AREA) --- */
+#master-core {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+/* --- INTRO VISUAL (SAT KARTAR SCREEN) --- */
+#preview-screen {
+    width: 100%;
+    height: 450px;
+    background-color: black;
+    border: 2px solid #555;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#intro-visual {
+    text-align: center;
+}
+
+.logo-text {
+    font-size: 50px;
+    color: white;
+    margin: 0;
+    font-weight: 800;
+}
+
+.flower-icon {
+    font-size: 40px;
+    display: block;
+    margin-top: 10px;
+}
+
+/* --- CONTROL AREA --- */
+#control-area {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #3A3D54;
+    border-radius: 8px;
+}
+
+#story-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    resize: none;
+    font-size: 16px;
+    background-color: #1C1C1C;
+    color: white;
+    box-sizing: border-box;
+    margin-top: 8px;
+}
+
+.big-run-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #FF5733; /* Orange/Red for action */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.big-run-btn:hover {
+    background-color: #C70039;
+}
+
+#status-box {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: #2A2D43;
+    border-radius: 4px;
+}
