@@ -1,110 +1,51 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const processButton = document.getElementById('process-story');
+    const storyInput = document.getElementById('story-input');
+    const statusMessage = document.getElementById('status-message');
+    const introVisual = document.getElementById('intro-visual');
+    const videoDisplay = document.getElementById('video-display');
 
-// Simple Naam Tone Studio using WebAudio + MediaRecorder for download
-let ctx, osc, gainNode, dest, mediaRec;
-const freq = document.getElementById('freq');
-const vol = document.getElementById('vol');
-const wave = document.getElementById('wave');
-const playBtn = document.getElementById('play');
-const stopBtn = document.getElementById('stop');
-const recordBtn = document.getElementById('record');
-const status = document.getElementById('status');
-const preview = document.getElementById('preview');
-const freqVal = document.getElementById('freqVal');
-const volVal = document.getElementById('volVal');
+    if (processButton) {
+        processButton.addEventListener('click', () => {
+            const storyText = storyInput.value.trim();
 
-freq.addEventListener('input', ()=> freqVal.textContent = freq.value);
-vol.addEventListener('input', ()=> volVal.textContent = vol.value);
+            if (storyText === "") {
+                statusMessage.textContent = "❌ ਕਿਰਪਾ ਕਰਕੇ ਕਹਾਣੀ ਦਾ ਪਾਠ ਦਰਜ ਕਰੋ।";
+                statusMessage.style.color = "red";
+                return;
+            }
 
-function ensureContext(){
-  if(!ctx){
-    ctx = new (window.AudioContext || window.webkitAudioContext)();
-  }
-}
+            // PHASE 1: STORY ANALYSIS (Thinking Node)
+            statusMessage.textContent = "🧠 ਕਹਾਣੀ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਹੋ ਰਿਹਾ ਹੈ... (ਭਾਵਨਾਵਾਂ ਦੀ ਜਾਂਚ)";
+            statusMessage.style.color = "orange";
+            processButton.disabled = true;
 
-playBtn.addEventListener('click', async ()=>{
-  ensureContext();
-  osc = ctx.createOscillator();
-  gainNode = ctx.createGain();
-  osc.type = wave.value;
-  osc.frequency.value = Number(freq.value);
-  gainNode.gain.value = Number(vol.value);
-  osc.connect(gainNode);
-  gainNode.connect(ctx.destination);
-  // also connect to a MediaStreamDestination for recording
-  dest = ctx.createMediaStreamDestination();
-  gainNode.connect(dest);
-  osc.start();
-  playBtn.disabled = true;
-  stopBtn.disabled = false;
-  status.textContent = "ਚਲ ਰਿਹਾ ਹੈ…";
+            // Simulate AI work: Analyzing the text and creating the video assets
+            setTimeout(() => {
+                // PHASE 2: SYNTHESIS AND ASSEMBLY (Video Building)
+                statusMessage.textContent = "🎬 ਐਨੀਮੇਸ਼ਨ ਅਤੇ ਆਵਾਜ਼ਾਂ ਬਣ ਰਹੀਆਂ ਹਨ... (Master Builder)";
+                statusMessage.style.color = "yellow";
+                
+                // --- Display final success ---
+                setTimeout(() => {
+                    statusMessage.textContent = "✅ ਸੰਪੂਰਨ! ਸਟੂਡੀਓ ਪ੍ਰੋਡਕਸ਼ਨ ਤਿਆਰ।";
+                    statusMessage.style.color = "lightgreen";
+                    
+                    // Hide the "Sat Kartar" screen and show a placeholder video
+                    introVisual.style.display = 'none';
+                    videoDisplay.style.display = 'block';
+                    videoDisplay.innerHTML = `<p style="text-align:center; padding-top: 120px; color: white;">ਅਸਲ ਵੀਡੀਓ ਆਊਟਪੁੱਟ ਇਸੇ ਥਾਂ 'ਤੇ ਦਿਸੇਗਾ।</p>`;
+                    
+                    processButton.disabled = false;
+                }, 4000); // 4 second assembly time
+
+            }, 2000); // 2 second analysis time
+        });
+    }
+    
+    // Disable irrelevant buttons since this is a demonstration
+    document.querySelectorAll('#visual-panel button').forEach(btn => btn.disabled = true);
+    document.querySelectorAll('#audio-panel button').forEach(btn => btn.disabled = true);
+    
 });
 
-stopBtn.addEventListener('click', ()=>{
-  if(osc){
-    try{ osc.stop(); } catch(e){}
-    osc.disconnect();
-    gainNode.disconnect();
-    playBtn.disabled = false;
-    stopBtn.disabled = true;
-    status.textContent = "ਰੁਕਿਆ ਹੋਇਆ।";
-  }
-});
-
-recordBtn.addEventListener('click', async ()=>{
-  ensureContext();
-  // If nothing playing, create a short sample to record
-  if(!dest){
-    const o = ctx.createOscillator();
-    const g = ctx.createGain();
-    o.type = wave.value;
-    o.frequency.value = Number(freq.value);
-    g.gain.value = Number(vol.value);
-    o.connect(g);
-    const d = ctx.createMediaStreamDestination();
-    g.connect(d);
-    o.start();
-    const mr = new MediaRecorder(d.stream);
-    const chunks=[];
-    mr.ondataavailable = e => chunks.push(e.data);
-    mr.onstop = ()=>{
-      const blob = new Blob(chunks, {type: 'audio/webm'});
-      preview.src = URL.createObjectURL(blob);
-      preview.style.display = "block";
-      const a = document.createElement('a');
-      a.href = preview.src;
-      a.download = 'naam-tone.webm';
-      a.click();
-    };
-    mr.start();
-    setTimeout(()=>{
-      mr.stop();
-      o.stop();
-    }, 2000);
-    return;
-  }
-  mediaRec = new MediaRecorder(dest.stream);
-  const chunks = [];
-  mediaRec.ondataavailable = e => chunks.push(e.data);
-  mediaRec.onstop = ()=>{
-    const blob = new Blob(chunks, {type: 'audio/webm'});
-    preview.src = URL.createObjectURL(blob);
-    preview.style.display = "block";
-    const a = document.createElement('a');
-    a.href = preview.src;
-    a.download = 'naam-tone.webm';
-    a.click();
-  };
-  mediaRec.start();
-  status.textContent = "Recording... 3s";
-  setTimeout(()=>{
-    mediaRec.stop();
-    status.textContent = "Recording saved.";
-  }, 3000);
-});
-
-// Service worker registration for offline
-if('serviceWorker' in navigator){
-  navigator.serviceWorker.register('/sw.js').then(()=>{
-    console.log('SW registered');
-  }).catch(()=>{});
-}
