@@ -4,36 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ਅੰਮ੍ਰਿਤ ਕੋਰ — Naam Toon Studio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> 
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#1C1C1C">
-    </head>
+</head>
 <body>
 
     <div id="studio-app">
-        <aside id="visual-panel">
+        <aside id="visual-panel" class="closed-panel">
             <h2>🖼️ ਦ੍ਰਿਸ਼ ਅਤੇ ਕਿਰਦਾਰ (Visuals)</h2>
-            <div class="panel-group">
-                <h3>ਕਿਰਦਾਰ (Toon)</h3>
-                <input type="file" id="character-upload" accept="image/*" disabled>
-                <p>ਹਰਕਤ (Animation Logic):</p>
-                <div class="control-grid">
-                    <button class="action-btn" data-action="walk">ਤੁਰੋ</button>
-                    <button class="action-btn" data-action="sit">ਬੈਠੋ</button>
-                    <button class="action-btn" data-action="jump">ਛਾਲ ਮਾਰੋ</button>
-                    <button class="action-btn" data-action="gaze">ਵੇਖੋ</button>
+            <button class="toggle-btn" data-panel="visual">➡️</button> <div class="panel-content">
+                <div class="panel-group">
+                    <h3>ਕਿਰਦਾਰ (Toon)</h3>
+                    <input type="file" id="character-upload" accept="image/*" disabled>
+                    <p>ਹਰਕਤ (Animation Logic):</p>
+                    <div class="control-grid">
+                        <button class="action-btn" data-action="walk">ਤੁਰੋ</button>
+                        <button class="action-btn" data-action="sit">ਬੈਠੋ</button>
+                        <button class="action-btn" data-action="jump">ਛਾਲ ਮਾਰੋ</button>
+                        <button class="action-btn" data-action="gaze">ਵੇਖੋ</button>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="panel-group">
-                <h3>ਬੈਕਗ੍ਰਾਊਂਡ</h3>
-                <button class="action-btn" data-action="bg-upload">ਤਸਵੀਰ ਅਪਲੋਡ ਕਰੋ</button>
-                <p>ਸੈਟਿੰਗ (AI Presets):</p>
-                <select id="background-preset">
-                    <option value="khu">ਤੂਤਾਂ ਵਾਲਾ ਖੂਹ</option>
-                    <option value="talab">ਪਿੰਡ ਦਾ ਤਲਾਅ</option>
-                    <option value="field">ਕਣਕ ਦਾ ਖੇਤ</option>
-                </select>
+                
+                <div class="panel-group">
+                    <h3>ਬੈਕਗ੍ਰਾਊਂਡ</h3>
+                    <button class="action-btn" data-action="bg-upload">ਤਸਵੀਰ ਅਪਲੋਡ ਕਰੋ</button>
+                    <p>ਸੈਟਿੰਗ (AI Presets):</p>
+                    <select id="background-preset">
+                        <option value="khu">ਤੂਤਾਂ ਵਾਲਾ ਖੂਹ</option>
+                        <option value="talab">ਪਿੰਡ ਦਾ ਤਲਾਅ</option>
+                        <option value="field">ਕਣਕ ਦਾ ਖੇਤ</option>
+                    </select>
+                </div>
             </div>
         </aside>
 
@@ -47,15 +49,28 @@
                     <h1 class="logo-text">ਸਤਿ ਕਰਤਾਰ</h1>
                     <span class="flower-icon">🌺</span>
                 </div>
-                
-                <div id="video-display" style="display: none;">
-                    </div>
+                <div id="video-display" style="display: none;"></div>
             </div>
 
             <div id="control-area">
                 <h2>🧠 1. ਕਹਾਣੀ ਦਾ ਦਿਮਾਗ਼</h2>
                 <textarea id="story-input" rows="8" placeholder="ਇੱਥੇ PDF ਤੋਂ ਕਾਪੀ ਕੀਤਾ ਪਾਠ ਜਾਂ ਡਾਇਲਾਗ ਦਰਜ ਕਰੋ... (AI ਵਿਸ਼ਲੇਸ਼ਣ ਲਈ)"></textarea>
-                <button id="process-story" class="big-run-btn">▶️ ਸਟੂਡੀਓ ਪ੍ਰੋਸੈੱਸ ਸ਼ੁਰੂ ਕਰੋ (AI ਨੂੰ ਚਲਾਓ)</button>
+                
+                <div class="naam-pulse-area">
+                    <div class="kund">
+                        <div id="glow" class="pulse-visual">
+                            <p id="heartbeat">ਸੁਰਤ: <span id="hb-count">0</span></p>
+                            <button id="pulse" class="action-btn">ਨਾਮ ਪਲਸ (ਸਿਮਰਨ)</button>
+                        </div>
+                    </div>
+                    <ul id="events"></ul>
+                </div>
+                <div id="input-options">
+                    <button class="upload-btn" data-input="file">📂 PDF/File</button>
+                    <button class="upload-btn" data-input="camera">📷 ਕੈਮਰਾ (Vision)</button>
+                </div>
+
+                <button id="process-story" class="big-run-btn">🚀 ਸਟੂਡੀਓ ਪ੍ਰੋਸੈੱਸ ਸ਼ੁਰੂ ਕਰੋ (AI ਨੂੰ ਚਲਾਓ)</button>
             </div>
 
             <div id="status-box">
@@ -63,29 +78,30 @@
             </div>
         </main>
 
-        <aside id="audio-panel">
+        <aside id="audio-panel" class="closed-panel">
             <h2>🎧 ਆਵਾਜ਼ ਅਤੇ ਡਬਿੰਗ (Audio)</h2>
-            <div class="panel-group">
-                <h3>ਡਾਇਲਾਗ ਕੰਟਰੋਲ</h3>
-                <p>ਕਿਰਦਾਰ ਦੀ ਵੌਲਿਊਮ:</p>
-                <input type="range" id="dialogue-volume" min="0" max="100" value="80">
-                <button class="action-btn" data-action="dub-start">🎤 ਬੋਲ ਕੇ ਡਬਿੰਗ ਕਰੋ</button>
-            </div>
-            
-            <div class="panel-group">
-                <h3>ਸਪੈਸ਼ਲ ਇਫੈਕਟਸ (SFX)</h3>
-                <p>ਆਵਾਜ਼ਾਂ ਦੀ 'ਅਲਮਾਰੀ':</p>
-                <select id="sfx-selector">
-                    <option value="peacock">ਮੋਰ ਦੀ ਆਵਾਜ਼</option>
-                    <option value="tinds">ਖੂਹ ਦੀਆਂ ਟਿੰਡਾਂ</option>
-                    <option value="flute">ਬੰਸਰੀ ਦੀ ਧੁਨ</option>
-                </select>
-                <button class="action-btn" data-action="add-sfx">ਆਵਾਜ਼ ਜੋੜੋ</button>
+            <button class="toggle-btn" data-panel="audio">➡️</button> <div class="panel-content">
+                <div class="panel-group">
+                    <h3>ਡਾਇਲਾਗ ਕੰਟਰੋਲ</h3>
+                    <p>ਕਿਰਦਾਰ ਦੀ ਵੌਲਿਊਮ:</p>
+                    <input type="range" id="dialogue-volume" min="0" max="100" value="80">
+                    <button class="action-btn" data-action="dub-start">🎤 ਬੋਲ ਕੇ ਡਬਿੰਗ ਕਰੋ</button>
+                </div>
+                
+                <div class="panel-group">
+                    <h3>ਸਪੈਸ਼ਲ ਇਫੈਕਟਸ (SFX)</h3>
+                    <p>ਆਵਾਜ਼ਾਂ ਦੀ 'ਅਲਮਾਰੀ':</p>
+                    <select id="sfx-selector">
+                        <option value="peacock">ਮੋਰ ਦੀ ਆਵਾਜ਼</option>
+                        <option value="tinds">ਖੂਹ ਦੀਆਂ ਟਿੰਡਾਂ</option>
+                        <option value="flute">ਬੰਸਰੀ ਦੀ ਧੁਨ</option>
+                    </select>
+                    <button class="action-btn" data-action="add-sfx">ਆਵਾਜ਼ ਜੋੜੋ</button>
+                </div>
             </div>
         </aside>
     </div>
 
-    <script src="app.js"></script>
-    <script src="styles.css"></script>
+    <script src="app.js"></script> 
 </body>
 </html>
