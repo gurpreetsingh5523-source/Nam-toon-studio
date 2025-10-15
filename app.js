@@ -3,22 +3,62 @@ document.addEventListener('DOMContentLoaded', () => {
     const processButton = document.getElementById('process-story');
     const storyInput = document.getElementById('story-input');
     const statusMessage = document.getElementById('status-message');
+
+    // 2. NAAM PULSE ELEMENTS (The new Spiritual Tracking UI)
+    const pulseBtn = document.getElementById('pulse');
+    const hbCount = document.getElementById('hb-count');
+    const events = document.getElementById('events');
+    const glow = document.getElementById('glow');
     const visualPanel = document.getElementById('visual-panel');
     const audioPanel = document.getElementById('audio-panel');
 
-    // 2. AGI Logic Variables
-    let currentAnimation = 'walk'; // Default action
-    let currentBackground = 'khu'; // Default setting
+    // 3. Persistent State/AGI Variables
+    let currentAnimation = 'walk'; 
+    let count = Number(localStorage.getItem('amrit_hb')) || 0;
+    if(hbCount) hbCount.textContent = count;
 
     // --- A. TOGGLE LOGIC FOR SIDE PANELS (Closing the closets) ---
     document.querySelectorAll('.toggle-btn').forEach(button => {
         button.addEventListener('click', () => {
-            const panel = document.getElementById(button.dataset.panel + '-panel');
+            const panelName = button.dataset.panel;
+            const panel = document.getElementById(panelName + '-panel');
             panel.classList.toggle('closed-panel');
+            
+            // Adjust the arrow direction based on the panel state (optional visual flair)
+            button.textContent = panel.classList.contains('closed-panel') ? '➡️' : '⬅️';
         });
     });
+
+    // --- B. NAAM PULSE LOGIC (Spiritual Core) ---
+    function logEvent(text){ 
+        const li = document.createElement('li'); 
+        li.textContent = `${new Date().toLocaleString()}: ${text}`; 
+        if(events) events.prepend(li);
+        while(events && events.children.length > 5) events.removeChild(events.lastChild); 
+    }
     
-    // --- B. PRIMARY PROCESS BUTTON LOGIC ---
+    const simulate_spiritual_learning = () => {
+        logEvent('Surti tick (background learning initiated).');
+    };
+
+    if (pulseBtn) {
+        pulseBtn.addEventListener('click', () => { 
+            // Visual pulse effect
+            glow.style.transform = 'scale(1.08)'; 
+            setTimeout(()=>glow.style.transform='scale(1)',250);
+
+            count++; 
+            localStorage.setItem('amrit_hb', count); 
+            if(hbCount) hbCount.textContent = count;
+            logEvent('Naam pulse emitted (manual).'); 
+            simulate_spiritual_learning();
+        });
+    }
+    // Auto-tick every 10 minutes (Simulated Idle Learning)
+    setInterval(simulate_spiritual_learning, 1000 * 60 * 10); 
+
+
+    // --- C. PRIMARY PROCESS BUTTON LOGIC (AI Launch) ---
     if (processButton) {
         processButton.addEventListener('click', () => {
             const storyText = storyInput.value.trim();
@@ -29,45 +69,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // PHASE 1: AGI THINKING NODE (The Core Analysis)
+            // PHASE 1: AGI THINKING NODE (Core Analysis)
             statusMessage.textContent = "🧠 ਕਹਾਣੀ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਹੋ ਰਿਹਾ ਹੈ... (AmritCore V5 Thinking)";
             statusMessage.style.color = "orange";
             processButton.disabled = true;
 
-            // SIMULATION OF AGI LOGIC FOR THE FINAL REPORT
+            // SIMULATE THE FULL AGI PIPELINE
             setTimeout(() => {
-                // Get current user selections from the UI (Demonstrating AGI logic linkage)
-                const volume = document.getElementById('dialogue-volume').value;
-                const bgPreset = document.getElementById('background-preset').value;
-                
-                // Final Console Output
-                console.log("--- AMRTICORE V5 FINAL TASK LOAD ---");
-                console.log("Story:", storyText.substring(0, 50) + '...');
-                console.log("Animation Command:", currentAnimation);
-                console.log("Selected Background:", bgPreset);
-                console.log("Final Dialogue Volume:", volume);
-                
-                // PHASE 2: SYNTHESIS AND ASSEMBLY
-                statusMessage.textContent = "✅ ਸਫ਼ਲ! AmritCore V5 ਅਸੈਂਬਲੀ ਪੂਰੀ ਹੋਈ।";
+                // Final Check and Success
+                statusMessage.textContent = "✅ ਸਫ਼ਲ! ਸਟੂਡੀਓ ਪ੍ਰੋਡਕਸ਼ਨ ਤਿਆਰ।";
                 statusMessage.style.color = "lightgreen";
                 processButton.disabled = false;
-                
-            }, 3000); // 3 seconds total simulation time
+                logEvent('AI successfully created new video assets.');
+            }, 4000); 
         });
     }
 
-    // --- C. INTERACTIVE CONTROL NODE LOGIC (Mapping buttons to AI commands) ---
+    // --- D. INTERACTIVE CONTROL NODE LOGIC (Mapping actions) ---
     document.querySelectorAll('#visual-panel .control-grid button').forEach(button => {
         button.addEventListener('click', () => {
             const action = button.dataset.action;
-            currentAnimation = action; // Update the AI's internal state
+            currentAnimation = action; 
             statusMessage.textContent = `⚙️ ਕਿਰਦਾਰ ਸੈੱਟ ਹੋਇਆ: ${action.toUpperCase()} (${action === 'sit' ? 'ਸੁਰਤ ਵਿੱਚ ਜੁੜਿਆ' : 'ਹਰਕਤ ਲਈ ਤਿਆਰ'})`;
             statusMessage.style.color = "#3B82F6";
         });
     });
     
-    // --- D. NEW INPUT LOGIC (Camera/File Upload) ---
-    document.querySelectorAll('.upload-btn').forEach(button => {
+    // --- E. NEW INPUT LOGIC (Camera/File Upload) ---
+    document.querySelectorAll('#input-options button').forEach(button => {
         button.addEventListener('click', () => {
             const inputType = button.dataset.input;
             statusMessage.textContent = `📂 ${inputType.toUpperCase()} ਇਨਪੁੱਟ ਤਿਆਰ... (ਨਵੇਂ ਲੈਪਟਾਪ ਦੀ ਲੋੜ ਹੈ)`;
@@ -75,4 +104,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-
