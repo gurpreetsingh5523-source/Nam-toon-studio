@@ -1,0 +1,70 @@
+{
+  "scenes": [
+    {
+      "scene_id": "0",
+      "title": "Scene 1",
+      "dialogues": [
+        {
+          "character": "Krishna",
+          "text": "Krishna walked to the well.",
+          "volume": 1.0,
+          "emotion": "neutral"
+        },
+        {
+          "character": "Sultana",
+          "text": "The morning sun warmed the fields.",
+          "volume": 1.0,
+          "emotion": "neutral"
+        },
+        {
+          "character": "Chapter",
+          "text": "\"Sultana,\" Krishna asked, \"do you ever want to visit the city?\"",
+          "volume": 1.0,
+          "emotion": "question"
+        }
+      ]
+    },
+    {
+      "scene_id": "1",
+      "title": "Scene 2",
+      "dialogues": [
+        {
+          "character": "Krishna",
+          "text": "Sultana smiled and replied, \"I am happy here in the village.",
+          "volume": 1.0,
+          "emotion": "neutral"
+        },
+        {
+          "character": "Sultana",
+          "text": "Our friendship is enough.\"",
+          "volume": 1.0,
+          "emotion": "neutral"
+        }
+      ]
+    },
+    {
+      "scene_id": "2",
+      "title": "Scene 3",
+      "dialogues": [
+        {
+          "character": "Krishna",
+          "text": "Days later, a storm came.",
+          "volume": 1.0,
+          "emotion": "neutral"
+        },
+        {
+          "character": "Sultana",
+          "text": "Krishna and Sultana sheltered under the old banyan tree, listening to the rain.",
+          "volume": 1.0,
+          "emotion": "neutral"
+        },
+        {
+          "character": "Chapter",
+          "text": "They spoke quietly about dreams and promises.",
+          "volume": 1.0,
+          "emotion": "neutral"
+        }
+      ]
+    }
+  ]
+}
