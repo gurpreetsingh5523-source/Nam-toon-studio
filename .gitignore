@@ -1,0 +1,14 @@
+# Ignore media outputs
+*.mp4
+*.mov
+*.wav
+*.mp3
+
+# Keep sample assets
+!audio/sample_*.wav
+!audio/test_*.wav
+
+# System and cache files
+.DS_Store
+__pycache__/
+.pytest_cache/
