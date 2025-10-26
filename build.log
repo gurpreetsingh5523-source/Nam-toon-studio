@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/gurpreetdhillon/Nam-toon-studio/colab/master_builder.py", line 6, in <module>
+    from moviepy.editor import *  # Using the simpler import style
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'moviepy.editor'
