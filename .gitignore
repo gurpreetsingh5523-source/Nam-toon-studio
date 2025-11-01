@@ -1,0 +1,13 @@
+# ignore media outputs
+*.mp4
+*.mov
+*.wav
+*.mp3
+
+# keep sample assets if you want
+!audio/sample_*.wav
+!audio/test_*.wav
+
+.DS_Store
+__pycache__/
+.pytest_cache/
