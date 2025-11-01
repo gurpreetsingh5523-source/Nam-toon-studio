@@ -1,7 +1,21 @@
+moviepy==1.0.3
+gTTS==2.5.4
+pydub==0.25.1
+# Pillow must be <12.0 for moviepy 2.2.1; pin to a compatible 11.x
+# Use Pillow 12 to match local dev environment (moviepy 1.0.3 is compatible)
+Pillow==12.0.0
+requests==2.32.5
+numpy==2.3.4
+imageio==2.37.0
+imageio-ffmpeg==0.6.0
+tqdm==4.67.1
+python-dotenv==1.1.1
+
 moviepy==2.2.1
 gTTS==2.5.4
 pydub==0.25.1
-Pillow==12.0.0
+# Pillow must be <12.0 for moviepy 2.2.1; pin to a compatible 11.x
+Pillow==11.3.0
 requests==2.32.5
 numpy==2.3.4
 imageio==2.37.0
