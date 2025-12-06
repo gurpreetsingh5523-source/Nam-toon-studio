@@ -1,0 +1,50 @@
+{
+  "timestamp": "2025-12-04T20:30:00",
+  "task_id": "FIX_DIVERSE_CHARACTERS",
+  "assigned_to": "Rahbar AI Developer",
+  "priority": "HIGH",
+  "problem": {
+    "title": "Videos showing only one cartoon character repeatedly",
+    "description": "All training videos have same single cartoon character with only text changing. Tools like Stable Diffusion were installed but not being used.",
+    "user_complaint": "oh ikko cartoon bana ke sirf text te likhda hai gurdwara seva ,langer ja kujh hor video sirf ohi cartoon hai jo tools install ketey oh vartey hi nahi ja rahey?",
+    "root_cause": "realistic_renderer.py only has one hardcoded character (Punjabi man with turban). No variety in characters despite having AI tools."
+  },
+  "solution_required": {
+    "main_goal": "Create diverse characters in every video - men, women, kids, elderly",
+    "requirements": [
+      "Multiple character types (8+): men, women, kids, elderly, youth",
+      "Different appearances: skin tones, clothing colors, styles",
+      "Gender variety: male and female characters",
+      "Age variety: kids, youth, adults, elderly",
+      "Traditional Punjabi look: turbans, suits, kurtas",
+      "Random selection per video for variety"
+    ]
+  },
+  "files_to_modify": [
+    {
+      "file": "realistic_renderer.py",
+      "changes": "Add diverse character system with 8+ character templates"
+    },
+    {
+      "file": "diverse_character_generator.py",
+      "status": "Already created",
+      "action": "Integrate into realistic_renderer.py"
+    }
+  ],
+  "testing": {
+    "test_command": "python3 simple_working_agent.py --videos 3 --delay 1",
+    "success_criteria": [
+      "Each video has different character",
+      "Characters include men, women, kids",
+      "Different colors and styles visible",
+      "No repetition in 3 consecutive videos"
+    ]
+  },
+  "rahbar_instructions": {
+    "step_1": "Read diverse_character_generator.py to understand character system",
+    "step_2": "Modify realistic_renderer.py to use diverse characters",
+    "step_3": "Ensure random character selection per video",
+    "step_4": "Test with 3 videos to verify variety",
+    "step_5": "Open generated videos to visually confirm diversity"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "import_date": "2025-12-04T20:54:18.768442",
+  "source": "/Volumes/My Passport",
+  "imported_data": {
+    "photos": 547,
+    "photos_size_mb": 675.36,
+    "audio": 100,
+    "audio_size_mb": 4815.33,
+    "pdfs": 0
+  },
+  "available_on_drive": {
+    "photos": 5821,
+    "videos": 343,
+    "audio": 2440,
+    "pdfs": 11,
+    "total_size_gb": 72.71
+  },
+  "ready_for_training": true,
+  "training_data_includes": [
+    "Personal photos (diverse people, Punjabi culture)",
+    "Gurbani Keertan (voice patterns, pronunciation)",
+    "Cultural context (Sikh traditions, family photos)"
+  ],
+  "next_steps": [
+    "Run: python3 ai_training_orchestrator.py",
+    "AI will train overnight (2-3 hours)",
+    "All 7 brains will learn from your data"
+  ]
+}

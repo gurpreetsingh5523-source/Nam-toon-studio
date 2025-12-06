@@ -1,0 +1,55 @@
+{
+  "audio_silence": {
+    "description": "Detect when audio is silent or too quiet",
+    "check": "rms_threshold",
+    "threshold": 0.02,
+    "severity": "critical",
+    "affected_brain": "audio"
+  },
+  "audio_intermittent": {
+    "description": "Detect gaps in background music",
+    "check": "continuity_check",
+    "sample_points": [
+      5,
+      15,
+      25,
+      35,
+      45,
+      55,
+      65,
+      75,
+      85,
+      95
+    ],
+    "min_pass_rate": 0.8,
+    "severity": "high",
+    "affected_brain": "audio"
+  },
+  "portrait_missing": {
+    "description": "Detect when character portraits aren't visible",
+    "check": "std_threshold",
+    "threshold": 40.0,
+    "region": "center",
+    "severity": "high",
+    "affected_brain": "visual"
+  },
+  "voice_pitch_wrong": {
+    "description": "Detect when voice sounds like child instead of adult",
+    "check": "user_feedback",
+    "keywords": [
+      "child",
+      "young",
+      "13 year",
+      "bachhe"
+    ],
+    "severity": "medium",
+    "affected_brain": "voice"
+  },
+  "music_volume_low": {
+    "description": "Background music not audible",
+    "check": "db_level",
+    "min_db": -40,
+    "severity": "high",
+    "affected_brain": "audio"
+  }
+}

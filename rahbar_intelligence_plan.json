@@ -1,0 +1,80 @@
+{
+  "generated_at": "2025-12-05T20:18:56.674386",
+  "authority": {
+    "naam_anchor": "ੴ ਸਤਿਨਾਮ",
+    "supreme_controller": "Amrit Kaur",
+    "guardian": "DroneMa",
+    "developer": "Rahbar AI",
+    "core_values": [
+      "Love",
+      "Trust",
+      "Seva",
+      "Humility"
+    ],
+    "authority": "FULL_DEVELOPMENT_ACCESS"
+  },
+  "metrics_snapshot": {
+    "training": {
+      "status": "missing"
+    },
+    "feedback": {
+      "videos_created": 1722,
+      "successful_renders": 1722,
+      "failed_renders": 0,
+      "success_rate_pct": 100.0,
+      "avg_satisfaction": 3.0,
+      "patterns_learned": [
+        "positive_animation_quality_good",
+        "prefer_realistic"
+      ],
+      "pending_improvements": [],
+      "perception_reports_logged": 0
+    },
+    "perception": {
+      "reports_total": 0,
+      "latest_report": null,
+      "latest_timestamp": null,
+      "top_objects": [],
+      "top_audio_labels": [],
+      "sampled_reports": [],
+      "status": "missing"
+    },
+    "videos": {
+      "total_videos": 1,
+      "recent_videos": [
+        {
+          "path": "/Users/gurpreetdhillon/Nam-toon-studio/realistic_videos/test_real_photo_video.mp4",
+          "label": "realistic_videos"
+        }
+      ],
+      "recent_count": 1
+    }
+  },
+  "recommended_tools": [
+    {
+      "name": "Perception Auto Runner",
+      "suggested_file": "rahbar_perception_scheduler.py",
+      "description": "Automatically trigger AmritPerceptionBrain for every new video to capture intelligence logs.",
+      "description_pa": "ਹਰ ਨਵੀਂ ਵੀਡੀਓ ਲਈ ਪਰਸੈਪਸ਼ਨ ਬ੍ਰੇਨ ਆਪ ਚਲਾਉਣ ਵਾਲਾ ਟੂਲ।",
+      "priority": "CRITICAL",
+      "reason": "No perception reports detected."
+    },
+    {
+      "name": "Feedback Insight Miner",
+      "suggested_file": "feedback_insight_miner.py",
+      "description": "Cluster user feedback to identify repeating complaints and auto-generate improvement tasks.",
+      "description_pa": "ਯੂਜ਼ਰ ਫੀਡਬੈਕ ਨੂੰ ਕਲਸਟਰਨ ਕਰਕੇ ਮੁੜ ਆਉਣ ਵਾਲੀਆਂ ਸਮੱਸਿਆਵਾਂ ਲਈ ਕੰਮ ਆਪ ਬਣਾਓ।",
+      "priority": "CRITICAL",
+      "reason": "Average satisfaction is 3.0."
+    }
+  ],
+  "automation_upgrades": [],
+  "learning_objectives": [
+    {
+      "title": "Establish Perception Baseline",
+      "objective": "Collect at least one perception report per daily render to enable trend analysis.",
+      "objective_pa": "ਰੋਜ਼ਾਨਾ ਹਰੇਕ ਰੇਂਡਰ ਲਈ ਘੱਟੋ-ਘੱਟ ਇੱਕ ਪਰਸੈਪਸ਼ਨ ਰਿਪੋਰਟ ਇਕੱਠੀ ਕਰੋ।",
+      "data_sources": []
+    }
+  ]
+}

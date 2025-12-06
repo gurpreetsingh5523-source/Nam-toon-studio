@@ -1,0 +1,10 @@
+{
+  "brain_id": "teacher",
+  "trained_at": "2025-12-06T10:25:29.758201",
+  "training_data": {
+    "photos": "/Users/gurpreetdhillon/Nam-toon-studio/training_photos",
+    "audio": "/Users/gurpreetdhillon/Nam-toon-studio/training_audio"
+  },
+  "status": "trained",
+  "overnight_training": true
+}

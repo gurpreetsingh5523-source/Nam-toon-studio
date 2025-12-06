@@ -1,0 +1,4 @@
+Newton's First Law: An object at rest stays at rest.
+Newton's Second Law: F=ma.
+Newton's Third Law: Every action has an equal and opposite reaction.
+Gravity is a force that attracts two bodies.

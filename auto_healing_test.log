@@ -1,0 +1,55 @@
+🤖 Auto-Healer initialized
+   Watching system health 24/7...
+
+======================================================================
+🤖 AUTO-HEALING CYCLE STARTING
+   ਵਾਹਿਗੁਰੂ ਜੀ ਕਾ ਖਾਲਸਾ, ਵਾਹਿਗੁਰੂ ਜੀ ਕੀ ਫਤਿਹ
+======================================================================
+
+🔍 AUTO-DETECTING PROBLEMS...
+✅ Libraries loaded
+   Found 1 problems
+
+======================================================================
+PROBLEM 1/1
+Type: no_output
+Severity: HIGH
+Description: Agents configured but no videos created
+======================================================================
+
+🔧 AUTO-FIXING: no_output
+   Analyzing why no videos created...
+   Testing simple_working_agent...
+   ❌ Simple agent ran but no video created
+   Output: =========
+📁 File: training_spiritual_20251204_194928
+📊 Size: 0.70 MB
+⏱️  Duration: 14.6s
+🎬 Scenes: 2
+🎞️  Total Frames: 438
+🎥 FPS: 30
+📐 Resolution: 1920x1080
+🔊 Voice: ✅ Yes
+🎵 Music: ✅ Yes
+🎨 Quality: ⭐⭐⭐⭐⭐ REALISTIC!
+======================================================================
+
+❌ Video creation failed
+
+======================================================================
+✅ BATCH COMPLETE
+   Created: 0/1
+   Failed: 1
+======================================================================
+
+
+📚 TEACHING OTHER BRAINS...
+   ✅ Lesson saved to learning feed
+   📖 Lesson: Encountered no_output, fix failed
+
+======================================================================
+✅ HEALING CYCLE COMPLETE
+   Problems detected: 1
+   Problems fixed: 0
+   Success rate: 0.0%
+======================================================================

@@ -1,0 +1,80 @@
+{
+  "title": "Scene 1: ਪਿੰਡ ਦੇ ਮੈਦਾਨ ਵਿੱਚ ਲੋਕ ਖੁਸ਼ ਹਨ। ਕੁਲਵੰਤ: ਮੈਂ ਖ਼ੁਸ਼ ਹਾਂ!",
+  "created_at": "2025-11-02T23:20:52.608400",
+  "scenes": [
+    {
+      "scene_id": 0,
+      "raw_text": "ਪਿੰਡ ਦੇ ਮੈਦਾਨ ਵਿੱਚ ਲੋਕ ਖੁਸ਼ ਹਨ। ਕੁਲਵੰਤ: ਮੈਂ ਖ਼ੁਸ਼ ਹਾਂ!",
+      "description": "ਪਿੰਡ ਦੇ ਮੈਦਾਨ ਵਿੱਚ ਲੋਕ ਖੁਸ਼ ਹਨ। ਕੁਲਵੰਤ: ਮੈਂ ਖ਼ੁਸ਼ ਹਾਂ!",
+      "dialogues": [
+        {
+          "character": "ਪਿੰਡ ਦੇ ਮੈਦਾਨ ਵਿੱਚ ਲੋਕ ਖੁਸ਼ ਹਨ। ਕੁਲਵੰਤ",
+          "text": "ਮੈਂ ਖ਼ੁਸ਼ ਹਾਂ!"
+        }
+      ],
+      "emotion": "happy",
+      "location": "village",
+      "camera_plan": {
+        "emotion": "happy",
+        "duration": 6.0,
+        "movement": {
+          "type": "pan",
+          "direction": "left-to-right",
+          "speed": "medium"
+        },
+        "zoom": {
+          "start": 1.0,
+          "end": 1.06
+        },
+        "recommended_shot": "medium"
+      },
+      "duration": 6.0
+    },
+    {
+      "scene_id": 1,
+      "raw_text": "ਉਹ ਮੰਜਾ ਤੇ ਬੈਠਦਾ ਹੈ ਅਤੇ ਸੋਚਦਾ ਹੈ।",
+      "description": "ਉਹ ਮੰਜਾ ਤੇ ਬੈਠਦਾ ਹੈ ਅਤੇ ਸੋਚਦਾ ਹੈ।",
+      "dialogues": [],
+      "emotion": "neutral",
+      "location": "unknown",
+      "camera_plan": {
+        "emotion": "neutral",
+        "duration": 6.0,
+        "movement": {
+          "type": "static",
+          "direction": null,
+          "speed": "none"
+        },
+        "zoom": {
+          "start": 1.0,
+          "end": 1.02
+        },
+        "recommended_shot": "medium"
+      },
+      "duration": 6.0
+    },
+    {
+      "scene_id": 2,
+      "raw_text": "ਗੁਰੂਦੁਆਰੇ ਵਿੱਚ ਪ੍ਰਾਰਥਨਾ ਹੋ ਰਹੀ ਹੈ।",
+      "description": "ਗੁਰੂਦੁਆਰੇ ਵਿੱਚ ਪ੍ਰਾਰਥਨਾ ਹੋ ਰਹੀ ਹੈ।",
+      "dialogues": [],
+      "emotion": "spiritual",
+      "location": "gurudwara",
+      "camera_plan": {
+        "emotion": "spiritual",
+        "duration": 6.0,
+        "movement": {
+          "type": "dolly",
+          "direction": "forward",
+          "speed": "very_slow"
+        },
+        "zoom": {
+          "start": 1.0,
+          "end": 1.04
+        },
+        "recommended_shot": "close"
+      },
+      "duration": 6.0
+    }
+  ]
+}

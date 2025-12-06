@@ -1,0 +1,15 @@
+[
+  {
+    "timestamp": "2025-11-03T20:27:58.960711",
+    "scene_id": 0,
+    "source": "unit_test",
+    "recommendations": [
+      {
+        "action": "lower_music_volume",
+        "reason": "background louder than dialogue",
+        "suggested_multiplier": 0.6
+      }
+    ],
+    "attempts": 1
+  }
+]

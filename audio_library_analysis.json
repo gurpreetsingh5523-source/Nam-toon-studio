@@ -1,0 +1,1150 @@
+{
+  "summary": {
+    "total_audio_files": 108,
+    "total_size_mb": 298.87,
+    "total_size_gb": 0.29,
+    "locations_scanned": 6,
+    "locations_with_files": 5
+  },
+  "by_location": {
+    "gurbani_keertan_desktop": {
+      "folder": "gurbani_keertan_desktop",
+      "path": "~/Desktop/gurbani keertan",
+      "files": [
+        {
+          "name": "Baabul_Meraa_Vad_Samrathaa(www.DjFm.pk).mp3",
+          "size_mb": 12.37,
+          "format": ".mp3",
+          "relative_path": "Baabul_Meraa_Vad_Samrathaa(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Ghar_Hi_Main_Amrit_Bharpoor_Hai(www.DjFm.pk).mp3",
+          "size_mb": 8.03,
+          "format": ".mp3",
+          "relative_path": "Ghar_Hi_Main_Amrit_Bharpoor_Hai(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Bande_Khoj_Dil(www.DjFm.pk).mp3",
+          "size_mb": 9.9,
+          "format": ".mp3",
+          "relative_path": "Bande_Khoj_Dil(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Mere_Mann_Mukh_Har_Har_Har_Boleo(www.DjFm.pk).mp3",
+          "size_mb": 10.02,
+          "format": ".mp3",
+          "relative_path": "Mere_Mann_Mukh_Har_Har_Har_Boleo(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Bhagat_Ravidas_Ji_Part_1(www.DjFm.pk).mp3",
+          "size_mb": 7.75,
+          "format": ".mp3",
+          "relative_path": "Bhagat_Ravidas_Ji_Part_1(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Tu_Prabh_Daata_Daan_Mat_Pura(www.DjFm.pk).mp3",
+          "size_mb": 5.03,
+          "format": ".mp3",
+          "relative_path": "Tu_Prabh_Daata_Daan_Mat_Pura(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "O4 SAJJAN MERE RANGLE JAAYE SUTTE JEERAN.mp3",
+          "size_mb": 10.16,
+          "format": ".mp3",
+          "relative_path": "O4 SAJJAN MERE RANGLE JAAYE SUTTE JEERAN.mp3"
+        },
+        {
+          "name": "Bhairavi.m4a",
+          "size_mb": 0.16,
+          "format": ".m4a",
+          "relative_path": "Bhairavi.m4a"
+        },
+        {
+          "name": "Choji_Mere_Piyareya(www.DjFm.pk).mp3",
+          "size_mb": 8.18,
+          "format": ".mp3",
+          "relative_path": "Choji_Mere_Piyareya(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Kabeer_Har_Kaa_Simran_Jo_Karai(www.DjFm.pk) copy.mp3",
+          "size_mb": 8.11,
+          "format": ".mp3",
+          "relative_path": "Kabeer_Har_Kaa_Simran_Jo_Karai(www.DjFm.pk) copy.mp3"
+        },
+        {
+          "name": "Mitth_Bolrha_Ji(www.DjFm.pk).mp3",
+          "size_mb": 9.05,
+          "format": ".mp3",
+          "relative_path": "Mitth_Bolrha_Ji(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Ghar_Hi_Main_Amrit_Bharpoor_Hai(www.DjFm.pk) copy.mp3",
+          "size_mb": 8.03,
+          "format": ".mp3",
+          "relative_path": "Ghar_Hi_Main_Amrit_Bharpoor_Hai(www.DjFm.pk) copy.mp3"
+        },
+        {
+          "name": "Prani_Kya_Mera_Kya_Tera(www.DjFm.pk).mp3",
+          "size_mb": 3.51,
+          "format": ".mp3",
+          "relative_path": "Prani_Kya_Mera_Kya_Tera(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Man_Kyon_Bairag_Karehga(www.DjFm.pk).mp3",
+          "size_mb": 9.55,
+          "format": ".mp3",
+          "relative_path": "Man_Kyon_Bairag_Karehga(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Chandrakouns.m4a",
+          "size_mb": 0.17,
+          "format": ".m4a",
+          "relative_path": "Chandrakouns.m4a"
+        },
+        {
+          "name": "Gur_Purai_Meri_Raakh_Layi(www.DjFm.pk).mp3",
+          "size_mb": 8.69,
+          "format": ".mp3",
+          "relative_path": "Gur_Purai_Meri_Raakh_Layi(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Vass_Mere_Pyareya_Vass_Mere_Govinda(www.DjFm.pk).mp3",
+          "size_mb": 3.61,
+          "format": ".mp3",
+          "relative_path": "Vass_Mere_Pyareya_Vass_Mere_Govinda(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Kya_Sawna_Kya_Jaagna(www.DjFm.pk) copy.mp3",
+          "size_mb": 2.44,
+          "format": ".mp3",
+          "relative_path": "Kya_Sawna_Kya_Jaagna(www.DjFm.pk) copy.mp3"
+        },
+        {
+          "name": "Sach_Kaho_Sun_Leho(www.DjFm.pk).mp3",
+          "size_mb": 8.18,
+          "format": ".mp3",
+          "relative_path": "Sach_Kaho_Sun_Leho(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "03 SATGURU KI SEWA SAFAL HAI.mp3",
+          "size_mb": 8.05,
+          "format": ".mp3",
+          "relative_path": "03 SATGURU KI SEWA SAFAL HAI.mp3"
+        },
+        {
+          "name": "Jagat_Jalanda_Rakh_Lei_Apni_Kirpa_Dhar(www.DjFm.pk).mp3",
+          "size_mb": 2.1,
+          "format": ".mp3",
+          "relative_path": "Jagat_Jalanda_Rakh_Lei_Apni_Kirpa_Dhar(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Satgur_Aaeyo_Saran_Tumhaari(www.DjFm.pk).mp3",
+          "size_mb": 2.89,
+          "format": ".mp3",
+          "relative_path": "Satgur_Aaeyo_Saran_Tumhaari(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Baitha_Sodhi_Patshah(www.DjFm.pk) (1).mp3",
+          "size_mb": 1.96,
+          "format": ".mp3",
+          "relative_path": "Baitha_Sodhi_Patshah(www.DjFm.pk) (1).mp3"
+        },
+        {
+          "name": "Dukh_Parhar_Sukh_Ghar_Lai_Jaye(www.DjFm.pk) copy.mp3",
+          "size_mb": 9.21,
+          "format": ".mp3",
+          "relative_path": "Dukh_Parhar_Sukh_Ghar_Lai_Jaye(www.DjFm.pk) copy.mp3"
+        },
+        {
+          "name": "Kabeer_Har_Kaa_Simran_Jo_Karai(www.DjFm.pk).mp3",
+          "size_mb": 8.11,
+          "format": ".mp3",
+          "relative_path": "Kabeer_Har_Kaa_Simran_Jo_Karai(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Tu_Samrath_Vadaa_Meri_Math_Thori_Raam(www.DjFm.pk).mp3",
+          "size_mb": 7.57,
+          "format": ".mp3",
+          "relative_path": "Tu_Samrath_Vadaa_Meri_Math_Thori_Raam(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Eh_Mann_Sundar_Apna(www.DjFm.pk).mp3",
+          "size_mb": 13.39,
+          "format": ".mp3",
+          "relative_path": "Eh_Mann_Sundar_Apna(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Kya_Sawna_Kya_Jaagna(www.DjFm.pk).mp3",
+          "size_mb": 2.44,
+          "format": ".mp3",
+          "relative_path": "Kya_Sawna_Kya_Jaagna(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Nit_Japiyei_Saas_Giraas(www.DjFm.pk).mp3",
+          "size_mb": 2.58,
+          "format": ".mp3",
+          "relative_path": "Nit_Japiyei_Saas_Giraas(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Dhhan_Dhhan__O_Ram_Baen_Baajai(www.DjFm.pk).mp3",
+          "size_mb": 10.88,
+          "format": ".mp3",
+          "relative_path": "Dhhan_Dhhan__O_Ram_Baen_Baajai(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Mera_Sunder_Swami_Ji(www.DjFm.pk).mp3",
+          "size_mb": 1.54,
+          "format": ".mp3",
+          "relative_path": "Mera_Sunder_Swami_Ji(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Bahur Hum Kaahe Avenge-Bhai Nirmal S.m4r",
+          "size_mb": 0.84,
+          "format": ".m4r",
+          "relative_path": "Bahur Hum Kaahe Avenge-Bhai Nirmal S.m4r"
+        },
+        {
+          "name": "Charan_Kamal_Tere_Dhoye_Dhoye_Pivaa(www.DjFm.pk).mp3",
+          "size_mb": 3.18,
+          "format": ".mp3",
+          "relative_path": "Charan_Kamal_Tere_Dhoye_Dhoye_Pivaa(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Dam_Dam_Sada_Samalda(www.DjFm.pk).mp3",
+          "size_mb": 2.75,
+          "format": ".mp3",
+          "relative_path": "Dam_Dam_Sada_Samalda(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Bilaskhani todi.m4a",
+          "size_mb": 0.16,
+          "format": ".m4a",
+          "relative_path": "Bilaskhani todi.m4a"
+        },
+        {
+          "name": "Aukhi_Ghadi_Na_Dekhan_Deyi(www.DjFm.pk).mp3",
+          "size_mb": 2.19,
+          "format": ".mp3",
+          "relative_path": "Aukhi_Ghadi_Na_Dekhan_Deyi(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Haun_Wari_Haun_Waari(www.DjFm.pk).mp3",
+          "size_mb": 2.38,
+          "format": ".mp3",
+          "relative_path": "Haun_Wari_Haun_Waari(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Deedne_Deedar_Sahib(www.DjFm.pk).mp3",
+          "size_mb": 2.87,
+          "format": ".mp3",
+          "relative_path": "Deedne_Deedar_Sahib(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "SO KYUN VISRE.mp3",
+          "size_mb": 0.29,
+          "format": ".mp3",
+          "relative_path": "SO KYUN VISRE.mp3"
+        },
+        {
+          "name": "Gun Gavan Din Raat - Anoop Singh (Una Sahib Wale).m4r",
+          "size_mb": 1.21,
+          "format": ".m4r",
+          "relative_path": "Gun Gavan Din Raat - Anoop Singh (Una Sahib Wale).m4r"
+        },
+        {
+          "name": "Dubidha_Door_Karho(www.DjFm.pk).mp3",
+          "size_mb": 3.5,
+          "format": ".mp3",
+          "relative_path": "Dubidha_Door_Karho(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "anand sahib path.mp3",
+          "size_mb": 3.33,
+          "format": ".mp3",
+          "relative_path": "anand sahib path.mp3"
+        },
+        {
+          "name": "Ramdas_Sarovar_Naate(www.DjFm.pk) (1).mp3",
+          "size_mb": 1.79,
+          "format": ".mp3",
+          "relative_path": "Ramdas_Sarovar_Naate(www.DjFm.pk) (1).mp3"
+        },
+        {
+          "name": "Ditthe_Sabhe_Thaanv(www.DjFm.pk).mp3",
+          "size_mb": 2.75,
+          "format": ".mp3",
+          "relative_path": "Ditthe_Sabhe_Thaanv(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Harj-Mere satgura.mp3",
+          "size_mb": 5.28,
+          "format": ".mp3",
+          "relative_path": "Harj-Mere satgura.mp3"
+        },
+        {
+          "name": "Main_Chaare_Kunda_Bhaalia(www.DjFm.pk).mp3",
+          "size_mb": 3.75,
+          "format": ".mp3",
+          "relative_path": "Main_Chaare_Kunda_Bhaalia(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Dukh_Parhar_Sukh_Ghar_Lai_Jaye(www.DjFm.pk).mp3",
+          "size_mb": 9.21,
+          "format": ".mp3",
+          "relative_path": "Dukh_Parhar_Sukh_Ghar_Lai_Jaye(www.DjFm.pk).mp3"
+        }
+      ],
+      "total_count": 47,
+      "total_size_mb": 249.15,
+      "by_format": {
+        ".mp3": 42,
+        ".m4a": 3,
+        ".m4r": 2
+      },
+      "sample_files": [
+        "Baabul_Meraa_Vad_Samrathaa(www.DjFm.pk).mp3",
+        "Ghar_Hi_Main_Amrit_Bharpoor_Hai(www.DjFm.pk).mp3",
+        "Bande_Khoj_Dil(www.DjFm.pk).mp3",
+        "Mere_Mann_Mukh_Har_Har_Har_Boleo(www.DjFm.pk).mp3",
+        "Bhagat_Ravidas_Ji_Part_1(www.DjFm.pk).mp3",
+        "Tu_Prabh_Daata_Daan_Mat_Pura(www.DjFm.pk).mp3",
+        "O4 SAJJAN MERE RANGLE JAAYE SUTTE JEERAN.mp3",
+        "Bhairavi.m4a",
+        "Choji_Mere_Piyareya(www.DjFm.pk).mp3",
+        "Kabeer_Har_Kaa_Simran_Jo_Karai(www.DjFm.pk) copy.mp3"
+      ]
+    },
+    "gurbani_keertan_amritkaur": {
+      "folder": "gurbani_keertan_amritkaur",
+      "path": "~/Desktop/amritkaur_local/gurbani_keertan",
+      "files": [
+        {
+          "name": "O4 SAJJAN MERE RANGLE JAAYE SUTTE JEERAN.mp3",
+          "size_mb": 10.16,
+          "format": ".mp3",
+          "relative_path": "O4 SAJJAN MERE RANGLE JAAYE SUTTE JEERAN.mp3"
+        },
+        {
+          "name": "03 SATGURU KI SEWA SAFAL HAI.mp3",
+          "size_mb": 8.05,
+          "format": ".mp3",
+          "relative_path": "03 SATGURU KI SEWA SAFAL HAI.mp3"
+        },
+        {
+          "name": "Bahur Hum Kaahe Avenge-Bhai Nirmal S.m4r",
+          "size_mb": 0.84,
+          "format": ".m4r",
+          "relative_path": "Bahur Hum Kaahe Avenge-Bhai Nirmal S.m4r"
+        },
+        {
+          "name": "SO KYUN VISRE.mp3",
+          "size_mb": 0.29,
+          "format": ".mp3",
+          "relative_path": "SO KYUN VISRE.mp3"
+        },
+        {
+          "name": "Gun Gavan Din Raat - Anoop Singh (Una Sahib Wale).m4r",
+          "size_mb": 1.21,
+          "format": ".m4r",
+          "relative_path": "Gun Gavan Din Raat - Anoop Singh (Una Sahib Wale).m4r"
+        },
+        {
+          "name": "anand sahib path.mp3",
+          "size_mb": 3.33,
+          "format": ".mp3",
+          "relative_path": "anand sahib path.mp3"
+        },
+        {
+          "name": "Harj-Mere satgura.mp3",
+          "size_mb": 5.28,
+          "format": ".mp3",
+          "relative_path": "Harj-Mere satgura.mp3"
+        }
+      ],
+      "total_count": 7,
+      "total_size_mb": 29.16,
+      "by_format": {
+        ".mp3": 5,
+        ".m4r": 2
+      },
+      "sample_files": [
+        "O4 SAJJAN MERE RANGLE JAAYE SUTTE JEERAN.mp3",
+        "03 SATGURU KI SEWA SAFAL HAI.mp3",
+        "Bahur Hum Kaahe Avenge-Bhai Nirmal S.m4r",
+        "SO KYUN VISRE.mp3",
+        "Gun Gavan Din Raat - Anoop Singh (Una Sahib Wale).m4r",
+        "anand sahib path.mp3",
+        "Harj-Mere satgura.mp3"
+      ]
+    },
+    "test_nano_audio": {
+      "folder": "test_nano_audio",
+      "path": "~/Desktop/amritkaur_local/test_nano_audio",
+      "files": [
+        {
+          "name": "002_Mother.mp3",
+          "size_mb": 0.02,
+          "format": ".mp3",
+          "relative_path": "002_Mother.mp3"
+        },
+        {
+          "name": "001_Simran.mp3",
+          "size_mb": 0.01,
+          "format": ".mp3",
+          "relative_path": "001_Simran.mp3"
+        },
+        {
+          "name": "000_Narrator.mp3",
+          "size_mb": 0.02,
+          "format": ".mp3",
+          "relative_path": "000_Narrator.mp3"
+        }
+      ],
+      "total_count": 3,
+      "total_size_mb": 0.04,
+      "by_format": {
+        ".mp3": 3
+      },
+      "sample_files": [
+        "002_Mother.mp3",
+        "001_Simran.mp3",
+        "000_Narrator.mp3"
+      ]
+    },
+    "nam_toon_audio": {
+      "folder": "nam_toon_audio",
+      "path": "~/Desktop/Nam-toon-studio/audio",
+      "files": [
+        {
+          "name": "clip_0_tmp.wav",
+          "size_mb": 0.34,
+          "format": ".wav",
+          "relative_path": "clip_0_tmp.wav"
+        },
+        {
+          "name": "birds.mp3",
+          "size_mb": 0.34,
+          "format": ".mp3",
+          "relative_path": "birds.mp3"
+        },
+        {
+          "name": "bg_loop_temp.wav",
+          "size_mb": 1.01,
+          "format": ".wav",
+          "relative_path": "bg_loop_temp.wav"
+        },
+        {
+          "name": "clip_1_tmp.wav",
+          "size_mb": 0.34,
+          "format": ".wav",
+          "relative_path": "clip_1_tmp.wav"
+        },
+        {
+          "name": "sample_dialogue_2.wav",
+          "size_mb": 0.17,
+          "format": ".wav",
+          "relative_path": "sample_dialogue_2.wav"
+        },
+        {
+          "name": "final_mix_temp.wav",
+          "size_mb": 1.01,
+          "format": ".wav",
+          "relative_path": "final_mix_temp.wav"
+        },
+        {
+          "name": "sample_dialogue_1.wav",
+          "size_mb": 0.17,
+          "format": ".wav",
+          "relative_path": "sample_dialogue_1.wav"
+        },
+        {
+          "name": "sample_dialogue_0.wav",
+          "size_mb": 0.17,
+          "format": ".wav",
+          "relative_path": "sample_dialogue_0.wav"
+        },
+        {
+          "name": "extracted_final.wav",
+          "size_mb": 3.29,
+          "format": ".wav",
+          "relative_path": "extracted_final.wav"
+        },
+        {
+          "name": "dialogue_2.mp3",
+          "size_mb": 0.05,
+          "format": ".mp3",
+          "relative_path": "dialogue_2.mp3"
+        },
+        {
+          "name": "clip_2_tmp.wav",
+          "size_mb": 0.34,
+          "format": ".wav",
+          "relative_path": "clip_2_tmp.wav"
+        },
+        {
+          "name": "dialogue_1.mp3",
+          "size_mb": 0.06,
+          "format": ".mp3",
+          "relative_path": "dialogue_1.mp3"
+        },
+        {
+          "name": "dialogue_0.mp3",
+          "size_mb": 0.04,
+          "format": ".mp3",
+          "relative_path": "dialogue_0.mp3"
+        },
+        {
+          "name": "birds.wav",
+          "size_mb": 0.34,
+          "format": ".wav",
+          "relative_path": "birds.wav"
+        },
+        {
+          "name": "dialogue_2.wav",
+          "size_mb": 1.14,
+          "format": ".wav",
+          "relative_path": "dialogue_2.wav"
+        },
+        {
+          "name": "dialogue_0.wav",
+          "size_mb": 0.83,
+          "format": ".wav",
+          "relative_path": "dialogue_0.wav"
+        },
+        {
+          "name": "dialogue_1.wav",
+          "size_mb": 1.31,
+          "format": ".wav",
+          "relative_path": "dialogue_1.wav"
+        }
+      ],
+      "total_count": 17,
+      "total_size_mb": 10.92,
+      "by_format": {
+        ".wav": 13,
+        ".mp3": 4
+      },
+      "sample_files": [
+        "clip_0_tmp.wav",
+        "birds.mp3",
+        "bg_loop_temp.wav",
+        "clip_1_tmp.wav",
+        "sample_dialogue_2.wav",
+        "final_mix_temp.wav",
+        "sample_dialogue_1.wav",
+        "sample_dialogue_0.wav",
+        "extracted_final.wav",
+        "dialogue_2.mp3"
+      ]
+    },
+    "downloads": {
+      "folder": "downloads",
+      "path": "~/Downloads",
+      "files": [
+        {
+          "name": "amrit_video_narration.wav",
+          "size_mb": 0.26,
+          "format": ".wav",
+          "relative_path": "amrit_video_narration.wav"
+        },
+        {
+          "name": "voiceRecordingStopped.mp3",
+          "size_mb": 0.02,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/voiceRecordingStopped.mp3"
+        },
+        {
+          "name": "editsUndone.mp3",
+          "size_mb": 0.03,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/editsUndone.mp3"
+        },
+        {
+          "name": "break.mp3",
+          "size_mb": 0.04,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/break.mp3"
+        },
+        {
+          "name": "editsKept.mp3",
+          "size_mb": 0.05,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/editsKept.mp3"
+        },
+        {
+          "name": "nextEditSuggestion.mp3",
+          "size_mb": 0.03,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/nextEditSuggestion.mp3"
+        },
+        {
+          "name": "format.mp3",
+          "size_mb": 0.04,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/format.mp3"
+        },
+        {
+          "name": "save.mp3",
+          "size_mb": 0.03,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/save.mp3"
+        },
+        {
+          "name": "codeActionTriggered.mp3",
+          "size_mb": 0.05,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/codeActionTriggered.mp3"
+        },
+        {
+          "name": "foldedAreas.mp3",
+          "size_mb": 0.02,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/foldedAreas.mp3"
+        },
+        {
+          "name": "terminalBell.mp3",
+          "size_mb": 0.03,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/terminalBell.mp3"
+        },
+        {
+          "name": "error.mp3",
+          "size_mb": 0.04,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/error.mp3"
+        },
+        {
+          "name": "chatEditModifiedFile.mp3",
+          "size_mb": 0.02,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/chatEditModifiedFile.mp3"
+        },
+        {
+          "name": "diffLineModified.mp3",
+          "size_mb": 0.04,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/diffLineModified.mp3"
+        },
+        {
+          "name": "responseReceived4.mp3",
+          "size_mb": 0.03,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/responseReceived4.mp3"
+        },
+        {
+          "name": "quickFixes.mp3",
+          "size_mb": 0.03,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/quickFixes.mp3"
+        },
+        {
+          "name": "taskFailed.mp3",
+          "size_mb": 0.07,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/taskFailed.mp3"
+        },
+        {
+          "name": "success.mp3",
+          "size_mb": 0.02,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/success.mp3"
+        },
+        {
+          "name": "responseReceived1.mp3",
+          "size_mb": 0.03,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/responseReceived1.mp3"
+        },
+        {
+          "name": "responseReceived3.mp3",
+          "size_mb": 0.03,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/responseReceived3.mp3"
+        },
+        {
+          "name": "responseReceived2.mp3",
+          "size_mb": 0.03,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/responseReceived2.mp3"
+        },
+        {
+          "name": "voiceRecordingStarted.mp3",
+          "size_mb": 0.03,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/voiceRecordingStarted.mp3"
+        },
+        {
+          "name": "clear.mp3",
+          "size_mb": 0.03,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/clear.mp3"
+        },
+        {
+          "name": "codeActionApplied.mp3",
+          "size_mb": 0.05,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/codeActionApplied.mp3"
+        },
+        {
+          "name": "diffLineDeleted.mp3",
+          "size_mb": 0.04,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/diffLineDeleted.mp3"
+        },
+        {
+          "name": "terminalCommandSucceeded.mp3",
+          "size_mb": 0.03,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/terminalCommandSucceeded.mp3"
+        },
+        {
+          "name": "diffLineInserted.mp3",
+          "size_mb": 0.04,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/diffLineInserted.mp3"
+        },
+        {
+          "name": "progress.mp3",
+          "size_mb": 0.03,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/progress.mp3"
+        },
+        {
+          "name": "warning.mp3",
+          "size_mb": 0.04,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/warning.mp3"
+        },
+        {
+          "name": "requestSent.mp3",
+          "size_mb": 0.04,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/requestSent.mp3"
+        },
+        {
+          "name": "taskCompleted.mp3",
+          "size_mb": 0.06,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/taskCompleted.mp3"
+        },
+        {
+          "name": "chatUserActionRequired.mp3",
+          "size_mb": 0.03,
+          "format": ".mp3",
+          "relative_path": "Visual Studio Code.app/Contents/Resources/app/out/vs/platform/accessibilitySignal/browser/media/chatUserActionRequired.mp3"
+        },
+        {
+          "name": "11.Cash Mani-Defenders of the Faith (DJJOhAL.Com).mp3",
+          "size_mb": 3.71,
+          "format": ".mp3",
+          "relative_path": "C/downloads/11.Cash Mani-Defenders of the Faith (DJJOhAL.Com).mp3"
+        },
+        {
+          "name": "013-goli da vaar (DJJOhAL.Com).mp3",
+          "size_mb": 4.56,
+          "format": ".mp3",
+          "relative_path": "C/downloads/013-goli da vaar (DJJOhAL.Com).mp3"
+        }
+      ],
+      "total_count": 34,
+      "total_size_mb": 9.6,
+      "by_format": {
+        ".wav": 1,
+        ".mp3": 33
+      },
+      "sample_files": [
+        "amrit_video_narration.wav",
+        "voiceRecordingStopped.mp3",
+        "editsUndone.mp3",
+        "break.mp3",
+        "editsKept.mp3",
+        "nextEditSuggestion.mp3",
+        "format.mp3",
+        "save.mp3",
+        "codeActionTriggered.mp3",
+        "foldedAreas.mp3"
+      ]
+    }
+  },
+  "gurbani_kirtan_analysis": {
+    "total_kirtan_files": 54,
+    "categorized": {
+      "gurbani_kirtan": [
+        {
+          "name": "Ghar_Hi_Main_Amrit_Bharpoor_Hai(www.DjFm.pk).mp3",
+          "size_mb": 8.03,
+          "format": ".mp3",
+          "relative_path": "Ghar_Hi_Main_Amrit_Bharpoor_Hai(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Mere_Mann_Mukh_Har_Har_Har_Boleo(www.DjFm.pk).mp3",
+          "size_mb": 10.02,
+          "format": ".mp3",
+          "relative_path": "Mere_Mann_Mukh_Har_Har_Har_Boleo(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Ghar_Hi_Main_Amrit_Bharpoor_Hai(www.DjFm.pk) copy.mp3",
+          "size_mb": 8.03,
+          "format": ".mp3",
+          "relative_path": "Ghar_Hi_Main_Amrit_Bharpoor_Hai(www.DjFm.pk) copy.mp3"
+        },
+        {
+          "name": "Gur_Purai_Meri_Raakh_Layi(www.DjFm.pk).mp3",
+          "size_mb": 8.69,
+          "format": ".mp3",
+          "relative_path": "Gur_Purai_Meri_Raakh_Layi(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "03 SATGURU KI SEWA SAFAL HAI.mp3",
+          "size_mb": 8.05,
+          "format": ".mp3",
+          "relative_path": "03 SATGURU KI SEWA SAFAL HAI.mp3"
+        },
+        {
+          "name": "Jagat_Jalanda_Rakh_Lei_Apni_Kirpa_Dhar(www.DjFm.pk).mp3",
+          "size_mb": 2.1,
+          "format": ".mp3",
+          "relative_path": "Jagat_Jalanda_Rakh_Lei_Apni_Kirpa_Dhar(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Satgur_Aaeyo_Saran_Tumhaari(www.DjFm.pk).mp3",
+          "size_mb": 2.89,
+          "format": ".mp3",
+          "relative_path": "Satgur_Aaeyo_Saran_Tumhaari(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Dukh_Parhar_Sukh_Ghar_Lai_Jaye(www.DjFm.pk) copy.mp3",
+          "size_mb": 9.21,
+          "format": ".mp3",
+          "relative_path": "Dukh_Parhar_Sukh_Ghar_Lai_Jaye(www.DjFm.pk) copy.mp3"
+        },
+        {
+          "name": "Charan_Kamal_Tere_Dhoye_Dhoye_Pivaa(www.DjFm.pk).mp3",
+          "size_mb": 3.18,
+          "format": ".mp3",
+          "relative_path": "Charan_Kamal_Tere_Dhoye_Dhoye_Pivaa(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Harj-Mere satgura.mp3",
+          "size_mb": 5.28,
+          "format": ".mp3",
+          "relative_path": "Harj-Mere satgura.mp3"
+        },
+        {
+          "name": "Dukh_Parhar_Sukh_Ghar_Lai_Jaye(www.DjFm.pk).mp3",
+          "size_mb": 9.21,
+          "format": ".mp3",
+          "relative_path": "Dukh_Parhar_Sukh_Ghar_Lai_Jaye(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "03 SATGURU KI SEWA SAFAL HAI.mp3",
+          "size_mb": 8.05,
+          "format": ".mp3",
+          "relative_path": "03 SATGURU KI SEWA SAFAL HAI.mp3"
+        },
+        {
+          "name": "Harj-Mere satgura.mp3",
+          "size_mb": 5.28,
+          "format": ".mp3",
+          "relative_path": "Harj-Mere satgura.mp3"
+        }
+      ],
+      "raag_kirtan": [
+        {
+          "name": "Bhairavi.m4a",
+          "size_mb": 0.16,
+          "format": ".m4a",
+          "relative_path": "Bhairavi.m4a"
+        },
+        {
+          "name": "Chandrakouns.m4a",
+          "size_mb": 0.17,
+          "format": ".m4a",
+          "relative_path": "Chandrakouns.m4a"
+        },
+        {
+          "name": "Bilaskhani todi.m4a",
+          "size_mb": 0.16,
+          "format": ".m4a",
+          "relative_path": "Bilaskhani todi.m4a"
+        }
+      ],
+      "path_paath": [
+        {
+          "name": "anand sahib path.mp3",
+          "size_mb": 3.33,
+          "format": ".mp3",
+          "relative_path": "anand sahib path.mp3"
+        },
+        {
+          "name": "anand sahib path.mp3",
+          "size_mb": 3.33,
+          "format": ".mp3",
+          "relative_path": "anand sahib path.mp3"
+        }
+      ],
+      "simran": [
+        {
+          "name": "Kabeer_Har_Kaa_Simran_Jo_Karai(www.DjFm.pk) copy.mp3",
+          "size_mb": 8.11,
+          "format": ".mp3",
+          "relative_path": "Kabeer_Har_Kaa_Simran_Jo_Karai(www.DjFm.pk) copy.mp3"
+        },
+        {
+          "name": "Kabeer_Har_Kaa_Simran_Jo_Karai(www.DjFm.pk).mp3",
+          "size_mb": 8.11,
+          "format": ".mp3",
+          "relative_path": "Kabeer_Har_Kaa_Simran_Jo_Karai(www.DjFm.pk).mp3"
+        }
+      ],
+      "other": [
+        {
+          "name": "Baabul_Meraa_Vad_Samrathaa(www.DjFm.pk).mp3",
+          "size_mb": 12.37,
+          "format": ".mp3",
+          "relative_path": "Baabul_Meraa_Vad_Samrathaa(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Bande_Khoj_Dil(www.DjFm.pk).mp3",
+          "size_mb": 9.9,
+          "format": ".mp3",
+          "relative_path": "Bande_Khoj_Dil(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Bhagat_Ravidas_Ji_Part_1(www.DjFm.pk).mp3",
+          "size_mb": 7.75,
+          "format": ".mp3",
+          "relative_path": "Bhagat_Ravidas_Ji_Part_1(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Tu_Prabh_Daata_Daan_Mat_Pura(www.DjFm.pk).mp3",
+          "size_mb": 5.03,
+          "format": ".mp3",
+          "relative_path": "Tu_Prabh_Daata_Daan_Mat_Pura(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "O4 SAJJAN MERE RANGLE JAAYE SUTTE JEERAN.mp3",
+          "size_mb": 10.16,
+          "format": ".mp3",
+          "relative_path": "O4 SAJJAN MERE RANGLE JAAYE SUTTE JEERAN.mp3"
+        },
+        {
+          "name": "Choji_Mere_Piyareya(www.DjFm.pk).mp3",
+          "size_mb": 8.18,
+          "format": ".mp3",
+          "relative_path": "Choji_Mere_Piyareya(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Mitth_Bolrha_Ji(www.DjFm.pk).mp3",
+          "size_mb": 9.05,
+          "format": ".mp3",
+          "relative_path": "Mitth_Bolrha_Ji(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Prani_Kya_Mera_Kya_Tera(www.DjFm.pk).mp3",
+          "size_mb": 3.51,
+          "format": ".mp3",
+          "relative_path": "Prani_Kya_Mera_Kya_Tera(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Man_Kyon_Bairag_Karehga(www.DjFm.pk).mp3",
+          "size_mb": 9.55,
+          "format": ".mp3",
+          "relative_path": "Man_Kyon_Bairag_Karehga(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Vass_Mere_Pyareya_Vass_Mere_Govinda(www.DjFm.pk).mp3",
+          "size_mb": 3.61,
+          "format": ".mp3",
+          "relative_path": "Vass_Mere_Pyareya_Vass_Mere_Govinda(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Kya_Sawna_Kya_Jaagna(www.DjFm.pk) copy.mp3",
+          "size_mb": 2.44,
+          "format": ".mp3",
+          "relative_path": "Kya_Sawna_Kya_Jaagna(www.DjFm.pk) copy.mp3"
+        },
+        {
+          "name": "Sach_Kaho_Sun_Leho(www.DjFm.pk).mp3",
+          "size_mb": 8.18,
+          "format": ".mp3",
+          "relative_path": "Sach_Kaho_Sun_Leho(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Baitha_Sodhi_Patshah(www.DjFm.pk) (1).mp3",
+          "size_mb": 1.96,
+          "format": ".mp3",
+          "relative_path": "Baitha_Sodhi_Patshah(www.DjFm.pk) (1).mp3"
+        },
+        {
+          "name": "Tu_Samrath_Vadaa_Meri_Math_Thori_Raam(www.DjFm.pk).mp3",
+          "size_mb": 7.57,
+          "format": ".mp3",
+          "relative_path": "Tu_Samrath_Vadaa_Meri_Math_Thori_Raam(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Eh_Mann_Sundar_Apna(www.DjFm.pk).mp3",
+          "size_mb": 13.39,
+          "format": ".mp3",
+          "relative_path": "Eh_Mann_Sundar_Apna(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Kya_Sawna_Kya_Jaagna(www.DjFm.pk).mp3",
+          "size_mb": 2.44,
+          "format": ".mp3",
+          "relative_path": "Kya_Sawna_Kya_Jaagna(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Nit_Japiyei_Saas_Giraas(www.DjFm.pk).mp3",
+          "size_mb": 2.58,
+          "format": ".mp3",
+          "relative_path": "Nit_Japiyei_Saas_Giraas(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Dhhan_Dhhan__O_Ram_Baen_Baajai(www.DjFm.pk).mp3",
+          "size_mb": 10.88,
+          "format": ".mp3",
+          "relative_path": "Dhhan_Dhhan__O_Ram_Baen_Baajai(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Mera_Sunder_Swami_Ji(www.DjFm.pk).mp3",
+          "size_mb": 1.54,
+          "format": ".mp3",
+          "relative_path": "Mera_Sunder_Swami_Ji(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Bahur Hum Kaahe Avenge-Bhai Nirmal S.m4r",
+          "size_mb": 0.84,
+          "format": ".m4r",
+          "relative_path": "Bahur Hum Kaahe Avenge-Bhai Nirmal S.m4r"
+        },
+        {
+          "name": "Dam_Dam_Sada_Samalda(www.DjFm.pk).mp3",
+          "size_mb": 2.75,
+          "format": ".mp3",
+          "relative_path": "Dam_Dam_Sada_Samalda(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Aukhi_Ghadi_Na_Dekhan_Deyi(www.DjFm.pk).mp3",
+          "size_mb": 2.19,
+          "format": ".mp3",
+          "relative_path": "Aukhi_Ghadi_Na_Dekhan_Deyi(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Haun_Wari_Haun_Waari(www.DjFm.pk).mp3",
+          "size_mb": 2.38,
+          "format": ".mp3",
+          "relative_path": "Haun_Wari_Haun_Waari(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Deedne_Deedar_Sahib(www.DjFm.pk).mp3",
+          "size_mb": 2.87,
+          "format": ".mp3",
+          "relative_path": "Deedne_Deedar_Sahib(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "SO KYUN VISRE.mp3",
+          "size_mb": 0.29,
+          "format": ".mp3",
+          "relative_path": "SO KYUN VISRE.mp3"
+        },
+        {
+          "name": "Gun Gavan Din Raat - Anoop Singh (Una Sahib Wale).m4r",
+          "size_mb": 1.21,
+          "format": ".m4r",
+          "relative_path": "Gun Gavan Din Raat - Anoop Singh (Una Sahib Wale).m4r"
+        },
+        {
+          "name": "Dubidha_Door_Karho(www.DjFm.pk).mp3",
+          "size_mb": 3.5,
+          "format": ".mp3",
+          "relative_path": "Dubidha_Door_Karho(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Ramdas_Sarovar_Naate(www.DjFm.pk) (1).mp3",
+          "size_mb": 1.79,
+          "format": ".mp3",
+          "relative_path": "Ramdas_Sarovar_Naate(www.DjFm.pk) (1).mp3"
+        },
+        {
+          "name": "Ditthe_Sabhe_Thaanv(www.DjFm.pk).mp3",
+          "size_mb": 2.75,
+          "format": ".mp3",
+          "relative_path": "Ditthe_Sabhe_Thaanv(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "Main_Chaare_Kunda_Bhaalia(www.DjFm.pk).mp3",
+          "size_mb": 3.75,
+          "format": ".mp3",
+          "relative_path": "Main_Chaare_Kunda_Bhaalia(www.DjFm.pk).mp3"
+        },
+        {
+          "name": "O4 SAJJAN MERE RANGLE JAAYE SUTTE JEERAN.mp3",
+          "size_mb": 10.16,
+          "format": ".mp3",
+          "relative_path": "O4 SAJJAN MERE RANGLE JAAYE SUTTE JEERAN.mp3"
+        },
+        {
+          "name": "Bahur Hum Kaahe Avenge-Bhai Nirmal S.m4r",
+          "size_mb": 0.84,
+          "format": ".m4r",
+          "relative_path": "Bahur Hum Kaahe Avenge-Bhai Nirmal S.m4r"
+        },
+        {
+          "name": "SO KYUN VISRE.mp3",
+          "size_mb": 0.29,
+          "format": ".mp3",
+          "relative_path": "SO KYUN VISRE.mp3"
+        },
+        {
+          "name": "Gun Gavan Din Raat - Anoop Singh (Una Sahib Wale).m4r",
+          "size_mb": 1.21,
+          "format": ".m4r",
+          "relative_path": "Gun Gavan Din Raat - Anoop Singh (Una Sahib Wale).m4r"
+        }
+      ]
+    }
+  },
+  "recommendations": {
+    "voice_ai_training": {
+      "suitable_files": [],
+      "estimated_training_hours": 4.5,
+      "use_cases": [
+        "Punjabi voice synthesis (Gurbani pronunciation)",
+        "Kirtan singing voice models",
+        "Accent and intonation training",
+        "Raag recognition and classification"
+      ]
+    },
+    "background_music": {
+      "suitable_files": [],
+      "use_cases": [
+        "Nam-toon video background music",
+        "Meditation/spiritual app background",
+        "Cultural content soundtracks"
+      ]
+    },
+    "speech_recognition": {
+      "suitable_files": [],
+      "use_cases": [
+        "Punjabi speech-to-text training",
+        "Gurbani word recognition",
+        "Multilingual ASR models"
+      ]
+    },
+    "estimated_value": {
+      "currency": "INR",
+      "training_data_value": 500000,
+      "licensing_value": 200000,
+      "total_value": 700000,
+      "explanation": "Authentic Gurbani Kirtan is rare training data for AI"
+    },
+    "next_steps": [
+      "1. Export high-quality kirtan files for voice AI training",
+      "2. Create metadata with lyrics/raag information",
+      "3. Organize by singer, raag, and length",
+      "4. Use for Punjabi TTS (Text-to-Speech) model",
+      "5. Background music for Nam-toon Studio videos"
+    ]
+  }
+}

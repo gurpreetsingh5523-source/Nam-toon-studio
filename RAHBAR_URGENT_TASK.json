@@ -1,0 +1,61 @@
+{
+  "timestamp": "2025-12-04T20:35:00",
+  "task_id": "FIX_CARTOON_NOT_CHANGING",
+  "priority": "URGENT",
+  "assigned_to": "Rahbar AI Developer",
+  
+  "USER_COMPLAINT": {
+    "original": "par oh cartoon ta same hi a koi real photo ni sirf txt te awaaz change ho brahi hai",
+    "translation": "But that cartoon is still the same, no real photo, only text and voice are changing",
+    "meaning": "USER SEES EXACT SAME CARTOON CHARACTER IN EVERY VIDEO - NOTHING CHANGED!"
+  },
+  
+  "REAL_PROBLEM": {
+    "issue": "diverse_character_generator.py was created BUT NOT BEING USED",
+    "why": "System is still using OLD draw_realistic_character() function",
+    "proof": "User confirms: 'cartoon ta same hi a' (cartoon is still same)",
+    "what_user_sees": "Same single cartoon character in every video",
+    "what_should_see": "DIFFERENT characters - men, women, kids, elderly with DIFFERENT appearances"
+  },
+  
+  "WHY_FIX_FAILED": {
+    "reason_1": "diverse_character_generator.py created but import might be failing",
+    "reason_2": "self.use_diverse_chars might be False",
+    "reason_3": "Old character code still running as fallback",
+    "reason_4": "Character not actually changing between videos"
+  },
+  
+  "DEBUGGING_NEEDED": {
+    "step_1": "Open latest video and VISUALLY CONFIRM character is same",
+    "step_2": "Check if DiverseCharacterGenerator is actually loading",
+    "step_3": "Check if draw_realistic_character() is using new code",
+    "step_4": "Add print statements to see which character is selected",
+    "step_5": "Test with actual video creation and verify visually"
+  },
+  
+  "WHAT_SUCCESS_LOOKS_LIKE": {
+    "test": "Create 3 videos back-to-back",
+    "video_1": "Should have Punjabi man with BLUE kurta and ORANGE turban",
+    "video_2": "Should have Punjabi woman with PINK suit and jewelry",
+    "video_3": "Should have different person (youth, kid, or elderly)",
+    "verification": "User must SEE different characters with own eyes",
+    "current_state": "User sees SAME character in all 3 videos"
+  },
+  
+  "ACTION_REQUIRED": {
+    "immediate": [
+      "Add debug prints to show which character is being drawn",
+      "Verify diverse_character_generator.py is imported correctly",
+      "Check if self.char_generator is actually initialized",
+      "Make sure random character selection is working",
+      "Create test video with VISIBLE character name overlay"
+    ]
+  },
+  
+  "RAHBAR_YOU_MUST": {
+    "understand": "Creating files is NOT enough - must verify they are USED",
+    "test": "Visual confirmation required - open video and SEE the difference",
+    "fail_reason": "Code was added but not executed/not working",
+    "success_criteria": "User sees DIFFERENT cartoon characters with eyes"
+  }
+}
