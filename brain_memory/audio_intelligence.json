@@ -1,0 +1,370 @@
+{
+  "music_library": {
+    "happy": {
+      "tracks": [
+        "punjabi_folk_happy.mp3",
+        "dhol_celebration.mp3",
+        "tumbi_joyful.mp3"
+      ],
+      "instruments": [
+        "dhol",
+        "tumbi",
+        "chimta",
+        "algoza"
+      ],
+      "tempo": "fast",
+      "volume_base": 0.6,
+      "success_rate": 0.0,
+      "usage_count": 6
+    },
+    "sad": {
+      "tracks": [
+        "sarangi_melancholy.mp3",
+        "flute_sorrow.mp3",
+        "harmonium_sad.mp3"
+      ],
+      "instruments": [
+        "sarangi",
+        "flute",
+        "harmonium",
+        "ektar"
+      ],
+      "tempo": "slow",
+      "volume_base": 0.4,
+      "success_rate": 0.0,
+      "usage_count": 6
+    },
+    "angry": {
+      "tracks": [
+        "dhol_intense.mp3",
+        "tabla_aggressive.mp3",
+        "drums_war.mp3"
+      ],
+      "instruments": [
+        "dhol",
+        "nagara",
+        "dhad",
+        "tabla"
+      ],
+      "tempo": "very_fast",
+      "volume_base": 0.7,
+      "success_rate": 0.0,
+      "usage_count": 0
+    },
+    "peaceful": {
+      "tracks": [
+        "harmonium_calm.mp3",
+        "nature_peaceful.mp3",
+        "kirtan_soft.mp3"
+      ],
+      "instruments": [
+        "harmonium",
+        "tanpura",
+        "dilruba"
+      ],
+      "tempo": "slow",
+      "volume_base": 0.3,
+      "success_rate": 0.0,
+      "usage_count": 17
+    },
+    "romantic": {
+      "tracks": [
+        "flute_love.mp3",
+        "sarangi_romantic.mp3",
+        "sitar_gentle.mp3"
+      ],
+      "instruments": [
+        "flute",
+        "sarangi",
+        "sitar",
+        "tanpura"
+      ],
+      "tempo": "medium",
+      "volume_base": 0.4,
+      "success_rate": 0.0,
+      "usage_count": 0
+    },
+    "spiritual": {
+      "tracks": [
+        "kirtan_divine.mp3",
+        "harmonium_prayer.mp3",
+        "tabla_kirtan.mp3"
+      ],
+      "instruments": [
+        "harmonium",
+        "tabla",
+        "tanpura",
+        "manjira"
+      ],
+      "tempo": "medium",
+      "volume_base": 0.5,
+      "success_rate": 0.0,
+      "usage_count": 1
+    },
+    "tense": {
+      "tracks": [
+        "suspense_low.mp3",
+        "tabla_tension.mp3",
+        "drone_ominous.mp3"
+      ],
+      "instruments": [
+        "tabla",
+        "tanpura_low",
+        "dhad"
+      ],
+      "tempo": "varied",
+      "volume_base": 0.5,
+      "success_rate": 0.0,
+      "usage_count": 0
+    }
+  },
+  "sfx_library": {
+    "walking": {
+      "sounds": [
+        "footsteps_dirt.wav",
+        "walking_grass.wav"
+      ],
+      "volume": 0.3,
+      "cultural_context": "village_paths",
+      "success_rate": 0.0
+    },
+    "running": {
+      "sounds": [
+        "running_fast.wav",
+        "footsteps_running.wav"
+      ],
+      "volume": 0.4,
+      "cultural_context": "urgency",
+      "success_rate": 0.0
+    },
+    "crying": {
+      "sounds": [
+        "sobbing.wav",
+        "tears.wav",
+        "sniffling.wav"
+      ],
+      "volume": 0.5,
+      "cultural_context": "emotional",
+      "success_rate": 0.0
+    },
+    "laughing": {
+      "sounds": [
+        "laughter.wav",
+        "chuckle.wav",
+        "giggle.wav"
+      ],
+      "volume": 0.4,
+      "cultural_context": "joyful",
+      "success_rate": 0.0
+    },
+    "door": {
+      "sounds": [
+        "door_open.wav",
+        "door_close.wav",
+        "door_creak.wav"
+      ],
+      "volume": 0.4,
+      "cultural_context": "home",
+      "success_rate": 0.0
+    },
+    "farming": {
+      "sounds": [
+        "plow_field.wav",
+        "harvesting.wav",
+        "wheat_rustle.wav"
+      ],
+      "volume": 0.3,
+      "cultural_context": "agriculture",
+      "success_rate": 0.0
+    },
+    "prayer": {
+      "sounds": [
+        "bell_temple.wav",
+        "prayer_beads.wav",
+        "incense.wav"
+      ],
+      "volume": 0.3,
+      "cultural_context": "spiritual",
+      "success_rate": 0.0
+    },
+    "celebration": {
+      "sounds": [
+        "dhol_beat.wav",
+        "clapping.wav",
+        "cheering.wav"
+      ],
+      "volume": 0.6,
+      "cultural_context": "festival",
+      "success_rate": 0.0
+    }
+  },
+  "ambient_sounds": {
+    "village_day": {
+      "sounds": [
+        "birds_chirping.wav",
+        "village_ambience.wav",
+        "distant_voices.wav"
+      ],
+      "volume": 0.2,
+      "time": "day",
+      "weather": "clear",
+      "success_rate": 0.0
+    },
+    "village_night": {
+      "sounds": [
+        "crickets.wav",
+        "night_ambience.wav",
+        "owl.wav"
+      ],
+      "volume": 0.15,
+      "time": "night",
+      "weather": "clear",
+      "success_rate": 0.0
+    },
+    "wind_gentle": {
+      "sounds": [
+        "wind_soft.wav",
+        "leaves_rustle.wav"
+      ],
+      "volume": 0.2,
+      "time": "any",
+      "weather": "breezy",
+      "success_rate": 0.0
+    },
+    "wind_strong": {
+      "sounds": [
+        "wind_strong.wav",
+        "storm_approaching.wav"
+      ],
+      "volume": 0.4,
+      "time": "any",
+      "weather": "stormy",
+      "success_rate": 0.0
+    },
+    "rain": {
+      "sounds": [
+        "rain_light.wav",
+        "rain_heavy.wav",
+        "thunder.wav"
+      ],
+      "volume": 0.3,
+      "time": "any",
+      "weather": "rainy",
+      "success_rate": 0.0
+    },
+    "farm_field": {
+      "sounds": [
+        "wheat_field.wav",
+        "tractor.wav",
+        "birds_field.wav"
+      ],
+      "volume": 0.25,
+      "time": "day",
+      "weather": "clear",
+      "success_rate": 0.0
+    },
+    "river": {
+      "sounds": [
+        "river_flowing.wav",
+        "water_stream.wav"
+      ],
+      "volume": 0.3,
+      "time": "any",
+      "weather": "clear",
+      "success_rate": 0.0
+    },
+    "home_interior": {
+      "sounds": [
+        "home_ambience.wav",
+        "clock_ticking.wav",
+        "fire_crackling.wav"
+      ],
+      "volume": 0.15,
+      "time": "any",
+      "weather": "any",
+      "success_rate": 0.0
+    }
+  },
+  "instruments": {
+    "dhol": {
+      "type": "percussion",
+      "emotion": [
+        "happy",
+        "celebratory",
+        "energetic"
+      ],
+      "cultural": "punjabi_traditional",
+      "volume": 0.6
+    },
+    "tumbi": {
+      "type": "string",
+      "emotion": [
+        "happy",
+        "folk",
+        "rural"
+      ],
+      "cultural": "punjabi_folk",
+      "volume": 0.5
+    },
+    "sarangi": {
+      "type": "string",
+      "emotion": [
+        "sad",
+        "romantic",
+        "deep"
+      ],
+      "cultural": "classical_indian",
+      "volume": 0.4
+    },
+    "flute": {
+      "type": "wind",
+      "emotion": [
+        "peaceful",
+        "romantic",
+        "spiritual"
+      ],
+      "cultural": "universal",
+      "volume": 0.4
+    },
+    "tabla": {
+      "type": "percussion",
+      "emotion": [
+        "spiritual",
+        "rhythmic",
+        "cultural"
+      ],
+      "cultural": "indian_classical",
+      "volume": 0.5
+    },
+    "harmonium": {
+      "type": "keyboard",
+      "emotion": [
+        "spiritual",
+        "devotional",
+        "peaceful"
+      ],
+      "cultural": "sikh_kirtan",
+      "volume": 0.5
+    },
+    "algoza": {
+      "type": "wind",
+      "emotion": [
+        "folk",
+        "pastoral",
+        "happy"
+      ],
+      "cultural": "punjabi_folk",
+      "volume": 0.4
+    },
+    "chimta": {
+      "type": "percussion",
+      "emotion": [
+        "celebratory",
+        "rhythmic"
+      ],
+      "cultural": "punjabi_bhangra",
+      "volume": 0.3
+    }
+  },
+  "last_updated": "2025-11-02T23:20:52.609977"
+}

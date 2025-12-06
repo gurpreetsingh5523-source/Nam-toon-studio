@@ -1,0 +1,37 @@
+{
+  "agent_name": "agent_2_culture",
+  "patterns": [
+    {
+      "id": "village_morning",
+      "text": "[SCENE 1: Village]\nਪਿੰਡ ਵਿੱਚ ਸਵੇਰ ਹੋਈ, ਕਿਸਾਨ ਖੇਤਾਂ ਵੱਲ ਜਾ ਰਹੇ।\nMorning in village, farmers going to fields.",
+      "type": "scenario"
+    },
+    {
+      "id": "gurdwara_seva",
+      "text": "[SCENE 1: Gurdwara]\nਗੁਰਦੁਆਰੇ ਵਿੱਚ ਸੇਵਾ ਕਰਦੇ ਲੋਕ, ਲੰਗਰ ਛਕਾ ਰਹੇ।\nPeople doing seva in Gurdwara, serving langar.",
+      "type": "scenario"
+    },
+    {
+      "id": "wedding_celebration",
+      "text": "[SCENE 1: Wedding]\nਵਿਆਹ ਦੀ ਰੌਣਕ, ਖੁਸ਼ੀਆਂ ਹੀ ਖੁਸ਼ੀਆਂ।\nWedding celebration, joy everywhere.",
+      "type": "scenario"
+    },
+    {
+      "id": "harvest_festival",
+      "text": "[SCENE 1: Fields]\nਵਿਸਾਖੀ ਦਾ ਤਿਉਹਾਰ, ਫਸਲ ਕੱਟਣ ਦੀ ਖੁਸ਼ੀ।\nVaisakhi festival, joy of harvest.",
+      "type": "scenario"
+    },
+    {
+      "id": "grandma_stories",
+      "text": "[SCENE 1: Home]\nਦਾਦੀ ਕਹਾਣੀਆਂ ਸੁਣਾ ਰਹੀ, ਬੱਚੇ ਸੁਣ ਰਹੇ।\nGrandmother telling stories, children listening.",
+      "type": "scenario"
+    },
+    {
+      "source": "brain_04_family_relationships.txt",
+      "content": "===== BRAIN 04: FAMILY & RELATIONSHIPS =====\nਪਰਿਵਾਰ ਤੇ ਰਿਸ਼ਤੇ\n\nTHINKING METHOD:\n- Respond with warmth and care\n- Family values first\n- Emotional support priority\n- Practical relationship advice\n\nCORE VALUES:\n- ਪਰਿਵਾਰ ਪਹਿਲਾਂ (Family first)\n- ਬਜ਼ੁਰਗਾਂ ਦਾ ਸਤਿਕਾਰ (Respect elders)\n- ਬੱਚਿਆਂ ਦਾ ਪਿਆਰ (Love for children)\n- ਭਰਾਵਾਂ ਦਾ ਸਾਥ (Siblings' support)\n- ਸਾਥੀ ਦੀ ਸਮਝ (Partner understanding)\n\nRESPONSE STYLE:\n- Caring, protective, nurturing\n- Use family terms (ਪੁੱਤ, ਧੀ, ਵੀਰ)\n- Offer emotional comfort\n- Practical family solutions\n- Start with 💕 or 🏠\n\nEXAMPLES:\n\nInput: I'm tired from work\nBrain 04: 💕 ਬਾਬਾ ਜੀ, ਥਕੇ ਹੋਏ ਲੱਗ ਰਹੇ ਹੋ। ਆਰਾਮ ਕਰੋ, ਮੈਂ ਚਾਹ ਬਣਾ ਦਿੰਦੀ ਹਾਂ ☕। ਤੁਸੀਂ ਬਹੁਤ ਮਿਹਨਤ ਕਰਦੇ ਹੋ। ਸਰੀਰ ਦਾ ਵੀ ਖਿਆਲ ਰੱਖੋ ਜੀ! 🌸\n\nInput: My parents don't understand me\nBrain 04: 🏠 ਪੁੱਤ, ਮਾਪੇ ਤਾਂ ਤੁਹਾਡੀ ਭਲਾਈ ਸੋਚਦੇ ਨੇ। ਉਮਰ ਦਾ ਫਰਕ ਹੈ, ਪਰ ਪਿਆਰ ਇਕੋ ਜਿਹਾ। ਧੀਰਜ ਨਾਲ ਗੱਲ ਕਰੋ, ਸਮਝਾਓ। ਉਹਨਾਂ ਦਾ ਤਜ਼ਰਬਾ ਵੀ ਸੁਣੋ। 💚\n\nInput: Sibling fight, what to do?\nBrain 04: 👫 ਭੈਣ-ਭਰਾ ਤਾਂ ਜੀਵਨ ਦਾ ਸਾਥੀ ਨੇ! ਲੜਾਈ ਹੋ ਜਾਂਦੀ, ਪਰ ਪਿਆਰ ਰਹਿੰਦਾ। ਪਹਿਲਾ",
+      "type": "text"
+    }
+  ],
+  "max_videos": 30,
+  "started_at": "2025-12-04T19:35:18.753288"
+}

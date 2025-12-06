@@ -1,0 +1,1050 @@
+{
+  "actions": [
+    {
+      "timestamp": "2025-12-04T20:05:13.607491",
+      "action_type": "command_executed",
+      "details": {
+        "command": "python3 --version",
+        "description": "Python version check",
+        "success": true,
+        "return_code": 0,
+        "output": "Python 3.9.6\n",
+        "timestamp": "2025-12-04T20:05:13.607473"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:05:13.656338",
+      "action_type": "command_executed",
+      "details": {
+        "command": "ps aux | grep -E 'python.*agent' | grep -v grep",
+        "description": "Check for running agents",
+        "success": true,
+        "return_code": 0,
+        "output": "gurpreetdhillon  33967   0.0  0.1 435291808   9248   ??  SN   Tue10PM   0:18.01 /opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python autonomous_agent_24x7.py\n",
+        "timestamp": "2025-12-04T20:05:13.656319"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:05:13.661038",
+      "action_type": "command_executed",
+      "details": {
+        "command": "df -h . | tail -1",
+        "description": "Disk space check",
+        "success": true,
+        "return_code": 0,
+        "output": "/dev/disk3s1   926Gi    93Gi   797Gi    11%    1.4M  8.4G    0%   /System/Volumes/Data\n",
+        "timestamp": "2025-12-04T20:05:13.661024"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:05:13.859365",
+      "action_type": "command_executed",
+      "details": {
+        "command": "find . -name \"training_*.mp4\" -mmin -60 -type f | wc -l",
+        "description": "Check recent videos",
+        "success": true,
+        "return_code": 0,
+        "output": "       2\n",
+        "timestamp": "2025-12-04T20:05:13.859346"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:05:13.859633",
+      "action_type": "health_check",
+      "details": {
+        "timestamp": "2025-12-04T20:05:13.596568",
+        "checks": {
+          "python": true,
+          "critical_files": true,
+          "no_stuck_processes": true,
+          "disk_space": true,
+          "videos_created_recently": true
+        },
+        "missing_files": [],
+        "recent_videos_count": 2,
+        "overall_healthy": true,
+        "problems_count": 0
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:06:11.794812",
+      "action_type": "command_executed",
+      "details": {
+        "command": "python3 simple_working_agent.py --videos 5 --delay 10",
+        "description": "Create 5 training videos",
+        "success": true,
+        "return_code": 0,
+        "output": "🔍 Loading video maker...\n✅ Libraries loaded\n✅ Simple Agent ready with 5 scenarios\n\n======================================================================\n🚀 SIMPLE AGENT BATCH START\n   Creating 5 diverse videos\n======================================================================\n\n📊 Progress: 1/5\n\n============================================================\n🎬 Creating: spiritual\n============================================================\n\n========================================================",
+        "timestamp": "2025-12-04T20:06:11.794763"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:06:11.982990",
+      "action_type": "command_executed",
+      "details": {
+        "command": "find . -name \"training_*.mp4\" -mmin -10 -type f | wc -l",
+        "description": "Count newly created videos",
+        "success": true,
+        "return_code": 0,
+        "output": "       6\n",
+        "timestamp": "2025-12-04T20:06:11.982972"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:06:11.983284",
+      "action_type": "videos_created",
+      "details": {
+        "count": 6,
+        "requested": 5
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:06:11.983589",
+      "action_type": "training_completed",
+      "details": {
+        "lessons_count": 3,
+        "commands_count": 6
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:09:06.755312",
+      "action_type": "command_executed",
+      "details": {
+        "command": "python3 --version",
+        "description": "Python version check",
+        "success": true,
+        "return_code": 0,
+        "output": "Python 3.9.6\n",
+        "timestamp": "2025-12-04T20:09:06.755284"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:09:06.805917",
+      "action_type": "command_executed",
+      "details": {
+        "command": "ps aux | grep -E 'python.*agent' | grep -v grep",
+        "description": "Check for running agents",
+        "success": true,
+        "return_code": 0,
+        "output": "gurpreetdhillon  33967   0.0  0.1 435291808   9248   ??  SN   Tue10PM   0:18.01 /opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python autonomous_agent_24x7.py\n",
+        "timestamp": "2025-12-04T20:09:06.805897"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:09:06.810305",
+      "action_type": "command_executed",
+      "details": {
+        "command": "df -h . | tail -1",
+        "description": "Disk space check",
+        "success": true,
+        "return_code": 0,
+        "output": "/dev/disk3s1   926Gi    93Gi   797Gi    11%    1.4M  8.4G    0%   /System/Volumes/Data\n",
+        "timestamp": "2025-12-04T20:09:06.810285"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:09:07.000325",
+      "action_type": "command_executed",
+      "details": {
+        "command": "find . -name \"training_*.mp4\" -mmin -60 -type f | wc -l",
+        "description": "Check recent videos",
+        "success": true,
+        "return_code": 0,
+        "output": "       7\n",
+        "timestamp": "2025-12-04T20:09:07.000301"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:09:07.000664",
+      "action_type": "health_check",
+      "details": {
+        "timestamp": "2025-12-04T20:09:06.742362",
+        "checks": {
+          "python": true,
+          "critical_files": true,
+          "no_stuck_processes": true,
+          "disk_space": true,
+          "videos_created_recently": true
+        },
+        "missing_files": [],
+        "recent_videos_count": 7,
+        "overall_healthy": true,
+        "problems_count": 0
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:09:51.111829",
+      "action_type": "command_executed",
+      "details": {
+        "command": "python3 --version",
+        "description": "Python version check",
+        "success": true,
+        "return_code": 0,
+        "output": "Python 3.9.6\n",
+        "timestamp": "2025-12-04T20:09:51.111810"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:09:51.163034",
+      "action_type": "command_executed",
+      "details": {
+        "command": "ps aux | grep -E 'python.*agent' | grep -v grep",
+        "description": "Check for running agents",
+        "success": true,
+        "return_code": 0,
+        "output": "gurpreetdhillon  33967   0.0  0.1 435291808   9248   ??  SN   Tue10PM   0:18.01 /opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python autonomous_agent_24x7.py\n",
+        "timestamp": "2025-12-04T20:09:51.163013"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:09:51.167895",
+      "action_type": "command_executed",
+      "details": {
+        "command": "df -h . | tail -1",
+        "description": "Disk space check",
+        "success": true,
+        "return_code": 0,
+        "output": "/dev/disk3s1   926Gi    93Gi   797Gi    11%    1.4M  8.4G    0%   /System/Volumes/Data\n",
+        "timestamp": "2025-12-04T20:09:51.167879"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:09:51.359429",
+      "action_type": "command_executed",
+      "details": {
+        "command": "find . -name \"training_*.mp4\" -mmin -60 -type f | wc -l",
+        "description": "Check recent videos",
+        "success": true,
+        "return_code": 0,
+        "output": "       9\n",
+        "timestamp": "2025-12-04T20:09:51.359410"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:09:51.359859",
+      "action_type": "health_check",
+      "details": {
+        "timestamp": "2025-12-04T20:09:51.100499",
+        "checks": {
+          "python": true,
+          "critical_files": true,
+          "no_stuck_processes": true,
+          "disk_space": true,
+          "videos_created_recently": true
+        },
+        "missing_files": [],
+        "recent_videos_count": 9,
+        "overall_healthy": true,
+        "problems_count": 0
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:11:01.546833",
+      "action_type": "command_executed",
+      "details": {
+        "command": "python3 --version",
+        "description": "Python version check",
+        "success": true,
+        "return_code": 0,
+        "output": "Python 3.9.6\n",
+        "timestamp": "2025-12-04T20:11:01.546810"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:11:01.596938",
+      "action_type": "command_executed",
+      "details": {
+        "command": "ps aux | grep -E 'python.*agent' | grep -v grep",
+        "description": "Check for running agents",
+        "success": true,
+        "return_code": 0,
+        "output": "gurpreetdhillon  33967   0.0  0.1 435291808   9248   ??  SN   Tue10PM   0:18.01 /opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python autonomous_agent_24x7.py\n",
+        "timestamp": "2025-12-04T20:11:01.596921"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:11:01.601650",
+      "action_type": "command_executed",
+      "details": {
+        "command": "df -h . | tail -1",
+        "description": "Disk space check",
+        "success": true,
+        "return_code": 0,
+        "output": "/dev/disk3s1   926Gi    93Gi   797Gi    11%    1.4M  8.4G    0%   /System/Volumes/Data\n",
+        "timestamp": "2025-12-04T20:11:01.601633"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:11:01.778207",
+      "action_type": "command_executed",
+      "details": {
+        "command": "find . -name \"training_*.mp4\" -mmin -60 -type f | wc -l",
+        "description": "Check recent videos",
+        "success": true,
+        "return_code": 0,
+        "output": "      12\n",
+        "timestamp": "2025-12-04T20:11:01.778191"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T20:11:01.778649",
+      "action_type": "health_check",
+      "details": {
+        "timestamp": "2025-12-04T20:11:01.535290",
+        "checks": {
+          "python": true,
+          "critical_files": true,
+          "no_stuck_processes": true,
+          "disk_space": true,
+          "videos_created_recently": true
+        },
+        "missing_files": [],
+        "recent_videos_count": 12,
+        "overall_healthy": true,
+        "problems_count": 0
+      }
+    },
+    {
+      "timestamp": "2025-12-04T21:32:56.902119",
+      "action_type": "command_executed",
+      "details": {
+        "command": "python3 --version",
+        "description": "Python version check",
+        "success": true,
+        "return_code": 0,
+        "output": "Python 3.9.6\n",
+        "timestamp": "2025-12-04T21:32:56.902087"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T21:32:56.952919",
+      "action_type": "command_executed",
+      "details": {
+        "command": "ps aux | grep -E 'python.*agent' | grep -v grep",
+        "description": "Check for running agents",
+        "success": true,
+        "return_code": 0,
+        "output": "gurpreetdhillon  33967   0.0  0.2 435291808  29344   ??  SN   Tue10PM   0:18.74 /opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python autonomous_agent_24x7.py\n",
+        "timestamp": "2025-12-04T21:32:56.952902"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T21:32:56.958121",
+      "action_type": "command_executed",
+      "details": {
+        "command": "df -h . | tail -1",
+        "description": "Disk space check",
+        "success": true,
+        "return_code": 0,
+        "output": "/dev/disk3s1   926Gi   114Gi   776Gi    13%    1.5M  8.1G    0%   /System/Volumes/Data\n",
+        "timestamp": "2025-12-04T21:32:56.958047"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T21:32:57.373088",
+      "action_type": "command_executed",
+      "details": {
+        "command": "find . -name \"training_*.mp4\" -mmin -60 -type f | wc -l",
+        "description": "Check recent videos",
+        "success": true,
+        "return_code": 0,
+        "output": "      10\n",
+        "timestamp": "2025-12-04T21:32:57.373071"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T21:32:57.373719",
+      "action_type": "health_check",
+      "details": {
+        "timestamp": "2025-12-04T21:32:56.884562",
+        "checks": {
+          "python": true,
+          "critical_files": true,
+          "no_stuck_processes": true,
+          "disk_space": true,
+          "videos_created_recently": true
+        },
+        "missing_files": [],
+        "recent_videos_count": 10,
+        "overall_healthy": true,
+        "problems_count": 0
+      }
+    },
+    {
+      "timestamp": "2025-12-04T21:34:17.809778",
+      "action_type": "command_executed",
+      "details": {
+        "command": "python3 simple_working_agent.py --videos 5 --delay 10",
+        "description": "Create 5 training videos",
+        "success": true,
+        "return_code": 0,
+        "output": "🔍 Loading video maker...\n✅ Libraries loaded\n🎨 Loading AI Image Generator...\n⚠️  AI Generator failed: Cannot load model stabilityai/stable-diffusion-2-1: model is not cached locally and an error occurred while trying to fetch metadata from the Hub. Please check out the root cause in the stacktrace above.\n   Falling back to simple renderer\n✅ Diverse Character Generator ready (8 characters)\n✅ Simple Agent ready with 22 scenarios\n\n=====================================================================",
+        "timestamp": "2025-12-04T21:34:17.809728"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T21:34:18.088776",
+      "action_type": "command_executed",
+      "details": {
+        "command": "find . -name \"training_*.mp4\" -mmin -10 -type f | wc -l",
+        "description": "Count newly created videos",
+        "success": true,
+        "return_code": 0,
+        "output": "       5\n",
+        "timestamp": "2025-12-04T21:34:18.088761"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T21:34:18.089266",
+      "action_type": "videos_created",
+      "details": {
+        "count": 5,
+        "requested": 5
+      }
+    },
+    {
+      "timestamp": "2025-12-04T21:34:18.091980",
+      "action_type": "training_completed",
+      "details": {
+        "lessons_count": 3,
+        "commands_count": 6
+      }
+    },
+    {
+      "timestamp": "2025-12-04T22:34:18.191098",
+      "action_type": "command_executed",
+      "details": {
+        "command": "python3 --version",
+        "description": "Python version check",
+        "success": true,
+        "return_code": 0,
+        "output": "Python 3.9.6\n",
+        "timestamp": "2025-12-04T22:34:18.191069"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T22:34:18.231635",
+      "action_type": "command_executed",
+      "details": {
+        "command": "ps aux | grep -E 'python.*agent' | grep -v grep",
+        "description": "Check for running agents",
+        "success": true,
+        "return_code": 0,
+        "output": "gurpreetdhillon  33967   0.0  0.2 435291808  29504   ??  SN   Tue10PM   0:19.24 /opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python autonomous_agent_24x7.py\n",
+        "timestamp": "2025-12-04T22:34:18.231618"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T22:34:18.236951",
+      "action_type": "command_executed",
+      "details": {
+        "command": "df -h . | tail -1",
+        "description": "Disk space check",
+        "success": true,
+        "return_code": 0,
+        "output": "/dev/disk3s1   926Gi   114Gi   776Gi    13%    1.5M  8.1G    0%   /System/Volumes/Data\n",
+        "timestamp": "2025-12-04T22:34:18.236934"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T22:34:18.618882",
+      "action_type": "command_executed",
+      "details": {
+        "command": "find . -name \"training_*.mp4\" -mmin -60 -type f | wc -l",
+        "description": "Check recent videos",
+        "success": true,
+        "return_code": 0,
+        "output": "      10\n",
+        "timestamp": "2025-12-04T22:34:18.618862"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T22:34:18.619396",
+      "action_type": "health_check",
+      "details": {
+        "timestamp": "2025-12-04T22:34:18.168096",
+        "checks": {
+          "python": true,
+          "critical_files": true,
+          "no_stuck_processes": true,
+          "disk_space": true,
+          "videos_created_recently": true
+        },
+        "missing_files": [],
+        "recent_videos_count": 10,
+        "overall_healthy": true,
+        "problems_count": 0
+      }
+    },
+    {
+      "timestamp": "2025-12-04T22:35:37.871876",
+      "action_type": "command_executed",
+      "details": {
+        "command": "python3 simple_working_agent.py --videos 5 --delay 10",
+        "description": "Create 5 training videos",
+        "success": true,
+        "return_code": 0,
+        "output": "🔍 Loading video maker...\n✅ Libraries loaded\n🎨 Loading AI Image Generator...\n⚠️  AI Generator failed: Cannot load model stabilityai/stable-diffusion-2-1: model is not cached locally and an error occurred while trying to fetch metadata from the Hub. Please check out the root cause in the stacktrace above.\n   Falling back to simple renderer\n✅ Diverse Character Generator ready (8 characters)\n✅ Simple Agent ready with 22 scenarios\n\n=====================================================================",
+        "timestamp": "2025-12-04T22:35:37.871836"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T22:35:38.154539",
+      "action_type": "command_executed",
+      "details": {
+        "command": "find . -name \"training_*.mp4\" -mmin -10 -type f | wc -l",
+        "description": "Count newly created videos",
+        "success": true,
+        "return_code": 0,
+        "output": "       5\n",
+        "timestamp": "2025-12-04T22:35:38.154523"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T22:35:38.157568",
+      "action_type": "videos_created",
+      "details": {
+        "count": 5,
+        "requested": 5
+      }
+    },
+    {
+      "timestamp": "2025-12-04T22:35:38.160124",
+      "action_type": "training_completed",
+      "details": {
+        "lessons_count": 3,
+        "commands_count": 6
+      }
+    },
+    {
+      "timestamp": "2025-12-04T23:35:38.291476",
+      "action_type": "command_executed",
+      "details": {
+        "command": "python3 --version",
+        "description": "Python version check",
+        "success": true,
+        "return_code": 0,
+        "output": "Python 3.9.6\n",
+        "timestamp": "2025-12-04T23:35:38.291456"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T23:35:38.327997",
+      "action_type": "command_executed",
+      "details": {
+        "command": "ps aux | grep -E 'python.*agent' | grep -v grep",
+        "description": "Check for running agents",
+        "success": true,
+        "return_code": 0,
+        "output": "gurpreetdhillon  33967   0.0  0.2 435291808  30064   ??  SN   Tue10PM   0:19.73 /opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python autonomous_agent_24x7.py\n",
+        "timestamp": "2025-12-04T23:35:38.327980"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T23:35:38.333294",
+      "action_type": "command_executed",
+      "details": {
+        "command": "df -h . | tail -1",
+        "description": "Disk space check",
+        "success": true,
+        "return_code": 0,
+        "output": "/dev/disk3s1   926Gi   114Gi   776Gi    13%    1.5M  8.1G    0%   /System/Volumes/Data\n",
+        "timestamp": "2025-12-04T23:35:38.333280"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T23:35:38.630121",
+      "action_type": "command_executed",
+      "details": {
+        "command": "find . -name \"training_*.mp4\" -mmin -60 -type f | wc -l",
+        "description": "Check recent videos",
+        "success": true,
+        "return_code": 0,
+        "output": "      10\n",
+        "timestamp": "2025-12-04T23:35:38.630102"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T23:35:38.630659",
+      "action_type": "health_check",
+      "details": {
+        "timestamp": "2025-12-04T23:35:38.268417",
+        "checks": {
+          "python": true,
+          "critical_files": true,
+          "no_stuck_processes": true,
+          "disk_space": true,
+          "videos_created_recently": true
+        },
+        "missing_files": [],
+        "recent_videos_count": 10,
+        "overall_healthy": true,
+        "problems_count": 0
+      }
+    },
+    {
+      "timestamp": "2025-12-04T23:36:57.392766",
+      "action_type": "command_executed",
+      "details": {
+        "command": "python3 simple_working_agent.py --videos 5 --delay 10",
+        "description": "Create 5 training videos",
+        "success": true,
+        "return_code": 0,
+        "output": "🔍 Loading video maker...\n✅ Libraries loaded\n🎨 Loading AI Image Generator...\n⚠️  AI Generator failed: Cannot load model stabilityai/stable-diffusion-2-1: model is not cached locally and an error occurred while trying to fetch metadata from the Hub. Please check out the root cause in the stacktrace above.\n   Falling back to simple renderer\n✅ Diverse Character Generator ready (8 characters)\n✅ Simple Agent ready with 22 scenarios\n\n=====================================================================",
+        "timestamp": "2025-12-04T23:36:57.392721"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T23:36:57.660116",
+      "action_type": "command_executed",
+      "details": {
+        "command": "find . -name \"training_*.mp4\" -mmin -10 -type f | wc -l",
+        "description": "Count newly created videos",
+        "success": true,
+        "return_code": 0,
+        "output": "       5\n",
+        "timestamp": "2025-12-04T23:36:57.660100"
+      }
+    },
+    {
+      "timestamp": "2025-12-04T23:36:57.660688",
+      "action_type": "videos_created",
+      "details": {
+        "count": 5,
+        "requested": 5
+      }
+    },
+    {
+      "timestamp": "2025-12-04T23:36:57.661564",
+      "action_type": "training_completed",
+      "details": {
+        "lessons_count": 3,
+        "commands_count": 6
+      }
+    },
+    {
+      "timestamp": "2025-12-05T00:36:57.741010",
+      "action_type": "command_executed",
+      "details": {
+        "command": "python3 --version",
+        "description": "Python version check",
+        "success": true,
+        "return_code": 0,
+        "output": "Python 3.9.6\n",
+        "timestamp": "2025-12-05T00:36:57.740988"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T00:36:57.778448",
+      "action_type": "command_executed",
+      "details": {
+        "command": "ps aux | grep -E 'python.*agent' | grep -v grep",
+        "description": "Check for running agents",
+        "success": true,
+        "return_code": 0,
+        "output": "gurpreetdhillon  33967   0.0  0.2 435291808  29728   ??  SN   Tue10PM   0:20.24 /opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python autonomous_agent_24x7.py\n",
+        "timestamp": "2025-12-05T00:36:57.778431"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T00:36:57.783379",
+      "action_type": "command_executed",
+      "details": {
+        "command": "df -h . | tail -1",
+        "description": "Disk space check",
+        "success": true,
+        "return_code": 0,
+        "output": "/dev/disk3s1   926Gi   114Gi   776Gi    13%    1.5M  8.1G    0%   /System/Volumes/Data\n",
+        "timestamp": "2025-12-05T00:36:57.783365"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T00:36:58.082260",
+      "action_type": "command_executed",
+      "details": {
+        "command": "find . -name \"training_*.mp4\" -mmin -60 -type f | wc -l",
+        "description": "Check recent videos",
+        "success": true,
+        "return_code": 0,
+        "output": "      11\n",
+        "timestamp": "2025-12-05T00:36:58.082240"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T00:36:58.082901",
+      "action_type": "health_check",
+      "details": {
+        "timestamp": "2025-12-05T00:36:57.718007",
+        "checks": {
+          "python": true,
+          "critical_files": true,
+          "no_stuck_processes": true,
+          "disk_space": true,
+          "videos_created_recently": true
+        },
+        "missing_files": [],
+        "recent_videos_count": 11,
+        "overall_healthy": true,
+        "problems_count": 0
+      }
+    },
+    {
+      "timestamp": "2025-12-05T00:38:16.457215",
+      "action_type": "command_executed",
+      "details": {
+        "command": "python3 simple_working_agent.py --videos 5 --delay 10",
+        "description": "Create 5 training videos",
+        "success": true,
+        "return_code": 0,
+        "output": "🔍 Loading video maker...\n✅ Libraries loaded\n🎨 Loading AI Image Generator...\n⚠️  AI Generator failed: Cannot load model stabilityai/stable-diffusion-2-1: model is not cached locally and an error occurred while trying to fetch metadata from the Hub. Please check out the root cause in the stacktrace above.\n   Falling back to simple renderer\n✅ Diverse Character Generator ready (8 characters)\n✅ Simple Agent ready with 22 scenarios\n\n=====================================================================",
+        "timestamp": "2025-12-05T00:38:16.457169"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T00:38:16.652072",
+      "action_type": "command_executed",
+      "details": {
+        "command": "find . -name \"training_*.mp4\" -mmin -10 -type f | wc -l",
+        "description": "Count newly created videos",
+        "success": true,
+        "return_code": 0,
+        "output": "       5\n",
+        "timestamp": "2025-12-05T00:38:16.652057"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T00:38:16.652763",
+      "action_type": "videos_created",
+      "details": {
+        "count": 5,
+        "requested": 5
+      }
+    },
+    {
+      "timestamp": "2025-12-05T00:38:16.655235",
+      "action_type": "training_completed",
+      "details": {
+        "lessons_count": 3,
+        "commands_count": 6
+      }
+    },
+    {
+      "timestamp": "2025-12-05T01:38:16.709846",
+      "action_type": "command_executed",
+      "details": {
+        "command": "python3 --version",
+        "description": "Python version check",
+        "success": true,
+        "return_code": 0,
+        "output": "Python 3.9.6\n",
+        "timestamp": "2025-12-05T01:38:16.709804"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T01:38:16.748304",
+      "action_type": "command_executed",
+      "details": {
+        "command": "ps aux | grep -E 'python.*agent' | grep -v grep",
+        "description": "Check for running agents",
+        "success": true,
+        "return_code": 0,
+        "output": "gurpreetdhillon  33967   0.0  0.2 435291808  29984   ??  SN   Tue10PM   0:20.73 /opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python autonomous_agent_24x7.py\n",
+        "timestamp": "2025-12-05T01:38:16.748287"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T01:38:16.753311",
+      "action_type": "command_executed",
+      "details": {
+        "command": "df -h . | tail -1",
+        "description": "Disk space check",
+        "success": true,
+        "return_code": 0,
+        "output": "/dev/disk3s1   926Gi   114Gi   776Gi    13%    1.5M  8.1G    0%   /System/Volumes/Data\n",
+        "timestamp": "2025-12-05T01:38:16.753298"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T01:38:17.069572",
+      "action_type": "command_executed",
+      "details": {
+        "command": "find . -name \"training_*.mp4\" -mmin -60 -type f | wc -l",
+        "description": "Check recent videos",
+        "success": true,
+        "return_code": 0,
+        "output": "      11\n",
+        "timestamp": "2025-12-05T01:38:17.069552"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T01:38:17.070263",
+      "action_type": "health_check",
+      "details": {
+        "timestamp": "2025-12-05T01:38:16.688205",
+        "checks": {
+          "python": true,
+          "critical_files": true,
+          "no_stuck_processes": true,
+          "disk_space": true,
+          "videos_created_recently": true
+        },
+        "missing_files": [],
+        "recent_videos_count": 11,
+        "overall_healthy": true,
+        "problems_count": 0
+      }
+    },
+    {
+      "timestamp": "2025-12-05T01:39:36.194657",
+      "action_type": "command_executed",
+      "details": {
+        "command": "python3 simple_working_agent.py --videos 5 --delay 10",
+        "description": "Create 5 training videos",
+        "success": true,
+        "return_code": 0,
+        "output": "🔍 Loading video maker...\n✅ Libraries loaded\n🎨 Loading AI Image Generator...\n⚠️  AI Generator failed: Cannot load model stabilityai/stable-diffusion-2-1: model is not cached locally and an error occurred while trying to fetch metadata from the Hub. Please check out the root cause in the stacktrace above.\n   Falling back to simple renderer\n✅ Diverse Character Generator ready (8 characters)\n✅ Simple Agent ready with 22 scenarios\n\n=====================================================================",
+        "timestamp": "2025-12-05T01:39:36.194606"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T01:39:36.411674",
+      "action_type": "command_executed",
+      "details": {
+        "command": "find . -name \"training_*.mp4\" -mmin -10 -type f | wc -l",
+        "description": "Count newly created videos",
+        "success": true,
+        "return_code": 0,
+        "output": "       5\n",
+        "timestamp": "2025-12-05T01:39:36.411655"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T01:39:36.412685",
+      "action_type": "videos_created",
+      "details": {
+        "count": 5,
+        "requested": 5
+      }
+    },
+    {
+      "timestamp": "2025-12-05T01:39:36.413559",
+      "action_type": "training_completed",
+      "details": {
+        "lessons_count": 3,
+        "commands_count": 6
+      }
+    },
+    {
+      "timestamp": "2025-12-05T02:39:36.537894",
+      "action_type": "command_executed",
+      "details": {
+        "command": "python3 --version",
+        "description": "Python version check",
+        "success": true,
+        "return_code": 0,
+        "output": "Python 3.9.6\n",
+        "timestamp": "2025-12-05T02:39:36.537869"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T02:39:36.574739",
+      "action_type": "command_executed",
+      "details": {
+        "command": "ps aux | grep -E 'python.*agent' | grep -v grep",
+        "description": "Check for running agents",
+        "success": true,
+        "return_code": 0,
+        "output": "gurpreetdhillon  33967   0.0  0.2 435291808  30080   ??  SN   Tue10PM   0:21.23 /opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python autonomous_agent_24x7.py\n",
+        "timestamp": "2025-12-05T02:39:36.574724"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T02:39:36.580292",
+      "action_type": "command_executed",
+      "details": {
+        "command": "df -h . | tail -1",
+        "description": "Disk space check",
+        "success": true,
+        "return_code": 0,
+        "output": "/dev/disk3s1   926Gi   114Gi   776Gi    13%    1.5M  8.1G    0%   /System/Volumes/Data\n",
+        "timestamp": "2025-12-05T02:39:36.580276"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T02:39:36.917145",
+      "action_type": "command_executed",
+      "details": {
+        "command": "find . -name \"training_*.mp4\" -mmin -60 -type f | wc -l",
+        "description": "Check recent videos",
+        "success": true,
+        "return_code": 0,
+        "output": "      10\n",
+        "timestamp": "2025-12-05T02:39:36.917124"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T02:39:36.917902",
+      "action_type": "health_check",
+      "details": {
+        "timestamp": "2025-12-05T02:39:36.517125",
+        "checks": {
+          "python": true,
+          "critical_files": true,
+          "no_stuck_processes": true,
+          "disk_space": true,
+          "videos_created_recently": true
+        },
+        "missing_files": [],
+        "recent_videos_count": 10,
+        "overall_healthy": true,
+        "problems_count": 0
+      }
+    },
+    {
+      "timestamp": "2025-12-05T02:40:54.880380",
+      "action_type": "command_executed",
+      "details": {
+        "command": "python3 simple_working_agent.py --videos 5 --delay 10",
+        "description": "Create 5 training videos",
+        "success": true,
+        "return_code": 0,
+        "output": "🔍 Loading video maker...\n✅ Libraries loaded\n🎨 Loading AI Image Generator...\n⚠️  AI Generator failed: Cannot load model stabilityai/stable-diffusion-2-1: model is not cached locally and an error occurred while trying to fetch metadata from the Hub. Please check out the root cause in the stacktrace above.\n   Falling back to simple renderer\n✅ Diverse Character Generator ready (8 characters)\n✅ Simple Agent ready with 22 scenarios\n\n=====================================================================",
+        "timestamp": "2025-12-05T02:40:54.880336"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T02:40:55.177959",
+      "action_type": "command_executed",
+      "details": {
+        "command": "find . -name \"training_*.mp4\" -mmin -10 -type f | wc -l",
+        "description": "Count newly created videos",
+        "success": true,
+        "return_code": 0,
+        "output": "       5\n",
+        "timestamp": "2025-12-05T02:40:55.177942"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T02:40:55.181157",
+      "action_type": "videos_created",
+      "details": {
+        "count": 5,
+        "requested": 5
+      }
+    },
+    {
+      "timestamp": "2025-12-05T02:40:55.182028",
+      "action_type": "training_completed",
+      "details": {
+        "lessons_count": 3,
+        "commands_count": 6
+      }
+    },
+    {
+      "timestamp": "2025-12-05T03:40:55.319093",
+      "action_type": "command_executed",
+      "details": {
+        "command": "python3 --version",
+        "description": "Python version check",
+        "success": true,
+        "return_code": 0,
+        "output": "Python 3.9.6\n",
+        "timestamp": "2025-12-05T03:40:55.319053"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T03:40:55.356619",
+      "action_type": "command_executed",
+      "details": {
+        "command": "ps aux | grep -E 'python.*agent' | grep -v grep",
+        "description": "Check for running agents",
+        "success": true,
+        "return_code": 0,
+        "output": "gurpreetdhillon  33967   0.0  0.2 435291808  29648   ??  SN   Tue10PM   0:21.72 /opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python autonomous_agent_24x7.py\n",
+        "timestamp": "2025-12-05T03:40:55.356601"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T03:40:55.361800",
+      "action_type": "command_executed",
+      "details": {
+        "command": "df -h . | tail -1",
+        "description": "Disk space check",
+        "success": true,
+        "return_code": 0,
+        "output": "/dev/disk3s1   926Gi   114Gi   776Gi    13%    1.5M  8.1G    0%   /System/Volumes/Data\n",
+        "timestamp": "2025-12-05T03:40:55.361785"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T03:40:55.814152",
+      "action_type": "command_executed",
+      "details": {
+        "command": "find . -name \"training_*.mp4\" -mmin -60 -type f | wc -l",
+        "description": "Check recent videos",
+        "success": true,
+        "return_code": 0,
+        "output": "      10\n",
+        "timestamp": "2025-12-05T03:40:55.814132"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T03:40:55.814994",
+      "action_type": "health_check",
+      "details": {
+        "timestamp": "2025-12-05T03:40:55.296052",
+        "checks": {
+          "python": true,
+          "critical_files": true,
+          "no_stuck_processes": true,
+          "disk_space": true,
+          "videos_created_recently": true
+        },
+        "missing_files": [],
+        "recent_videos_count": 10,
+        "overall_healthy": true,
+        "problems_count": 0
+      }
+    },
+    {
+      "timestamp": "2025-12-05T03:42:14.712955",
+      "action_type": "command_executed",
+      "details": {
+        "command": "python3 simple_working_agent.py --videos 5 --delay 10",
+        "description": "Create 5 training videos",
+        "success": true,
+        "return_code": 0,
+        "output": "🔍 Loading video maker...\n✅ Libraries loaded\n🎨 Loading AI Image Generator...\n⚠️  AI Generator failed: Cannot load model stabilityai/stable-diffusion-2-1: model is not cached locally and an error occurred while trying to fetch metadata from the Hub. Please check out the root cause in the stacktrace above.\n   Falling back to simple renderer\n✅ Diverse Character Generator ready (8 characters)\n✅ Simple Agent ready with 22 scenarios\n\n=====================================================================",
+        "timestamp": "2025-12-05T03:42:14.712905"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T03:42:14.991596",
+      "action_type": "command_executed",
+      "details": {
+        "command": "find . -name \"training_*.mp4\" -mmin -10 -type f | wc -l",
+        "description": "Count newly created videos",
+        "success": true,
+        "return_code": 0,
+        "output": "       5\n",
+        "timestamp": "2025-12-05T03:42:14.991578"
+      }
+    },
+    {
+      "timestamp": "2025-12-05T03:42:14.995090",
+      "action_type": "videos_created",
+      "details": {
+        "count": 5,
+        "requested": 5
+      }
+    },
+    {
+      "timestamp": "2025-12-05T03:42:14.997100",
+      "action_type": "training_completed",
+      "details": {
+        "lessons_count": 3,
+        "commands_count": 6
+      }
+    }
+  ]
+}

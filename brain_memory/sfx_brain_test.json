@@ -1,0 +1,110 @@
+{
+  "brain": "sfx",
+  "results": [
+    {
+      "scene_id": 0,
+      "location": "ਮਾਸੀ ਦਾ ਘਰ / ਪਿੰਡ",
+      "emotion": "family_background",
+      "ambient_sfx": [
+        "door_creak",
+        "footsteps"
+      ],
+      "emotion_sfx": [],
+      "sfx_volume": 0.3,
+      "brain_reasoning": "Location 'ਮਾਸੀ ਦਾ ਘਰ / ਪਿੰਡ' + emotion 'family_background'"
+    },
+    {
+      "scene_id": 1,
+      "location": "ਕਾਰ ਵਰਕਸ਼ਾਪ / ਘਰ",
+      "emotion": "trouble",
+      "ambient_sfx": [
+        "metal_clang",
+        "tools"
+      ],
+      "emotion_sfx": [
+        "heavy_breathing",
+        "tension"
+      ],
+      "sfx_volume": 0.3,
+      "brain_reasoning": "Location 'ਕਾਰ ਵਰਕਸ਼ਾਪ / ਘਰ' + emotion 'trouble'"
+    },
+    {
+      "scene_id": 2,
+      "location": "ਖੇਤ / ਪਿੰਡ ਰਾਹ",
+      "emotion": "brotherhood",
+      "ambient_sfx": [
+        "birds_chirping",
+        "distant_voices"
+      ],
+      "emotion_sfx": [],
+      "sfx_volume": 0.3,
+      "brain_reasoning": "Location 'ਖੇਤ / ਪਿੰਡ ਰਾਹ' + emotion 'brotherhood'"
+    },
+    {
+      "scene_id": 3,
+      "location": "ਮਾਸੀ ਦਾ ਘਰ / ਵਿਆਹ ਦਾ মੌਕਾ",
+      "emotion": "marriage_conflict",
+      "ambient_sfx": [
+        "door_creak",
+        "footsteps"
+      ],
+      "emotion_sfx": [],
+      "sfx_volume": 0.3,
+      "brain_reasoning": "Location 'ਮਾਸੀ ਦਾ ਘਰ / ਵਿਆਹ ਦਾ মੌਕਾ' + emotion 'marriage_conflict'"
+    },
+    {
+      "scene_id": 4,
+      "location": "ਘਰ اندر",
+      "emotion": "alienation",
+      "ambient_sfx": [
+        "door_close",
+        "ambient_home"
+      ],
+      "emotion_sfx": [],
+      "sfx_volume": 0.3,
+      "brain_reasoning": "Location 'ਘਰ اندر' + emotion 'alienation'"
+    },
+    {
+      "scene_id": 5,
+      "location": "ਘਰ / ਪੁਲਿਸ ਢੋੰਗ",
+      "emotion": "harassment",
+      "ambient_sfx": [
+        "door_close",
+        "ambient_home"
+      ],
+      "emotion_sfx": [
+        "heavy_breathing",
+        "tension"
+      ],
+      "sfx_volume": 0.3,
+      "brain_reasoning": "Location 'ਘਰ / ਪੁਲਿਸ ਢੋੰਗ' + emotion 'harassment'"
+    },
+    {
+      "scene_id": 6,
+      "location": "ਘਰ / ਰਾਤ",
+      "emotion": "despair",
+      "ambient_sfx": [
+        "door_close",
+        "ambient_home"
+      ],
+      "emotion_sfx": [
+        "wind",
+        "silence"
+      ],
+      "sfx_volume": 0.3,
+      "brain_reasoning": "Location 'ਘਰ / ਰਾਤ' + emotion 'despair'"
+    },
+    {
+      "scene_id": 7,
+      "location": "ਹਸਪਤਾਲ / ਪਿੰਡ",
+      "emotion": "aftermath_questioning",
+      "ambient_sfx": [
+        "birds_chirping",
+        "distant_voices"
+      ],
+      "emotion_sfx": [],
+      "sfx_volume": 0.3,
+      "brain_reasoning": "Location 'ਹਸਪਤਾਲ / ਪਿੰਡ' + emotion 'aftermath_questioning'"
+    }
+  ]
+}

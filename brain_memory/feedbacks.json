@@ -1,0 +1,446 @@
+[
+  {
+    "timestamp": "2025-11-02T23:51:20.553271",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": null,
+      "background_loudness_db": null,
+      "scene_id": 0,
+      "success": true
+    }
+  },
+  {
+    "timestamp": "2025-11-03T20:11:12.534987",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -3.0500956894854663,
+      "background_loudness_db": -200.0,
+      "scene_id": 0,
+      "success": true
+    }
+  },
+  {
+    "timestamp": "2025-11-03T20:15:03.835190",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -3.0500956894854663,
+      "background_loudness_db": -200.0,
+      "scene_id": 0,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": -3.0500956894854663
+    }
+  },
+  {
+    "timestamp": "2025-11-03T20:15:36.915481",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -3.0500956894854663,
+      "background_loudness_db": -200.0,
+      "scene_id": 0,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": -3.0500956894854663
+    }
+  },
+  {
+    "timestamp": "2025-11-03T20:27:58.960383",
+    "source": "unit_test",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -20.0,
+      "background_loudness_db": -5.0
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": -5.0,
+      "dialogue_loudness_db": -20.0
+    },
+    "recommendations": [
+      {
+        "action": "lower_music_volume",
+        "reason": "background louder than dialogue",
+        "suggested_multiplier": 0.6
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-11-03T20:28:00.450591",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -15.691404736873558,
+      "background_loudness_db": -200.0,
+      "scene_id": 0,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": -15.691404736873558
+    }
+  },
+  {
+    "timestamp": "2025-11-03T20:43:54.049048",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -15.491746450086314,
+      "background_loudness_db": -200.0,
+      "scene_id": 0,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": -15.491746450086314
+    }
+  },
+  {
+    "timestamp": "2025-11-03T20:46:35.954151",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -15.525841303767278,
+      "background_loudness_db": -200.0,
+      "scene_id": 0,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": -15.525841303767278
+    }
+  },
+  {
+    "timestamp": "2025-11-03T20:47:23.761377",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -15.539125563405706,
+      "background_loudness_db": -200.0,
+      "scene_id": 0,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": -15.539125563405706
+    }
+  },
+  {
+    "timestamp": "2025-11-03T20:56:16.241745",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -17.853477982312295,
+      "background_loudness_db": -200.0,
+      "scene_id": 0,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": -17.853477982312295
+    }
+  },
+  {
+    "timestamp": "2025-11-03T21:04:10.324277",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -17.848186077499108,
+      "background_loudness_db": -200.0,
+      "scene_id": 0,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": -17.848186077499108
+    }
+  },
+  {
+    "timestamp": "2025-11-03T21:06:38.363208",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -17.847610659290705,
+      "background_loudness_db": -200.0,
+      "scene_id": 0,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": -17.847610659290705
+    }
+  },
+  {
+    "timestamp": "2025-11-03T21:21:22.511920",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -17.849258466734845,
+      "background_loudness_db": -200.0,
+      "scene_id": 0,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": -17.849258466734845
+    }
+  },
+  {
+    "timestamp": "2025-11-03T21:45:43.777646",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -17.849091497981476,
+      "background_loudness_db": -200.0,
+      "scene_id": 0,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": -17.849091497981476
+    }
+  },
+  {
+    "timestamp": "2025-11-03T21:49:09.825771",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -17.84794431894473,
+      "background_loudness_db": -200.0,
+      "scene_id": 0,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": -17.84794431894473
+    }
+  },
+  {
+    "timestamp": "2025-11-03T21:51:10.565344",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -17.849307426714645,
+      "background_loudness_db": -200.0,
+      "scene_id": 0,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": -17.849307426714645
+    }
+  },
+  {
+    "timestamp": "2025-11-03T21:53:17.025065",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -17.849927230058775,
+      "background_loudness_db": -200.0,
+      "scene_id": 0,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": -17.849927230058775
+    }
+  },
+  {
+    "timestamp": "2025-11-03T21:55:36.850605",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -17.84864032497396,
+      "background_loudness_db": -200.0,
+      "scene_id": 0,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": -17.84864032497396
+    }
+  },
+  {
+    "timestamp": "2025-11-03T22:31:47.535653",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -17.850204051650447,
+      "background_loudness_db": -200.0,
+      "scene_id": 0,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": -17.850204051650447
+    }
+  },
+  {
+    "timestamp": "2025-11-03T23:00:55.176136",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -15.53943066646765,
+      "background_loudness_db": -200.0,
+      "scene_id": 0,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": -15.53943066646765
+    }
+  },
+  {
+    "timestamp": "2025-11-03T23:05:00.124620",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -16.85864388852921,
+      "background_loudness_db": -200.0,
+      "scene_id": 0,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": -16.85864388852921
+    }
+  },
+  {
+    "timestamp": "2025-11-03T23:23:32.152116",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -16.832971852881663,
+      "background_loudness_db": -200.0,
+      "scene_id": 0,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": -16.832971852881663
+    }
+  },
+  {
+    "timestamp": "2025-11-03T23:53:19.327583",
+    "source": "render_with_ai_images",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": null,
+      "background_loudness_db": null,
+      "music_path": null,
+      "scene_id": 0,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": null
+    }
+  },
+  {
+    "timestamp": "2025-11-03T23:53:19.432196",
+    "source": "render_with_ai_images",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -22.06701358821264,
+      "background_loudness_db": -34.88655392559707,
+      "music_path": null,
+      "scene_id": 0,
+      "success": true,
+      "stt_transcript": null,
+      "stt_score": 0.0
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": -34.88655392559707,
+      "dialogue_loudness_db": -22.06701358821264
+    }
+  },
+  {
+    "timestamp": "2025-11-03T23:53:20.057999",
+    "source": "render_with_ai_images",
+    "scene_id": 1,
+    "metrics": {
+      "dialogue_loudness_db": null,
+      "background_loudness_db": null,
+      "music_path": null,
+      "scene_id": 1,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": null
+    }
+  },
+  {
+    "timestamp": "2025-11-03T23:53:20.154273",
+    "source": "render_with_ai_images",
+    "scene_id": 1,
+    "metrics": {
+      "dialogue_loudness_db": -21.866042125148457,
+      "background_loudness_db": -34.88655862587806,
+      "music_path": null,
+      "scene_id": 1,
+      "success": true,
+      "stt_transcript": null,
+      "stt_score": 0.0
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": -34.88655862587806,
+      "dialogue_loudness_db": -21.866042125148457
+    }
+  },
+  {
+    "timestamp": "2025-11-03T23:53:20.815956",
+    "source": "render_with_ai_images",
+    "scene_id": 2,
+    "metrics": {
+      "dialogue_loudness_db": null,
+      "background_loudness_db": null,
+      "music_path": null,
+      "scene_id": 2,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": null,
+      "dialogue_loudness_db": null
+    }
+  },
+  {
+    "timestamp": "2025-11-03T23:53:20.926977",
+    "source": "render_with_ai_images",
+    "scene_id": 2,
+    "metrics": {
+      "dialogue_loudness_db": -22.213565941568824,
+      "background_loudness_db": -34.88800372729458,
+      "music_path": null,
+      "scene_id": 2,
+      "success": true,
+      "stt_transcript": null,
+      "stt_score": 0.0
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": -34.88800372729458,
+      "dialogue_loudness_db": -22.213565941568824
+    }
+  },
+  {
+    "timestamp": "2025-11-04T21:17:35.413820",
+    "source": "master_builder",
+    "scene_id": 0,
+    "metrics": {
+      "dialogue_loudness_db": -15.289206889784888,
+      "background_loudness_db": -25.3968988247562,
+      "scene_id": 0,
+      "success": true
+    },
+    "metrics_sanitized": {
+      "background_loudness_db": -25.3968988247562,
+      "dialogue_loudness_db": -15.289206889784888
+    }
+  }
+]

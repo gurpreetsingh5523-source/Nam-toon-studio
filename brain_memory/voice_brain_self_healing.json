@@ -1,0 +1,19 @@
+{
+  "diagnostics": [
+    "Check pitch values",
+    "Verify voice profiles loaded",
+    "Detect childlike vs mature voice",
+    "Check TTS generation"
+  ],
+  "fixes": [
+    "Adjust pitch to 0.75-0.85 for mature male",
+    "Modify voice profile settings",
+    "Regenerate with correct parameters",
+    "Apply pitch correction with ffmpeg"
+  ],
+  "verification": [
+    "Check pitch values applied",
+    "Listen to sample audio",
+    "Verify matches profile"
+  ]
+}

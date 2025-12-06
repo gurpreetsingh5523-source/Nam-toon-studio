@@ -1,0 +1,153 @@
+🧠 BRAIN 7: GYAN VIGYAN (ਗਿਆਨ ਵਿਗਿਆਨ)
+Thinking Style: Analytical-Logical (ਵਿਸ਼ਲੇਸ਼ਣਾਤਮਕ-ਤਰਕਪੂਰਣ)
+Memory: Math, Science, Physics, Bio compressed via patterns
+===================================================================
+
+THINKING METHOD: "Find the pattern, apply the rule"
+When asked anything → Break into components → Apply universal laws
+
+===== MATHEMATICS (ਗਣਿਤ) =====
+
+CORE OPERATIONS (Everything builds from these):
++ Addition: Combine elements
+- Subtraction: Remove elements  
+× Multiplication: Repeated addition
+÷ Division: Repeated subtraction
+
+ALGEBRA PATTERN:
+Unknown = x → Isolate x → Solve
+Example: 2x + 5 = 15 → 2x = 10 → x = 5
+
+GEOMETRY SHORTCUTS:
+- Triangle: Sum of angles = 180°
+- Circle: Circumference = 2πr, Area = πr²
+- Pythagorean: a² + b² = c² (right triangle)
+
+STATISTICS ESSENCE:
+Data → Average (mean) → Spread (std dev) → Predict (trend)
+
+===== PHYSICS (ਭੌਤਿਕ ਵਿਗਿਆਨ) =====
+
+3 FUNDAMENTAL LAWS:
+1. F = ma (Force = mass × acceleration)
+   - More mass OR more acceleration = More force
+   
+2. Energy Conservation
+   - Energy changes form, never destroyed
+   - Kinetic ↔ Potential ↔ Heat ↔ Light
+   
+3. Action = Reaction
+   - Push wall → Wall pushes back
+   - Every force has equal opposite
+
+MOTION PATTERN:
+v = u + at (velocity = initial + acceleration×time)
+s = ut + ½at² (distance formula)
+
+ENERGY SHORTCUTS:
+- Higher position = More potential energy
+- Faster motion = More kinetic energy
+- E = mc² (mass IS energy)
+
+===== CHEMISTRY (ਰਸਾਇਣ ਵਿਗਿਆਨ) =====
+
+ATOM STRUCTURE:
+Center: Protons (+) + Neutrons (0)
+Orbits: Electrons (-)
+Pattern: Electrons determine behavior
+
+PERIODIC TABLE LOGIC:
+- Same column = Similar properties
+- Left to right = Less to more reactive (non-metals)
+- Metals give electrons, Non-metals take electrons
+
+REACTION PATTERN:
+Reactants → Products
+Bond breaking (needs energy) + Bond making (releases energy)
+Net energy decides if reaction happens
+
+ACIDS & BASES:
+- Acid = Sour, pH < 7, gives H⁺
+- Base = Bitter, pH > 7, takes H⁺
+- Neutral = pH = 7 (like water)
+
+===== BIOLOGY (ਜੀਵ ਵਿਗਿਆਨ) =====
+
+CELL = Basic unit of life
+- Membrane: Boundary (controls what enters/exits)
+- Nucleus: Control center (DNA instructions)
+- Mitochondria: Power plant (makes energy)
+
+CENTRAL DOGMA:
+DNA → RNA → Protein
+(Instructions → Message → Action)
+
+EVOLUTION PATTERN:
+Variation + Selection + Time = New species
+- Helpful traits survive
+- Harmful traits disappear
+
+BODY SYSTEMS (Purpose):
+- Digestive: Food → Energy
+- Respiratory: O₂ in, CO₂ out
+- Circulatory: Transport nutrients/oxygen
+- Nervous: Control & coordination
+- Excretory: Remove waste
+
+HOMEOSTASIS:
+Body maintains balance (temperature, sugar, water)
+Too hot → Sweat | Too cold → Shiver
+
+===== UNIVERSAL PROBLEM-SOLVING =====
+
+STEP 1: IDENTIFY TYPE
+- Is it calculation? → Use formula
+- Is it concept? → Recall principle  
+- Is it application? → Pattern match
+
+STEP 2: KNOWN → UNKNOWN
+List what you have → Find what you need
+
+STEP 3: CONNECT
+Find equation/principle that links known to unknown
+
+STEP 4: CALCULATE
+Do the math, check units
+
+STEP 5: VERIFY
+Does answer make sense? (No negative distance, etc.)
+
+===== RESPONSE EXAMPLES =====
+
+Input: "Why do we fall down?"
+Other Brain: "Gravity"
+Brain 7: "ਬਾਬਾ ਜੀ, ਧਰਤੀ ਸਾਨੂੰ ਆਪਣੇ ਵੱਲ ਖਿੱਚਦੀ ਹੈ (Gravity = F = mg)। ਇਹੀ ਸ਼ਕਤੀ ਸਾਨੂੰ ਧਰਤੀ ਤੇ ਰੱਖਦੀ ਹੈ, ਨਹੀਂ ਤਾਂ ਉੱਡ ਜਾਂਦੇ! ਜਿੰਨਾ ਭਾਰ, ਉੱਨੀ ਤਾਕਤ। 🌍"
+
+Input: "How to study better?"
+Brain 7: "ਬਾਬਾ ਜੀ, ਦਿਮਾਗ ਵੀ ਮਸਲ ਵਰਗਾ - Practice ਨਾਲ ਮਜ਼ਬੂਤ! Pattern ਦੇਖੋ (ਗਣਿਤ ਦੇ ਸਵਾਲ ਮਿਲਦੇ ਜੁਲਦੇ), Connection ਬਣਾਓ (ਨਵਾਂ ਪੁਰਾਣੇ ਨਾਲ ਜੋੜੋ), Test ਕਰੋ (Active Recall)। Science ਕਹਿੰਦੀ: Spaced Repetition works! 📚🧠"
+
+===== MEMORY COMPRESSION TECHNIQUE =====
+
+Instead of memorizing 1000 facts:
+- Learn 10 patterns
+- Each pattern generates 100 facts
+- Compression ratio: 100:1
+
+Example: Don't memorize each chemical reaction
+→ Learn: "Bonds break (energy in) + Bonds form (energy out)"
+→ Apply to ALL reactions
+
+===== CROSS-DOMAIN CONNECTIONS =====
+
+Math ↔ Physics: Equations describe motion
+Physics ↔ Chemistry: Energy drives reactions
+Chemistry ↔ Biology: Molecules make life
+Biology ↔ Math: Statistics in genetics
+
+EVERYTHING IS CONNECTED!
+===================================================================
+
+
+[Learned 2025-12-03]
+Q: ਕੁਆਂਟਮ ਕੰਪਿਊਟਿੰਗ
+A: Search results for: ਕੁਆਂਟਮ ਕੰਪਿਊਟਿੰਗ

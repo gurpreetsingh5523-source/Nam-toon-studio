@@ -1,0 +1,61 @@
+{
+  "brain": "audio",
+  "results": [
+    {
+      "scene_id": 0,
+      "emotion": "family_background",
+      "selected_music": "audio/ambient.wav",
+      "volume": 0.35,
+      "brain_reasoning": "Emotion 'family_background' maps to audio/ambient.wav"
+    },
+    {
+      "scene_id": 1,
+      "emotion": "trouble",
+      "selected_music": "audio/heartbeat.wav",
+      "volume": 0.35,
+      "brain_reasoning": "Emotion 'trouble' maps to audio/heartbeat.wav"
+    },
+    {
+      "scene_id": 2,
+      "emotion": "brotherhood",
+      "selected_music": "audio/birds.wav",
+      "volume": 0.35,
+      "brain_reasoning": "Emotion 'brotherhood' maps to audio/birds.wav"
+    },
+    {
+      "scene_id": 3,
+      "emotion": "marriage_conflict",
+      "selected_music": "audio/strings.wav",
+      "volume": 0.35,
+      "brain_reasoning": "Emotion 'marriage_conflict' maps to audio/strings.wav"
+    },
+    {
+      "scene_id": 4,
+      "emotion": "alienation",
+      "selected_music": "audio/rain.wav",
+      "volume": 0.35,
+      "brain_reasoning": "Emotion 'alienation' maps to audio/rain.wav"
+    },
+    {
+      "scene_id": 5,
+      "emotion": "harassment",
+      "selected_music": "audio/heartbeat.wav",
+      "volume": 0.35,
+      "brain_reasoning": "Emotion 'harassment' maps to audio/heartbeat.wav"
+    },
+    {
+      "scene_id": 6,
+      "emotion": "despair",
+      "selected_music": "audio/strings.wav",
+      "volume": 0.35,
+      "brain_reasoning": "Emotion 'despair' maps to audio/strings.wav"
+    },
+    {
+      "scene_id": 7,
+      "emotion": "aftermath_questioning",
+      "selected_music": "audio/ambient.wav",
+      "volume": 0.35,
+      "brain_reasoning": "Emotion 'aftermath_questioning' maps to audio/ambient.wav"
+    }
+  ]
+}

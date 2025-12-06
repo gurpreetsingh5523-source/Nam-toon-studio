@@ -1,0 +1,181 @@
+{
+  "emotion_colors": {
+    "happy": {
+      "primary": [
+        "#FFD700",
+        "#FFA500",
+        "#FFFF00"
+      ],
+      "secondary": [
+        "#FF69B4",
+        "#FFB6C1",
+        "#FFC0CB"
+      ],
+      "meaning": "Joy, celebration, warmth",
+      "success_rate": 0.0,
+      "usage_count": 5
+    },
+    "sad": {
+      "primary": [
+        "#4169E1",
+        "#1E90FF",
+        "#87CEEB"
+      ],
+      "secondary": [
+        "#708090",
+        "#778899",
+        "#B0C4DE"
+      ],
+      "meaning": "Sorrow, melancholy, tears",
+      "success_rate": 0.0,
+      "usage_count": 6
+    },
+    "angry": {
+      "primary": [
+        "#DC143C",
+        "#FF0000",
+        "#8B0000"
+      ],
+      "secondary": [
+        "#FF4500",
+        "#FF6347",
+        "#CD5C5C"
+      ],
+      "meaning": "Rage, intensity, heat",
+      "success_rate": 0.0,
+      "usage_count": 0
+    },
+    "peaceful": {
+      "primary": [
+        "#90EE90",
+        "#98FB98",
+        "#00FA9A"
+      ],
+      "secondary": [
+        "#87CEEB",
+        "#ADD8E6",
+        "#B0E0E6"
+      ],
+      "meaning": "Calm, nature, serenity",
+      "success_rate": 0.0,
+      "usage_count": 17
+    },
+    "romantic": {
+      "primary": [
+        "#FF1493",
+        "#FF69B4",
+        "#FFC0CB"
+      ],
+      "secondary": [
+        "#DDA0DD",
+        "#EE82EE",
+        "#DA70D6"
+      ],
+      "meaning": "Love, passion, tenderness",
+      "success_rate": 0.0,
+      "usage_count": 0
+    },
+    "fearful": {
+      "primary": [
+        "#2F4F4F",
+        "#696969",
+        "#000000"
+      ],
+      "secondary": [
+        "#483D8B",
+        "#6A5ACD",
+        "#8B008B"
+      ],
+      "meaning": "Darkness, uncertainty, danger",
+      "success_rate": 0.0,
+      "usage_count": 0
+    },
+    "celebratory": {
+      "primary": [
+        "#FF8C00",
+        "#FFA500",
+        "#FFD700"
+      ],
+      "secondary": [
+        "#FF6347",
+        "#FF4500",
+        "#DC143C"
+      ],
+      "meaning": "Sikh celebrations, festivals (Vaisakhi colors)",
+      "success_rate": 0.0,
+      "usage_count": 1
+    },
+    "spiritual": {
+      "primary": [
+        "#FF8C00",
+        "#0000FF",
+        "#FFFFFF"
+      ],
+      "secondary": [
+        "#FFD700",
+        "#FFA500",
+        "#F0E68C"
+      ],
+      "meaning": "Religious, divine, purity",
+      "success_rate": 0.0,
+      "usage_count": 1
+    }
+  },
+  "cultural_colors": {
+    "saffron_orange": {
+      "hex": "#FF8C00",
+      "meaning": "Courage, sacrifice (Sikh tradition)",
+      "contexts": [
+        "prayer",
+        "celebration",
+        "bravery"
+      ]
+    },
+    "blue": {
+      "hex": "#0000FF",
+      "meaning": "Warrior spirit, strength (Khalsa)",
+      "contexts": [
+        "courage",
+        "protection",
+        "honor"
+      ]
+    },
+    "white": {
+      "hex": "#FFFFFF",
+      "meaning": "Purity, peace, truth",
+      "contexts": [
+        "elderly",
+        "spiritual",
+        "mourning"
+      ]
+    },
+    "red": {
+      "hex": "#FF0000",
+      "meaning": "Marriage, celebration, energy",
+      "contexts": [
+        "wedding",
+        "festival",
+        "joy"
+      ]
+    },
+    "green": {
+      "hex": "#228B22",
+      "meaning": "Agriculture, prosperity, life",
+      "contexts": [
+        "farming",
+        "fields",
+        "growth"
+      ]
+    },
+    "pink": {
+      "hex": "#FF69B4",
+      "meaning": "Femininity, youth, love",
+      "contexts": [
+        "young_women",
+        "romance",
+        "softness"
+      ]
+    }
+  },
+  "last_updated": "2025-11-02T23:20:52.609805"
+}

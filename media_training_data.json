@@ -1,0 +1,354 @@
+{
+  "description": "Training data for all brains to learn from",
+  "version": "1.0",
+  "last_updated": "2025-11-02",
+  
+  "music_library": [
+    {
+      "file": "punjabi_folk_happy.mp3",
+      "metadata": {
+        "emotion": "happy",
+        "tempo": "fast",
+        "instruments": ["dhol", "tumbi", "algoza"],
+        "culture": "punjabi",
+        "bpm": 140,
+        "duration": 180,
+        "usage_scenarios": ["wedding", "celebration", "joyful_moments"],
+        "energy_level": "high",
+        "description": "Traditional Punjabi folk music with energetic dhol beats"
+      }
+    },
+    {
+      "file": "kirtan_peaceful.mp3",
+      "metadata": {
+        "emotion": "peaceful",
+        "tempo": "slow",
+        "instruments": ["harmonium", "tabla", "vocals"],
+        "culture": "punjabi",
+        "bpm": 60,
+        "duration": 240,
+        "usage_scenarios": ["prayer", "meditation", "calm_scenes"],
+        "energy_level": "low",
+        "description": "Soothing Gurbani kirtan with harmonium and tabla"
+      }
+    },
+    {
+      "file": "sad_harmonium.mp3",
+      "metadata": {
+        "emotion": "sad",
+        "tempo": "slow",
+        "instruments": ["harmonium", "flute"],
+        "culture": "punjabi",
+        "bpm": 50,
+        "duration": 150,
+        "usage_scenarios": ["grief", "loss", "emotional_pain"],
+        "energy_level": "very_low",
+        "description": "Melancholic harmonium melody expressing deep sorrow"
+      }
+    },
+    {
+      "file": "bhangra_excited.mp3",
+      "metadata": {
+        "emotion": "excited",
+        "tempo": "very_fast",
+        "instruments": ["dhol", "chimta", "tumbi"],
+        "culture": "punjabi",
+        "bpm": 160,
+        "duration": 200,
+        "usage_scenarios": ["festival", "dance", "celebration"],
+        "energy_level": "very_high",
+        "description": "High-energy bhangra with powerful dhol rhythms"
+      }
+    },
+    {
+      "file": "angry_intense.mp3",
+      "metadata": {
+        "emotion": "angry",
+        "tempo": "fast",
+        "instruments": ["drums", "bass", "aggressive_strings"],
+        "culture": "universal",
+        "bpm": 130,
+        "duration": 120,
+        "usage_scenarios": ["conflict", "tension", "anger"],
+        "energy_level": "high",
+        "description": "Intense percussion expressing rage and frustration"
+      }
+    },
+    {
+      "file": "nostalgic_flute.mp3",
+      "metadata": {
+        "emotion": "nostalgic",
+        "tempo": "medium",
+        "instruments": ["flute", "strings", "soft_percussion"],
+        "culture": "punjabi",
+        "bpm": 80,
+        "duration": 180,
+        "usage_scenarios": ["memories", "reflection", "past_times"],
+        "energy_level": "medium",
+        "description": "Bansuri flute evoking memories of village life"
+      }
+    }
+  ],
+  
+  "image_library": [
+    {
+      "file": "punjab_wheat_fields.jpg",
+      "metadata": {
+        "dominant_colors": ["#F4D03F", "#52BE80", "#3498DB"],
+        "objects": ["wheat_field", "blue_sky", "farmer", "tractor"],
+        "emotion": "peaceful",
+        "style": "realistic",
+        "time_of_day": "golden_hour",
+        "location": "Punjab farmland",
+        "usage_scenarios": ["agricultural_scenes", "village_life", "peaceful_moments"],
+        "cultural_significance": "Represents Punjab's farming heritage",
+        "composition": "rule_of_thirds"
+      }
+    },
+    {
+      "file": "gurudwara_golden_temple.jpg",
+      "metadata": {
+        "dominant_colors": ["#FFD700", "#FFFFFF", "#1E8449"],
+        "objects": ["golden_temple", "sarovar", "devotees", "sky"],
+        "emotion": "spiritual",
+        "style": "realistic",
+        "time_of_day": "sunrise",
+        "location": "Amritsar",
+        "usage_scenarios": ["spiritual_scenes", "prayer", "devotion"],
+        "cultural_significance": "Holiest shrine for Sikhs",
+        "composition": "centered"
+      }
+    },
+    {
+      "file": "punjabi_wedding.jpg",
+      "metadata": {
+        "dominant_colors": ["#E74C3C", "#F39C12", "#F1C40F"],
+        "objects": ["bride", "groom", "family", "decorations"],
+        "emotion": "joyful",
+        "style": "vibrant",
+        "time_of_day": "day",
+        "location": "Wedding venue",
+        "usage_scenarios": ["wedding", "celebration", "family_gathering"],
+        "cultural_significance": "Traditional Punjabi wedding",
+        "composition": "group_shot"
+      }
+    },
+    {
+      "file": "village_home_evening.jpg",
+      "metadata": {
+        "dominant_colors": ["#E67E22", "#95A5A6", "#34495E"],
+        "objects": ["mud_house", "charpai", "lantern", "evening_sky"],
+        "emotion": "nostalgic",
+        "style": "rustic",
+        "time_of_day": "dusk",
+        "location": "Punjab village",
+        "usage_scenarios": ["village_life", "simple_living", "memories"],
+        "cultural_significance": "Traditional Punjab lifestyle",
+        "composition": "atmospheric"
+      }
+    },
+    {
+      "file": "protest_scene.jpg",
+      "metadata": {
+        "dominant_colors": ["#C0392B", "#7F8C8D", "#2C3E50"],
+        "objects": ["crowd", "banners", "raised_fists"],
+        "emotion": "angry",
+        "style": "documentary",
+        "time_of_day": "day",
+        "location": "City streets",
+        "usage_scenarios": ["conflict", "injustice", "struggle"],
+        "cultural_significance": "Social justice movement",
+        "composition": "dynamic"
+      }
+    }
+  ],
+  
+  "video_clips": [
+    {
+      "file": "dhol_performance.mp4",
+      "metadata": {
+        "duration": 15,
+        "fps": 24,
+        "resolution": "1920x1080",
+        "emotion": "excited",
+        "scenes": [
+          {"time": 0, "action": "drummer_enters", "energy": "building"},
+          {"time": 5, "action": "full_performance", "energy": "peak"},
+          {"time": 10, "action": "crowd_dancing", "energy": "sustained"}
+        ],
+        "transitions": ["fade_in", "cut", "fade_out"],
+        "pacing": "fast",
+        "cultural_significance": "Traditional dhol performance",
+        "usage_scenarios": ["celebrations", "festivals", "energetic_moments"]
+      }
+    },
+    {
+      "file": "farmer_working.mp4",
+      "metadata": {
+        "duration": 20,
+        "fps": 24,
+        "resolution": "1920x1080",
+        "emotion": "peaceful",
+        "scenes": [
+          {"time": 0, "action": "sunrise_over_fields", "energy": "calm"},
+          {"time": 8, "action": "farmer_plowing", "energy": "steady"},
+          {"time": 15, "action": "water_buffalo", "energy": "tranquil"}
+        ],
+        "transitions": ["fade_in", "dissolve", "fade_out"],
+        "pacing": "slow",
+        "cultural_significance": "Traditional farming life",
+        "usage_scenarios": ["agricultural_scenes", "daily_life", "peaceful_moments"]
+      }
+    },
+    {
+      "file": "family_crying.mp4",
+      "metadata": {
+        "duration": 12,
+        "fps": 24,
+        "resolution": "1920x1080",
+        "emotion": "grief",
+        "scenes": [
+          {"time": 0, "action": "mother_weeping", "energy": "low"},
+          {"time": 5, "action": "family_embracing", "energy": "emotional"},
+          {"time": 9, "action": "tears_closeup", "energy": "intense"}
+        ],
+        "transitions": ["fade_in", "slow_pan", "fade_out"],
+        "pacing": "very_slow",
+        "cultural_significance": "Expression of deep loss",
+        "usage_scenarios": ["tragedy", "loss", "emotional_scenes"]
+      }
+    }
+  ],
+  
+  "brain_learnings": {
+    "visual_brain": {
+      "successful_patterns": [
+        {
+          "pattern": "warm_colors_for_happiness",
+          "description": "Yellow, orange, gold colors work best for happy/joyful emotions",
+          "success_rate": 0.95,
+          "usage_count": 50,
+          "examples": ["#FFD700", "#FFA500", "#F4D03F"]
+        },
+        {
+          "pattern": "cool_colors_for_sadness",
+          "description": "Blue, grey tones express sadness effectively",
+          "success_rate": 0.92,
+          "usage_count": 35,
+          "examples": ["#4169E1", "#708090", "#34495E"]
+        },
+        {
+          "pattern": "red_for_intensity",
+          "description": "Red and dark red for anger, passion, intensity",
+          "success_rate": 0.88,
+          "usage_count": 28,
+          "examples": ["#DC143C", "#8B0000", "#C0392B"]
+        }
+      ],
+      "failed_approaches": [
+        {
+          "approach": "using_bright_colors_for_sad_scenes",
+          "description": "Bright yellows/pinks don't match sad emotions",
+          "failure_rate": 0.85,
+          "lesson": "Always match color psychology to emotion"
+        }
+      ]
+    },
+    
+    "audio_brain": {
+      "successful_patterns": [
+        {
+          "pattern": "slow_tempo_for_emotional_scenes",
+          "description": "BPM under 70 works best for sad/emotional content",
+          "success_rate": 0.93,
+          "usage_count": 42,
+          "optimal_bpm": "50-70"
+        },
+        {
+          "pattern": "traditional_instruments_for_punjabi_scenes",
+          "description": "Dhol, harmonium, tumbi create authentic Punjabi feel",
+          "success_rate": 0.96,
+          "usage_count": 58,
+          "instruments": ["dhol", "harmonium", "tumbi", "algoza"]
+        },
+        {
+          "pattern": "volume_balance",
+          "description": "Background music at 40-50% volume allows dialogue clarity",
+          "success_rate": 0.90,
+          "usage_count": 65,
+          "optimal_volume": 0.45
+        }
+      ]
+    },
+    
+    "voice_brain": {
+      "successful_patterns": [
+        {
+          "pattern": "accent_matching_character",
+          "description": "Use regional accents based on character's origin",
+          "success_rate": 0.94,
+          "usage_count": 48,
+          "accent_map": {
+            "Patiala": "Majhi",
+            "Malwa": "Malwai",
+            "Doaba": "Doabi"
+          }
+        },
+        {
+          "pattern": "emotion_in_voice",
+          "description": "Vary pitch and pace based on emotion",
+          "success_rate": 0.89,
+          "usage_count": 52,
+          "techniques": ["pitch_variation", "pace_control", "volume_dynamics"]
+        }
+      ]
+    },
+    
+    "creative_brain": {
+      "successful_patterns": [
+        {
+          "pattern": "scene_duration_balance",
+          "description": "3-5 seconds per dialogue scene works best",
+          "success_rate": 0.91,
+          "usage_count": 70,
+          "optimal_duration": "3.0-5.0"
+        },
+        {
+          "pattern": "transition_matching_pace",
+          "description": "Use fade for slow scenes, cut for fast action",
+          "success_rate": 0.87,
+          "usage_count": 45,
+          "transition_map": {
+            "peaceful": "fade",
+            "excited": "cut",
+            "nostalgic": "dissolve"
+          }
+        }
+      ]
+    }
+  },
+  
+  "cross_brain_insights": [
+    {
+      "insight": "color_music_emotional_sync",
+      "description": "When visual colors and music tempo align with same emotion, viewer engagement increases by 40%",
+      "participating_brains": ["visual_brain", "audio_brain"],
+      "evidence_strength": "strong",
+      "usage_scenarios": ["all_emotional_scenes"]
+    },
+    {
+      "insight": "voice_music_volume_relationship",
+      "description": "Dialogue should be 2x louder than background music for clarity",
+      "participating_brains": ["voice_brain", "audio_brain"],
+      "evidence_strength": "very_strong",
+      "optimal_ratio": 2.0
+    },
+    {
+      "insight": "cultural_authenticity_matters",
+      "description": "Using traditional Punjabi elements (instruments, colors, accents) increases authenticity score by 60%",
+      "participating_brains": ["visual_brain", "audio_brain", "voice_brain"],
+      "evidence_strength": "strong",
+      "cultural_elements": ["dhol", "harmonium", "saffron_colors", "Majhi_accent"]
+    }
+  ]
+}

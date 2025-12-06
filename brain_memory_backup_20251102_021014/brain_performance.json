@@ -1,0 +1,48 @@
+{
+  "visual_brain": {
+    "tasks_completed": 32,
+    "success_rate": 1.0,
+    "avg_processing_time": 0.00033900141716003423,
+    "specialties": {
+      "color_selection": 0.0,
+      "behavior_detection": 0.0,
+      "emotion_analysis": 0.9656631617970748
+    },
+    "reliability_score": 0.9999904227256775
+  },
+  "audio_brain": {
+    "tasks_completed": 32,
+    "success_rate": 1.0,
+    "avg_processing_time": 0.00026907771825790405,
+    "specialties": {
+      "music_selection": 0.9656631617970748,
+      "sfx_design": 0.0,
+      "ambient_mixing": 0.0
+    },
+    "reliability_score": 0.999991989135742
+  },
+  "creative_brain": {
+    "tasks_completed": 0,
+    "success_rate": 0.0,
+    "avg_processing_time": 0.0,
+    "specialties": {
+      "camera_movement": 0.0,
+      "timing_calculation": 0.0,
+      "transition_design": 0.0
+    },
+    "reliability_score": 1.0
+  },
+  "voice_music_brain": {
+    "tasks_completed": 0,
+    "success_rate": 0.0,
+    "avg_processing_time": 0.0,
+    "specialties": {
+      "dialogue_synthesis": 0.0,
+      "music_composition": 0.0,
+      "kirtan_design": 0.0,
+      "voice_modulation": 0.0
+    },
+    "reliability_score": 1.0
+  },
+  "last_updated": "2025-11-02T01:54:26.194429"
+}

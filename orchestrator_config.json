@@ -1,0 +1,35 @@
+{
+  "max_training_videos": 100,
+  "cleanup_threshold": 150,
+  "auto_cleanup": true,
+  "video_retention_days": 7,
+  "agents": {
+    "autonomous_learning_agent": {
+      "enabled": true,
+      "patterns": [
+        "punjabi_culture",
+        "gurbani",
+        "family"
+      ],
+      "max_videos_per_session": 20
+    },
+    "data_collection_agent": {
+      "enabled": true,
+      "patterns": [
+        "user_stories",
+        "feedback"
+      ],
+      "max_videos_per_session": 10
+    }
+  },
+  "rahbar_ai": {
+    "enabled": true,
+    "check_interval_hours": 6
+  },
+  "data_sources": {
+    "brain_files": true,
+    "gurbani_data": true,
+    "photos_library": true,
+    "audio_library": true
+  }
+}

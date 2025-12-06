@@ -1,0 +1,46 @@
+{
+  "analysis": {
+    "timestamp": "2025-12-04T16:38:28.251038",
+    "total_photos": 7948,
+    "albums": [
+      "Tick tok photo",
+      "Video Saver",
+      "TikTok",
+      "\u0a15\u0a30\u0a4b\u0a28\u0a3e \u0a35\u0a3e\u0a07\u0a30\u0a38",
+      "WhatsApp",
+      "Favourite doc",
+      "WhatsApp",
+      "WhatsApp",
+      "\u0a17\u0a41\u0a30",
+      "Twitter",
+      "WhatsApp",
+      "Dropbox",
+      "Gur love",
+      "Instagram",
+      "PSExpress",
+      "WhatsApp",
+      "Downloaded",
+      "KineMaster",
+      "WhatsApp",
+      "Downloaded"
+    ],
+    "can_access": true
+  },
+  "exported_locations": {
+    "/Users/gurpreetdhillon/Desktop/Nam-toon-studio/images": 1,
+    "/Users/gurpreetdhillon/Downloads": 3,
+    "/Users/gurpreetdhillon/Desktop": 12
+  },
+  "recommendations": {
+    "export_albums": [
+      "Punjab Culture",
+      "Punjabi People",
+      "Family"
+    ],
+    "use_for": [
+      "character_training",
+      "background_generation",
+      "style_transfer"
+    ]
+  }
+}

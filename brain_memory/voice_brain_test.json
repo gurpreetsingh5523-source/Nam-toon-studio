@@ -1,0 +1,77 @@
+{
+  "brain": "voice",
+  "results": [
+    {
+      "scene_id": 0,
+      "character": "ਰਚਨਾ",
+      "text_length": 160,
+      "voice_pitch": 0.82,
+      "voice_speed": 0.92,
+      "estimated_duration": 18.0,
+      "brain_reasoning": "Character 'ਰਚਨਾ' → pitch=0.82"
+    },
+    {
+      "scene_id": 1,
+      "character": "ਰਚਨਾ",
+      "text_length": 112,
+      "voice_pitch": 0.82,
+      "voice_speed": 0.92,
+      "estimated_duration": 12.5,
+      "brain_reasoning": "Character 'ਰਚਨਾ' → pitch=0.82"
+    },
+    {
+      "scene_id": 2,
+      "character": "ਰਚਨਾ",
+      "text_length": 146,
+      "voice_pitch": 0.82,
+      "voice_speed": 0.92,
+      "estimated_duration": 16.0,
+      "brain_reasoning": "Character 'ਰਚਨਾ' → pitch=0.82"
+    },
+    {
+      "scene_id": 3,
+      "character": "ਰਚਨਾ",
+      "text_length": 125,
+      "voice_pitch": 0.82,
+      "voice_speed": 0.92,
+      "estimated_duration": 12.5,
+      "brain_reasoning": "Character 'ਰਚਨਾ' → pitch=0.82"
+    },
+    {
+      "scene_id": 4,
+      "character": "ਰਚਨਾ",
+      "text_length": 116,
+      "voice_pitch": 0.82,
+      "voice_speed": 0.92,
+      "estimated_duration": 11.5,
+      "brain_reasoning": "Character 'ਰਚਨਾ' → pitch=0.82"
+    },
+    {
+      "scene_id": 5,
+      "character": "ਰਚਨਾ",
+      "text_length": 131,
+      "voice_pitch": 0.82,
+      "voice_speed": 0.92,
+      "estimated_duration": 13.5,
+      "brain_reasoning": "Character 'ਰਚਨਾ' → pitch=0.82"
+    },
+    {
+      "scene_id": 6,
+      "character": "ਰਚਨਾ",
+      "text_length": 127,
+      "voice_pitch": 0.82,
+      "voice_speed": 0.92,
+      "estimated_duration": 14.0,
+      "brain_reasoning": "Character 'ਰਚਨਾ' → pitch=0.82"
+    },
+    {
+      "scene_id": 7,
+      "character": "ਰਚਨਾ",
+      "text_length": 174,
+      "voice_pitch": 0.82,
+      "voice_speed": 0.92,
+      "estimated_duration": 19.0,
+      "brain_reasoning": "Character 'ਰਚਨਾ' → pitch=0.82"
+    }
+  ]
+}

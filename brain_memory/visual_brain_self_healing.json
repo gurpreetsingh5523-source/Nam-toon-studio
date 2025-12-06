@@ -1,0 +1,19 @@
+{
+  "diagnostics": [
+    "Check center region std deviation",
+    "Verify portrait visibility",
+    "Check avatar generation",
+    "Measure visual variance"
+  ],
+  "fixes": [
+    "Increase portrait size",
+    "Adjust opacity/alpha",
+    "Regenerate avatars with higher contrast",
+    "Modify positioning"
+  ],
+  "verification": [
+    "Re-check std deviation > 40",
+    "Visual inspection at key frames",
+    "Confirm portraits visible"
+  ]
+}

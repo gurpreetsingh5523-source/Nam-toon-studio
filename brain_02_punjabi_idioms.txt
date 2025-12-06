@@ -1,0 +1,544 @@
+🧠 BRAIN 2: ਪੰਜਾਬੀ ਭਾਸ਼ਾ - ਮੁਹਾਵਰੇ ਅਤੇ ਕਹਾਵਤਾਂ
+Training Dataset: 100 Common Punjabi Idioms and Proverbs
+===================================================================
+
+SECTION 1: ਰੋਜ਼ਾਨਾ ਵਰਤੋਂ ਦੇ ਮੁਹਾਵਰੇ (Daily Use Idioms)
+-------------------------------------------------------------------
+
+1. ਅੱਖਾਂ ਵਿੱਚ ਧੂੜ ਪਾਉਣੀ
+   Meaning: ਧੋਖਾ ਦੇਣਾ
+   English: To deceive someone
+   Usage: "ਉਹ ਮੈਨੂੰ ਅੱਖਾਂ ਵਿੱਚ ਧੂੜ ਪਾ ਕੇ ਚਲਾ ਗਿਆ"
+
+2. ਕੰਨਾਂ ਵਿੱਚ ਤੇਲ ਪਾਉਣਾ
+   Meaning: ਕਿਸੇ ਗੱਲ ਵੱਲ ਧਿਆਨ ਨਾ ਦੇਣਾ
+   English: To ignore deliberately
+   Usage: "ਤੁਸੀਂ ਕੰਨਾਂ ਵਿੱਚ ਤੇਲ ਪਾ ਕੇ ਬੈਠੇ ਹੋ?"
+
+3. ਨੱਕ ਦਾ ਵਾਲ ਹੋਣਾ
+   Meaning: ਬਹੁਤ ਨਜ਼ਦੀਕੀ ਹੋਣਾ
+   English: To be very close friend
+   Usage: "ਓਹ ਦੋਵੇਂ ਨੱਕ ਦੇ ਵਾਲ ਨੇ"
+
+4. ਮੂੰਹ ਵਿੱਚ ਪਾਣੀ ਆਉਣਾ
+   Meaning: ਭੁੱਖ ਲੱਗਣੀ, ਲਾਲਚ ਆਉਣਾ
+   English: To make mouth water
+   Usage: "ਉਸ ਖਾਣੇ ਦੀ ਮਹਿਕ ਤੋਂ ਮੂੰਹ ਵਿੱਚ ਪਾਣੀ ਆ ਗਿਆ"
+
+5. ਹੱਥ ਤੰਗ ਹੋਣਾ
+   Meaning: ਪੈਸੇ ਦੀ ਕਮੀ ਹੋਣੀ
+   English: To be short of money
+   Usage: "ਮਹੀਨੇ ਦੇ ਅੰਤ ਵਿੱਚ ਹੱਥ ਤੰਗ ਹੋ ਜਾਂਦੇ ਨੇ"
+
+6. ਦਿਲ ਟੁੱਟਣਾ
+   Meaning: ਉਦਾਸ ਹੋਣਾ
+   English: To be heartbroken
+   Usage: "ਉਸਦੀ ਗੱਲ ਸੁਣ ਕੇ ਮੇਰਾ ਦਿਲ ਟੁੱਟ ਗਿਆ"
+
+7. ਪੈਰਾਂ ਵਿੱਚ ਆਉਣਾ
+   Meaning: ਮਿਲਣ ਆਉਣਾ, ਦਰਸ਼ਨ ਕਰਨੇ
+   English: To visit respectfully
+   Usage: "ਬਾਬਾ ਜੀ, ਮੈਂ ਤੁਹਾਡੇ ਪੈਰਾਂ ਵਿੱਚ ਆਇਆ ਹਾਂ"
+
+8. ਸਿਰ ਤੋਂ ਪੈਰਾਂ ਤੱਕ
+   Meaning: ਪੂਰੀ ਤਰ੍ਹਾਂ
+   English: From head to toe, completely
+   Usage: "ਉਹ ਸਿਰ ਤੋਂ ਪੈਰਾਂ ਤੱਕ ਭਿੱਜ ਗਿਆ"
+
+9. ਦਾਲ ਵਿੱਚ ਕੁਝ ਕਾਲਾ ਹੋਣਾ
+   Meaning: ਕੋਈ ਰਾਜ਼ ਜਾਂ ਸ਼ੱਕ ਹੋਣਾ
+   English: Something fishy
+   Usage: "ਮੈਨੂੰ ਲੱਗਦਾ ਹੈ ਦਾਲ ਵਿੱਚ ਕੁਝ ਕਾਲਾ ਹੈ"
+
+10. ਚਾਰ ਚੰਦ ਲਗਾਉਣੇ
+    Meaning: ਸ਼ੋਭਾ ਵਧਾਉਣੀ
+    English: To enhance beauty
+    Usage: "ਤੁਹਾਡੀ ਹਾਜ਼ਰੀ ਨੇ ਮਹਿਫ਼ਲ ਨੂੰ ਚਾਰ ਚੰਦ ਲਾ ਦਿੱਤੇ"
+
+SECTION 2: ਪੰਜਾਬੀ ਕਹਾਵਤਾਂ (Punjabi Proverbs)
+-------------------------------------------------------------------
+
+11. ਜਿਹੜਾ ਬੀਜੇ ਸੋ ਵੱਢੇ
+    Meaning: ਜੋ ਕਰਨੀ ਕਰੋਗੇ ਓਹੀ ਮਿਲੇਗਾ
+    English: As you sow, so shall you reap
+    Usage: "ਜੀਵਨ ਵਿੱਚ ਜਿਹੜਾ ਬੀਜੇ ਸੋ ਵੱਢੇ"
+
+12. ਅੱਗ ਲੱਗਣ ਤੇ ਕੂਹ ਖੋਦਣਾ
+    Meaning: ਸਮੇਂ ਸਿਰ ਤਿਆਰੀ ਨਾ ਹੋਣੀ
+    English: Too late to prepare
+    Usage: "ਹੁਣ ਅੱਗ ਲੱਗਣ ਤੇ ਕੂਹ ਖੋਦਣਾ ਕੀ ਫਾਇਦਾ?"
+
+13. ਘਰ ਦੀ ਮੁਰਗੀ ਦਾਲ ਬਰਾਬਰ
+    Meaning: ਘਰ ਦੀ ਚੀਜ਼ ਦੀ ਕਦਰ ਨਹੀਂ
+    English: Familiarity breeds contempt
+    Usage: "ਤੁਸੀਂ ਤਾਂ ਘਰ ਦੀ ਮੁਰਗੀ ਦਾਲ ਬਰਾਬਰ ਸਮਝਦੇ ਹੋ"
+
+14. ਚੋਰ ਦੀ ਦਾੜ੍ਹੀ ਵਿੱਚ ਤਿੰਕਾ
+    Meaning: ਦੋਸ਼ੀ ਆਪ ਡਰਦਾ ਹੈ
+    English: Guilty conscience
+    Usage: "ਓਹ ਡਰਦਾ ਕਿਉਂ ਹੈ? ਚੋਰ ਦੀ ਦਾੜ੍ਹੀ ਵਿੱਚ ਤਿੰਕਾ ਹੈ"
+
+15. ਦੁੱਧ ਦਾ ਜਲਿਆ ਛਾਛ ਵੀ ਫੂਕ ਫੂਕ ਕੇ ਪੀਂਦਾ
+    Meaning: ਇੱਕ ਵਾਰ ਧੋਖਾ ਖਾਣ ਤੋਂ ਬਾਅਦ ਸਾਵਧਾਨ ਰਹਿਣਾ
+    English: Once bitten, twice shy
+    Usage: "ਮੈਂ ਹੁਣ ਸੰਭਲ ਕੇ - ਦੁੱਧ ਦਾ ਜਲਿਆ ਛਾਛ ਵੀ ਫੂਕ ਫੂਕ ਕੇ ਪੀਂਦਾ"
+
+16. ਜੋਗੀ ਜੁੱਤੇ ਦੇ ਲੇ ਰਹਿ ਗਏ
+    Meaning: ਬੁਰੀ ਤਰ੍ਹਾਂ ਹਾਰਨਾ
+    English: To lose badly
+    Usage: "ਮੈਚ ਵਿੱਚ ਸਾਡੀ ਟੀਮ ਜੋਗੀ ਜੁੱਤੇ ਦੇ ਲੇ ਰਹੀ ਗਈ"
+
+17. ਬੰਦਰ ਕੀ ਜਾਣੇ ਅਦਰਕ ਦਾ ਸਵਾਦ
+    Meaning: ਮੂਰਖ ਕੀ ਜਾਣੇ
+    English: Ignorant person can't appreciate
+    Usage: "ਉਸਨੂੰ ਕਲਾ ਦਾ ਕੀ ਪਤਾ - ਬੰਦਰ ਕੀ ਜਾਣੇ ਅਦਰਕ ਦਾ ਸਵਾਦ"
+
+18. ਖਾਲੀ ਕੰਡਾ ਖੂਬ ਬੱਜੇ
+    Meaning: ਨਿਰਾ ਅਧੂਰਾ ਵਿਅਕਤੀ ਵੱਧ ਬੋਲਦਾ
+    English: Empty vessels make more noise
+    Usage: "ਉਹ ਬਹੁਤ ਬੋਲਦਾ ਹੈ - ਖਾਲੀ ਕੰਡਾ ਖੂਬ ਬੱਜੇ"
+
+19. ਅੰਨੇ ਨੂੰ ਅੰਧੇਰੇ ਵਿੱਚ ਦੂਰ ਦੀ ਸੂਝੀ
+    Meaning: ਗਲਤ ਵਿਅਕਤੀ ਨੂੰ ਗਲਤ ਵੇਲੇ ਸਮਝ ਆਉਣੀ
+    English: Wrong understanding at wrong time
+    Usage: "ਹੁਣ ਸਮਝ ਆਈ? ਅੰਨੇ ਨੂੰ ਅੰਧੇਰੇ ਵਿੱਚ ਦੂਰ ਦੀ ਸੂਝੀ"
+
+20. ਸੱਪ ਵੀ ਮਰ ਜਾਵੇ ਤੇ ਲਾਠੀ ਵੀ ਨਾ ਟੁੱਟੇ
+    Meaning: ਬਿਨਾਂ ਨੁਕਸਾਨ ਕੰਮ ਪੂਰਾ ਕਰਨਾ
+    English: To solve problem without loss
+    Usage: "ਐਸਾ ਹੱਲ ਚਾਹੀਦਾ ਹੈ ਕਿ ਸੱਪ ਵੀ ਮਰ ਜਾਵੇ ਤੇ ਲਾਠੀ ਵੀ ਨਾ ਟੁੱਟੇ"
+
+SECTION 3: ਰਿਸ਼ਤਿਆਂ ਬਾਰੇ ਮੁਹਾਵਰੇ (Relationship Idioms)
+-------------------------------------------------------------------
+
+21. ਖੂਨ ਪਾਣੀ ਨਾਲੋਂ ਸੰਘਣਾ
+    Meaning: ਖੂਨ ਦਾ ਰਿਸ਼ਤਾ ਮਜ਼ਬੂਤ
+    English: Blood is thicker than water
+    Usage: "ਆਖਿਰ ਖੂਨ ਪਾਣੀ ਨਾਲੋਂ ਸੰਘਣਾ ਹੁੰਦਾ ਹੈ"
+
+22. ਦਿਲ ਦਾ ਧਨੀ ਹੋਣਾ
+    Meaning: ਬਹੁਤ ਪਿਆਰਾ ਹੋਣਾ
+    English: To be beloved
+    Usage: "ਤੁਸੀਂ ਮੇਰੇ ਦਿਲ ਦੇ ਧਨੀ ਹੋ"
+
+23. ਸਾਕ ਸੱਜਣ ਹੋਣੇ
+    Meaning: ਨਜ਼ਦੀਕੀ ਰਿਸ਼ਤੇਦਾਰ
+    English: Close relatives
+    Usage: "ਓਹ ਸਾਡੇ ਸਾਕ ਸੱਜਣ ਨੇ"
+
+24. ਮਾਂ ਬਾਪ ਦੀ ਸੇਵਾ
+    Meaning: ਮਾਤਾ ਪਿਤਾ ਦੀ ਦੇਖਭਾਲ
+    English: To serve parents
+    Usage: "ਮਾਂ ਬਾਪ ਦੀ ਸੇਵਾ ਵੱਡੀ ਪੂਜਾ ਹੈ"
+
+25. ਭਰਾਵਾਂ ਦੀ ਸਾਂਝ
+    Meaning: ਭਾਈਚਾਰਾ
+    English: Brotherhood
+    Usage: "ਭਰਾਵਾਂ ਦੀ ਸਾਂਝ ਕਾਇਮ ਰਹਣੀ ਚਾਹੀਦੀ ਹੈ"
+
+26. ਘਰ ਦਾ ਚਿਰਾਗ
+    Meaning: ਘਰ ਦੀ ਰੌਣਕ, ਸ਼ਾਨ
+    English: Pride of the family
+    Usage: "ਤੁਸੀਂ ਸਾਡੇ ਘਰ ਦਾ ਚਿਰਾਗ ਹੋ"
+
+27. ਪਿਤਾ ਪਰਮੇਸ਼ੁਰ
+    Meaning: ਪਿਤਾ ਜੀ ਸਾਰੀ ਸ਼ਕਤੀ ਦੇ ਮਾਲਕ
+    English: Father is like God
+    Usage: "ਮੇਰੇ ਲਈ ਤਾਂ ਪਿਤਾ ਪਰਮੇਸ਼ੁਰ ਨੇ"
+
+28. ਮਾਂ ਦਾ ਦਿਲ
+    Meaning: ਬਹੁਤ ਨਿਮ੍ਰ ਅਤੇ ਪਿਆਰ ਵਾਲਾ
+    English: Motherly heart
+    Usage: "ਤੁਹਾਡੇ ਵਿੱਚ ਮਾਂ ਦਾ ਦਿਲ ਹੈ"
+
+29. ਧੀਆਂ ਘਰ ਦੀ ਲੱਜ
+    Meaning: ਧੀਆਂ ਇੱਜ਼ਤ ਹਨ
+    English: Daughters are honor
+    Usage: "ਧੀਆਂ ਘਰ ਦੀ ਲੱਜ ਹੁੰਦੀਆਂ ਨੇ"
+
+30. ਪੁੱਤਰ ਬੁਢਾਪੇ ਦੀ ਲਾਠੀ
+    Meaning: ਪੁੱਤਰ ਸਹਾਰਾ ਹੈ
+    English: Son is support in old age
+    Usage: "ਪੁੱਤਰ ਬੁਢਾਪੇ ਦੀ ਲਾਠੀ ਹੁੰਦਾ ਹੈ"
+
+SECTION 4: ਕੰਮ ਅਤੇ ਮਿਹਨਤ (Work & Labor)
+-------------------------------------------------------------------
+
+31. ਮਿਹਨਤ ਦਾ ਫਲ ਮਿੱਠਾ
+    Meaning: ਮਿਹਨਤ ਸਫਲ ਹੁੰਦੀ ਹੈ
+    English: Hard work pays off
+    Usage: "ਮਿਹਨਤ ਦਾ ਫਲ ਮਿੱਠਾ ਹੁੰਦਾ ਹੈ"
+
+32. ਕੰਮ ਕਰਾਂਗਾ ਖਾਵਾਂਗਾ
+    Meaning: ਮਿਹਨਤ ਕਰਕੇ ਖਾਣਾ
+    English: Earn by working
+    Usage: "ਮੈਂ ਕੰਮ ਕਰਾਂਗਾ ਖਾਵਾਂਗਾ, ਕਿਸੇ ਦਾ ਏਹਸਾਨ ਨਹੀਂ ਲਵਾਂਗਾ"
+
+33. ਹੱਥ ਪੈਰ ਮਾਰਨੇ
+    Meaning: ਕੋਸ਼ਿਸ਼ ਕਰਨੀ
+    English: To make efforts
+    Usage: "ਉਹ ਬਹੁਤ ਹੱਥ ਪੈਰ ਮਾਰਦਾ ਹੈ"
+
+34. ਦਿਨ ਰਾਤ ਇੱਕ ਕਰਨਾ
+    Meaning: ਬਹੁਤ ਮਿਹਨਤ ਕਰਨੀ
+    English: To work day and night
+    Usage: "ਮੈਂ ਦਿਨ ਰਾਤ ਇੱਕ ਕਰ ਦਿੱਤਾ"
+
+35. ਪਸੀਨਾ ਵਗਾਉਣਾ
+    Meaning: ਸਖ਼ਤ ਮਿਹਨਤ ਕਰਨੀ
+    English: To sweat it out
+    Usage: "ਉਸਨੇ ਬਹੁਤ ਪਸੀਨਾ ਵਗਾਇਆ"
+
+36. ਲੋਹਾ ਗਰਮ ਹੋਣ ਤੇ ਹੱਥ ਮਾਰਨਾ
+    Meaning: ਸਹੀ ਸਮੇਂ 'ਤੇ ਕੰਮ ਕਰਨਾ
+    English: Strike while the iron is hot
+    Usage: "ਲੋਹਾ ਗਰਮ ਹੋਣ ਤੇ ਹੱਥ ਮਾਰੋ"
+
+37. ਕੰਮ ਮੁੱਢ ਲਾਉਣਾ
+    Meaning: ਕੰਮ ਸ਼ੁਰੂ ਕਰਨਾ
+    English: To start work
+    Usage: "ਆਓ ਕੰਮ ਮੁੱਢ ਲਾਈਏ"
+
+38. ਗੱਡੀ ਵਿੱਚ ਤੇਲ ਭਰਨਾ
+    Meaning: ਤਿਆਰੀ ਕਰਨੀ
+    English: To prepare/fuel up
+    Usage: "ਪਹਿਲੇ ਗੱਡੀ ਵਿੱਚ ਤੇਲ ਭਰੋ ਫਿਰ ਸਫ਼ਰ ਕਰਾਂਗੇ"
+
+39. ਕਮਰ ਕੱਸਣੀ
+    Meaning: ਤਿਆਰ ਹੋਣਾ
+    English: To prepare/gear up
+    Usage: "ਹੁਣ ਕਮਰ ਕੱਸੋ ਅਤੇ ਕੰਮ ਕਰੋ"
+
+40. ਕੰਮ ਤਮਾਮ ਕਰਨਾ
+    Meaning: ਕੰਮ ਪੂਰਾ ਕਰਨਾ
+    English: To complete work
+    Usage: "ਮੈਂ ਇਹ ਕੰਮ ਅੱਜ ਤਮਾਮ ਕਰ ਦਿਆਂਗਾ"
+
+SECTION 5: ਭਾਵਨਾਵਾਂ (Emotions)
+-------------------------------------------------------------------
+
+41. ਦਿਲ ਖੁੱਲ੍ਹ ਜਾਣਾ
+    Meaning: ਖੁਸ਼ੀ ਮਹਿਸੂਸ ਕਰਨੀ
+    English: To feel happy/relieved
+    Usage: "ਤੁਹਾਨੂੰ ਦੇਖ ਕੇ ਮੇਰਾ ਦਿਲ ਖੁੱਲ੍ਹ ਗਿਆ"
+
+42. ਦਿਲ ਭਰ ਆਉਣਾ
+    Meaning: ਉਦਾਸ ਹੋਣਾ
+    English: To feel sad
+    Usage: "ਇਹ ਗੱਲ ਸੁਣ ਕੇ ਦਿਲ ਭਰ ਆਇਆ"
+
+43. ਖੁਸ਼ੀ ਦੇ ਮਾਰੇ ਫੁੱਲੇ ਨਾ ਸਮਾਉਣਾ
+    Meaning: ਬਹੁਤ ਖੁਸ਼ ਹੋਣਾ
+    English: Over the moon
+    Usage: "ਉਹ ਖੁਸ਼ੀ ਦੇ ਮਾਰੇ ਫੁੱਲੇ ਨਹੀਂ ਸਮਾ ਰਿਹਾ"
+
+44. ਦੁੱਖ ਵੰਡਣੇ
+    Meaning: ਹਮਦਰਦੀ ਕਰਨੀ
+    English: To share sorrows
+    Usage: "ਸੱਚੇ ਮਿੱਤਰ ਦੁੱਖ ਵੰਡਦੇ ਨੇ"
+
+45. ਗੁੱਸੇ ਵਿੱਚ ਲਾਲ ਹੋਣਾ
+    Meaning: ਬਹੁਤ ਗੁੱਸਾ ਹੋਣਾ
+    English: To be red with anger
+    Usage: "ਉਹ ਗੁੱਸੇ ਵਿੱਚ ਲਾਲ ਹੋ ਗਿਆ"
+
+46. ਮਨ ਮੋਹ ਲੈਣਾ
+    Meaning: ਦਿਲ ਜਿੱਤਣਾ
+    English: To win heart
+    Usage: "ਤੁਹਾਡੇ ਬੋਲ ਨੇ ਮੇਰਾ ਮਨ ਮੋਹ ਲਿਆ"
+
+47. ਡਰ ਦੇ ਮਾਰੇ ਕੰਬਣਾ
+    Meaning: ਡਰਨਾ
+    English: To tremble with fear
+    Usage: "ਉਹ ਡਰ ਦੇ ਮਾਰੇ ਕੰਬ ਰਿਹਾ ਸੀ"
+
+48. ਪਿਆਰ ਨਾਲ ਵਗਣਾ
+    Meaning: ਬਹੁਤ ਪਿਆਰ ਕਰਨਾ
+    English: To overflow with love
+    Usage: "ਮੇਰਾ ਦਿਲ ਤੁਹਾਡੇ ਲਈ ਪਿਆਰ ਨਾਲ ਵਗਦਾ ਹੈ"
+
+49. ਆਸਾਂ ਟੁੱਟਣੀਆਂ
+    Meaning: ਉਮੀਦ ਖਤਮ ਹੋਣੀ
+    English: To lose hope
+    Usage: "ਮੇਰੀਆਂ ਸਾਰੀਆਂ ਆਸਾਂ ਟੁੱਟ ਗਈਆਂ"
+
+50. ਚਿੰਤਾ ਵਿੱਚ ਡੁੱਬਣਾ
+    Meaning: ਫਿਕਰਮੰਦ ਹੋਣਾ
+    English: To be worried
+    Usage: "ਤੁਸੀਂ ਚਿੰਤਾ ਵਿੱਚ ਡੁੱਬੇ ਹੋਏ ਲੱਗਦੇ ਹੋ"
+
+SECTION 6: ਖਾਣਾ ਪੀਣਾ (Food & Drink)
+-------------------------------------------------------------------
+
+51. ਮੂੰਹ ਮਿੱਠਾ ਕਰਨਾ
+    Meaning: ਮਿਠਾਈ ਖਾਣੀ
+    English: To have sweets
+    Usage: "ਚਲੋ ਮੂੰਹ ਮਿੱਠਾ ਕਰੀਏ"
+
+52. ਪੇਟ ਭਰਨਾ
+    Meaning: ਖਾਣਾ ਖਾਣਾ
+    English: To fill stomach
+    Usage: "ਪਹਿਲੇ ਪੇਟ ਭਰ ਲਵੋ"
+
+53. ਲੱਜਾ ਦੇ ਮਾਰੇ ਰੋਟੀ ਖਾਣੀ
+    Meaning: ਮਜ਼ਬੂਰੀ ਵਿੱਚ ਗੁਜ਼ਾਰਾ ਕਰਨਾ
+    English: To earn living reluctantly
+    Usage: "ਮੈਂ ਲੱਜਾ ਦੇ ਮਾਰੇ ਰੋਟੀ ਨਹੀਂ ਖਾਂਦਾ"
+
+54. ਦਾਲ ਰੋਟੀ ਦਾ ਜੁਗਾੜ
+    Meaning: ਰੋਜ਼ੀ ਰੋਟੀ
+    English: Daily bread
+    Usage: "ਦਾਲ ਰੋਟੀ ਦਾ ਜੁਗਾੜ ਕਰਨਾ ਪੈਂਦਾ ਹੈ"
+
+55. ਪੇਟ ਵਿੱਚ ਚੂਹੇ ਦੌੜਨੇ
+    Meaning: ਭੁੱਖ ਲੱਗਣੀ
+    English: To be very hungry
+    Usage: "ਮੇਰੇ ਪੇਟ ਵਿੱਚ ਚੂਹੇ ਦੌੜ ਰਹੇ ਨੇ"
+
+56. ਲੱਸੀ ਪੀ ਕੇ ਫੁੱਲਣਾ
+    Meaning: ਮੌਜ ਮਾਣਨੀ
+    English: To enjoy life
+    Usage: "ਉਹ ਲੱਸੀ ਪੀ ਕੇ ਫੁੱਲ ਰਿਹਾ ਹੈ"
+
+57. ਤੰਦੂਰੀ ਰੋਟੀ ਦੀ ਮਹਿਕ
+    Meaning: ਸੁਆਦ ਯਾਦ ਆਉਣਾ
+    English: Nostalgic smell
+    Usage: "ਤੰਦੂਰੀ ਰੋਟੀ ਦੀ ਮਹਿਕ ਯਾਦ ਆ ਗਈ"
+
+58. ਪਿੰਡ ਦਾ ਘਿਓ
+    Meaning: ਸ਼ੁੱਧ ਅਤੇ ਅਸਲੀ
+    English: Pure and authentic
+    Usage: "ਇਹ ਪਿੰਡ ਦਾ ਘਿਓ ਹੈ"
+
+59. ਮੱਖਣ ਲਾਉਣਾ
+    Meaning: ਚਾਪਲੂਸੀ ਕਰਨੀ
+    English: To butter up
+    Usage: "ਉਹ ਬੌਸ ਨੂੰ ਮੱਖਣ ਲਾ ਰਿਹਾ ਹੈ"
+
+60. ਗੁੜ ਦੀ ਡਲੀ
+    Meaning: ਮਿੱਠਾ ਬੋਲਣ ਵਾਲਾ
+    English: Sweet talker
+    Usage: "ਤੁਸੀਂ ਤਾਂ ਗੁੜ ਦੀ ਡਲੀ ਹੋ"
+
+SECTION 7: ਮੌਸਮ ਅਤੇ ਕੁਦਰਤ (Weather & Nature)
+-------------------------------------------------------------------
+
+61. ਸੂਰਜ ਚੜ੍ਹਨਾ
+    Meaning: ਦਿਨ ਚੜ੍ਹਨਾ, ਖੁਸ਼ਹਾਲੀ ਆਉਣੀ
+    English: Sun rises, prosperity comes
+    Usage: "ਤੁਹਾਡੇ ਜੀਵਨ ਵਿੱਚ ਸੂਰਜ ਚੜ੍ਹੇਗਾ"
+
+62. ਬੱਦਲ ਛਾਉਣੇ
+    Meaning: ਮੁਸੀਬਤ ਆਉਣੀ
+    English: Clouds gather, trouble comes
+    Usage: "ਸਾਡੇ ਉੱਤੇ ਬੱਦਲ ਛਾ ਗਏ"
+
+63. ਮੀਂਹ ਵਿੱਚ ਭਿੱਜਣਾ
+    Meaning: ਮੁਸੀਬਤ ਝੱਲਣੀ
+    English: To face hardship
+    Usage: "ਮੈਂ ਮੀਂਹ ਵਿੱਚ ਭਿੱਜਿਆ ਪਰ ਹਾਰ ਨਹੀਂ ਮੰਨੀ"
+
+64. ਬਰਫ਼ ਪਿਘਲਣੀ
+    Meaning: ਗੁੱਸਾ ਠੰਡਾ ਹੋਣਾ
+    English: Anger melts
+    Usage: "ਉਸਦਾ ਗੁੱਸਾ ਬਰਫ਼ ਵਾਂਗ ਪਿਘਲ ਗਿਆ"
+
+65. ਹਵਾ ਲੱਗਣੀ
+    Meaning: ਅਸਰ ਹੋਣਾ
+    English: To be influenced
+    Usage: "ਉਸਨੂੰ ਬੁਰੀ ਹਵਾ ਲੱਗ ਗਈ"
+
+66. ਧਰਤੀ ਮਾਤਾ
+    Meaning: ਧਰਤੀ ਮਾਂ ਵਰਗੀ
+    English: Mother Earth
+    Usage: "ਧਰਤੀ ਮਾਤਾ ਸਾਨੂੰ ਸਭ ਕੁਝ ਦਿੰਦੀ ਹੈ"
+
+67. ਤਾਰੇ ਗਿਣਨੇ
+    Meaning: ਉਡੀਕ ਕਰਨੀ
+    English: To wait desperately
+    Usage: "ਮੈਂ ਤੁਹਾਡੇ ਲਈ ਤਾਰੇ ਗਿਣਦਾ ਰਿਹਾ"
+
+68. ਚੰਨ ਵਰਗਾ ਮੂੰਹ
+    Meaning: ਸੁੰਦਰ ਚਿਹਰਾ
+    English: Moon-like face
+    Usage: "ਤੇਰਾ ਚੰਨ ਵਰਗਾ ਮੂੰਹ"
+
+69. ਫੁੱਲਾਂ ਵਾਂਗ ਖਿੜਨਾ
+    Meaning: ਖੁਸ਼ ਹੋਣਾ
+    English: To bloom like flowers
+    Usage: "ਤੁਸੀਂ ਫੁੱਲਾਂ ਵਾਂਗ ਖਿੜੇ ਹੋਏ ਹੋ"
+
+70. ਰੁੱਖ ਦੀ ਛਾਂ
+    Meaning: ਸਹਾਰਾ ਅਤੇ ਰੱਖਿਆ
+    English: Protection and support
+    Usage: "ਤੁਸੀਂ ਮੇਰੇ ਰੁੱਖ ਦੀ ਛਾਂ ਹੋ"
+
+SECTION 8: ਪੈਸੇ ਅਤੇ ਦੌਲਤ (Money & Wealth)
+-------------------------------------------------------------------
+
+71. ਪੈਸੇ ਪਾਣੀ ਵਾਂਗ ਵਹਾਉਣੇ
+    Meaning: ਬਹੁਤ ਖਰਚ ਕਰਨਾ
+    English: To spend lavishly
+    Usage: "ਉਹ ਪੈਸੇ ਪਾਣੀ ਵਾਂਗ ਵਹਾਉਂਦਾ ਹੈ"
+
+72. ਕੌੜੀ ਕੌੜੀ ਜੋੜਨੀ
+    Meaning: ਬਚਤ ਕਰਨੀ
+    English: To save penny by penny
+    Usage: "ਮੈਂ ਕੌੜੀ ਕੌੜੀ ਜੋੜ ਕੇ ਘਰ ਬਣਾਇਆ"
+
+73. ਹੱਥ ਤੇ ਹੱਥ ਰੱਖ ਕੇ ਬੈਠਣਾ
+    Meaning: ਬੇਰੋਜ਼ਗਾਰ ਹੋਣਾ
+    English: To be jobless
+    Usage: "ਹੱਥ ਤੇ ਹੱਥ ਰੱਖ ਕੇ ਨਹੀਂ ਬੈਠਣਾ"
+
+74. ਮੁਫ਼ਤ ਦੀ ਰੋਟੀ
+    Meaning: ਬਿਨਾਂ ਮਿਹਨਤ ਖਾਣਾ
+    English: Free lunch
+    Usage: "ਮੁਫ਼ਤ ਦੀ ਰੋਟੀ ਹਜ਼ਮ ਨਹੀਂ ਹੁੰਦੀ"
+
+75. ਧਨ ਦੌਲਤ
+    Meaning: ਸੰਪਤੀ
+    English: Wealth
+    Usage: "ਧਨ ਦੌਲਤ ਸਭ ਕੁਝ ਨਹੀਂ"
+
+76. ਜੇਬ ਖਾਲੀ ਹੋਣੀ
+    Meaning: ਪੈਸੇ ਖਤਮ ਹੋਣੇ
+    English: To be broke
+    Usage: "ਮੇਰੀ ਜੇਬ ਖਾਲੀ ਹੋ ਗਈ"
+
+77. ਲੱਖਾਂ ਕਮਾਉਣੇ
+    Meaning: ਬਹੁਤ ਪੈਸਾ ਕਮਾਉਣਾ
+    English: To earn lakhs
+    Usage: "ਉਹ ਲੱਖਾਂ ਕਮਾਉਂਦਾ ਹੈ"
+
+78. ਗਰੀਬੀ ਰੇਖਾ
+    Meaning: ਬਹੁਤ ਗਰੀਬ
+    English: Below poverty line
+    Usage: "ਅਸੀਂ ਗਰੀਬੀ ਰੇਖਾ ਤੋਂ ਉੱਪਰ ਆਏ"
+
+79. ਅਮੀਰ ਘਰਾਣਾ
+    Meaning: ਅਮੀਰ ਪਰਿਵਾਰ
+    English: Rich family
+    Usage: "ਉਹ ਅਮੀਰ ਘਰਾਣੇ ਤੋਂ ਹੈ"
+
+80. ਕਰਜ਼ਾ ਚੁਕਾਉਣਾ
+    Meaning: ਕਰਜ਼ਾ ਭਰਨਾ
+    English: To repay debt
+    Usage: "ਮੈਂ ਸਾਰਾ ਕਰਜ਼ਾ ਚੁਕਾ ਦਿੱਤਾ"
+
+SECTION 9: ਸਿੱਖਿਆ ਅਤੇ ਗਿਆਨ (Education & Knowledge)
+-------------------------------------------------------------------
+
+81. ਗਿਆਨ ਦੀ ਬਾਤੀ
+    Meaning: ਗਿਆਨ ਦਾ ਦੀਪਕ
+    English: Lamp of knowledge
+    Usage: "ਸਿੱਖਿਆ ਗਿਆਨ ਦੀ ਬਾਤੀ ਹੈ"
+
+82. ਪੜ੍ਹਾਈ ਵਿੱਚ ਧਿਆਨ ਦੇਣਾ
+    Meaning: ਪੜ੍ਹਾਈ ਤੇ ਧਿਆਨ ਲਗਾਉਣਾ
+    English: To focus on studies
+    Usage: "ਪੜ੍ਹਾਈ ਵਿੱਚ ਧਿਆਨ ਦਿਓ"
+
+83. ਕਿਤਾਬੀ ਕੀੜਾ
+    Meaning: ਬਹੁਤ ਪੜ੍ਹਨ ਵਾਲਾ
+    English: Bookworm
+    Usage: "ਉਹ ਕਿਤਾਬੀ ਕੀੜਾ ਹੈ"
+
+84. ਗੁਰੂ ਦੀ ਸੇਵਾ
+    Meaning: ਗੁਰੂ ਦੀ ਸਿੱਖਿਆ
+    English: Serving the teacher
+    Usage: "ਗੁਰੂ ਦੀ ਸੇਵਾ ਵਿੱਦਿਆ ਦਾ ਆਧਾਰ ਹੈ"
+
+85. ਹੁਨਰ ਸਿੱਖਣਾ
+    Meaning: ਕੌਸ਼ਲ ਸਿੱਖਣਾ
+    English: To learn skills
+    Usage: "ਹੁਨਰ ਸਿੱਖਣਾ ਜ਼ਰੂਰੀ ਹੈ"
+
+86. ਬੁੱਧੀ ਦਾ ਤੀਖਾ ਹੋਣਾ
+    Meaning: ਸਮਝਦਾਰ ਹੋਣਾ
+    English: To be intelligent
+    Usage: "ਉਹ ਬੁੱਧੀ ਦਾ ਤੀਖਾ ਹੈ"
+
+87. ਸਬਕ ਸਿੱਖਣਾ
+    Meaning: ਸਿੱਖਿਆ ਲੈਣੀ
+    English: To learn lesson
+    Usage: "ਮੈਂ ਆਪਣੀਆਂ ਗਲਤੀਆਂ ਤੋਂ ਸਬਕ ਸਿੱਖਿਆ"
+
+88. ਸੋਚ ਸਮਝ ਕੇ
+    Meaning: ਵਿਚਾਰ ਕਰਕੇ
+    English: After thinking
+    Usage: "ਸੋਚ ਸਮਝ ਕੇ ਫੈਸਲਾ ਕਰੋ"
+
+89. ਤਜਰਬਾ ਹੋਣਾ
+    Meaning: ਅਨੁਭਵ ਹੋਣਾ
+    English: To have experience
+    Usage: "ਉਸਨੂੰ ਬਹੁਤ ਤਜਰਬਾ ਹੈ"
+
+90. ਸਮਝ ਵਿੱਚ ਆਉਣਾ
+    Meaning: ਸਮਝਣਾ
+    English: To understand
+    Usage: "ਹੁਣ ਮੇਰੀ ਸਮਝ ਵਿੱਚ ਆ ਗਿਆ"
+
+SECTION 10: ਜੀਵਨ ਸਬਕ (Life Lessons)
+-------------------------------------------------------------------
+
+91. ਜੀਵਨ ਇੱਕ ਸਫ਼ਰ
+    Meaning: ਜ਼ਿੰਦਗੀ ਯਾਤਰਾ ਹੈ
+    English: Life is a journey
+    Usage: "ਜੀਵਨ ਇੱਕ ਸਫ਼ਰ ਹੈ, ਮੰਜ਼ਿਲ ਨਹੀਂ"
+
+92. ਸੱਚ ਦਾ ਸਾਥ
+    Meaning: ਸੱਚਾਈ ਦਾ ਸਾਥ ਦੇਣਾ
+    English: Stand by truth
+    Usage: "ਸੱਚ ਦਾ ਸਾਥ ਦਿਓ"
+
+93. ਸੰਘਰਸ਼ ਜ਼ਿੰਦਗੀ ਹੈ
+    Meaning: ਜੀਵਨ ਸੰਘਰਸ਼ ਹੈ
+    English: Struggle is life
+    Usage: "ਸੰਘਰਸ਼ ਜ਼ਿੰਦਗੀ ਹੈ, ਹਾਰੋ ਨਾ"
+
+94. ਉਮੀਦ ਦਾ ਦੀਵਾ
+    Meaning: ਆਸ ਦਾ ਚਾਨਣ
+    English: Light of hope
+    Usage: "ਉਮੀਦ ਦਾ ਦੀਵਾ ਜਲਾਈ ਰੱਖੋ"
+
+95. ਸਬਰ ਦਾ ਫਲ ਮਿੱਠਾ
+    Meaning: ਧੀਰਜ ਦਾ ਨਤੀਜਾ ਚੰਗਾ
+    English: Patience pays off
+    Usage: "ਸਬਰ ਦਾ ਫਲ ਮਿੱਠਾ ਹੁੰਦਾ ਹੈ"
+
+96. ਸਿਰ ਉੱਚਾ ਰੱਖਣਾ
+    Meaning: ਇੱਜ਼ਤ ਨਾਲ ਜੀਣਾ
+    English: To live with dignity
+    Usage: "ਹਮੇਸ਼ਾ ਸਿਰ ਉੱਚਾ ਰੱਖੋ"
+
+97. ਖੁਦ ਤੇ ਭਰੋਸਾ
+    Meaning: ਆਤਮ-ਵਿਸ਼ਵਾਸ
+    English: Self-confidence
+    Usage: "ਖੁਦ ਤੇ ਭਰੋਸਾ ਰੱਖੋ"
+
+98. ਸਿਦਕ ਨਾਲ ਕੰਮ
+    Meaning: ਇਮਾਨਦਾਰੀ ਨਾਲ ਕੰਮ
+    English: Work with honesty
+    Usage: "ਸਿਦਕ ਨਾਲ ਕੰਮ ਕਰੋ"
+
+99. ਹੌਸਲਾ ਰੱਖਣਾ
+    Meaning: ਹਿੰਮਤ ਰੱਖਣੀ
+    English: Keep courage
+    Usage: "ਹੌਸਲਾ ਰੱਖੋ, ਸਭ ਠੀਕ ਹੋਵੇਗਾ"
+
+100. ਵਾਹਿਗੁਰੂ ਮੇਹਰ ਕਰੇ
+     Meaning: ਰੱਬ ਦੀ ਕਿਰਪਾ
+     English: God's grace
+     Usage: "ਵਾਹਿਗੁਰੂ ਮੇਹਰ ਕਰੇ ਤੇ ਸਭ ਚੰਗਾ ਹੋਵੇਗਾ"
+
+===================================================================
+🎯 TRAINING OBJECTIVES:
+- Use these idioms in natural conversation
+- Respond with appropriate proverbs for life situations
+- Enhance Punjabi language authenticity
+- Connect emotionally through cultural expressions
+
+📊 INTEGRATION STATUS: Ready for Brain 2 Module
+🔄 NEXT UPDATE: 400 more idioms (reaching 500 total)
+===================================================================

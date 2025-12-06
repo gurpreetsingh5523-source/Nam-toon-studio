@@ -1,0 +1,51 @@
+{
+  "agents": [
+    "StudioAgentSecurity",
+    "StudioAgentCodegen",
+    "StudioAgent",
+    "AutonomousAgent"
+  ],
+  "status": {
+    "StudioAgentSecurity": {
+      "enabled": true,
+      "auto_fix": true,
+      "auto_update": true,
+      "evolution": true,
+      "last_run": "2025-12-02T23:48:07.231559",
+      "run_count": 1,
+      "errors_fixed": 0,
+      "upgrades": 0
+    },
+    "StudioAgentCodegen": {
+      "enabled": true,
+      "auto_fix": true,
+      "auto_update": true,
+      "evolution": true,
+      "last_run": null,
+      "run_count": 0,
+      "errors_fixed": 0,
+      "upgrades": 6
+    },
+    "StudioAgent": {
+      "enabled": true,
+      "auto_fix": true,
+      "auto_update": true,
+      "evolution": true,
+      "last_run": null,
+      "run_count": 0,
+      "errors_fixed": 0,
+      "upgrades": 0
+    },
+    "AutonomousAgent": {
+      "enabled": true,
+      "auto_fix": true,
+      "auto_update": true,
+      "evolution": true,
+      "last_run": null,
+      "run_count": 0,
+      "errors_fixed": 0,
+      "upgrades": 0
+    }
+  },
+  "last_updated": "2025-12-02T23:53:34.692267"
+}

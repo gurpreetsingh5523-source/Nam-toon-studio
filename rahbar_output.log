@@ -1,0 +1,43 @@
+
+======================================================================
+👑 RAHBAR AI SUPREME CONTROLLER
+   Complete Autonomous System Management
+   ਰਾਹਬਰ AI ਸੁਪਰੀਮ - ਸਭ ਕੁੱਝ ਆਪਣੇ ਆਪ
+======================================================================
+👑 Rahbar Supreme Controller initialized
+📂 Workspace: /Users/gurpreetdhillon/Nam-toon-studio
+
+======================================================================
+👑 RAHBAR SUPREME CONTROLLER - FULL AUTONOMOUS CYCLE
+   ਵਾਹਿਗੁਰੂ ਜੀ ਕਾ ਖਾਲਸਾ, ਵਾਹਿਗੁਰੂ ਜੀ ਕੀ ਫਤਿਹ
+======================================================================
+
+======================================================================
+🏥 SYSTEM HEALTH CHECK
+======================================================================
+
+💻 Running: Python version check
+   Command: python3 --version
+   ✅ Success!
+
+💻 Running: Check for running agents
+   Command: ps aux | grep -E 'python.*agent' | grep -v grep
+   ✅ Success!
+
+💻 Running: Disk space check
+   Command: df -h . | tail -1
+   ✅ Success!
+
+💻 Running: Check recent videos
+   Command: find . -name "training_*.mp4" -mmin -60 -type f | wc -l
+   ✅ Success!
+
+📊 Health Status: ✅ HEALTHY
+   Problems detected: 0
+
+======================================================================
+🎬 CREATING 5 VIDEOS
+======================================================================
+
+💻 Running: Create 5 training videos
+   Command: python3 simple_working_agent.py --videos 5 --delay 10

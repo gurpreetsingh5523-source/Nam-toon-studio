@@ -1,5 +1,10 @@
-Traceback (most recent call last):
-  File "/Users/gurpreetdhillon/Nam-toon-studio/colab/master_builder.py", line 6, in <module>
-    from moviepy.editor import *  # Using the simpler import style
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ModuleNotFoundError: No module named 'moviepy.editor'
+usage: master_builder.py [-h] [--dry-run] [--verbose] [--duck]
+                         [--bg-gain BG_GAIN] [--duck-factor DUCK_FACTOR]
+                         [--no-tts] [--duck-attack DUCK_ATTACK]
+                         [--duck-release DUCK_RELEASE] [--dream]
+                         [--pan-width PAN_WIDTH] [--learn] [--scenes SCENES]
+                         [--background BACKGROUND]
+                         [--characters-dir CHARACTERS_DIR]
+                         [--audio-dir AUDIO_DIR] [--record-mic]
+                         [--open-editor] [--master]
+master_builder.py: error: unrecognized arguments: --output AmritCore_COMBINED_DEMO.mp4

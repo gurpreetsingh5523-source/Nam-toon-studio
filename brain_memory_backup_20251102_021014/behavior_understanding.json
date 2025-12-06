@@ -1,0 +1,143 @@
+{
+  "patterns": {
+    "walking": {
+      "keywords": [
+        "ਚੱਲ",
+        "ਗਿਆ",
+        "ਆਇਆ",
+        "walk",
+        "went",
+        "came",
+        "going"
+      ],
+      "animation": "walking_forward",
+      "intensity": "medium",
+      "confidence": 0.0,
+      "examples": []
+    },
+    "running": {
+      "keywords": [
+        "ਭੱਜ",
+        "ਦੌੜ",
+        "run",
+        "rush",
+        "hurry"
+      ],
+      "animation": "running_fast",
+      "intensity": "high",
+      "confidence": 0.0,
+      "examples": []
+    },
+    "crying": {
+      "keywords": [
+        "ਰੋ",
+        "ਅੱਥਰੂ",
+        "cry",
+        "tears",
+        "weep",
+        "sob"
+      ],
+      "animation": "crying_gesture",
+      "intensity": "high",
+      "confidence": 0.01,
+      "examples": [
+        "ਮੈਂ ਬਹੁਤ ਦੁਖੀ ਹਾਂ, ਰੋ ਰਹੀ ਹਾਂ।"
+      ]
+    },
+    "laughing": {
+      "keywords": [
+        "ਹੱਸ",
+        "laugh",
+        "smile",
+        "grin",
+        "chuckle"
+      ],
+      "animation": "laughing_happy",
+      "intensity": "medium",
+      "confidence": 0.0,
+      "examples": []
+    },
+    "praying": {
+      "keywords": [
+        "ਪ੍ਰਾਰਥਨਾ",
+        "ਅਰਦਾਸ",
+        "pray",
+        "prayer",
+        "worship",
+        "ਅਰਦਾਸ"
+      ],
+      "animation": "prayer_hands",
+      "intensity": "calm",
+      "confidence": 0.01,
+      "examples": [
+        "ਅਸੀਂ ਪ੍ਰਾਰਥਨਾ ਕਰਦੇ ਹਾਂ, ਸ਼ਾਂਤ ਹੋ ਕੇ।"
+      ]
+    },
+    "farming": {
+      "keywords": [
+        "ਖੇਤ",
+        "ਫਸਲ",
+        "farm",
+        "field",
+        "harvest",
+        "plow"
+      ],
+      "animation": "working_field",
+      "intensity": "medium",
+      "confidence": 0.0,
+      "examples": []
+    },
+    "gesturing": {
+      "keywords": [
+        "ਇਸ਼ਾਰਾ",
+        "gesture",
+        "point",
+        "wave",
+        "signal"
+      ],
+      "animation": "hand_gesture",
+      "intensity": "low",
+      "confidence": 0.0,
+      "examples": []
+    },
+    "sitting": {
+      "keywords": [
+        "ਬੈਠ",
+        "sit",
+        "sat",
+        "seated"
+      ],
+      "animation": "sitting_still",
+      "intensity": "low",
+      "confidence": 0.0,
+      "examples": []
+    },
+    "embracing": {
+      "keywords": [
+        "ਗਲੇ",
+        "embrace",
+        "hug",
+        "hold"
+      ],
+      "animation": "hugging",
+      "intensity": "medium",
+      "confidence": 0.0,
+      "examples": []
+    },
+    "fighting": {
+      "keywords": [
+        "ਲੜ",
+        "fight",
+        "struggle",
+        "battle"
+      ],
+      "animation": "aggressive_stance",
+      "intensity": "high",
+      "confidence": 0.01,
+      "examples": [
+        "ਮੈਨੂੰ ਬਹੁਤ ਗੁੱਸਾ ਆ ਰਿਹਾ ਹੈ! ਲੜਨਾ ਪਵੇਗਾ।"
+      ]
+    }
+  },
+  "last_updated": "2025-11-02T00:32:09.901498"
+}

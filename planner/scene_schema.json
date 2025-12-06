@@ -1,0 +1,165 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RahbarStoryScene",
+  "type": "object",
+  "required": [
+    "story_id",
+    "scenes"
+  ],
+  "properties": {
+    "story_id": {
+      "type": "string",
+      "description": "Identifier for the full story or script"
+    },
+    "language": {
+      "type": "string",
+      "description": "Primary language of the story (pa, en, hi, etc.)"
+    },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "scene_id",
+          "location",
+          "mood",
+          "narration",
+          "characters"
+        ],
+        "properties": {
+          "scene_id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "title": {
+            "type": "string"
+          },
+          "location": {
+            "type": "object",
+            "required": [
+              "tag"
+            ],
+            "properties": {
+              "tag": {
+                "type": "string",
+                "description": "Environment tag (gurdwara, fields, home, city, classroom, etc.)"
+              },
+              "confidence": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "weather": {
+                "type": "string",
+                "description": "Optional weather tag (sunny, cloudy, rainy, foggy)"
+              }
+            }
+          },
+          "mood": {
+            "type": "object",
+            "required": [
+              "tag"
+            ],
+            "properties": {
+              "tag": {
+                "type": "string",
+                "description": "Mood keyword (happy, devotional, tense, sad, fun, adventurous, romantic, reflective)"
+              },
+              "confidence": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            }
+          },
+          "props": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "narration": {
+            "type": "array",
+            "description": "Ordered narration/dialogue lines for the scene",
+            "items": {
+              "type": "object",
+              "required": [
+                "speaker",
+                "text"
+              ],
+              "properties": {
+                "speaker": {
+                  "type": "string",
+                  "description": "Speaker identifier (character id or narrator)"
+                },
+                "text": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "characters": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "display_name",
+                "role",
+                "voice_id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Stable character identifier"
+                },
+                "display_name": {
+                  "type": "string"
+                },
+                "role": {
+                  "type": "string",
+                  "description": "Semantic role such as mother, kid, granthi, teacher"
+                },
+                "age_group": {
+                  "type": "string",
+                  "enum": [
+                    "child",
+                    "teen",
+                    "adult",
+                    "elder"
+                  ]
+                },
+                "gender": {
+                  "type": "string",
+                  "enum": [
+                    "male",
+                    "female",
+                    "nonbinary",
+                    "unknown"
+                  ]
+                },
+                "voice_id": {
+                  "type": "string",
+                  "description": "Voice roster identifier (e.g., female_adult_pa_01)"
+                },
+                "action": {
+                  "type": "string",
+                  "description": "Planned action tag (walk, run, cricket_bat, swim, fold_hands)"
+                },
+                "mood_override": {
+                  "type": "string",
+                  "description": "Optional per-character mood for voice acting"
+                }
+              }
+            }
+          },
+          "duration_hint": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Approximate duration in seconds for the scene"
+          }
+        }
+      }
+    }
+  }
+}

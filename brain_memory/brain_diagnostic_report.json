@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-11-03",
+  "scenes_tested": 8,
+  "results": {
+    "audio_brain": [],
+    "voice_brain": [],
+    "visual_brain": [],
+    "sfx_brain": []
+  },
+  "summary": {
+    "audio_brain": {
+      "tested_scenes": 0,
+      "status": "❌"
+    },
+    "voice_brain": {
+      "tested_scenes": 0,
+      "status": "❌"
+    },
+    "visual_brain": {
+      "tested_scenes": 0,
+      "status": "❌"
+    },
+    "sfx_brain": {
+      "tested_scenes": 0,
+      "status": "❌"
+    }
+  }
+}

@@ -8,21 +8,21 @@
     },
     "bg_loop_temp.wav": {
       "path": "audio/bg_loop_temp.wav",
-      "rms": 0.0,
-      "centroid": 0.0,
-      "duration": 6.0
+      "rms": 0.027212664484977722,
+      "centroid": 10859.327489580744,
+      "duration": 221.04997732426304
     },
     "sample_dialogue_2.wav": {
       "path": "audio/sample_dialogue_2.wav",
-      "rms": 0.17616668343544006,
-      "centroid": 436.03849523924754,
-      "duration": 2.0
+      "rms": 0.17665794491767883,
+      "centroid": 436.00149866782994,
+      "duration": 12.0
     },
     "sample_dialogue_1.wav": {
       "path": "audio/sample_dialogue_1.wav",
-      "rms": 0.17616720497608185,
-      "centroid": 374.84652527374493,
-      "duration": 2.0
+      "rms": 0.17665913701057434,
+      "centroid": 374.8303851713899,
+      "duration": 12.0
     },
     "sample_dialogue_0.wav": {
       "path": "audio/sample_dialogue_0.wav",
@@ -38,8 +38,8 @@
     },
     "birds.wav": {
       "path": "audio/birds.wav",
-      "rms": 0.0,
-      "centroid": 0.0,
+      "rms": 0.038428232073783875,
+      "centroid": 10780.114729011764,
       "duration": 4.0
     },
     "dialogue_2.wav": {
@@ -59,6 +59,342 @@
       "rms": 0.07241692394018173,
       "centroid": 2239.940990925312,
       "duration": 7.8
+    },
+    "clip_0_tmp.wav": {
+      "path": "audio/clip_0_tmp.wav",
+      "rms": 0.12456613779067993,
+      "centroid": 318.02252341261124,
+      "duration": 2.0
+    },
+    "clip_21_tmp.wav": {
+      "path": "audio/clip_21_tmp.wav",
+      "rms": 0.12474587559700012,
+      "centroid": 1579.970953256974,
+      "duration": 3.5
+    },
+    "clip_9_tmp.wav": {
+      "path": "audio/clip_9_tmp.wav",
+      "rms": 0.13114610314369202,
+      "centroid": 1205.8595105977631,
+      "duration": 12.0
+    },
+    "clip_17_tmp.wav": {
+      "path": "audio/clip_17_tmp.wav",
+      "rms": 0.1247967854142189,
+      "centroid": 1342.4351512639516,
+      "duration": 4.45
+    },
+    "clip_28_tmp.wav": {
+      "path": "audio/clip_28_tmp.wav",
+      "rms": 0.12476150691509247,
+      "centroid": 1996.955369570282,
+      "duration": 3.75
+    },
+    "clip_16_tmp.wav": {
+      "path": "audio/clip_16_tmp.wav",
+      "rms": 0.12474265694618225,
+      "centroid": 1273.8794389846244,
+      "duration": 3.5
+    },
+    "clip_8_tmp.wav": {
+      "path": "audio/clip_8_tmp.wav",
+      "rms": 0.12491504848003387,
+      "centroid": 1164.6213081120186,
+      "duration": 12.0
+    },
+    "clip_1_tmp.wav": {
+      "path": "audio/clip_1_tmp.wav",
+      "rms": 0.1249147355556488,
+      "centroid": 562.356223669058,
+      "duration": 12.0
+    },
+    "clip_20_tmp.wav": {
+      "path": "audio/clip_20_tmp.wav",
+      "rms": 0.12491514533758163,
+      "centroid": 1933.6413170442152,
+      "duration": 12.0
+    },
+    "sample_dialogue_10.wav": {
+      "path": "audio/sample_dialogue_10.wav",
+      "rms": 0.17661765217781067,
+      "centroid": 910.9145838301878,
+      "duration": 8.5
+    },
+    "clip_14_tmp.wav": {
+      "path": "audio/clip_14_tmp.wav",
+      "rms": 0.12483589351177216,
+      "centroid": 1354.563195492514,
+      "duration": 5.599977324263039
+    },
+    "sample_dialogue_3.wav": {
+      "path": "audio/sample_dialogue_3.wav",
+      "rms": 0.17665933072566986,
+      "centroid": 499.01318878924803,
+      "duration": 12.0
+    },
+    "sample_dialogue_11.wav": {
+      "path": "audio/sample_dialogue_11.wav",
+      "rms": 0.1766592413187027,
+      "centroid": 974.8741530084338,
+      "duration": 12.0
+    },
+    "final_mix_temp.wav": {
+      "path": "audio/final_mix_temp.wav",
+      "rms": 0.5889124870300293,
+      "centroid": 3818.876154214882,
+      "duration": 221.04997732426304
+    },
+    "sample_dialogue_13.wav": {
+      "path": "audio/sample_dialogue_13.wav",
+      "rms": 0.17655064165592194,
+      "centroid": 1093.5989525450632,
+      "duration": 5.7
+    },
+    "clip_3_tmp.wav": {
+      "path": "audio/clip_3_tmp.wav",
+      "rms": 0.12491500377655029,
+      "centroid": 761.6228498171092,
+      "duration": 12.0
+    },
+    "clip_22_tmp.wav": {
+      "path": "audio/clip_22_tmp.wav",
+      "rms": 0.12474561482667923,
+      "centroid": 1636.4705283631283,
+      "duration": 3.5
+    },
+    "sample_dialogue_12.wav": {
+      "path": "audio/sample_dialogue_12.wav",
+      "rms": 0.17664577066898346,
+      "centroid": 1036.435759661551,
+      "duration": 10.55
+    },
+    "clip_2_tmp.wav": {
+      "path": "audio/clip_2_tmp.wav",
+      "rms": 0.12491366267204285,
+      "centroid": 584.244152378624,
+      "duration": 12.0
+    },
+    "sample_dialogue_16.wav": {
+      "path": "audio/sample_dialogue_16.wav",
+      "rms": 0.17641790211200714,
+      "centroid": 1269.359726482487,
+      "duration": 3.5
+    },
+    "sample_dialogue_4.wav": {
+      "path": "audio/sample_dialogue_4.wav",
+      "rms": 0.17665918171405792,
+      "centroid": 554.4209136748466,
+      "duration": 12.0
+    },
+    "clip_23_tmp.wav": {
+      "path": "audio/clip_23_tmp.wav",
+      "rms": 0.12480320781469345,
+      "centroid": 2209.0269560271154,
+      "duration": 4.65
+    },
+    "sample_dialogue_5.wav": {
+      "path": "audio/sample_dialogue_5.wav",
+      "rms": 0.17665952444076538,
+      "centroid": 611.854564668121,
+      "duration": 12.0
+    },
+    "sample_dialogue_17.wav": {
+      "path": "audio/sample_dialogue_17.wav",
+      "rms": 0.1764925867319107,
+      "centroid": 1335.7955029373204,
+      "duration": 4.45
+    },
+    "sample_dialogue_15.wav": {
+      "path": "audio/sample_dialogue_15.wav",
+      "rms": 0.1764630377292633,
+      "centroid": 1210.98465313562,
+      "duration": 4.0
+    },
+    "sample_dialogue_7.wav": {
+      "path": "audio/sample_dialogue_7.wav",
+      "rms": 0.1766592264175415,
+      "centroid": 735.3000481461145,
+      "duration": 12.0
+    },
+    "clip_15_tmp.wav": {
+      "path": "audio/clip_15_tmp.wav",
+      "rms": 0.1247757077217102,
+      "centroid": 1215.997127984011,
+      "duration": 4.0
+    },
+    "sample_dialogue_6.wav": {
+      "path": "audio/sample_dialogue_6.wav",
+      "rms": 0.1766592413187027,
+      "centroid": 675.9236173701252,
+      "duration": 12.0
+    },
+    "sample_dialogue_28.wav": {
+      "path": "audio/sample_dialogue_28.wav",
+      "rms": 0.17644302546977997,
+      "centroid": 1991.8317822082518,
+      "duration": 3.75
+    },
+    "sample_dialogue_14.wav": {
+      "path": "audio/sample_dialogue_14.wav",
+      "rms": 0.17654697597026825,
+      "centroid": 1154.6817003385236,
+      "duration": 5.6
+    },
+    "sample_dialogue_19.wav": {
+      "path": "audio/sample_dialogue_19.wav",
+      "rms": 0.17658904194831848,
+      "centroid": 1452.1498016840221,
+      "duration": 7.0
+    },
+    "sample_dialogue_25.wav": {
+      "path": "audio/sample_dialogue_25.wav",
+      "rms": 0.1764194667339325,
+      "centroid": 1809.801342957304,
+      "duration": 3.5
+    },
+    "sample_dialogue_24.wav": {
+      "path": "audio/sample_dialogue_24.wav",
+      "rms": 0.1764954924583435,
+      "centroid": 1753.432179998037,
+      "duration": 4.5
+    },
+    "sample_dialogue_18.wav": {
+      "path": "audio/sample_dialogue_18.wav",
+      "rms": 0.17653919756412506,
+      "centroid": 1395.1114046310431,
+      "duration": 5.4
+    },
+    "clip_10_tmp.wav": {
+      "path": "audio/clip_10_tmp.wav",
+      "rms": 0.12488626688718796,
+      "centroid": 1218.7809659330803,
+      "duration": 8.5
+    },
+    "clip_26_tmp.wav": {
+      "path": "audio/clip_26_tmp.wav",
+      "rms": 0.12474587559700012,
+      "centroid": 1878.790102871873,
+      "duration": 3.5
+    },
+    "sample_dialogue_26.wav": {
+      "path": "audio/sample_dialogue_26.wav",
+      "rms": 0.17642058432102203,
+      "centroid": 1873.166332773302,
+      "duration": 3.5
+    },
+    "sample_dialogue_8.wav": {
+      "path": "audio/sample_dialogue_8.wav",
+      "rms": 0.17665928602218628,
+      "centroid": 797.4717302935564,
+      "duration": 12.0
+    },
+    "clip_7_tmp.wav": {
+      "path": "audio/clip_7_tmp.wav",
+      "rms": 0.12491491436958313,
+      "centroid": 1046.338436333242,
+      "duration": 12.0
+    },
+    "sample_dialogue_9.wav": {
+      "path": "audio/sample_dialogue_9.wav",
+      "rms": 0.17665785551071167,
+      "centroid": 852.1774840404057,
+      "duration": 12.0
+    },
+    "clip_19_tmp.wav": {
+      "path": "audio/clip_19_tmp.wav",
+      "rms": 0.12486546486616135,
+      "centroid": 1661.4081963726264,
+      "duration": 7.0
+    },
+    "sample_dialogue_27.wav": {
+      "path": "audio/sample_dialogue_27.wav",
+      "rms": 0.17654119431972504,
+      "centroid": 1933.8079334249035,
+      "duration": 5.45
+    },
+    "sample_dialogue_23.wav": {
+      "path": "audio/sample_dialogue_23.wav",
+      "rms": 0.17650258541107178,
+      "centroid": 1691.4881887521444,
+      "duration": 4.65
+    },
+    "clip_27_tmp.wav": {
+      "path": "audio/clip_27_tmp.wav",
+      "rms": 0.12483140081167221,
+      "centroid": 2363.7461378555113,
+      "duration": 5.45
+    },
+    "clip_18_tmp.wav": {
+      "path": "audio/clip_18_tmp.wav",
+      "rms": 0.12482976913452148,
+      "centroid": 1890.6415589230717,
+      "duration": 5.4
+    },
+    "clip_6_tmp.wav": {
+      "path": "audio/clip_6_tmp.wav",
+      "rms": 0.12491519004106522,
+      "centroid": 972.2672258206603,
+      "duration": 12.0
+    },
+    "sample_dialogue_22.wav": {
+      "path": "audio/sample_dialogue_22.wav",
+      "rms": 0.17642055451869965,
+      "centroid": 1632.4685569771334,
+      "duration": 3.5
+    },
+    "sample_dialogue_20.wav": {
+      "path": "audio/sample_dialogue_20.wav",
+      "rms": 0.17665956914424896,
+      "centroid": 1510.9661265174311,
+      "duration": 12.0
+    },
+    "clip_11_tmp.wav": {
+      "path": "audio/clip_11_tmp.wav",
+      "rms": 0.12491542845964432,
+      "centroid": 1191.4907706044519,
+      "duration": 12.0
+    },
+    "sample_dialogue_21.wav": {
+      "path": "audio/sample_dialogue_21.wav",
+      "rms": 0.17642059922218323,
+      "centroid": 1573.2593287192765,
+      "duration": 3.5
+    },
+    "clip_25_tmp.wav": {
+      "path": "audio/clip_25_tmp.wav",
+      "rms": 0.12474577873945236,
+      "centroid": 1813.448800030876,
+      "duration": 3.5
+    },
+    "clip_4_tmp.wav": {
+      "path": "audio/clip_4_tmp.wav",
+      "rms": 0.12491476535797119,
+      "centroid": 831.3333283999378,
+      "duration": 12.0
+    },
+    "clip_13_tmp.wav": {
+      "path": "audio/clip_13_tmp.wav",
+      "rms": 0.12483803182840347,
+      "centroid": 1254.7807414628528,
+      "duration": 5.7
+    },
+    "clip_12_tmp.wav": {
+      "path": "audio/clip_12_tmp.wav",
+      "rms": 0.12490563094615936,
+      "centroid": 1361.9291775581294,
+      "duration": 10.55
+    },
+    "clip_24_tmp.wav": {
+      "path": "audio/clip_24_tmp.wav",
+      "rms": 0.12479884922504425,
+      "centroid": 1758.9653711131216,
+      "duration": 4.5
+    },
+    "clip_5_tmp.wav": {
+      "path": "audio/clip_5_tmp.wav",
+      "rms": 0.12491507828235626,
+      "centroid": 924.8919034430368,
+      "duration": 12.0
     }
   },
   "images": {
@@ -69,6 +405,10 @@
         0,
         0,
         0,
+        445440,
+        591360,
+        591360,
+        445440,
         0,
         0,
         0,
@@ -81,7 +421,6 @@
         0,
         0,
         0,
-        2073600,
         0,
         0,
         0,
@@ -132,6 +471,11 @@
         0,
         0,
         0,
+        487680,
+        487680,
+        487680,
+        487680,
+        122880,
         0,
         0,
         0,
@@ -146,7 +490,6 @@
         0,
         0,
         0,
-        2073600,
         0,
         0,
         0,
@@ -195,6 +538,11 @@
         0,
         0,
         0,
+        130560,
+        518400,
+        516480,
+        518400,
+        389760,
         0,
         0,
         0,
@@ -203,18 +551,6 @@
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2073600,
         0,
         0,
         0,
@@ -258,15 +594,15 @@
         0,
         0
       ],
-      "avg_brightness": 74.66666412353516
+      "avg_brightness": 34.00092697143555
     }
   },
   "videos": {},
   "meta": {
     "last_suggestion": {
-      "bg_gain": 0.16861863359808923,
+      "bg_gain": 0.10323750701817601,
       "duck_factor": 0.3,
-      "pan_width": 0.2987928467204407,
+      "pan_width": 0.424353565007323,
       "dream": true
     }
   }

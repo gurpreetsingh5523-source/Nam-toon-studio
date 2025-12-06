@@ -1,0 +1,1245 @@
+{
+  "summary": {
+    "brain_knowledge_files": 53,
+    "gurbani_spiritual_files": 10,
+    "pdf_documents": 78,
+    "text_files": 2,
+    "json_data_files": 52,
+    "total_files": 195
+  },
+  "details": {
+    "brain_knowledge": [
+      {
+        "file": "/Users/gurpreetdhillon/Nam-toon-studio/brain_05_daily_life.txt",
+        "name": "brain_05_daily_life.txt",
+        "size_kb": 3.0,
+        "lines": 95,
+        "location": "/Users/gurpreetdhillon/Nam-toon-studio"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Nam-toon-studio/brain_02_punjabi_language.txt",
+        "name": "brain_02_punjabi_language.txt",
+        "size_kb": 2.67,
+        "lines": 60,
+        "location": "/Users/gurpreetdhillon/Nam-toon-studio"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Nam-toon-studio/brain_03_punjab_history.txt",
+        "name": "brain_03_punjab_history.txt",
+        "size_kb": 3.2,
+        "lines": 74,
+        "location": "/Users/gurpreetdhillon/Nam-toon-studio"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Nam-toon-studio/brain_04_family_relationships.txt",
+        "name": "brain_04_family_relationships.txt",
+        "size_kb": 3.42,
+        "lines": 81,
+        "location": "/Users/gurpreetdhillon/Nam-toon-studio"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Nam-toon-studio/brain_01_sggs_core.txt",
+        "name": "brain_01_sggs_core.txt",
+        "size_kb": 2.06,
+        "lines": 46,
+        "location": "/Users/gurpreetdhillon/Nam-toon-studio"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_27_medical_ai.txt",
+        "name": "brain_27_medical_ai.txt",
+        "size_kb": 8.45,
+        "lines": 152,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_12_vision_ai.txt",
+        "name": "brain_12_vision_ai.txt",
+        "size_kb": 7.19,
+        "lines": 159,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_36_translation_expert_nano.txt",
+        "name": "brain_36_translation_expert_nano.txt",
+        "size_kb": 4.28,
+        "lines": 107,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_19_chemistry_ai.txt",
+        "name": "brain_19_chemistry_ai.txt",
+        "size_kb": 7.11,
+        "lines": 167,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_18_physics_ai.txt",
+        "name": "brain_18_physics_ai.txt",
+        "size_kb": 10.69,
+        "lines": 225,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_29_voice_synthesis_ai_nano.txt",
+        "name": "brain_29_voice_synthesis_ai_nano.txt",
+        "size_kb": 29.35,
+        "lines": 760,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_37_arabic_basic_nano.txt",
+        "name": "brain_37_arabic_basic_nano.txt",
+        "size_kb": 6.29,
+        "lines": 133,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_14_emotional_ai.txt",
+        "name": "brain_14_emotional_ai.txt",
+        "size_kb": 4.08,
+        "lines": 63,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_26_allopathy_ai_nano.txt",
+        "name": "brain_26_allopathy_ai_nano.txt",
+        "size_kb": 5.92,
+        "lines": 103,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_04_parivar_rishte.txt",
+        "name": "brain_04_parivar_rishte.txt",
+        "size_kb": 8.13,
+        "lines": 159,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_16_science_ai.txt",
+        "name": "brain_16_science_ai.txt",
+        "size_kb": 8.02,
+        "lines": 183,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_02_punjabi_idioms.txt",
+        "name": "brain_02_punjabi_idioms.txt",
+        "size_kb": 23.85,
+        "lines": 550,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_09_kala_sangeet_nano.txt",
+        "name": "brain_09_kala_sangeet_nano.txt",
+        "size_kb": 3.51,
+        "lines": 53,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_30_multilingual_nano.txt",
+        "name": "brain_30_multilingual_nano.txt",
+        "size_kb": 9.17,
+        "lines": 196,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_38_german_basic_nano.txt",
+        "name": "brain_38_german_basic_nano.txt",
+        "size_kb": 6.28,
+        "lines": 143,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_13_codegen_ai.txt",
+        "name": "brain_13_codegen_ai.txt",
+        "size_kb": 6.47,
+        "lines": 120,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_17_geography_ai.txt",
+        "name": "brain_17_geography_ai.txt",
+        "size_kb": 5.76,
+        "lines": 112,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_31_global_languages_nano.txt",
+        "name": "brain_31_global_languages_nano.txt",
+        "size_kb": 4.55,
+        "lines": 115,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_41_portuguese_basic_nano.txt",
+        "name": "brain_41_portuguese_basic_nano.txt",
+        "size_kb": 3.39,
+        "lines": 93,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_02_punjabi_language.txt",
+        "name": "brain_02_punjabi_language.txt",
+        "size_kb": 5.75,
+        "lines": 110,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_40_korean_basic_nano.txt",
+        "name": "brain_40_korean_basic_nano.txt",
+        "size_kb": 3.78,
+        "lines": 92,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_03_punjab_itihaas_nano.txt",
+        "name": "brain_03_punjab_itihaas_nano.txt",
+        "size_kb": 1.85,
+        "lines": 28,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_29_voice_samples_template.txt",
+        "name": "brain_29_voice_samples_template.txt",
+        "size_kb": 5.84,
+        "lines": 83,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_34_chinese_basic_nano.txt",
+        "name": "brain_34_chinese_basic_nano.txt",
+        "size_kb": 2.96,
+        "lines": 81,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_08_computing_tech.txt",
+        "name": "brain_08_computing_tech.txt",
+        "size_kb": 19.73,
+        "lines": 484,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_07_gyan_vigyan.txt",
+        "name": "brain_07_gyan_vigyan.txt",
+        "size_kb": 8.26,
+        "lines": 200,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_23_arabic_ai.txt",
+        "name": "brain_23_arabic_ai.txt",
+        "size_kb": 2.8,
+        "lines": 50,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_39_japanese_basic_nano.txt",
+        "name": "brain_39_japanese_basic_nano.txt",
+        "size_kb": 3.78,
+        "lines": 102,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_00_master_meta_knowledge.txt",
+        "name": "brain_00_master_meta_knowledge.txt",
+        "size_kb": 16.37,
+        "lines": 386,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_35_creative_thinking_nano.txt",
+        "name": "brain_35_creative_thinking_nano.txt",
+        "size_kb": 4.62,
+        "lines": 109,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_32_advanced_reasoning_nano.txt",
+        "name": "brain_32_advanced_reasoning_nano.txt",
+        "size_kb": 5.94,
+        "lines": 117,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_10_sehhat_health.txt",
+        "name": "brain_10_sehhat_health.txt",
+        "size_kb": 24.5,
+        "lines": 585,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_20_engineering_ai.txt",
+        "name": "brain_20_engineering_ai.txt",
+        "size_kb": 7.85,
+        "lines": 173,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_24_robotics_ai.txt",
+        "name": "brain_24_robotics_ai.txt",
+        "size_kb": 6.38,
+        "lines": 109,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_01_sggs_core.txt",
+        "name": "brain_01_sggs_core.txt",
+        "size_kb": 5.46,
+        "lines": 96,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_22_english_ai.txt",
+        "name": "brain_22_english_ai.txt",
+        "size_kb": 3.8,
+        "lines": 74,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_25_ayurveda_ai.txt",
+        "name": "brain_25_ayurveda_ai.txt",
+        "size_kb": 4.17,
+        "lines": 62,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_05_rozana_jeevan.txt",
+        "name": "brain_05_rozana_jeevan.txt",
+        "size_kb": 8.68,
+        "lines": 171,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_15_math_ai.txt",
+        "name": "brain_15_math_ai.txt",
+        "size_kb": 10.15,
+        "lines": 250,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_09_kala_sangeet.txt",
+        "name": "brain_09_kala_sangeet.txt",
+        "size_kb": 17.68,
+        "lines": 467,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_06_sanchar_communication.txt",
+        "name": "brain_06_sanchar_communication.txt",
+        "size_kb": 14.78,
+        "lines": 311,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_26_allopathy_ai.txt",
+        "name": "brain_26_allopathy_ai.txt",
+        "size_kb": 3.0,
+        "lines": 50,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_11_physics_nano_nano.txt",
+        "name": "brain_11_physics_nano_nano.txt",
+        "size_kb": 3.26,
+        "lines": 57,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_21_biology_ai.txt",
+        "name": "brain_21_biology_ai.txt",
+        "size_kb": 4.62,
+        "lines": 76,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_33_coding_expert_nano.txt",
+        "name": "brain_33_coding_expert_nano.txt",
+        "size_kb": 4.3,
+        "lines": 112,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_42_russian_basic_nano.txt",
+        "name": "brain_42_russian_basic_nano.txt",
+        "size_kb": 4.2,
+        "lines": 93,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_11_physics_nano.txt",
+        "name": "brain_11_physics_nano.txt",
+        "size_kb": 25.09,
+        "lines": 527,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_03_punjab_itihaas.txt",
+        "name": "brain_03_punjab_itihaas.txt",
+        "size_kb": 8.79,
+        "lines": 122,
+        "location": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain"
+      }
+    ],
+    "gurbani_spiritual": [
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/gurbani_knowledge.json",
+        "name": "gurbani_knowledge.json",
+        "type": ".json",
+        "size_kb": 1.46
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/GURBANI_STUDIO_GUIDE.txt",
+        "name": "GURBANI_STUDIO_GUIDE.txt",
+        "type": ".txt",
+        "size_kb": 6.86
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/amrit_gurbani_studio_lite.py",
+        "name": "amrit_gurbani_studio_lite.py",
+        "type": ".py",
+        "size_kb": 13.27
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/amrit_gurbani_studio.py",
+        "name": "amrit_gurbani_studio.py",
+        "type": ".py",
+        "size_kb": 13.67
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/amrit_lessons/sikh_spirituality_&_gurbani_lesson.json",
+        "name": "sikh_spirituality_&_gurbani_lesson.json",
+        "type": ".json",
+        "size_kb": 1.3
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/brain_01_sggs_core.txt",
+        "name": "brain_01_sggs_core.txt",
+        "type": ".txt",
+        "size_kb": 5.46
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/amrit_lessons/sikh_spirituality_&_gurbani_interactive.txt",
+        "name": "sikh_spirituality_&_gurbani_interactive.txt",
+        "type": ".txt",
+        "size_kb": 1.42
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/.venv/lib/python3.10/site-packages/dateparser/data/date_translation_data/pa-Guru.py",
+        "name": "pa-Guru.py",
+        "type": ".py",
+        "size_kb": 5.03
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Nam-toon-studio/brain_01_sggs_core.txt",
+        "name": "brain_01_sggs_core.txt",
+        "type": ".txt",
+        "size_kb": 2.06
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Nam-toon-studio/amrit_spiritual_gurbani_reasoning.py",
+        "name": "amrit_spiritual_gurbani_reasoning.py",
+        "type": ".py",
+        "size_kb": 1.71
+      }
+    ],
+    "pdfs": [
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/anglosikhwars.pdf",
+        "name": "anglosikhwars.pdf",
+        "size_mb": 0.18,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/1.pdf",
+        "name": "1.pdf",
+        "size_mb": 0.08,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Documents/AMRIT_PDFs/split_large_document.pdf",
+        "name": "split_large_document.pdf",
+        "size_mb": 0.0,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Documents/AMRIT_PDFs/sample_document.txt.pdf",
+        "name": "sample_document.txt.pdf",
+        "size_mb": 0.0,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Documents/AMRIT_PDFs/images_presentation.pdf",
+        "name": "images_presentation.pdf",
+        "size_mb": 0.0,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/MORCHA-GURU-KA-BAGH.pdf",
+        "name": "MORCHA-GURU-KA-BAGH.pdf",
+        "size_mb": 11.29,
+        "sikhi_related": true
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/Saka-Sri-Panja-Sahib-by-Armanjit-Singh-2.pdf",
+        "name": "Saka-Sri-Panja-Sahib-by-Armanjit-Singh-2.pdf",
+        "size_mb": 9.27,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/Sikh_Raj_Kiven_Baniya_By_Giani_Sohan_Singh_Seetal.pdf",
+        "name": "Sikh_Raj_Kiven_Baniya_By_Giani_Sohan_Singh_Seetal.pdf",
+        "size_mb": 17.81,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/Saka-Sri-Panja-Sahib-by-Armanjit-Singh-3.pdf",
+        "name": "Saka-Sri-Panja-Sahib-by-Armanjit-Singh-3.pdf",
+        "size_mb": 9.27,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/Tutan-Wala-Kukh-by-Sohan-Singh-Seetal.pdf",
+        "name": "Tutan-Wala-Kukh-by-Sohan-Singh-Seetal.pdf",
+        "size_mb": 18.54,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/Saka-Sri-Panja-Sahib-by-Armanjit-Singh-4.pdf",
+        "name": "Saka-Sri-Panja-Sahib-by-Armanjit-Singh-4.pdf",
+        "size_mb": 9.27,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/Saka-Sri-Panja-Sahib-by-Armanjit-Singh-5.pdf",
+        "name": "Saka-Sri-Panja-Sahib-by-Armanjit-Singh-5.pdf",
+        "size_mb": 9.27,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/Saka-Sri-Panja-Sahib-by-Armanjit-Singh.pdf",
+        "name": "Saka-Sri-Panja-Sahib-by-Armanjit-Singh.pdf",
+        "size_mb": 9.27,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/Saka-Sri-Panja-Sahib-by-Armanjit-Singh-6.pdf",
+        "name": "Saka-Sri-Panja-Sahib-by-Armanjit-Singh-6.pdf",
+        "size_mb": 9.27,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/MORCHA-GURU-KA-BAGH-2.pdf",
+        "name": "MORCHA-GURU-KA-BAGH-2.pdf",
+        "size_mb": 11.29,
+        "sikhi_related": true
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/MORCHA-GURU-KA-BAGH-3.pdf",
+        "name": "MORCHA-GURU-KA-BAGH-3.pdf",
+        "size_mb": 11.29,
+        "sikhi_related": true
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/MORCHA-GURU-KA-BAGH-4.pdf",
+        "name": "MORCHA-GURU-KA-BAGH-4.pdf",
+        "size_mb": 11.29,
+        "sikhi_related": true
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Documentation/Documentation/SK/Prirucka pouzivatela VGN-FW_SK.pdf",
+        "name": "Prirucka pouzivatela VGN-FW_SK.pdf",
+        "size_mb": 2.3,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Documentation/Documentation/PL/Podrecznik uzytkownika VGN-FW_PL.pdf",
+        "name": "Podrecznik uzytkownika VGN-FW_PL.pdf",
+        "size_mb": 2.29,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Documentation/Documentation/SV/Bruksanvisning VGN-FW_SV.pdf",
+        "name": "Bruksanvisning VGN-FW_SV.pdf",
+        "size_mb": 2.25,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Documentation/Documentation/GR/User Guide Greek VGN-FW_GR.pdf",
+        "name": "User Guide Greek VGN-FW_GR.pdf",
+        "size_mb": 2.36,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Documentation/Documentation/IT/Guida utente VGN-FW_IT.pdf",
+        "name": "Guida utente VGN-FW_IT.pdf",
+        "size_mb": 2.27,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Documentation/Documentation/CS/Uzivatelska prirucka VGN-FW_CS.pdf",
+        "name": "Uzivatelska prirucka VGN-FW_CS.pdf",
+        "size_mb": 2.26,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Documentation/Documentation/RU/User Guide Russian VGN-FW_RU.pdf",
+        "name": "User Guide Russian VGN-FW_RU.pdf",
+        "size_mb": 2.29,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Documentation/Documentation/RO/Ghid de utilizare VGN-FW_RO.pdf",
+        "name": "Ghid de utilizare VGN-FW_RO.pdf",
+        "size_mb": 2.26,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Documentation/Documentation/UK/User Guide Ukrainian VGN-FW_UK.pdf",
+        "name": "User Guide Ukrainian VGN-FW_UK.pdf",
+        "size_mb": 2.3,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Documentation/Documentation/PO/Manual do utilizador VGN-FW_PO.pdf",
+        "name": "Manual do utilizador VGN-FW_PO.pdf",
+        "size_mb": 2.24,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Documentation/Documentation/HU/Felhasznaloi utmutato VGN-FW_HU.pdf",
+        "name": "Felhasznaloi utmutato VGN-FW_HU.pdf",
+        "size_mb": 2.29,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Documentation/Documentation/NL/Gebruikershandleiding VGN-FW_NL.pdf",
+        "name": "Gebruikershandleiding VGN-FW_NL.pdf",
+        "size_mb": 2.24,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Documentation/Documentation/BG/User Guide Bulgarian VGN-FW_BG.pdf",
+        "name": "User Guide Bulgarian VGN-FW_BG.pdf",
+        "size_mb": 2.29,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Documentation/Documentation/DE/Benutzerhandbuch VGN-FW_DE.pdf",
+        "name": "Benutzerhandbuch VGN-FW_DE.pdf",
+        "size_mb": 2.28,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Documentation/Documentation/DK/Brugervejledning VGN-FW_DK.pdf",
+        "name": "Brugervejledning VGN-FW_DK.pdf",
+        "size_mb": 2.25,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Documentation/Documentation/FI/Kayttoopas VGN-FW_FI.pdf",
+        "name": "Kayttoopas VGN-FW_FI.pdf",
+        "size_mb": 2.22,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Documentation/Documentation/FR/Guide de utilisateur VGN-FW_FR.pdf",
+        "name": "Guide de utilisateur VGN-FW_FR.pdf",
+        "size_mb": 2.28,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Documentation/Documentation/ES/Guia del usuario VGN-FW_ES.pdf",
+        "name": "Guia del usuario VGN-FW_ES.pdf",
+        "size_mb": 2.25,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Documentation/Documentation/EN/User Guide VGN-FW_EN.pdf",
+        "name": "User Guide VGN-FW_EN.pdf",
+        "size_mb": 2.25,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Documentation/Documentation/TR/Kullanim Kilavuzu VGN-FW_TR.pdf",
+        "name": "Kullanim Kilavuzu VGN-FW_TR.pdf",
+        "size_mb": 2.4,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/PDFSigQFormalRep.pdf",
+        "name": "PDFSigQFormalRep.pdf",
+        "size_mb": 0.34,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/plug_ins/Annotations/Stamps/Words.pdf",
+        "name": "Words.pdf",
+        "size_mb": 0.11,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/plug_ins/Annotations/Stamps/ENU/Standard.pdf",
+        "name": "Standard.pdf",
+        "size_mb": 0.11,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/plug_ins/Annotations/Stamps/ENU/SignHere.pdf",
+        "name": "SignHere.pdf",
+        "size_mb": 0.04,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/plug_ins/Annotations/Stamps/ENU/Faces.pdf",
+        "name": "Faces.pdf",
+        "size_mb": 0.03,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/plug_ins/Annotations/Stamps/ENU/Dynamic.pdf",
+        "name": "Dynamic.pdf",
+        "size_mb": 0.05,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/plug_ins/Annotations/Stamps/ENU/StandardBusiness.pdf",
+        "name": "StandardBusiness.pdf",
+        "size_mb": 0.1,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/plug_ins/Annotations/Stamps/ENU/Pointers.pdf",
+        "name": "Pointers.pdf",
+        "size_mb": 0.04,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/plug_ins/Annotations/Stamps/FRA/Standard.pdf",
+        "name": "Standard.pdf",
+        "size_mb": 0.15,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/plug_ins/Annotations/Stamps/FRA/SignHere.pdf",
+        "name": "SignHere.pdf",
+        "size_mb": 0.04,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/plug_ins/Annotations/Stamps/FRA/Faces.pdf",
+        "name": "Faces.pdf",
+        "size_mb": 0.03,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/plug_ins/Annotations/Stamps/FRA/Dynamic.pdf",
+        "name": "Dynamic.pdf",
+        "size_mb": 0.19,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/plug_ins/Annotations/Stamps/FRA/StandardBusiness.pdf",
+        "name": "StandardBusiness.pdf",
+        "size_mb": 0.27,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/plug_ins/Annotations/Stamps/FRA/Pointers.pdf",
+        "name": "Pointers.pdf",
+        "size_mb": 0.03,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/plug_ins/Annotations/Stamps/DEU/Standard.pdf",
+        "name": "Standard.pdf",
+        "size_mb": 0.26,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/plug_ins/Annotations/Stamps/DEU/SignHere.pdf",
+        "name": "SignHere.pdf",
+        "size_mb": 0.04,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/plug_ins/Annotations/Stamps/DEU/Faces.pdf",
+        "name": "Faces.pdf",
+        "size_mb": 0.03,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/plug_ins/Annotations/Stamps/DEU/Dynamic.pdf",
+        "name": "Dynamic.pdf",
+        "size_mb": 0.05,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/plug_ins/Annotations/Stamps/DEU/StandardBusiness.pdf",
+        "name": "StandardBusiness.pdf",
+        "size_mb": 0.09,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/plug_ins/Annotations/Stamps/DEU/Pointers.pdf",
+        "name": "Pointers.pdf",
+        "size_mb": 0.03,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/HostedServicesTemplates/ENU/template1.pdf",
+        "name": "template1.pdf",
+        "size_mb": 0.06,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/HostedServicesTemplates/FRA/template1.pdf",
+        "name": "template1.pdf",
+        "size_mb": 0.28,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/HostedServicesTemplates/DEU/template1.pdf",
+        "name": "template1.pdf",
+        "size_mb": 0.3,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/DocSettings/CombineFiles/ENU/coversheet.pdf",
+        "name": "coversheet.pdf",
+        "size_mb": 0.03,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/DocSettings/CombineFiles/FRA/coversheet.pdf",
+        "name": "coversheet.pdf",
+        "size_mb": 0.03,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/DocSettings/CombineFiles/DEU/coversheet.pdf",
+        "name": "coversheet.pdf",
+        "size_mb": 0.03,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/IDTemplates/ENU/AdobeID.pdf",
+        "name": "AdobeID.pdf",
+        "size_mb": 0.08,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/IDTemplates/ENU/DefaultID.pdf",
+        "name": "DefaultID.pdf",
+        "size_mb": 0.08,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/IDTemplates/FRA/AdobeID.pdf",
+        "name": "AdobeID.pdf",
+        "size_mb": 0.07,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/IDTemplates/FRA/DefaultID.pdf",
+        "name": "DefaultID.pdf",
+        "size_mb": 0.06,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/IDTemplates/DEU/AdobeID.pdf",
+        "name": "AdobeID.pdf",
+        "size_mb": 0.06,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/IDTemplates/DEU/DefaultID.pdf",
+        "name": "DefaultID.pdf",
+        "size_mb": 0.06,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/DocTemplates/ENU/template1.pdf",
+        "name": "template1.pdf",
+        "size_mb": 0.02,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/DocTemplates/ENU/template2.pdf",
+        "name": "template2.pdf",
+        "size_mb": 0.03,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/DocTemplates/ENU/template3.pdf",
+        "name": "template3.pdf",
+        "size_mb": 0.03,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/DocTemplates/FRA/template1.pdf",
+        "name": "template1.pdf",
+        "size_mb": 0.77,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/DocTemplates/FRA/template2.pdf",
+        "name": "template2.pdf",
+        "size_mb": 0.03,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/DocTemplates/FRA/template3.pdf",
+        "name": "template3.pdf",
+        "size_mb": 0.09,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/DocTemplates/DEU/template1.pdf",
+        "name": "template1.pdf",
+        "size_mb": 0.07,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/DocTemplates/DEU/template2.pdf",
+        "name": "template2.pdf",
+        "size_mb": 0.03,
+        "sikhi_related": false
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Downloads/C/Program Files/Adobe/Acrobat 9.0/Acrobat/DocTemplates/DEU/template3.pdf",
+        "name": "template3.pdf",
+        "size_mb": 0.08,
+        "sikhi_related": false
+      }
+    ],
+    "text_files": [
+      {
+        "file": "/Users/gurpreetdhillon/Nam-toon-studio/AUTO_AGENT_README.txt",
+        "name": "AUTO_AGENT_README.txt",
+        "size_kb": 3.26,
+        "lines": 106
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Nam-toon-studio/SYSTEM_ANALYSIS_REPORT.txt",
+        "name": "SYSTEM_ANALYSIS_REPORT.txt",
+        "size_kb": 7.33,
+        "lines": 239
+      }
+    ],
+    "json_data": [
+      {
+        "file": "/Users/gurpreetdhillon/Nam-toon-studio/agent_knowledge.json",
+        "name": "agent_knowledge.json",
+        "size_kb": 11.6
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Nam-toon-studio/ai_improvements.json",
+        "name": "ai_improvements.json",
+        "size_kb": 377.38
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Nam-toon-studio/photo_library_analysis.json",
+        "name": "photo_library_analysis.json",
+        "size_kb": 0.96
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Nam-toon-studio/rahbar_system_analysis.json",
+        "name": "rahbar_system_analysis.json",
+        "size_kb": 1.04
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Nam-toon-studio/agent_training_log.json",
+        "name": "agent_training_log.json",
+        "size_kb": 196.09
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Nam-toon-studio/ai_memory.json",
+        "name": "ai_memory.json",
+        "size_kb": 8.88
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Nam-toon-studio/user_feedback.json",
+        "name": "user_feedback.json",
+        "size_kb": 421.27
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Nam-toon-studio/audio_library_analysis.json",
+        "name": "audio_library_analysis.json",
+        "size_kb": 37.76
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/raag_knowledge.json",
+        "name": "raag_knowledge.json",
+        "size_kb": 1.44
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/director_learning_memory.json",
+        "name": "director_learning_memory.json",
+        "size_kb": 9.84
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/sikh_history.json",
+        "name": "sikh_history.json",
+        "size_kb": 1.41
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/voice_science_database.json",
+        "name": "voice_science_database.json",
+        "size_kb": 34.51
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/gurbani_knowledge.json",
+        "name": "gurbani_knowledge.json",
+        "size_kb": 1.46
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/punjabi_vocabulary.json",
+        "name": "punjabi_vocabulary.json",
+        "size_kb": 1.03
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/voice_learning_samples.json",
+        "name": "voice_learning_samples.json",
+        "size_kb": 32.78
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/auto_learning_progress.json",
+        "name": "auto_learning_progress.json",
+        "size_kb": 2.26
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/video_learning_memory.json",
+        "name": "video_learning_memory.json",
+        "size_kb": 8.28
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/ai_decision_memory.json",
+        "name": "ai_decision_memory.json",
+        "size_kb": 28.57
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/auto_voice_memory.json",
+        "name": "auto_voice_memory.json",
+        "size_kb": 10.92
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/video_lessons_nano.json",
+        "name": "video_lessons_nano.json",
+        "size_kb": 4.34
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/director_memory.json",
+        "name": "director_memory.json",
+        "size_kb": 3.05
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/amrit_repair_memory.json",
+        "name": "amrit_repair_memory.json",
+        "size_kb": 1.34
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/voice_fingerprints.json",
+        "name": "voice_fingerprints.json",
+        "size_kb": 2.81
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/.examples/conversation_memory.json",
+        "name": "conversation_memory.json",
+        "size_kb": 3.01
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/.examples/teach_memory.json",
+        "name": "teach_memory.json",
+        "size_kb": 2.34
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/test_output/scenes.json",
+        "name": "scenes.json",
+        "size_kb": 2.39
+      },
+      {
+        "file": "/Users/gurpreetdhillon/Desktop/amritkaur_local/complete_output/complete_video_data.json",
+        "name": "complete_video_data.json",
+        "size_kb": 4.19
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/phase4_progress.json",
+        "name": "phase4_progress.json",
+        "size_kb": 1.33
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/phase3_progress.json",
+        "name": "phase3_progress.json",
+        "size_kb": 0.99
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/phase1_progress.json",
+        "name": "phase1_progress.json",
+        "size_kb": 0.82
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/phase6_complete_progress.json",
+        "name": "phase6_complete_progress.json",
+        "size_kb": 2.12
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/ai_capability_report.json",
+        "name": "ai_capability_report.json",
+        "size_kb": 1.86
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/untitled folder/package-lock.json",
+        "name": "package-lock.json",
+        "size_kb": 194.0
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/untitled folder/package.json",
+        "name": "package.json",
+        "size_kb": 2.54
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/untitled folder/tsconfig.json",
+        "name": "tsconfig.json",
+        "size_kb": 0.5
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/untitled folder/.vscode/settings.json",
+        "name": "settings.json",
+        "size_kb": 0.61
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/untitled folder/.vscode/launch.json",
+        "name": "launch.json",
+        "size_kb": 0.58
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/quantum_brain/untitled folder/.vscode/tasks.json",
+        "name": "tasks.json",
+        "size_kb": 1.48
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/core/vs code helper/package-lock.json",
+        "name": "package-lock.json",
+        "size_kb": 201.03
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/core/vs code helper/package.json",
+        "name": "package.json",
+        "size_kb": 1.99
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/core/vs code helper/tsconfig.json",
+        "name": "tsconfig.json",
+        "size_kb": 0.5
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/core/vs code helper/.vscode/settings.json",
+        "name": "settings.json",
+        "size_kb": 0.61
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/core/vs code helper/.vscode/launch.json",
+        "name": "launch.json",
+        "size_kb": 0.58
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/core/vs code helper/.vscode/tasks.json",
+        "name": "tasks.json",
+        "size_kb": 1.48
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/amrit_lessons/meta-knowledge_&_learning_lesson.json",
+        "name": "meta-knowledge_&_learning_lesson.json",
+        "size_kb": 1.28
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/amrit_lessons/music_&_arts_lesson.json",
+        "name": "music_&_arts_lesson.json",
+        "size_kb": 0.72
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/amrit_lessons/coding_&_programming_lesson.json",
+        "name": "coding_&_programming_lesson.json",
+        "size_kb": 0.64
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/amrit_lessons/punjab_history_lesson.json",
+        "name": "punjab_history_lesson.json",
+        "size_kb": 6.38
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/amrit_lessons/mathematics_lesson.json",
+        "name": "mathematics_lesson.json",
+        "size_kb": 2.85
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/amrit_lessons/sikh_spirituality_&_gurbani_lesson.json",
+        "name": "sikh_spirituality_&_gurbani_lesson.json",
+        "size_kb": 1.3
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/amrit_lessons/science_lesson.json",
+        "name": "science_lesson.json",
+        "size_kb": 1.68
+      },
+      {
+        "file": "/Users/gurpreetdhillon/AmritCore_QuantumBrain_OS/amrit_lessons/punjabi_language_lesson.json",
+        "name": "punjabi_language_lesson.json",
+        "size_kb": 3.13
+      }
+    ],
+    "stories": [],
+    "training_data": []
+  },
+  "value_assessment": {
+    "brain_knowledge": {
+      "value_inr": 200000,
+      "reason": "53 curated knowledge files",
+      "size_kb": 415.2
+    },
+    "gurbani_data": {
+      "value_inr": 300000,
+      "reason": "Rare Gurbani/Punjabi spiritual content",
+      "files": 10
+    },
+    "pdf_library": {
+      "value_inr": 100000,
+      "reason": "78 documents including Sikhi history",
+      "size_mb": 187.3
+    },
+    "text_content": {
+      "value_inr": 150000,
+      "reason": "345 lines of text data",
+      "files": 2
+    },
+    "total_value_inr": 750000
+  },
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "action": "Consolidate brain knowledge files",
+      "details": "Merge Nam-toon and AmritCore brain files into master knowledge base"
+    },
+    {
+      "priority": "HIGH",
+      "action": "Extract PDF content",
+      "details": "Use OCR/PyPDF2 to extract text from PDFs for training"
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Organize Gurbani data",
+      "details": "Create unified Gurbani dataset from scattered JSON/TXT files"
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Build training corpus",
+      "details": "Combine all text data into single searchable database"
+    },
+    {
+      "priority": "LOW",
+      "action": "Backup everything",
+      "details": "Create archive of all discovered valuable data"
+    }
+  ]
+}

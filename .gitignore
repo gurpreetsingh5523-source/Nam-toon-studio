@@ -11,3 +11,36 @@
 .DS_Store
 __pycache__/
 .pytest_cache/
+node_modules
+
+# Training data (too large for repo)
+training_photos/
+training_audio/
+training_video/
+training_pdfs/
+training_text/
+*.mp4
+archived_training_videos/
+
+# --- Added by Rahbar Cleanup ---
+# System & Logs
+.venv/
+*.log
+*_REPORT.md
+*_ANALYSIS.md
+*_ANALYSIS.json
+rahbar_*.json
+!rahbar_action_plan.json
+!rahbar_auto_tasks.json
+
+# Models
+*.pt
+*.pth
+trained_models/
+
+# Temp
+temp_audio/
+animated_frames/
+realistic_videos/
+*_REPORT.json
+*log.json

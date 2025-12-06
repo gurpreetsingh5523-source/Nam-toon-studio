@@ -1,0 +1,44 @@
+{
+  "generated_at": "2025-12-06T13:24:38.740203",
+  "generated_by": "Rahbar AI Auto-Learner",
+  "based_on": "Learning feed from debugging session",
+  "immediate_actions": [
+    {
+      "action": "Test simple_working_agent.py",
+      "reason": "Verify we have a working baseline",
+      "command": "python3 simple_working_agent.py --videos 2 --delay 2",
+      "expected": "2 videos created successfully",
+      "priority": "CRITICAL"
+    },
+    {
+      "action": "Fix autonomous_learning_agent.py config loading",
+      "reason": "Original agent can't load custom patterns",
+      "file": "autonomous_learning_agent.py",
+      "changes": "Add config loading block in main()",
+      "priority": "URGENT"
+    },
+    {
+      "action": "Add process health monitoring",
+      "reason": "Detect stuck agents early",
+      "file": "MASTER_TRAINING_ORCHESTRATOR.py",
+      "changes": "Check CPU% and process state",
+      "priority": "HIGH"
+    }
+  ],
+  "testing_strategy": [
+    "1. Test simple agent with 1 video",
+    "2. If works, test with 5 videos",
+    "3. Fix any issues found",
+    "4. Only then deploy orchestrator",
+    "5. Start with 1 agent, not 4",
+    "6. Scale up gradually"
+  ],
+  "success_criteria": [
+    "✅ Simple agent creates videos reliably",
+    "✅ Config loading works",
+    "✅ Process monitoring active",
+    "✅ No stuck processes",
+    "✅ Videos actually created",
+    "✅ Diverse patterns used"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "lottie-react-native": "^7.3.4",
+    "react-native-svg": "^15.15.0"
+  }
+}

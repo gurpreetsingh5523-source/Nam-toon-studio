@@ -1,0 +1,77 @@
+{
+  "character_profiles": {
+    "ਰਚਨਾ": {
+      "age": "adult",
+      "gender": "male",
+      "voice_pitch": 0.82,
+      "voice_speed": 0.92,
+      "emotion": "narrator",
+      "description": "ਬਾਲਗ ਆਦਮੀ, ਕਹਾਣੀ ਸੁਣਾਉਣ ਵਾਲਾ, ਗੰਭੀਰ ਆਵਾਜ਼"
+    },
+    "ਦਲੀਪ": {
+      "age": "middle_aged",
+      "gender": "male",
+      "voice_pitch": 0.78,
+      "voice_speed": 0.88,
+      "emotion": "troubled",
+      "description": "ਮੱਧ ਉਮਰ, ਪਰੇਸ਼ਾਨ, ਡੂੰਘੀ ਆਵਾਜ਼"
+    },
+    "ਅਮਨਦੀਪ": {
+      "age": "young_adult",
+      "gender": "male",
+      "voice_pitch": 0.88,
+      "voice_speed": 0.98,
+      "emotion": "neutral",
+      "description": "ਜਵਾਨ ਮੁੰਡਾ, ਸਧਾਰਨ ਆਵਾਜ਼"
+    },
+    "ਦਲਜੀਤ": {
+      "age": "young_adult",
+      "gender": "female",
+      "voice_pitch": 1.08,
+      "voice_speed": 1.02,
+      "emotion": "manipulative",
+      "description": "ਜਵਾਨ ਔਰਤ, ਤਿੱਖੀ ਆਵਾਜ਼"
+    },
+    "ਰਮਨਦੀਪ": {
+      "age": "young_adult",
+      "gender": "female",
+      "voice_pitch": 1.05,
+      "voice_speed": 1.0,
+      "emotion": "neutral",
+      "description": "ਜਵਾਨ ਕੁੜੀ"
+    },
+    "ਜਸਪਰੀਤ": {
+      "age": "child",
+      "gender": "female",
+      "voice_pitch": 1.25,
+      "voice_speed": 1.05,
+      "emotion": "innocent",
+      "description": "ਛੋਟੀ ਬੱਚੀ"
+    },
+    "Narrator": {
+      "age": "adult",
+      "gender": "male",
+      "voice_pitch": 0.85,
+      "voice_speed": 0.95,
+      "emotion": "neutral",
+      "description": "Default narrator voice"
+    }
+  },
+  "voice_pitch_guide": {
+    "child": 1.2,
+    "young_male": 0.90,
+    "adult_male": 0.82,
+    "mature_male": 0.78,
+    "elder_male": 0.72,
+    "young_female": 1.05,
+    "adult_female": 1.0,
+    "elder_female": 0.95
+  },
+  "voice_speed_guide": {
+    "storytelling": 0.90,
+    "conversation": 1.0,
+    "excited": 1.15,
+    "dramatic": 0.85,
+    "elder_slow": 0.80
+  }
+}

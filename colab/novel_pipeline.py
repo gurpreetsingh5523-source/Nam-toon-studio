@@ -1,9 +1,10 @@
-"""Offline novel-to-cinema minimal pipeline.
+"""Offline novel-to-cinema minimal pipeline (TXT only).
 
-Reads `novel.txt` (preferred) or `novel.pdf` (if PyPDF2 available), splits into scenes,
-extracts simple characters, and writes `colab/scenes.json` describing scenes and dialogues.
+Reads `novel.txt`, splits into scenes, extracts simple characters, and writes
+`colab/scenes.json` describing scenes and dialogues.
 
-This is intentionally dependency-light and works without any external APIs.
+Note: PDF support removed by request. Keep your story in `novel.txt` (UTF‑8).
+This script is dependency-light and uses no external APIs.
 """
 from pathlib import Path
 import re
@@ -16,14 +17,7 @@ def read_text_file(path: Path) -> str:
     return path.read_text(encoding='utf-8')
 
 
-def extract_text_from_pdf(path: Path) -> str:
-    try:
-        import PyPDF2
-        reader = PyPDF2.PdfReader(str(path))
-        pages = [p.extract_text() or '' for p in reader.pages]
-        return '\n\n'.join(pages)
-    except Exception:
-        raise RuntimeError('PyPDF2 not available or PDF parsing failed')
+# PDF support deliberately removed. Keep input in novel.txt only.
 
 
 def split_into_scenes(text: str):
@@ -44,16 +38,32 @@ def split_into_scenes(text: str):
 
 
 def simple_character_extraction(text: str, max_char=6):
-    # heuristics: find capitalized words (2+ letters) that appear often
-    tokens = re.findall(r"\b[A-Z][a-z]{1,20}\b", text)
-    freq = {}
-    for t in tokens:
-        freq[t] = freq.get(t, 0) + 1
-    sorted_names = sorted(freq.items(), key=lambda x: -x[1])
-    names = [n for n, _ in sorted_names[:max_char]]
-    if not names:
-        names = ['Narrator', 'Protagonist']
-    return names
+    # Extract Punjabi names (Gurmukhi script) - look for proper nouns
+    # Common Punjabi names in this story: ਕੁਲਵੰਤ, ਅਮਨਦੀਪ, ਦਲਜੀਤ, ਦਲੀਪ, ਰਮਨਦੀਪ, ਜਸਪ੍ਰੀਤ
+    
+    # Hardcoded character list for this story (narrator + main characters)
+    # In future: use NER or pattern matching for Punjabi names
+    known_chars = ['ਕੁਲਵੰਤ', 'ਅਮਨਦੀਪ', 'ਅਮਨ', 'ਦਲਜੀਤ', 'ਦਲੀਪ', 'ਰਮਨਦੀਪ', 'ਜਸਪ੍ਰੀਤ']
+    
+    # Check which characters appear in text
+    found = []
+    for char in known_chars:
+        if char in text:
+            found.append(char)
+    
+    # Always include narrator as first character
+    if 'ਕੁਲਵੰਤ' in found:
+        # ਕੁਲਵੰਤ is the narrator
+        chars = ['ਕੁਲਵੰਤ (Narrator)']
+        found.remove('ਕੁਲਵੰਤ')
+        chars.extend(found[:max_char-1])
+    else:
+        chars = ['Narrator'] + found[:max_char-1]
+    
+    if not chars or len(chars) == 0:
+        chars = ['Narrator', 'Character']
+    
+    return chars
 
 
 def sentences_from_text(text: str):
@@ -64,41 +74,62 @@ def sentences_from_text(text: str):
 
 def build_scene_json(scenes, characters):
     out = {'scenes': []}
+    
+    # Narrator is always first character (if exists)
+    narrator = characters[0] if characters else 'Narrator'
+    
     for i, s in enumerate(scenes):
         sents = sentences_from_text(s)
         dialogues = []
-        # assign sentences to characters round-robin with some randomness
+        
+        # Smart assignment: most sentences go to narrator, unless dialogue markers present
         for j, sent in enumerate(sents):
-            char = characters[(j) % len(characters)]
+            # Check if sentence looks like direct speech (has quotes or dialogue markers)
+            is_dialogue = any(marker in sent for marker in ['"', '"', '"', ':', '—', 'ਕਹਿ', 'ਬੋਲ', 'ਆਖ'])
+            
+            if is_dialogue and len(characters) > 1:
+                # Assign to a character (cycle through non-narrator characters)
+                char_idx = (j % (len(characters) - 1)) + 1
+                char = characters[char_idx] if char_idx < len(characters) else narrator
+            else:
+                # Narrator speaks
+                char = narrator
+            
             vol = 1.0
-            if '?' in sent:
+            if '?' in sent or '।' in sent:  # Question or exclamation
                 emotion = 'question'
             elif '!' in sent:
                 emotion = 'exclaim'
                 vol = 1.05
             else:
                 emotion = 'neutral'
+            
             dialogues.append({'character': char, 'text': sent, 'volume': vol, 'emotion': emotion})
-        out['scenes'].append({'scene_id': str(i), 'title': f'Scene {i+1}', 'dialogues': dialogues})
+        
+        # Scene metadata based on content
+        scene_title = f'Scene {i+1}'
+        if i == 0:
+            scene_title = 'ਸ਼ੁਰੂਆਤ (Introduction)'
+        elif 'ਵਿਆਹ' in s:
+            scene_title = 'ਵਿਆਹ (Marriage)'
+        elif 'ਅੱਗ' in s or 'ਜਲ' in s:
+            scene_title = 'ਹਾਦਸਾ (Tragedy)'
+        elif 'ਹਸਪਤਾਲ' in s or 'ਮੌਤ' in s:
+            scene_title = 'ਮੌਤ (Death)'
+        
+        out['scenes'].append({'scene_id': str(i), 'title': scene_title, 'dialogues': dialogues})
+    
     return out
 
 
 def main():
     base = Path(__file__).parent
     txt = base.parent / 'novel.txt'
-    pdf = base.parent / 'novel.pdf'
     if txt.exists():
         print('Reading novel.txt')
         text = read_text_file(txt)
-    elif pdf.exists():
-        print('Attempting to read novel.pdf')
-        try:
-            text = extract_text_from_pdf(pdf)
-        except Exception as e:
-            print('PDF read failed:', e)
-            sys.exit(1)
     else:
-        print('No novel.txt or novel.pdf found. Please add novel.txt with the story.')
+        print('No novel.txt found. Please create a UTF-8 text file at project root named novel.txt with your story.')
         sys.exit(1)
 
     scenes = split_into_scenes(text)

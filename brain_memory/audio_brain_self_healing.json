@@ -1,0 +1,19 @@
+{
+  "diagnostics": [
+    "Check RMS levels at multiple time points",
+    "Detect gaps in continuity",
+    "Measure dB levels",
+    "Verify loop duration matches video duration"
+  ],
+  "fixes": [
+    "Increase amplitude in generation code",
+    "Extend audio loop to full duration",
+    "Adjust bg-gain parameter",
+    "Add silence padding if needed"
+  ],
+  "verification": [
+    "Re-check RMS levels after fix",
+    "Verify 80%+ pass rate",
+    "Confirm no silent gaps"
+  ]
+}
