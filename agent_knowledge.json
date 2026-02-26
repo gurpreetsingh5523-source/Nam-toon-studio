@@ -1,0 +1,1785 @@
+{
+  "fixes": [],
+  "patterns": [
+    {
+      "timestamp": "2025-12-02T22:51:39.888332",
+      "success": false,
+      "duration": 4.260735034942627,
+      "output_snippet": "  File \"/Users/gurpreetdhillon/Nam-toon-studio/colab/master_builder.py\", line 856\n    return None\nIndentationError: expected an indented block after 'except' statement on line 854\n"
+    },
+    {
+      "timestamp": "2025-12-02T22:52:13.591169",
+      "success": false,
+      "duration": 2.329988956451416,
+      "output_snippet": "  File \"/Users/gurpreetdhillon/Nam-toon-studio/colab/master_builder.py\", line 866\n    return ImageFont.load_default()\n    ^^^^^^\nIndentationError: expected an indented block after 'except' statement o"
+    },
+    {
+      "timestamp": "2025-12-02T22:52:54.521670",
+      "success": false,
+      "duration": 2.3972930908203125,
+      "output_snippet": "  File \"/Users/gurpreetdhillon/Nam-toon-studio/colab/master_builder.py\", line 993\n    try:\nIndentationError: expected an indented block after 'except' statement on line 990\n"
+    },
+    {
+      "timestamp": "2025-12-02T22:55:31.451356",
+      "success": false,
+      "duration": 2.8194727897644043,
+      "output_snippet": "Traceback (most recent call last):\n  File \"/Users/gurpreetdhillon/Nam-toon-studio/colab/master_builder.py\", line 6, in <module>\n    from moviepy.editor import *  # Using the simpler import style\n    ^"
+    },
+    {
+      "timestamp": "2025-12-02T23:25:35.137700",
+      "success": false,
+      "duration": 3.6566827297210693,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-02T23:55:37.170998",
+      "success": false,
+      "duration": 2.020667791366577,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-03T06:49:59.034120",
+      "success": false,
+      "duration": 2.0504531860351562,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-03T18:15:32.323748",
+      "success": false,
+      "duration": 2.249289035797119,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-03T18:46:24.232713",
+      "success": false,
+      "duration": 2.2456867694854736,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-03T20:47:08.468729",
+      "success": false,
+      "duration": 0.49907898902893066,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-03T21:21:27.015611",
+      "success": false,
+      "duration": 1.7251360416412354,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-03T21:51:27.515401",
+      "success": false,
+      "duration": 0.4612741470336914,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-04T04:24:50.667580",
+      "success": false,
+      "duration": 0.4549899101257324,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-04T04:54:51.240801",
+      "success": false,
+      "duration": 0.48205113410949707,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-04T14:51:18.297300",
+      "success": false,
+      "duration": 0.23288679122924805,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-04T16:04:15.683062",
+      "success": false,
+      "duration": 0.23224282264709473,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-04T16:53:50.746291",
+      "success": false,
+      "duration": 0.36126208305358887,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-04T17:23:51.259305",
+      "success": false,
+      "duration": 0.47350120544433594,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-04T17:53:51.626729",
+      "success": false,
+      "duration": 0.2209780216217041,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-04T18:23:51.940080",
+      "success": false,
+      "duration": 0.2643892765045166,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-04T18:53:52.504654",
+      "success": false,
+      "duration": 0.5075678825378418,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-04T19:23:53.031130",
+      "success": false,
+      "duration": 0.469804048538208,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-04T19:53:53.340706",
+      "success": false,
+      "duration": 0.23793697357177734,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-04T20:23:53.801345",
+      "success": false,
+      "duration": 0.3862307071685791,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-04T20:53:54.354450",
+      "success": false,
+      "duration": 0.514451265335083,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-04T21:23:54.940651",
+      "success": false,
+      "duration": 0.48982667922973633,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-04T21:53:55.450507",
+      "success": false,
+      "duration": 0.4225118160247803,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-04T22:23:56.014636",
+      "success": false,
+      "duration": 0.4951817989349365,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-04T22:53:56.520404",
+      "success": false,
+      "duration": 0.44542384147644043,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-04T23:23:57.130120",
+      "success": false,
+      "duration": 0.49613094329833984,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-04T23:53:57.627688",
+      "success": false,
+      "duration": 0.4627821445465088,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T00:23:58.216459",
+      "success": false,
+      "duration": 0.49797701835632324,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T00:53:58.794162",
+      "success": false,
+      "duration": 0.504817008972168,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T01:23:59.173897",
+      "success": false,
+      "duration": 0.25632381439208984,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T01:53:59.610991",
+      "success": false,
+      "duration": 0.4353599548339844,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T02:24:00.213168",
+      "success": false,
+      "duration": 0.500511884689331,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T02:54:00.692796",
+      "success": false,
+      "duration": 0.3988983631134033,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T03:24:01.255383",
+      "success": false,
+      "duration": 0.4967060089111328,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T03:54:01.600948",
+      "success": false,
+      "duration": 0.26773595809936523,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T04:24:01.901564",
+      "success": false,
+      "duration": 0.2564561367034912,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T04:54:02.439568",
+      "success": false,
+      "duration": 0.4655921459197998,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T05:24:03.055037",
+      "success": false,
+      "duration": 0.4940502643585205,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T05:54:03.377278",
+      "success": false,
+      "duration": 0.2566230297088623,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T06:24:03.737687",
+      "success": false,
+      "duration": 0.2553901672363281,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T06:54:04.177807",
+      "success": false,
+      "duration": 0.40549492835998535,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T07:24:04.691157",
+      "success": false,
+      "duration": 0.48146700859069824,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T07:54:05.309423",
+      "success": false,
+      "duration": 0.5668199062347412,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T08:24:05.878942",
+      "success": false,
+      "duration": 0.4882979393005371,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T08:54:06.547882",
+      "success": false,
+      "duration": 0.4983808994293213,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T09:24:07.064699",
+      "success": false,
+      "duration": 0.5000419616699219,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T09:54:07.611402",
+      "success": false,
+      "duration": 0.491074800491333,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T10:24:08.219470",
+      "success": false,
+      "duration": 0.48722386360168457,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T10:54:08.725097",
+      "success": false,
+      "duration": 0.48841214179992676,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T11:24:09.346992",
+      "success": false,
+      "duration": 0.4899158477783203,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T11:54:09.933796",
+      "success": false,
+      "duration": 0.49126720428466797,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T12:24:10.500310",
+      "success": false,
+      "duration": 0.48809385299682617,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T12:54:11.019496",
+      "success": false,
+      "duration": 0.469832181930542,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T13:24:11.510577",
+      "success": false,
+      "duration": 0.4746890068054199,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T13:54:12.121352",
+      "success": false,
+      "duration": 0.4951972961425781,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T14:24:12.700933",
+      "success": false,
+      "duration": 0.47653818130493164,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T14:54:13.259130",
+      "success": false,
+      "duration": 0.5010738372802734,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T15:24:13.797439",
+      "success": false,
+      "duration": 0.4680027961730957,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T15:54:14.348225",
+      "success": false,
+      "duration": 0.4939768314361572,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T16:24:14.929836",
+      "success": false,
+      "duration": 0.4970707893371582,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T16:54:15.520288",
+      "success": false,
+      "duration": 0.4860649108886719,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T17:24:16.075867",
+      "success": false,
+      "duration": 0.48423194885253906,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T17:54:16.407379",
+      "success": false,
+      "duration": 0.25795912742614746,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T18:24:16.940065",
+      "success": false,
+      "duration": 0.47008275985717773,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T18:54:17.482757",
+      "success": false,
+      "duration": 0.483612060546875,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T19:24:18.053644",
+      "success": false,
+      "duration": 0.48661303520202637,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T19:54:18.371485",
+      "success": false,
+      "duration": 0.2581970691680908,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T20:24:18.929982",
+      "success": false,
+      "duration": 0.474074125289917,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T20:54:19.492809",
+      "success": false,
+      "duration": 0.5132529735565186,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T21:24:20.041589",
+      "success": false,
+      "duration": 0.43230700492858887,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-05T21:54:20.588031",
+      "success": false,
+      "duration": 0.46318602561950684,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-06T10:22:40.043897",
+      "success": false,
+      "duration": 0.5961380004882812,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-06T11:06:14.887347",
+      "success": false,
+      "duration": 0.6176860332489014,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-06T11:38:29.308354",
+      "success": false,
+      "duration": 0.5098388195037842,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-06T12:08:29.959193",
+      "success": false,
+      "duration": 0.4915909767150879,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    },
+    {
+      "timestamp": "2025-12-06T13:14:31.741079",
+      "success": false,
+      "duration": 0.582496166229248,
+      "output_snippet": "Fatal Python error: init_sys_streams: can't initialize sys standard streams\nPython runtime state: core initialized\nOSError: [Errno 9] Bad file descriptor\n\nCurrent thread 0x00000002006b09c0 (most recen"
+    }
+  ],
+  "upgrades": [
+    {
+      "timestamp": "2025-12-03T20:47:08.526652",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: colab/master_builder.py",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 6
+    },
+    {
+      "timestamp": "2025-12-03T20:47:08.529413",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-03T21:21:27.054996",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-03T21:21:27.055340",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-03T21:51:27.556375",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-03T21:51:27.556806",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-04T04:24:50.707873",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T04:24:50.746511",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T04:24:50.746870",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-04T04:54:51.307876",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T04:54:51.308401",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-04T14:51:18.337594",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T14:51:18.337987",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-04T16:04:15.723280",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T16:04:15.723631",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-04T16:53:50.786601",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T16:53:50.786984",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-04T17:23:51.304845",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T17:23:51.351561",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T17:23:51.352026",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-04T17:53:51.665601",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T17:53:51.666061",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-04T18:23:51.981159",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T18:23:51.981623",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-04T18:53:52.545288",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T18:53:52.545787",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-04T19:23:53.072072",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T19:23:53.072532",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-04T19:53:53.383901",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T19:53:53.424380",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T19:53:53.424927",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-04T20:23:53.841672",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T20:23:53.842154",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-04T20:53:54.396232",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T20:53:54.401676",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-04T21:23:54.989486",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T21:23:54.990383",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-04T21:53:55.499009",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T21:53:55.499581",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-04T22:23:56.063224",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T22:23:56.111362",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T22:23:56.112138",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-04T22:53:56.568953",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T22:53:56.569745",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-04T23:23:57.178416",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T23:23:57.179046",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-04T23:53:57.676171",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-04T23:53:57.677044",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T00:23:58.265114",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T00:23:58.265765",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T00:53:58.842683",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T00:53:58.890896",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T00:53:58.891509",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T01:23:59.222165",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T01:23:59.222787",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T01:53:59.659324",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T01:53:59.659969",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T02:24:00.261381",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T02:24:00.262044",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T02:54:00.741507",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T02:54:00.742356",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T03:24:01.303497",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T03:24:01.351785",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T03:24:01.352471",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T03:54:01.649470",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T03:54:01.650178",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T04:24:01.949828",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T04:24:01.950519",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T04:54:02.487895",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T04:54:02.488585",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T05:24:03.103496",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T05:24:03.104235",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T05:54:03.422495",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T05:54:03.470309",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T05:54:03.471069",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T06:24:03.786064",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T06:24:03.786817",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T06:54:04.217354",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T06:54:04.218338",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T07:24:04.715355",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T07:24:04.715986",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T07:54:05.375520",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T07:54:05.377191",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T08:24:05.927542",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T08:24:05.976138",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T08:24:05.977090",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T08:54:06.596218",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T08:54:06.596999",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T09:24:07.113145",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T09:24:07.114220",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T09:54:07.659824",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T09:54:07.660674",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T10:24:08.268308",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T10:24:08.269155",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T10:54:08.773331",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T10:54:08.821966",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T10:54:08.822782",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T11:24:09.395641",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T11:24:09.396750",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T11:54:09.982386",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T11:54:09.983376",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T12:24:10.549146",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T12:24:10.550158",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T12:54:11.068469",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T12:54:11.069350",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T13:24:11.559666",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T13:24:11.608431",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T13:24:11.609310",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T13:54:12.170103",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T13:54:12.171250",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T14:24:12.737401",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T14:24:12.738224",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T14:54:13.307794",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T14:54:13.308828",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T15:24:13.846226",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T15:24:13.847077",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T15:54:14.396937",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T15:54:14.445793",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T15:54:14.446997",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T16:24:14.978868",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T16:24:14.980067",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T16:54:15.569117",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T16:54:15.570320",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T17:24:16.124912",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T17:24:16.126049",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T17:54:16.455729",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T17:54:16.456629",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T18:24:16.988674",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T18:24:17.037481",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T18:24:17.038734",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T18:54:17.531388",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T18:54:17.532341",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T19:24:18.102498",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T19:24:18.103404",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T19:54:18.420095",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T19:54:18.421093",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T20:24:18.971177",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T20:24:18.972366",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T20:54:19.537467",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T20:54:19.597561",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T20:54:19.598771",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T21:24:20.082149",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 5
+    },
+    {
+      "timestamp": "2025-12-05T21:24:20.083321",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-05T21:54:20.648796",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: colab/master_builder.py",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 6
+    },
+    {
+      "timestamp": "2025-12-05T21:54:20.652262",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-06T10:22:40.104119",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: colab/master_builder.py",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 6
+    },
+    {
+      "timestamp": "2025-12-06T10:22:40.105116",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-06T11:06:14.948147",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: colab/master_builder.py",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 6
+    },
+    {
+      "timestamp": "2025-12-06T11:06:14.949117",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-06T11:38:29.368120",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: colab/master_builder.py",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 6
+    },
+    {
+      "timestamp": "2025-12-06T11:38:29.429491",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: colab/master_builder.py",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 6
+    },
+    {
+      "timestamp": "2025-12-06T11:38:29.430485",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-06T12:08:30.020167",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: colab/master_builder.py",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 6
+    },
+    {
+      "timestamp": "2025-12-06T12:08:30.021142",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    },
+    {
+      "timestamp": "2025-12-06T13:14:31.802023",
+      "applied": [
+        "Created tool: asset_downloader",
+        "Created tool: code_refactor",
+        "Created tool: smart_upgrade",
+        "Updated core packages",
+        "Formatted: colab/master_builder.py",
+        "Formatted: autonomous_agent_24x7.py"
+      ],
+      "count": 6
+    },
+    {
+      "timestamp": "2025-12-06T13:14:31.803005",
+      "reason": "low_success_rate",
+      "action": "enhanced_error_handling"
+    }
+  ]
+}

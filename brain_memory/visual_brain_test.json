@@ -1,0 +1,101 @@
+{
+  "brain": "visual",
+  "results": [
+    {
+      "scene_id": 0,
+      "emotion": "family_background",
+      "camera_movement": "steady",
+      "color_palette": [
+        "warm_orange",
+        "soft_yellow"
+      ],
+      "num_characters": 4,
+      "animation_intensity": 0.3,
+      "brain_reasoning": "Emotion 'family_background' → steady camera"
+    },
+    {
+      "scene_id": 1,
+      "emotion": "trouble",
+      "camera_movement": "handheld",
+      "color_palette": [
+        "dark_red",
+        "gray"
+      ],
+      "num_characters": 2,
+      "animation_intensity": 0.3,
+      "brain_reasoning": "Emotion 'trouble' → handheld camera"
+    },
+    {
+      "scene_id": 2,
+      "emotion": "brotherhood",
+      "camera_movement": "rhythmic_zoom",
+      "color_palette": [
+        "green",
+        "blue"
+      ],
+      "num_characters": 2,
+      "animation_intensity": 0.3,
+      "brain_reasoning": "Emotion 'brotherhood' → rhythmic_zoom camera"
+    },
+    {
+      "scene_id": 3,
+      "emotion": "marriage_conflict",
+      "camera_movement": "static_close",
+      "color_palette": [
+        "red",
+        "purple"
+      ],
+      "num_characters": 3,
+      "animation_intensity": 0.3,
+      "brain_reasoning": "Emotion 'marriage_conflict' → static_close camera"
+    },
+    {
+      "scene_id": 4,
+      "emotion": "alienation",
+      "camera_movement": "slow_pan",
+      "color_palette": [
+        "gray",
+        "dark_blue"
+      ],
+      "num_characters": 4,
+      "animation_intensity": 0.3,
+      "brain_reasoning": "Emotion 'alienation' → slow_pan camera"
+    },
+    {
+      "scene_id": 5,
+      "emotion": "harassment",
+      "camera_movement": "handheld",
+      "color_palette": [
+        "black",
+        "red"
+      ],
+      "num_characters": 4,
+      "animation_intensity": 0.3,
+      "brain_reasoning": "Emotion 'harassment' → handheld camera"
+    },
+    {
+      "scene_id": 6,
+      "emotion": "despair",
+      "camera_movement": "static_close",
+      "color_palette": [
+        "dark_gray",
+        "black"
+      ],
+      "num_characters": 2,
+      "animation_intensity": 0.5,
+      "brain_reasoning": "Emotion 'despair' → static_close camera"
+    },
+    {
+      "scene_id": 7,
+      "emotion": "aftermath_questioning",
+      "camera_movement": "steady",
+      "color_palette": [
+        "gray",
+        "white"
+      ],
+      "num_characters": 3,
+      "animation_intensity": 0.3,
+      "brain_reasoning": "Emotion 'aftermath_questioning' → steady camera"
+    }
+  ]
+}

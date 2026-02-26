@@ -1,0 +1,28 @@
+{
+  "generated_at": "2025-12-06T13:24:38.740519",
+  "tasks": [
+    {
+      "type": "tool",
+      "name": "Perception Auto Runner",
+      "suggested_file": "rahbar_perception_scheduler.py",
+      "priority": "CRITICAL",
+      "description": "Automatically trigger AmritPerceptionBrain for every new video to capture intelligence logs.",
+      "description_pa": "ਹਰ ਨਵੀਂ ਵੀਡੀਓ ਲਈ ਪਰਸੈਪਸ਼ਨ ਬ੍ਰੇਨ ਆਪ ਚਲਾਉਣ ਵਾਲਾ ਟੂਲ।"
+    },
+    {
+      "type": "tool",
+      "name": "Feedback Insight Miner",
+      "suggested_file": "feedback_insight_miner.py",
+      "priority": "CRITICAL",
+      "description": "Cluster user feedback to identify repeating complaints and auto-generate improvement tasks.",
+      "description_pa": "ਯੂਜ਼ਰ ਫੀਡਬੈਕ ਨੂੰ ਕਲਸਟਰਨ ਕਰਕੇ ਮੁੜ ਆਉਣ ਵਾਲੀਆਂ ਸਮੱਸਿਆਵਾਂ ਲਈ ਕੰਮ ਆਪ ਬਣਾਓ।"
+    },
+    {
+      "type": "learning",
+      "name": "Establish Perception Baseline",
+      "priority": "HIGH",
+      "description": "Collect at least one perception report per daily render to enable trend analysis.",
+      "description_pa": "ਰੋਜ਼ਾਨਾ ਹਰੇਕ ਰੇਂਡਰ ਲਈ ਘੱਟੋ-ਘੱਟ ਇੱਕ ਪਰਸੈਪਸ਼ਨ ਰਿਪੋਰਟ ਇਕੱਠੀ ਕਰੋ।"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Nano training data for TinyBERT classifier
+# Format: question\tcategory
+What is gravity?	Physics
+nuton da law kee se?	Physics
+math295=345?	Physics
+How to reverse gravity?	Physics
+Ki universe vich jeevan di sambhavana hai?	Physics
+cancer da qure lai ke ke techniques available ne?	Health
+fever nu kiven control kariye?	Health
+ki healthy diet ki hai?	Health
+first aid kise accident layi ki hai?	Health
+fure work ki technique hai?	Health
+ki gurbani vich akaal described keeta hai?	Culture
+Punjabi idioms di list daso.	Culture
+ki Lohri da mool arth ki hai?	Culture
+ki Vaisakhi di importance ki hai?	Culture
+ki Punjabi culture vich family role ki hai?	Culture
+nano brain kamm kivey kardey?	Tech
+ki future hai nano brains da?	Tech
+ki koi brain fully trained keeta ja sakda robot vich paoun to pehla hi?	Tech
+What is Python programming?	Tech
+How does AI learn?	Tech

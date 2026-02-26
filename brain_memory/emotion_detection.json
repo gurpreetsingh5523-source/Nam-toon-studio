@@ -1,0 +1,126 @@
+{
+  "indicators": {
+    "happy": {
+      "keywords": [
+        "ਖੁਸ਼",
+        "ਖੁਸ਼ੀ",
+        "happy",
+        "joy",
+        "glad",
+        "delighted",
+        "pleased"
+      ],
+      "intensity_modifiers": [
+        "very",
+        "so",
+        "extremely",
+        "ਬਹੁਤ"
+      ],
+      "accuracy": 0.0,
+      "detection_count": 1
+    },
+    "sad": {
+      "keywords": [
+        "ਦੁਖੀ",
+        "ਉਦਾਸ",
+        "sad",
+        "sorrow",
+        "grief",
+        "unhappy"
+      ],
+      "intensity_modifiers": [
+        "very",
+        "deeply",
+        "extremely",
+        "ਬਹੁਤ"
+      ],
+      "accuracy": 0.0,
+      "detection_count": 0
+    },
+    "angry": {
+      "keywords": [
+        "ਗੁੱਸਾ",
+        "ਕ੍ਰੋਧ",
+        "angry",
+        "rage",
+        "furious",
+        "mad"
+      ],
+      "intensity_modifiers": [
+        "very",
+        "extremely",
+        "ਬਹੁਤ"
+      ],
+      "accuracy": 0.0,
+      "detection_count": 0
+    },
+    "fearful": {
+      "keywords": [
+        "ਡਰ",
+        "ਭਿਆ",
+        "fear",
+        "scared",
+        "afraid",
+        "terrified"
+      ],
+      "intensity_modifiers": [
+        "very",
+        "so",
+        "ਬਹੁਤ"
+      ],
+      "accuracy": 0.0,
+      "detection_count": 0
+    },
+    "surprised": {
+      "keywords": [
+        "ਹੈਰਾਨ",
+        "surprise",
+        "shocked",
+        "amazed",
+        "astonished"
+      ],
+      "intensity_modifiers": [
+        "very",
+        "so",
+        "ਬਹੁਤ"
+      ],
+      "accuracy": 0.0,
+      "detection_count": 0
+    },
+    "loving": {
+      "keywords": [
+        "ਪਿਆਰ",
+        "ਪ੍ਰੇਮ",
+        "love",
+        "affection",
+        "care",
+        "dear"
+      ],
+      "intensity_modifiers": [
+        "deep",
+        "true",
+        "ਗਹਿਰਾ"
+      ],
+      "accuracy": 0.0,
+      "detection_count": 0
+    },
+    "peaceful": {
+      "keywords": [
+        "ਸ਼ਾਂਤ",
+        "ਸੁਖ",
+        "peace",
+        "calm",
+        "serene",
+        "tranquil"
+      ],
+      "intensity_modifiers": [
+        "very",
+        "completely",
+        "ਬਹੁਤ"
+      ],
+      "accuracy": 0.0,
+      "detection_count": 0
+    }
+  },
+  "last_updated": "2025-11-02T23:20:52.607413"
+}

@@ -1,0 +1,63 @@
+/Users/gurpreetdhillon/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+
+======================================================================
+🌙 RAHBAR AI DEVELOPER - OVERNIGHT TRAINING
+   ਜ਼ਿੰਮੇਵਾਰੀ: ਸਾਰੀ ਰਾਤ AI Training
+   ਵਾਹਿਗੁਰੂ ਜੀ ਕਾ ਖਾਲਸਾ, ਵਾਹਿਗੁਰੂ ਜੀ ਕੀ ਫਤਿਹ
+======================================================================
+
+🌙 RAHBAR AI DEVELOPER - OVERNIGHT TRAINING MANAGER
+======================================================================
+   Responsibility: Train all 7 AI brains
+   Duration: All night until morning
+   Auto-fix: Any issues that arise
+======================================================================
+
+[20:57:26] 
+🚀 Starting Overnight Training
+[20:57:26]    Start time: 08:57 PM
+[20:57:26] 🔍 Checking dependencies...
+[20:57:26]    ✅ Pillow
+[20:57:27]    ✅ torch
+[20:57:27]    ✅ transformers
+[20:57:27] 
+📸 Phase 1: Training on Photos
+[20:57:27]    Creating photo analysis system...
+[20:57:27]    Found 49 photos
+[20:57:27]    Analyzing photos...
+[20:57:27]       Progress: 25/100
+[20:57:27]    ✅ Photo analysis complete: 48 photos
+[20:57:27] 
+⏸️  Taking 10 second break...
+[20:57:37] 
+🎵 Phase 2: Training on Keertan Audio
+[20:57:37]    Found 100 audio files
+[20:57:37]    ✅ Audio analysis complete: 100 files (4815.3 MB)
+[20:57:37] 
+⏸️  Taking 10 second break...
+[20:57:47] 
+🧠 Phase 3: Training All 7 AI Brains
+[20:57:47]    ✅ rahbar_developer trained
+[20:57:48]    ✅ auto_healer trained
+[20:57:48]    ✅ learning_brain trained
+[20:57:49]    ✅ video_maker trained
+[20:57:49]    ✅ monitor trained
+[20:57:50]    ✅ teacher trained
+[20:57:50]    ✅ amrit_main trained
+[20:57:51]    ✅ All 7 brains trained successfully!
+[20:57:51] 
+📊 Report saved: /Users/gurpreetdhillon/Nam-toon-studio/OVERNIGHT_TRAINING_REPORT.json
+[20:57:51] 
+======================================================================
+[20:57:51] ✅ OVERNIGHT TRAINING COMPLETE!
+[20:57:51] ======================================================================
+[20:57:51]    End time: 08:57 PM
+[20:57:51]    Photos trained: Yes
+[20:57:51]    Audio trained: Yes
+[20:57:51]    Brains trained: Yes
+[20:57:51] 
+🌅 ਸਵੇਰ ਹੋ ਗਈ! AI ਤਿਆਰ ਹੈ!
+
+🎉 Training successful! AI is ready!
+   Test with: python3 simple_working_agent.py --videos 3

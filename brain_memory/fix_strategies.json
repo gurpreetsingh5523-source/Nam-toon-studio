@@ -1,0 +1,91 @@
+{
+  "audio_silence": {
+    "description": "Fix silent audio by increasing amplitude",
+    "steps": [
+      {
+        "action": "modify_code",
+        "file": "colab/master_builder.py",
+        "search": "pad = {current_value} * np.sin",
+        "replace": "pad = {increased_value} * np.sin",
+        "increase_by": 0.2,
+        "max_value": 0.8
+      },
+      {
+        "action": "regenerate",
+        "command": "python colab/master_builder.py --scenes {scenes} --bg-gain {gain}"
+      },
+      {
+        "action": "verify",
+        "check": "audio_silence"
+      }
+    ],
+    "max_iterations": 5,
+    "learning": true
+  },
+  "audio_intermittent": {
+    "description": "Fix gaps in background music by ensuring continuous loop",
+    "steps": [
+      {
+        "action": "modify_code",
+        "file": "colab/master_builder.py",
+        "insert_after": "bg_loop = audio_loop(background_audio_clip, duration=total_duration)",
+        "code": "\n# SELF-HEALING FIX: Ensure continuous loop\nif bg_loop.duration < total_duration:\n    log.warning(f\"\u26a0\ufe0f  bg_loop too short, extending to {total_duration}s\")\n    from moviepy.editor import AudioClip, concatenate_audioclips\n    gap = total_duration - bg_loop.duration\n    silence = AudioClip(lambda t: [0,0], duration=gap, fps=44100)\n    bg_loop = concatenate_audioclips([bg_loop, silence])\nlog.info(f\"\u2713 Background loop verified: {bg_loop.duration:.2f}s\")\n"
+      },
+      {
+        "action": "regenerate",
+        "command": "python colab/master_builder.py --scenes {scenes} --bg-gain 0.70"
+      },
+      {
+        "action": "verify",
+        "check": "audio_intermittent"
+      }
+    ],
+    "max_iterations": 3,
+    "learning": true
+  },
+  "portrait_missing": {
+    "description": "Fix invisible portraits by increasing size",
+    "steps": [
+      {
+        "action": "modify_code",
+        "file": "colab/master_builder.py",
+        "search": "speaker_size = {current_value}",
+        "replace": "speaker_size = {increased_value}",
+        "increase_by": 100,
+        "max_value": 800
+      },
+      {
+        "action": "regenerate",
+        "command": "python colab/master_builder.py --scenes {scenes}"
+      },
+      {
+        "action": "verify",
+        "check": "portrait_missing"
+      }
+    ],
+    "max_iterations": 3,
+    "learning": true
+  },
+  "music_volume_low": {
+    "description": "Increase bg-gain parameter",
+    "steps": [
+      {
+        "action": "adjust_parameter",
+        "parameter": "bg_gain",
+        "current": 0.35,
+        "increase_by": 0.15,
+        "max": 0.9
+      },
+      {
+        "action": "regenerate",
+        "command": "python colab/master_builder.py --scenes {scenes} --bg-gain {bg_gain}"
+      },
+      {
+        "action": "verify",
+        "check": "music_volume_low"
+      }
+    ],
+    "max_iterations": 4,
+    "learning": true
+  }
+}

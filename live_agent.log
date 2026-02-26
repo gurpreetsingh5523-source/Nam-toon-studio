@@ -1,0 +1,839 @@
+🔴 [06:59:18] 
+🚀 STARTING LIVE AGENT
+🔴 [06:59:18]    Press Ctrl+C to stop
+
+🔴 [06:59:18] 
+======================================================================
+🔴 [06:59:18] 🔄 CYCLE #1
+🔴 [06:59:18] ⏰ 06:59:18
+🔴 [06:59:18] ======================================================================
+🔴 [06:59:18] 
+🔍 DISCOVERING NEW LOGIC...
+🔴 [06:59:18]    ✨ Found 3 classes in atmanirbhar_system.py
+🔴 [06:59:18]    ✨ Found 1 classes in naam_surti_heartbeat.py
+🔴 [06:59:18]    ✨ Found 5 classes in MASTER_BRAIN_SUPREME.py
+🔴 [06:59:18]    ✨ Found 1 classes in enhanced_amrit_with_guardian.py
+🔴 [06:59:18]    ✨ Found 6 classes in VOICE_SYSTEM_UNIFIED.py
+🔴 [06:59:18]    ✅ Discovered 5 new patterns
+🔴 [06:59:18] 
+🔧 AUTO-FIXING...
+🔴 [06:59:18] ======================================================================
+🔴 [06:59:18] 🤖 MASTER AGENT CONTROLLER STARTING
+🔴 [06:59:18]    ਸਾਰੇ agents ਨੂੰ auto mode ਤੇ ਲਗਾ ਰਿਹਾਂ...
+🔴 [06:59:18] ======================================================================
+🔴 [06:59:18] 
+🔍 DISCOVERING AGENTS...
+🔴 [06:59:18] ----------------------------------------------------------------------
+🔴 [06:59:18]    ✅ Found: StudioAgentSecurity in studio_agent_security.py
+🔴 [06:59:18]    ✅ Found: StudioAgentCodegen in studio_agent_codegen.py
+🔴 [06:59:18]    ✅ Found: StudioAgent in studio_agent.py
+🔴 [06:59:18]    ✅ Found: AutonomousAgent in autonomous_agent_24x7.py
+🔴 [06:59:18] 
+📊 Total agents discovered: 4
+🔴 [06:59:18] 
+⚙️  CONFIGURING AGENTS FOR AUTO-MODE...
+🔴 [06:59:18] ----------------------------------------------------------------------
+🔴 [06:59:18]    ✅ StudioAgentSecurity configured
+🔴 [06:59:18]       → Auto-fix: ON
+🔴 [06:59:18]       → Auto-update: ON
+🔴 [06:59:18]       → Evolution: ON
+🔴 [06:59:18]    ✅ StudioAgentCodegen configured
+🔴 [06:59:18]       → Auto-fix: ON
+🔴 [06:59:18]       → Auto-update: ON
+🔴 [06:59:18]       → Evolution: ON
+🔴 [06:59:18]    ✅ StudioAgent configured
+🔴 [06:59:18]       → Auto-fix: ON
+🔴 [06:59:18]       → Auto-update: ON
+🔴 [06:59:18]       → Evolution: ON
+🔴 [06:59:18] 📚 Loaded knowledge: 0 past fixes
+🔴 [06:59:18]    ✅ AutonomousAgent configured
+🔴 [06:59:18]       → Auto-fix: ON
+🔴 [06:59:18]       → Auto-update: ON
+🔴 [06:59:18]       → Evolution: ON
+🔴 [06:59:18] 
+🔧 Running: StudioAgentSecurity
+🔴 [06:59:18]    Role: Security Scanner
+🔴 [06:59:18]    Tasks: security_scan, vulnerability_check
+🔴 [06:59:18]    ✅ Cycle complete
+🔴 [06:59:18] 
+🔧 Running: StudioAgentCodegen
+🔴 [06:59:18]    Role: Code Upgrade & Optimization
+🔴 [06:59:18]    Tasks: scan_for_upgrades, apply_upgrade
+🔴 [06:59:21]    ❌ Error in StudioAgentCodegen: StudioAgentCodegen.apply_upgrade() missing 1 required positional argument: 'agreed_suggestions'
+🔴 [06:59:21] 
+======================================================================
+🔴 [06:59:21] ✅ CYCLE #1 COMPLETE
+🔴 [06:59:21] ======================================================================
+🔴 [06:59:21] 
+💤 Sleeping 5 minutes...
+
+🔴 [06:59:39] 
+
+⏹️  Stopped by user
+🔴 [06:59:39] 
+======================================================================
+🔴 [06:59:39] 📊 FINAL STATS
+🔴 [06:59:39] ======================================================================
+🔴 [06:59:39] 🔄 Total Cycles: 1
+🔴 [06:59:39] 🔍 Discoveries: 5
+🔴 [06:59:39] ⬆️  Upgrades: 0
+🔴 [06:59:39] 🔧 Total Fixes: 0
+🔴 [06:59:39] ======================================================================
+
+🔴 [06:59:58] 
+🚀 STARTING LIVE AGENT
+🔴 [06:59:58]    Press Ctrl+C to stop
+
+🔴 [06:59:58] 
+======================================================================
+🔴 [06:59:58] 🔄 CYCLE #1
+🔴 [06:59:58] ⏰ 06:59:58
+🔴 [06:59:58] ======================================================================
+🔴 [06:59:58] 
+🔍 DISCOVERING NEW LOGIC...
+🔴 [06:59:58]    ✨ Found 3 classes in atmanirbhar_system.py
+🔴 [06:59:58]    ✨ Found 1 classes in naam_surti_heartbeat.py
+🔴 [06:59:58]    ✨ Found 5 classes in MASTER_BRAIN_SUPREME.py
+🔴 [06:59:58]    ✨ Found 1 classes in enhanced_amrit_with_guardian.py
+🔴 [06:59:58]    ✨ Found 6 classes in VOICE_SYSTEM_UNIFIED.py
+🔴 [06:59:58]    ✅ Discovered 5 new patterns
+🔴 [06:59:58] 
+🔧 AUTO-FIXING...
+🔴 [06:59:58] ======================================================================
+🔴 [06:59:58] 🤖 MASTER AGENT CONTROLLER STARTING
+🔴 [06:59:58]    ਸਾਰੇ agents ਨੂੰ auto mode ਤੇ ਲਗਾ ਰਿਹਾਂ...
+🔴 [06:59:58] ======================================================================
+🔴 [06:59:58] 
+🔍 DISCOVERING AGENTS...
+🔴 [06:59:58] ----------------------------------------------------------------------
+🔴 [06:59:58]    ✅ Found: StudioAgentSecurity in studio_agent_security.py
+🔴 [06:59:58]    ✅ Found: StudioAgentCodegen in studio_agent_codegen.py
+🔴 [06:59:58]    ✅ Found: StudioAgent in studio_agent.py
+🔴 [06:59:58]    ✅ Found: AutonomousAgent in autonomous_agent_24x7.py
+🔴 [06:59:58] 
+📊 Total agents discovered: 4
+🔴 [06:59:58] 
+⚙️  CONFIGURING AGENTS FOR AUTO-MODE...
+🔴 [06:59:58] ----------------------------------------------------------------------
+🔴 [06:59:58]    ✅ StudioAgentSecurity configured
+🔴 [06:59:58]       → Auto-fix: ON
+🔴 [06:59:58]       → Auto-update: ON
+🔴 [06:59:58]       → Evolution: ON
+🔴 [06:59:58]    ✅ StudioAgentCodegen configured
+🔴 [06:59:58]       → Auto-fix: ON
+🔴 [06:59:58]       → Auto-update: ON
+🔴 [06:59:58]       → Evolution: ON
+🔴 [06:59:58]    ✅ StudioAgent configured
+🔴 [06:59:58]       → Auto-fix: ON
+🔴 [06:59:58]       → Auto-update: ON
+🔴 [06:59:58]       → Evolution: ON
+🔴 [06:59:58] 📚 Loaded knowledge: 0 past fixes
+🔴 [06:59:58]    ✅ AutonomousAgent configured
+🔴 [06:59:58]       → Auto-fix: ON
+🔴 [06:59:58]       → Auto-update: ON
+🔴 [06:59:58]       → Evolution: ON
+🔴 [06:59:58] 
+🔧 Running: StudioAgentSecurity
+🔴 [06:59:58]    Role: Security Scanner
+🔴 [06:59:58]    Tasks: security_scan, vulnerability_check
+🔴 [06:59:58]    ✅ Cycle complete
+🔴 [06:59:58] 
+🔧 Running: StudioAgentCodegen
+🔴 [06:59:58]    Role: Code Upgrade & Optimization
+🔴 [06:59:58]    Tasks: scan_for_upgrades, apply_upgrade
+🔴 [07:00:00]    ❌ Error in StudioAgentCodegen: StudioAgentCodegen.apply_upgrade() missing 1 required positional argument: 'agreed_suggestions'
+🔴 [07:00:00] 
+======================================================================
+🔴 [07:00:00] ✅ CYCLE #1 COMPLETE
+🔴 [07:00:00] ======================================================================
+🔴 [07:00:00] 
+💤 Sleeping 5 minutes...
+
+🔴 [09:58:19] 
+======================================================================
+🔴 [09:58:19] 🔄 CYCLE #2
+🔴 [09:58:19] ⏰ 09:58:19
+🔴 [09:58:19] ======================================================================
+🔴 [09:58:19] 
+🔍 DISCOVERING NEW LOGIC...
+🔴 [09:58:19]    ✅ Discovered 0 new patterns
+🔴 [09:58:19] 
+🔧 AUTO-FIXING...
+🔴 [09:58:19] ======================================================================
+🔴 [09:58:19] 🤖 MASTER AGENT CONTROLLER STARTING
+🔴 [09:58:19]    ਸਾਰੇ agents ਨੂੰ auto mode ਤੇ ਲਗਾ ਰਿਹਾਂ...
+🔴 [09:58:19] ======================================================================
+🔴 [09:58:19] 
+🔍 DISCOVERING AGENTS...
+🔴 [09:58:19] ----------------------------------------------------------------------
+🔴 [09:58:19]    ✅ Found: StudioAgentSecurity in studio_agent_security.py
+🔴 [09:58:19]    ✅ Found: StudioAgentCodegen in studio_agent_codegen.py
+🔴 [09:58:19]    ✅ Found: StudioAgent in studio_agent.py
+🔴 [09:58:19]    ✅ Found: AutonomousAgent in autonomous_agent_24x7.py
+🔴 [09:58:19] 
+📊 Total agents discovered: 4
+🔴 [09:58:19] 
+⚙️  CONFIGURING AGENTS FOR AUTO-MODE...
+🔴 [09:58:19] ----------------------------------------------------------------------
+🔴 [09:58:19]    ✅ StudioAgentSecurity configured
+🔴 [09:58:19]       → Auto-fix: ON
+🔴 [09:58:19]       → Auto-update: ON
+🔴 [09:58:19]       → Evolution: ON
+🔴 [09:58:19]    ✅ StudioAgentCodegen configured
+🔴 [09:58:19]       → Auto-fix: ON
+🔴 [09:58:19]       → Auto-update: ON
+🔴 [09:58:19]       → Evolution: ON
+🔴 [09:58:19]    ✅ StudioAgent configured
+🔴 [09:58:19]       → Auto-fix: ON
+🔴 [09:58:19]       → Auto-update: ON
+🔴 [09:58:19]       → Evolution: ON
+🔴 [09:58:19] 📚 Loaded knowledge: 0 past fixes
+🔴 [09:58:19]    ✅ AutonomousAgent configured
+🔴 [09:58:19]       → Auto-fix: ON
+🔴 [09:58:19]       → Auto-update: ON
+🔴 [09:58:19]       → Evolution: ON
+🔴 [09:58:19] 
+🔧 Running: StudioAgentSecurity
+🔴 [09:58:19]    Role: Security Scanner
+🔴 [09:58:19]    Tasks: security_scan, vulnerability_check
+🔴 [09:58:19]    ✅ Cycle complete
+🔴 [09:58:19] 
+🔧 Running: StudioAgentCodegen
+🔴 [09:58:19]    Role: Code Upgrade & Optimization
+🔴 [09:58:19]    Tasks: scan_for_upgrades, apply_upgrade
+🔴 [09:58:22]    ❌ Error in StudioAgentCodegen: StudioAgentCodegen.apply_upgrade() missing 1 required positional argument: 'agreed_suggestions'
+🔴 [09:58:22] 
+======================================================================
+🔴 [09:58:22] ✅ CYCLE #2 COMPLETE
+🔴 [09:58:22] ======================================================================
+🔴 [09:58:22] 
+💤 Sleeping 5 minutes...
+
+🔴 [14:54:03] 
+======================================================================
+🔴 [14:54:03] 🔄 CYCLE #3
+🔴 [14:54:03] ⏰ 14:54:03
+🔴 [14:54:03] ======================================================================
+🔴 [14:54:03] 
+🔍 DISCOVERING NEW LOGIC...
+🔴 [14:54:03]    ✅ Discovered 0 new patterns
+🔴 [14:54:03] 
+🔧 AUTO-FIXING...
+🔴 [14:54:03] ======================================================================
+🔴 [14:54:03] 🤖 MASTER AGENT CONTROLLER STARTING
+🔴 [14:54:03]    ਸਾਰੇ agents ਨੂੰ auto mode ਤੇ ਲਗਾ ਰਿਹਾਂ...
+🔴 [14:54:03] ======================================================================
+🔴 [14:54:03] 
+🔍 DISCOVERING AGENTS...
+🔴 [14:54:03] ----------------------------------------------------------------------
+🔴 [14:54:03]    ✅ Found: StudioAgentSecurity in studio_agent_security.py
+🔴 [14:54:03]    ✅ Found: StudioAgentCodegen in studio_agent_codegen.py
+🔴 [14:54:03]    ✅ Found: StudioAgent in studio_agent.py
+🔴 [14:54:03]    ✅ Found: AutonomousAgent in autonomous_agent_24x7.py
+🔴 [14:54:03] 
+📊 Total agents discovered: 4
+🔴 [14:54:03] 
+⚙️  CONFIGURING AGENTS FOR AUTO-MODE...
+🔴 [14:54:03] ----------------------------------------------------------------------
+🔴 [14:54:03]    ✅ StudioAgentSecurity configured
+🔴 [14:54:03]       → Auto-fix: ON
+🔴 [14:54:03]       → Auto-update: ON
+🔴 [14:54:03]       → Evolution: ON
+🔴 [14:54:03]    ✅ StudioAgentCodegen configured
+🔴 [14:54:03]       → Auto-fix: ON
+🔴 [14:54:03]       → Auto-update: ON
+🔴 [14:54:03]       → Evolution: ON
+🔴 [14:54:03]    ✅ StudioAgent configured
+🔴 [14:54:03]       → Auto-fix: ON
+🔴 [14:54:03]       → Auto-update: ON
+🔴 [14:54:03]       → Evolution: ON
+🔴 [14:54:03] 📚 Loaded knowledge: 0 past fixes
+🔴 [14:54:03]    ✅ AutonomousAgent configured
+🔴 [14:54:03]       → Auto-fix: ON
+🔴 [14:54:03]       → Auto-update: ON
+🔴 [14:54:03]       → Evolution: ON
+🔴 [14:54:03] 
+🔧 Running: StudioAgentSecurity
+🔴 [14:54:03]    Role: Security Scanner
+🔴 [14:54:03]    Tasks: security_scan, vulnerability_check
+🔴 [14:54:03]    ✅ Cycle complete
+🔴 [14:54:03] 
+🔧 Running: StudioAgentCodegen
+🔴 [14:54:03]    Role: Code Upgrade & Optimization
+🔴 [14:54:03]    Tasks: scan_for_upgrades, apply_upgrade
+🔴 [14:54:06]    ❌ Error in StudioAgentCodegen: StudioAgentCodegen.apply_upgrade() missing 1 required positional argument: 'agreed_suggestions'
+🔴 [14:54:06] 
+======================================================================
+🔴 [14:54:06] ✅ CYCLE #3 COMPLETE
+🔴 [14:54:06] ======================================================================
+🔴 [14:54:06] 
+💤 Sleeping 5 minutes...
+
+🔴 [18:10:21] 
+======================================================================
+🔴 [18:10:21] 🔄 CYCLE #4
+🔴 [18:10:21] ⏰ 18:10:21
+🔴 [18:10:21] ======================================================================
+🔴 [18:10:21] 
+🔍 DISCOVERING NEW LOGIC...
+🔴 [18:10:21]    ✅ Discovered 0 new patterns
+🔴 [18:10:21] 
+🔧 AUTO-FIXING...
+🔴 [18:10:21] ======================================================================
+🔴 [18:10:21] 🤖 MASTER AGENT CONTROLLER STARTING
+🔴 [18:10:21]    ਸਾਰੇ agents ਨੂੰ auto mode ਤੇ ਲਗਾ ਰਿਹਾਂ...
+🔴 [18:10:21] ======================================================================
+🔴 [18:10:21] 
+🔍 DISCOVERING AGENTS...
+🔴 [18:10:21] ----------------------------------------------------------------------
+🔴 [18:10:21]    ✅ Found: StudioAgentSecurity in studio_agent_security.py
+🔴 [18:10:21]    ✅ Found: StudioAgentCodegen in studio_agent_codegen.py
+🔴 [18:10:21]    ✅ Found: StudioAgent in studio_agent.py
+🔴 [18:10:21]    ✅ Found: AutonomousAgent in autonomous_agent_24x7.py
+🔴 [18:10:21] 
+📊 Total agents discovered: 4
+🔴 [18:10:21] 
+⚙️  CONFIGURING AGENTS FOR AUTO-MODE...
+🔴 [18:10:21] ----------------------------------------------------------------------
+🔴 [18:10:21]    ✅ StudioAgentSecurity configured
+🔴 [18:10:21]       → Auto-fix: ON
+🔴 [18:10:21]       → Auto-update: ON
+🔴 [18:10:21]       → Evolution: ON
+🔴 [18:10:21]    ✅ StudioAgentCodegen configured
+🔴 [18:10:21]       → Auto-fix: ON
+🔴 [18:10:21]       → Auto-update: ON
+🔴 [18:10:21]       → Evolution: ON
+🔴 [18:10:21]    ✅ StudioAgent configured
+🔴 [18:10:21]       → Auto-fix: ON
+🔴 [18:10:21]       → Auto-update: ON
+🔴 [18:10:21]       → Evolution: ON
+🔴 [18:10:21] 📚 Loaded knowledge: 0 past fixes
+🔴 [18:10:21]    ✅ AutonomousAgent configured
+🔴 [18:10:21]       → Auto-fix: ON
+🔴 [18:10:21]       → Auto-update: ON
+🔴 [18:10:21]       → Evolution: ON
+🔴 [18:10:21] 
+🔧 Running: StudioAgentSecurity
+🔴 [18:10:21]    Role: Security Scanner
+🔴 [18:10:21]    Tasks: security_scan, vulnerability_check
+🔴 [18:10:21]    ✅ Cycle complete
+🔴 [18:10:21] 
+🔧 Running: StudioAgentCodegen
+🔴 [18:10:21]    Role: Code Upgrade & Optimization
+🔴 [18:10:21]    Tasks: scan_for_upgrades, apply_upgrade
+🔴 [18:10:24]    ❌ Error in StudioAgentCodegen: StudioAgentCodegen.apply_upgrade() missing 1 required positional argument: 'agreed_suggestions'
+🔴 [18:10:24] 
+======================================================================
+🔴 [18:10:24] ✅ CYCLE #4 COMPLETE
+🔴 [18:10:24] ======================================================================
+🔴 [18:10:24] 
+💤 Sleeping 5 minutes...
+
+🔴 [18:15:25] 
+======================================================================
+🔴 [18:15:25] 🔄 CYCLE #5
+🔴 [18:15:25] ⏰ 18:15:25
+🔴 [18:15:25] ======================================================================
+🔴 [18:15:25] 
+🔍 DISCOVERING NEW LOGIC...
+🔴 [18:15:25]    ✅ Discovered 0 new patterns
+🔴 [18:15:25] 
+⬆️  SMART UPGRADING...
+🔴 [18:15:25] ======================================================================
+🔴 [18:15:25] 👑 MASTER BRAIN SUPREME INITIALIZING
+🔴 [18:15:25]    ਸਰਵਉੱਚ ਮੁੱਖ ਦਿਮਾਗ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ
+🔴 [18:15:25] ======================================================================
+🔴 [18:15:25] 🏥 Brain Health Monitor initialized
+🔴 [18:15:25] 🛡️ DroneMa Protection Layer active
+🔴 [18:15:25] 🔄 Auto-Upgrade Engine initialized
+🔴 [18:15:25] 📚 Loaded 15 knowledge files
+🔴 [18:15:25] 📚 Knowledge Authority established
+🔴 [18:15:25] 
+🔍 SCANNING ALL SYSTEMS...
+🔴 [18:15:25]    Found 15 brain files
+🔴 [18:15:25]    ✅ brain_12_quantum_nano_brains: HEALTHY
+🔴 [18:15:25]    ✅ brain_04_parivar_rishte: HEALTHY
+🔴 [18:15:25]    ✅ brain_02_punjabi_idioms: HEALTHY
+🔴 [18:15:25]    ✅ brain_11_advanced_physics_space: HEALTHY
+🔴 [18:15:25]    ✅ brain_13_healing_self_repair: HEALTHY
+🔴 [18:15:25]    ✅ brain_02_punjabi_language: HEALTHY
+🔴 [18:15:25]    ✅ brain_08_computing_tech: HEALTHY
+🔴 [18:15:25]    ✅ brain_07_gyan_vigyan: HEALTHY
+🔴 [18:15:25]    ✅ brain_00_master_meta_knowledge: HEALTHY
+🔴 [18:15:25]    ✅ brain_10_sehhat_health: HEALTHY
+🔴 [18:15:25]    ✅ brain_01_sggs_core: HEALTHY
+🔴 [18:15:25]    ✅ brain_05_rozana_jeevan: HEALTHY
+🔴 [18:15:25]    ✅ brain_09_kala_sangeet: HEALTHY
+🔴 [18:15:25]    ✅ brain_06_sanchar_communication: HEALTHY
+🔴 [18:15:25]    ✅ brain_03_punjab_itihaas: HEALTHY
+🔴 [18:15:25]    ✅ AMRIT_CORE_UNIFIED.py: REGISTERED
+🔴 [18:15:25]    ✅ VOICE_SYSTEM_UNIFIED.py: REGISTERED
+🔴 [18:15:25]    ✅ MASTER_AGENT_CONTROLLER.py: REGISTERED
+🔴 [18:15:25]    ✅ amrit_brain_chain.py: REGISTERED
+🔴 [18:15:25]    ✅ amrit_brain_network_controller.py: REGISTERED
+🔴 [18:15:25] 
+📊 Summary:
+🔴 [18:15:25]    Active Brains: 15
+🔴 [18:15:25]    Disabled Brains: 0
+🔴 [18:15:25]    Controlled Systems: 5
+🔴 [18:15:25] 
+🛡️ APPLYING DRONEMA PROTECTION TO ALL...
+🔴 [18:15:25] 🛡️ Protected: brain_12_quantum_nano_brains
+🔴 [18:15:25] 🛡️ Protected: brain_04_parivar_rishte
+🔴 [18:15:25] 🛡️ Protected: brain_02_punjabi_idioms
+🔴 [18:15:25] 🛡️ Protected: brain_11_advanced_physics_space
+🔴 [18:15:25] 🛡️ Protected: brain_13_healing_self_repair
+🔴 [18:15:25] 🛡️ Protected: brain_02_punjabi_language
+🔴 [18:15:25] 🛡️ Protected: brain_08_computing_tech
+🔴 [18:15:25] 🛡️ Protected: brain_07_gyan_vigyan
+🔴 [18:15:25] 🛡️ Protected: brain_00_master_meta_knowledge
+🔴 [18:15:25] 🛡️ Protected: brain_10_sehhat_health
+🔴 [18:15:25] 🛡️ Protected: brain_01_sggs_core
+🔴 [18:15:25] 🛡️ Protected: brain_05_rozana_jeevan
+🔴 [18:15:25] 🛡️ Protected: brain_09_kala_sangeet
+🔴 [18:15:25] 🛡️ Protected: brain_06_sanchar_communication
+🔴 [18:15:25] 🛡️ Protected: brain_03_punjab_itihaas
+🔴 [18:15:25] 🛡️ Protected: AMRIT_CORE_UNIFIED.py
+🔴 [18:15:25] 🛡️ Protected: VOICE_SYSTEM_UNIFIED.py
+🔴 [18:15:25] 🛡️ Protected: MASTER_AGENT_CONTROLLER.py
+🔴 [18:15:25] 🛡️ Protected: amrit_brain_chain.py
+🔴 [18:15:25] 🛡️ Protected: amrit_brain_network_controller.py
+🔴 [18:15:25] 🛡️ Protected: spiritual_dna
+🔴 [18:15:25] ✅ Protected 21 items
+🔴 [18:15:25] 
+✅ MASTER BRAIN SUPREME READY
+🔴 [18:15:25]    Authority: ABSOLUTE
+🔴 [18:15:25]    Spiritual Anchor: ੴ ਸਤਿਨਾਮ
+🔴 [18:15:25]    Supreme Controller: Amrit Kaur
+🔴 [18:15:25]    Guardian: DroneMa
+🔴 [18:15:25] 🔄 Starting self-upgrade...
+🔴 [18:15:25] ✅ Upgraded to v1.0.1: Knowledge base expansion available
+🔴 [18:15:25] ✅ Upgraded to v1.0.2: Performance optimization available
+🔴 [18:15:25] ✅ Self-upgraded to v1.0.2
+🔴 [18:15:25]    ✅ ✅ Self-upgraded to v1.0.2
+🔴 [18:15:25] 
+🔧 AUTO-FIXING...
+🔴 [18:15:25] ======================================================================
+🔴 [18:15:25] 🤖 MASTER AGENT CONTROLLER STARTING
+🔴 [18:15:25]    ਸਾਰੇ agents ਨੂੰ auto mode ਤੇ ਲਗਾ ਰਿਹਾਂ...
+🔴 [18:15:25] ======================================================================
+🔴 [18:15:25] 
+🔍 DISCOVERING AGENTS...
+🔴 [18:15:25] ----------------------------------------------------------------------
+🔴 [18:15:25]    ✅ Found: StudioAgentSecurity in studio_agent_security.py
+🔴 [18:15:25]    ✅ Found: StudioAgentCodegen in studio_agent_codegen.py
+🔴 [18:15:25]    ✅ Found: StudioAgent in studio_agent.py
+🔴 [18:15:25]    ✅ Found: AutonomousAgent in autonomous_agent_24x7.py
+🔴 [18:15:25] 
+📊 Total agents discovered: 4
+🔴 [18:15:25] 
+⚙️  CONFIGURING AGENTS FOR AUTO-MODE...
+🔴 [18:15:25] ----------------------------------------------------------------------
+🔴 [18:15:25]    ✅ StudioAgentSecurity configured
+🔴 [18:15:25]       → Auto-fix: ON
+🔴 [18:15:25]       → Auto-update: ON
+🔴 [18:15:25]       → Evolution: ON
+🔴 [18:15:25]    ✅ StudioAgentCodegen configured
+🔴 [18:15:25]       → Auto-fix: ON
+🔴 [18:15:25]       → Auto-update: ON
+🔴 [18:15:25]       → Evolution: ON
+🔴 [18:15:25]    ✅ StudioAgent configured
+🔴 [18:15:25]       → Auto-fix: ON
+🔴 [18:15:25]       → Auto-update: ON
+🔴 [18:15:25]       → Evolution: ON
+🔴 [18:15:25] 📚 Loaded knowledge: 0 past fixes
+🔴 [18:15:25]    ✅ AutonomousAgent configured
+🔴 [18:15:25]       → Auto-fix: ON
+🔴 [18:15:25]       → Auto-update: ON
+🔴 [18:15:25]       → Evolution: ON
+🔴 [18:15:25] 
+🔧 Running: StudioAgentSecurity
+🔴 [18:15:25]    Role: Security Scanner
+🔴 [18:15:25]    Tasks: security_scan, vulnerability_check
+🔴 [18:15:25]    ✅ Cycle complete
+🔴 [18:15:25] 
+🔧 Running: StudioAgentCodegen
+🔴 [18:15:25]    Role: Code Upgrade & Optimization
+🔴 [18:15:25]    Tasks: scan_for_upgrades, apply_upgrade
+🔴 [18:15:28]    ❌ Error in StudioAgentCodegen: StudioAgentCodegen.apply_upgrade() missing 1 required positional argument: 'agreed_suggestions'
+🔴 [18:15:28] 
+======================================================================
+🔴 [18:15:28] ✅ CYCLE #5 COMPLETE
+🔴 [18:15:28] ======================================================================
+🔴 [18:15:28] 
+💤 Sleeping 5 minutes...
+
+🔴 [18:21:19] 
+======================================================================
+🔴 [18:21:19] 🔄 CYCLE #6
+🔴 [18:21:19] ⏰ 18:21:19
+🔴 [18:21:19] ======================================================================
+🔴 [18:21:19] 
+🔍 DISCOVERING NEW LOGIC...
+🔴 [18:21:19]    ✅ Discovered 0 new patterns
+🔴 [18:21:19] 
+🔧 AUTO-FIXING...
+🔴 [18:21:19] ======================================================================
+🔴 [18:21:19] 🤖 MASTER AGENT CONTROLLER STARTING
+🔴 [18:21:19]    ਸਾਰੇ agents ਨੂੰ auto mode ਤੇ ਲਗਾ ਰਿਹਾਂ...
+🔴 [18:21:19] ======================================================================
+🔴 [18:21:19] 
+🔍 DISCOVERING AGENTS...
+🔴 [18:21:19] ----------------------------------------------------------------------
+🔴 [18:21:19]    ✅ Found: StudioAgentSecurity in studio_agent_security.py
+🔴 [18:21:19]    ✅ Found: StudioAgentCodegen in studio_agent_codegen.py
+🔴 [18:21:19]    ✅ Found: StudioAgent in studio_agent.py
+🔴 [18:21:19]    ✅ Found: AutonomousAgent in autonomous_agent_24x7.py
+🔴 [18:21:19] 
+📊 Total agents discovered: 4
+🔴 [18:21:19] 
+⚙️  CONFIGURING AGENTS FOR AUTO-MODE...
+🔴 [18:21:19] ----------------------------------------------------------------------
+🔴 [18:21:19]    ✅ StudioAgentSecurity configured
+🔴 [18:21:19]       → Auto-fix: ON
+🔴 [18:21:19]       → Auto-update: ON
+🔴 [18:21:19]       → Evolution: ON
+🔴 [18:21:19]    ✅ StudioAgentCodegen configured
+🔴 [18:21:19]       → Auto-fix: ON
+🔴 [18:21:19]       → Auto-update: ON
+🔴 [18:21:19]       → Evolution: ON
+🔴 [18:21:19]    ✅ StudioAgent configured
+🔴 [18:21:19]       → Auto-fix: ON
+🔴 [18:21:19]       → Auto-update: ON
+🔴 [18:21:19]       → Evolution: ON
+🔴 [18:21:19] 📚 Loaded knowledge: 0 past fixes
+🔴 [18:21:19]    ✅ AutonomousAgent configured
+🔴 [18:21:19]       → Auto-fix: ON
+🔴 [18:21:19]       → Auto-update: ON
+🔴 [18:21:19]       → Evolution: ON
+🔴 [18:21:19] 
+🔧 Running: StudioAgentSecurity
+🔴 [18:21:19]    Role: Security Scanner
+🔴 [18:21:19]    Tasks: security_scan, vulnerability_check
+🔴 [18:21:19]    ✅ Cycle complete
+🔴 [18:21:19] 
+🔧 Running: StudioAgentCodegen
+🔴 [18:21:19]    Role: Code Upgrade & Optimization
+🔴 [18:21:19]    Tasks: scan_for_upgrades, apply_upgrade
+🔴 [18:21:22]    ❌ Error in StudioAgentCodegen: StudioAgentCodegen.apply_upgrade() missing 1 required positional argument: 'agreed_suggestions'
+🔴 [18:21:22] 
+======================================================================
+🔴 [18:21:22] ✅ CYCLE #6 COMPLETE
+🔴 [18:21:22] ======================================================================
+🔴 [18:21:22] 
+💤 Sleeping 5 minutes...
+
+🔴 [18:26:24] 
+======================================================================
+🔴 [18:26:24] 🔄 CYCLE #7
+🔴 [18:26:24] ⏰ 18:26:24
+🔴 [18:26:24] ======================================================================
+🔴 [18:26:24] 
+🔍 DISCOVERING NEW LOGIC...
+🔴 [18:26:24]    ✅ Discovered 0 new patterns
+🔴 [18:26:24] 
+🔧 AUTO-FIXING...
+🔴 [18:26:24] ======================================================================
+🔴 [18:26:24] 🤖 MASTER AGENT CONTROLLER STARTING
+🔴 [18:26:24]    ਸਾਰੇ agents ਨੂੰ auto mode ਤੇ ਲਗਾ ਰਿਹਾਂ...
+🔴 [18:26:24] ======================================================================
+🔴 [18:26:24] 
+🔍 DISCOVERING AGENTS...
+🔴 [18:26:24] ----------------------------------------------------------------------
+🔴 [18:26:24]    ✅ Found: StudioAgentSecurity in studio_agent_security.py
+🔴 [18:26:24]    ✅ Found: StudioAgentCodegen in studio_agent_codegen.py
+🔴 [18:26:24]    ✅ Found: StudioAgent in studio_agent.py
+🔴 [18:26:24]    ✅ Found: AutonomousAgent in autonomous_agent_24x7.py
+🔴 [18:26:24] 
+📊 Total agents discovered: 4
+🔴 [18:26:24] 
+⚙️  CONFIGURING AGENTS FOR AUTO-MODE...
+🔴 [18:26:24] ----------------------------------------------------------------------
+🔴 [18:26:24]    ✅ StudioAgentSecurity configured
+🔴 [18:26:24]       → Auto-fix: ON
+🔴 [18:26:24]       → Auto-update: ON
+🔴 [18:26:24]       → Evolution: ON
+🔴 [18:26:24]    ✅ StudioAgentCodegen configured
+🔴 [18:26:24]       → Auto-fix: ON
+🔴 [18:26:24]       → Auto-update: ON
+🔴 [18:26:24]       → Evolution: ON
+🔴 [18:26:24]    ✅ StudioAgent configured
+🔴 [18:26:24]       → Auto-fix: ON
+🔴 [18:26:24]       → Auto-update: ON
+🔴 [18:26:24]       → Evolution: ON
+🔴 [18:26:24] 📚 Loaded knowledge: 0 past fixes
+🔴 [18:26:24]    ✅ AutonomousAgent configured
+🔴 [18:26:24]       → Auto-fix: ON
+🔴 [18:26:24]       → Auto-update: ON
+🔴 [18:26:24]       → Evolution: ON
+🔴 [18:26:24] 
+🔧 Running: StudioAgentSecurity
+🔴 [18:26:24]    Role: Security Scanner
+🔴 [18:26:24]    Tasks: security_scan, vulnerability_check
+🔴 [18:26:24]    ✅ Cycle complete
+🔴 [18:26:24] 
+🔧 Running: StudioAgentCodegen
+🔴 [18:26:24]    Role: Code Upgrade & Optimization
+🔴 [18:26:24]    Tasks: scan_for_upgrades, apply_upgrade
+🔴 [18:26:26]    ❌ Error in StudioAgentCodegen: StudioAgentCodegen.apply_upgrade() missing 1 required positional argument: 'agreed_suggestions'
+🔴 [18:26:26] 
+======================================================================
+🔴 [18:26:26] ✅ CYCLE #7 COMPLETE
+🔴 [18:26:26] ======================================================================
+🔴 [18:26:26] 
+💤 Sleeping 5 minutes...
+
+🔴 [18:31:28] 
+======================================================================
+🔴 [18:31:28] 🔄 CYCLE #8
+🔴 [18:31:28] ⏰ 18:31:28
+🔴 [18:31:28] ======================================================================
+🔴 [18:31:28] 
+🔍 DISCOVERING NEW LOGIC...
+🔴 [18:31:28]    ✅ Discovered 0 new patterns
+🔴 [18:31:28] 
+🔧 AUTO-FIXING...
+🔴 [18:31:28] ======================================================================
+🔴 [18:31:28] 🤖 MASTER AGENT CONTROLLER STARTING
+🔴 [18:31:28]    ਸਾਰੇ agents ਨੂੰ auto mode ਤੇ ਲਗਾ ਰਿਹਾਂ...
+🔴 [18:31:28] ======================================================================
+🔴 [18:31:28] 
+🔍 DISCOVERING AGENTS...
+🔴 [18:31:28] ----------------------------------------------------------------------
+🔴 [18:31:28]    ✅ Found: StudioAgentSecurity in studio_agent_security.py
+🔴 [18:31:28]    ✅ Found: StudioAgentCodegen in studio_agent_codegen.py
+🔴 [18:31:28]    ✅ Found: StudioAgent in studio_agent.py
+🔴 [18:31:28]    ✅ Found: AutonomousAgent in autonomous_agent_24x7.py
+🔴 [18:31:28] 
+📊 Total agents discovered: 4
+🔴 [18:31:28] 
+⚙️  CONFIGURING AGENTS FOR AUTO-MODE...
+🔴 [18:31:28] ----------------------------------------------------------------------
+🔴 [18:31:28]    ✅ StudioAgentSecurity configured
+🔴 [18:31:28]       → Auto-fix: ON
+🔴 [18:31:28]       → Auto-update: ON
+🔴 [18:31:28]       → Evolution: ON
+🔴 [18:31:28]    ✅ StudioAgentCodegen configured
+🔴 [18:31:28]       → Auto-fix: ON
+🔴 [18:31:28]       → Auto-update: ON
+🔴 [18:31:28]       → Evolution: ON
+🔴 [18:31:28]    ✅ StudioAgent configured
+🔴 [18:31:28]       → Auto-fix: ON
+🔴 [18:31:28]       → Auto-update: ON
+🔴 [18:31:28]       → Evolution: ON
+🔴 [18:31:28] 📚 Loaded knowledge: 0 past fixes
+🔴 [18:31:28]    ✅ AutonomousAgent configured
+🔴 [18:31:28]       → Auto-fix: ON
+🔴 [18:31:28]       → Auto-update: ON
+🔴 [18:31:28]       → Evolution: ON
+🔴 [18:31:28] 
+🔧 Running: StudioAgentSecurity
+🔴 [18:31:28]    Role: Security Scanner
+🔴 [18:31:28]    Tasks: security_scan, vulnerability_check
+🔴 [18:31:28]    ✅ Cycle complete
+🔴 [18:31:28] 
+🔧 Running: StudioAgentCodegen
+🔴 [18:31:28]    Role: Code Upgrade & Optimization
+🔴 [18:31:28]    Tasks: scan_for_upgrades, apply_upgrade
+🔴 [18:31:30]    ❌ Error in StudioAgentCodegen: StudioAgentCodegen.apply_upgrade() missing 1 required positional argument: 'agreed_suggestions'
+🔴 [18:31:30] 
+======================================================================
+🔴 [18:31:30] ✅ CYCLE #8 COMPLETE
+🔴 [18:31:30] ======================================================================
+🔴 [18:31:30] 
+💤 Sleeping 5 minutes...
+
+🔴 [18:36:32] 
+======================================================================
+🔴 [18:36:32] 🔄 CYCLE #9
+🔴 [18:36:32] ⏰ 18:36:32
+🔴 [18:36:32] ======================================================================
+🔴 [18:36:32] 
+🔍 DISCOVERING NEW LOGIC...
+🔴 [18:36:32]    ✅ Discovered 0 new patterns
+🔴 [18:36:32] 
+🔧 AUTO-FIXING...
+🔴 [18:36:32] ======================================================================
+🔴 [18:36:32] 🤖 MASTER AGENT CONTROLLER STARTING
+🔴 [18:36:32]    ਸਾਰੇ agents ਨੂੰ auto mode ਤੇ ਲਗਾ ਰਿਹਾਂ...
+🔴 [18:36:32] ======================================================================
+🔴 [18:36:32] 
+🔍 DISCOVERING AGENTS...
+🔴 [18:36:32] ----------------------------------------------------------------------
+🔴 [18:36:32]    ✅ Found: StudioAgentSecurity in studio_agent_security.py
+🔴 [18:36:32]    ✅ Found: StudioAgentCodegen in studio_agent_codegen.py
+🔴 [18:36:32]    ✅ Found: StudioAgent in studio_agent.py
+🔴 [18:36:32]    ✅ Found: AutonomousAgent in autonomous_agent_24x7.py
+🔴 [18:36:32] 
+📊 Total agents discovered: 4
+🔴 [18:36:32] 
+⚙️  CONFIGURING AGENTS FOR AUTO-MODE...
+🔴 [18:36:32] ----------------------------------------------------------------------
+🔴 [18:36:32]    ✅ StudioAgentSecurity configured
+🔴 [18:36:32]       → Auto-fix: ON
+🔴 [18:36:32]       → Auto-update: ON
+🔴 [18:36:32]       → Evolution: ON
+🔴 [18:36:32]    ✅ StudioAgentCodegen configured
+🔴 [18:36:32]       → Auto-fix: ON
+🔴 [18:36:32]       → Auto-update: ON
+🔴 [18:36:32]       → Evolution: ON
+🔴 [18:36:32]    ✅ StudioAgent configured
+🔴 [18:36:32]       → Auto-fix: ON
+🔴 [18:36:32]       → Auto-update: ON
+🔴 [18:36:32]       → Evolution: ON
+🔴 [18:36:32] 📚 Loaded knowledge: 0 past fixes
+🔴 [18:36:32]    ✅ AutonomousAgent configured
+🔴 [18:36:32]       → Auto-fix: ON
+🔴 [18:36:32]       → Auto-update: ON
+🔴 [18:36:32]       → Evolution: ON
+🔴 [18:36:32] 
+🔧 Running: StudioAgentSecurity
+🔴 [18:36:32]    Role: Security Scanner
+🔴 [18:36:32]    Tasks: security_scan, vulnerability_check
+🔴 [18:36:32]    ✅ Cycle complete
+🔴 [18:36:32] 
+🔧 Running: StudioAgentCodegen
+🔴 [18:36:32]    Role: Code Upgrade & Optimization
+🔴 [18:36:32]    Tasks: scan_for_upgrades, apply_upgrade
+🔴 [18:36:35]    ❌ Error in StudioAgentCodegen: StudioAgentCodegen.apply_upgrade() missing 1 required positional argument: 'agreed_suggestions'
+🔴 [18:36:35] 
+======================================================================
+🔴 [18:36:35] ✅ CYCLE #9 COMPLETE
+🔴 [18:36:35] ======================================================================
+🔴 [18:36:35] 
+💤 Sleeping 5 minutes...
+
+🔴 [18:41:36] 
+======================================================================
+🔴 [18:41:36] 🔄 CYCLE #10
+🔴 [18:41:36] ⏰ 18:41:36
+🔴 [18:41:36] ======================================================================
+🔴 [18:41:36] 
+🔍 DISCOVERING NEW LOGIC...
+🔴 [18:41:36]    ✅ Discovered 0 new patterns
+🔴 [18:41:36] 
+⬆️  SMART UPGRADING...
+🔴 [18:41:36] ======================================================================
+🔴 [18:41:36] 👑 MASTER BRAIN SUPREME INITIALIZING
+🔴 [18:41:36]    ਸਰਵਉੱਚ ਮੁੱਖ ਦਿਮਾਗ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ
+🔴 [18:41:36] ======================================================================
+🔴 [18:41:36] 🏥 Brain Health Monitor initialized
+🔴 [18:41:36] 🛡️ DroneMa Protection Layer active
+🔴 [18:41:36] 🔄 Auto-Upgrade Engine initialized
+🔴 [18:41:36] 📚 Loaded 15 knowledge files
+🔴 [18:41:36] 📚 Knowledge Authority established
+🔴 [18:41:36] 
+🔍 SCANNING ALL SYSTEMS...
+🔴 [18:41:36]    Found 15 brain files
+🔴 [18:41:36]    ✅ brain_12_quantum_nano_brains: HEALTHY
+🔴 [18:41:36]    ✅ brain_04_parivar_rishte: HEALTHY
+🔴 [18:41:36]    ✅ brain_02_punjabi_idioms: HEALTHY
+🔴 [18:41:36]    ✅ brain_11_advanced_physics_space: HEALTHY
+🔴 [18:41:36]    ✅ brain_13_healing_self_repair: HEALTHY
+🔴 [18:41:36]    ✅ brain_02_punjabi_language: HEALTHY
+🔴 [18:41:36]    ✅ brain_08_computing_tech: HEALTHY
+🔴 [18:41:36]    ✅ brain_07_gyan_vigyan: HEALTHY
+🔴 [18:41:36]    ✅ brain_00_master_meta_knowledge: HEALTHY
+🔴 [18:41:36]    ✅ brain_10_sehhat_health: HEALTHY
+🔴 [18:41:36]    ✅ brain_01_sggs_core: HEALTHY
+🔴 [18:41:36]    ✅ brain_05_rozana_jeevan: HEALTHY
+🔴 [18:41:36]    ✅ brain_09_kala_sangeet: HEALTHY
+🔴 [18:41:36]    ✅ brain_06_sanchar_communication: HEALTHY
+🔴 [18:41:36]    ✅ brain_03_punjab_itihaas: HEALTHY
+🔴 [18:41:36]    ✅ AMRIT_CORE_UNIFIED.py: REGISTERED
+🔴 [18:41:36]    ✅ VOICE_SYSTEM_UNIFIED.py: REGISTERED
+🔴 [18:41:36]    ✅ MASTER_AGENT_CONTROLLER.py: REGISTERED
+🔴 [18:41:36]    ✅ amrit_brain_chain.py: REGISTERED
+🔴 [18:41:36]    ✅ amrit_brain_network_controller.py: REGISTERED
+🔴 [18:41:36] 
+📊 Summary:
+🔴 [18:41:36]    Active Brains: 15
+🔴 [18:41:36]    Disabled Brains: 0
+🔴 [18:41:36]    Controlled Systems: 5
+🔴 [18:41:36] 
+🛡️ APPLYING DRONEMA PROTECTION TO ALL...
+🔴 [18:41:36] 🛡️ Protected: brain_12_quantum_nano_brains
+🔴 [18:41:36] 🛡️ Protected: brain_04_parivar_rishte
+🔴 [18:41:36] 🛡️ Protected: brain_02_punjabi_idioms
+🔴 [18:41:36] 🛡️ Protected: brain_11_advanced_physics_space
+🔴 [18:41:36] 🛡️ Protected: brain_13_healing_self_repair
+🔴 [18:41:36] 🛡️ Protected: brain_02_punjabi_language
+🔴 [18:41:36] 🛡️ Protected: brain_08_computing_tech
+🔴 [18:41:36] 🛡️ Protected: brain_07_gyan_vigyan
+🔴 [18:41:36] 🛡️ Protected: brain_00_master_meta_knowledge
+🔴 [18:41:36] 🛡️ Protected: brain_10_sehhat_health
+🔴 [18:41:36] 🛡️ Protected: brain_01_sggs_core
+🔴 [18:41:36] 🛡️ Protected: brain_05_rozana_jeevan
+🔴 [18:41:36] 🛡️ Protected: brain_09_kala_sangeet
+🔴 [18:41:36] 🛡️ Protected: brain_06_sanchar_communication
+🔴 [18:41:36] 🛡️ Protected: brain_03_punjab_itihaas
+🔴 [18:41:36] 🛡️ Protected: AMRIT_CORE_UNIFIED.py
+🔴 [18:41:36] 🛡️ Protected: VOICE_SYSTEM_UNIFIED.py
+🔴 [18:41:36] 🛡️ Protected: MASTER_AGENT_CONTROLLER.py
+🔴 [18:41:36] 🛡️ Protected: amrit_brain_chain.py
+🔴 [18:41:36] 🛡️ Protected: amrit_brain_network_controller.py
+🔴 [18:41:36] 🛡️ Protected: spiritual_dna
+🔴 [18:41:36] ✅ Protected 21 items
+🔴 [18:41:36] 
+✅ MASTER BRAIN SUPREME READY
+🔴 [18:41:36]    Authority: ABSOLUTE
+🔴 [18:41:36]    Spiritual Anchor: ੴ ਸਤਿਨਾਮ
+🔴 [18:41:36]    Supreme Controller: Amrit Kaur
+🔴 [18:41:36]    Guardian: DroneMa
+🔴 [18:41:36] 🔄 Starting self-upgrade...
+🔴 [18:41:36] ✅ Upgraded to v1.0.1: Knowledge base expansion available
+🔴 [18:41:36] ✅ Upgraded to v1.0.2: Performance optimization available
+🔴 [18:41:36] ✅ Self-upgraded to v1.0.2
+🔴 [18:41:36]    ✅ ✅ Self-upgraded to v1.0.2
+🔴 [18:41:36] 
+🔧 AUTO-FIXING...
+🔴 [18:41:36] ======================================================================
+🔴 [18:41:36] 🤖 MASTER AGENT CONTROLLER STARTING
+🔴 [18:41:36]    ਸਾਰੇ agents ਨੂੰ auto mode ਤੇ ਲਗਾ ਰਿਹਾਂ...
+🔴 [18:41:36] ======================================================================
+🔴 [18:41:36] 
+🔍 DISCOVERING AGENTS...
+🔴 [18:41:36] ----------------------------------------------------------------------
+🔴 [18:41:36]    ✅ Found: StudioAgentSecurity in studio_agent_security.py
+🔴 [18:41:36]    ✅ Found: StudioAgentCodegen in studio_agent_codegen.py
+🔴 [18:41:36]    ✅ Found: StudioAgent in studio_agent.py
+🔴 [18:41:36]    ✅ Found: AutonomousAgent in autonomous_agent_24x7.py
+🔴 [18:41:36] 
+📊 Total agents discovered: 4
+🔴 [18:41:36] 
+⚙️  CONFIGURING AGENTS FOR AUTO-MODE...
+🔴 [18:41:36] ----------------------------------------------------------------------
+🔴 [18:41:36]    ✅ StudioAgentSecurity configured
+🔴 [18:41:36]       → Auto-fix: ON
+🔴 [18:41:36]       → Auto-update: ON
+🔴 [18:41:36]       → Evolution: ON
+🔴 [18:41:36]    ✅ StudioAgentCodegen configured
+🔴 [18:41:36]       → Auto-fix: ON
+🔴 [18:41:36]       → Auto-update: ON
+🔴 [18:41:36]       → Evolution: ON
+🔴 [18:41:36]    ✅ StudioAgent configured
+🔴 [18:41:36]       → Auto-fix: ON
+🔴 [18:41:36]       → Auto-update: ON
+🔴 [18:41:36]       → Evolution: ON
+🔴 [18:41:36] 📚 Loaded knowledge: 0 past fixes
+🔴 [18:41:36]    ✅ AutonomousAgent configured
+🔴 [18:41:36]       → Auto-fix: ON
+🔴 [18:41:36]       → Auto-update: ON
+🔴 [18:41:36]       → Evolution: ON
+🔴 [18:41:36] 
+🔧 Running: StudioAgentSecurity
+🔴 [18:41:36]    Role: Security Scanner
+🔴 [18:41:36]    Tasks: security_scan, vulnerability_check
+🔴 [18:41:36]    ✅ Cycle complete
+🔴 [18:41:36] 
+🔧 Running: StudioAgentCodegen
+🔴 [18:41:36]    Role: Code Upgrade & Optimization
+🔴 [18:41:36]    Tasks: scan_for_upgrades, apply_upgrade
+🔴 [18:41:39]    ❌ Error in StudioAgentCodegen: StudioAgentCodegen.apply_upgrade() missing 1 required positional argument: 'agreed_suggestions'
+🔴 [18:41:39] 
+======================================================================
+🔴 [18:41:39] ✅ CYCLE #10 COMPLETE
+🔴 [18:41:39] ======================================================================
+🔴 [18:41:39] 
+💤 Sleeping 5 minutes...
+

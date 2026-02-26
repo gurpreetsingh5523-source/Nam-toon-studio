@@ -1,0 +1,388 @@
+{
+  "timestamp": "2025-12-04T19:43:00.275464",
+  "teacher": "Human Developer",
+  "student": "Rahbar AI Developer",
+  "lessons_learned": [
+    {
+      "lesson_id": 1,
+      "title": "Agent Configuration Loading Issue",
+      "problem": "Agents were stuck in TN (stopped) state, no videos created",
+      "root_cause": "autonomous_learning_agent.py didn't properly load custom config files",
+      "symptoms": [
+        "Processes running but CPU 0.0%",
+        "Status: TN (stopped/waiting)",
+        "No videos created",
+        "Config files created but not loaded"
+      ],
+      "solution": "Need to add config loading logic in autonomous_learning_agent.py main() function",
+      "code_pattern": "\n# BEFORE (broken):\ndef main():\n    agent = AutonomousLearningAgent()\n    # Config never loaded!\n\n# AFTER (working):\ndef main():\n    args = parser.parse_args()\n    agent = AutonomousLearningAgent()\n    \n    # Load custom config if provided\n    if args.config:\n        import json\n        with open(args.config, 'r') as f:\n            custom_config = json.load(f)\n            if 'patterns' in custom_config:\n                agent.training_scenarios = custom_config['patterns']\n",
+      "importance": "CRITICAL",
+      "lesson": "Always verify config loading works BEFORE spawning multiple processes"
+    },
+    {
+      "lesson_id": 2,
+      "title": "Testing Before Deployment",
+      "problem": "Launched 4 agents without testing if one works",
+      "root_cause": "Assumed code would work without validation",
+      "solution": "Always test with 1 agent first, then scale up",
+      "code_pattern": "\n# WRONG: Launch all at once\nfor agent in all_agents:\n    start_agent(agent)  # If broken, all fail!\n\n# RIGHT: Test first\ntest_agent = agents[0]\nif test_agent_works():\n    for agent in all_agents:\n        start_agent(agent)\nelse:\n    fix_issues_first()\n",
+      "importance": "HIGH",
+      "lesson": "Test small, then scale. Don't assume."
+    },
+    {
+      "lesson_id": 3,
+      "title": "Process State Monitoring",
+      "problem": "Processes showed 'TN' state but we didn't catch it early",
+      "root_cause": "No proactive monitoring of process health",
+      "solution": "Add process state checking in orchestrator",
+      "code_pattern": "\ndef monitor_agent_health(process):\n    # Check CPU usage\n    if process.cpu_percent() == 0.0:\n        log.warning(f\"Agent {process.pid} has 0% CPU - may be stuck!\")\n    \n    # Check state (T = stopped, S = sleeping, R = running)\n    state = get_process_state(process.pid)\n    if state in ['T', 'TN']:\n        log.error(f\"Agent {process.pid} is in stopped state!\")\n        restart_agent(process)\n",
+      "importance": "HIGH",
+      "lesson": "Monitor process health actively, not just assume it's working"
+    },
+    {
+      "lesson_id": 4,
+      "title": "Simplicity Over Complexity",
+      "problem": "Complex orchestrator with 4 agents, configs, patterns - too many moving parts",
+      "root_cause": "Tried to do everything at once",
+      "solution": "Create simple_working_agent.py - minimal, works reliably",
+      "code_pattern": "\n# COMPLEX (breaks easily):\n- Master orchestrator\n- 4 different agents\n- Config files for each\n- Pattern library loading\n- Custom scenario injection\n= Too many failure points!\n\n# SIMPLE (reliable):\nclass SimpleAgent:\n    def __init__(self):\n        self.maker = RealisticMovieMaker()\n        self.scenarios = [5 hardcoded scenarios]\n    \n    def create_one_video(self):\n        scenario = random.choice(self.scenarios)\n        self.maker.create_movie(scenario['story'], name)\n        \n= Works every time!\n",
+      "importance": "CRITICAL",
+      "lesson": "Start simple. Add complexity only when simple version works perfectly."
+    },
+    {
+      "lesson_id": 5,
+      "title": "Method Name Mismatch",
+      "problem": "autonomous_learning_agent calls video_maker.create_video() but integrated_smart_video_maker doesn't have that method",
+      "root_cause": "Assumed method names without checking API",
+      "symptoms": [
+        "AttributeError: 'IntegratedSmartVideoMaker' object has no attribute 'create_video'",
+        "Agent crashes silently",
+        "No error shown to user"
+      ],
+      "solution": "Check actual API of classes before calling",
+      "code_pattern": "\n# WRONG (assumed):\nvideo_maker.create_video(text=story)\n\n# RIGHT (actual API):\n# Check realistic_movie_maker.py:\ndef create_movie(self, story_text, output_name):\n    # This is the real method!\n\n# So use:\nvideo_maker.create_movie(story, video_name)\n",
+      "importance": "HIGH",
+      "lesson": "Never assume method names. Always check the actual class definition."
+    },
+    {
+      "lesson_id": 6,
+      "title": "Data Flow Understanding",
+      "problem": "User wants existing data (brain files, gurbani) used in training",
+      "solution": "Pattern library builder that loads from existing files",
+      "implementation": "\ndef _build_pattern_library(self):\n    patterns = {}\n    \n    # 1. Load brain files\n    brain_files = list(self.workspace.glob('brain_*.txt'))\n    for brain_file in brain_files:\n        content = brain_file.read_text(encoding='utf-8')[:1000]\n        patterns['category'].append({\n            'source': brain_file.name,\n            'content': content,\n            'type': 'text'\n        })\n    \n    # 2. Load gurbani JSON\n    gurbani_json = self.workspace / 'gurbani_knowledge.json'\n    if gurbani_json.exists():\n        data = json.load(gurbani_json.open())\n        patterns['gurbani'].extend(data)\n    \n    return patterns\n",
+      "importance": "MEDIUM",
+      "lesson": "User's existing data is valuable - make sure to USE it, not ignore it"
+    },
+    {
+      "lesson_id": 7,
+      "title": "Auto-Cleanup Logic",
+      "problem": "Training videos accumulate, user wants automatic deletion",
+      "solution": "Implement smart cleanup with thresholds",
+      "code_pattern": "\ndef cleanup_old_videos(self):\n    video_files = list(workspace.glob('training_video*.mp4'))\n    video_count = len(video_files)\n    \n    if video_count > self.cleanup_threshold:\n        # Sort by modification time (oldest first)\n        video_files.sort(key=lambda x: x.stat().st_mtime)\n        \n        # Keep newest N videos\n        to_delete = video_count - self.max_training_videos\n        \n        for video_file in video_files[:to_delete]:\n            video_file.unlink()  # Delete\n            \n        log.info(f'Deleted {to_delete} old videos')\n",
+      "importance": "MEDIUM",
+      "lesson": "Automate maintenance tasks. Don't let system fill up."
+    },
+    {
+      "lesson_id": 8,
+      "title": "User Feedback Integration",
+      "problem": "User said 'eh kamm ni kar ria' - agents not working",
+      "user_observation": "Checked and saw 0.0% CPU, TN state, no videos",
+      "correct_response": [
+        "Stop all stuck processes immediately",
+        "Diagnose why they're stuck",
+        "Create simpler working version",
+        "Test before redeploying"
+      ],
+      "importance": "CRITICAL",
+      "lesson": "When user says 'not working', believe them! Check immediately, don't assume."
+    },
+    {
+      "timestamp": "2025-12-04T20:17:00",
+      "lesson_id": 9,
+      "title": "Video Diversity Problem Fixed",
+      "problem": "Videos were repetitive - only 5 scenarios repeating",
+      "root_cause": "simple_working_agent.py had only 5 scenarios (spiritual, village, family, gurdwara, learning)",
+      "solution": "Expanded to 25 diverse scenarios across 5 categories",
+      "categories": {
+        "spiritual": [
+          "morning_prayer",
+          "gurdwara_darshan",
+          "langar_seva",
+          "path_sahib",
+          "simran_time"
+        ],
+        "family": [
+          "family_dinner",
+          "kids_playing",
+          "wedding_celebration",
+          "birthday_party",
+          "homework_help"
+        ],
+        "village": [
+          "farming_morning",
+          "village_well",
+          "cattle_care",
+          "harvest_festival",
+          "village_school"
+        ],
+        "learning": [
+          "science_experiment",
+          "punjabi_lesson",
+          "coding_class",
+          "music_practice",
+          "history_lesson"
+        ],
+        "modern": [
+          "startup_idea",
+          "sports_training"
+        ]
+      },
+      "impact": "Now each video is unique with different story and content",
+      "importance": "CRITICAL",
+      "lesson": "Always provide variety in training data to avoid repetition",
+      "code_pattern": "Create large pool of diverse scenarios, use random selection",
+      "future_improvements": [
+        {
+          "task": "Add 50+ more scenarios",
+          "priority": "HIGH"
+        },
+        {
+          "task": "Generate scenarios dynamically using AI",
+          "priority": "MEDIUM"
+        },
+        {
+          "task": "Track which scenarios used recently, avoid repetition",
+          "priority": "HIGH"
+        }
+      ]
+    },
+    {
+      "title": "Choose Right Tool for the Job",
+      "problem": "Stable Diffusion installed but too slow for real-time video",
+      "solution": "Hand-drawn diverse characters - fast and controllable",
+      "code_pattern": "Use lightweight solutions for frequent operations",
+      "importance": "CRITICAL",
+      "learning": "AI isn't always best - simple code can be better for performance",
+      "lesson_id": 10,
+      "timestamp": "2025-12-04T20:27:00"
+    },
+    {
+      "lesson_id": 11,
+      "timestamp": "2025-12-05T21:18:00",
+      "title": "Background Music Replaced Narration",
+      "problem": "Videos lose narration because merge_audio_video concatenates tracks instead of mixing them, so ffmpeg keeps only the shorter segment.",
+      "symptoms": [
+        "Final MP4 contains background tone but narration stops early",
+        "Rahbar reports video duration shorter than script",
+        "FFmpeg -shortest trims to narration length"
+      ],
+      "root_cause": "pydub concatenation with combined += audio builds a sequential playlist. Background music never overlaps narration, and ffmpeg drops extra length.",
+      "solution": "Use AudioSegment.overlay to place the music bed under the spoken track, normalise levels, and trim/loop music to the total scene duration before muxing in ffmpeg.",
+      "code_pattern": "\n# WRONG (current)\ncombined = AudioSegment.empty()\nfor audio in audio_files:\n    combined += audio  # plays one after another\n\n# RIGHT (mix)\nvoice = AudioSegment.silent(duration=target_ms)\nfor segment in voice_tracks:\n    voice = voice.overlay(segment, position=segment_start)\n\nmusic = build_music_track(target_ms)\nfinal_mix = voice.overlay(music - 12)\n",
+      "importance": "CRITICAL",
+      "lesson": "Whenever multiple audio elements must play together, mix with overlay instead of concatenation."
+    },
+    {
+      "lesson_id": 12,
+      "timestamp": "2025-12-05T21:42:00",
+      "title": "Raw Training Photos Should Guide Style, Not Become Actors",
+      "problem": "Rendered videos showed a still portrait sliding across the screen because draw_realistic_character pasted the source photo for every frame.",
+      "root_cause": "RealisticRenderer treated training_photos as live sprites. As the animation moved left-to-right, the same photograph drifted, breaking immersion and repeating real family photos.",
+      "symptoms": [
+        "Character visuals reuse the exact training photo",
+        "No arm/leg animation – just a static picture gliding",
+        "Story roles (mother, kid, granthi) ignore dialogue context"
+      ],
+      "solution": "Disable photo overlays by default, keep photos for background ambience, and drive character selection through diverse_character_generator using scene role heuristics (prepare_for_scene + _select_character_template).",
+      "code_pattern": "\n# WRONG: direct photo overlay every frame\nif self.use_real_photos:\n    img.paste(bordered_photo, position)\n\n# RIGHT: map scene label to generator template\nself.prepare_for_scene(character_name)\nself.current_character = self._select_character_template(label)\nself.char_generator.draw_character(...)",
+      "importance": "CRITICAL",
+      "lesson": "Training photos should inspire style palettes; let animated characters act the story so the user's images stay private."
+    },
+    {
+      "lesson_id": 13,
+      "timestamp": "2025-12-05T22:11:00",
+      "title": "Real Stories Need Real Actors, Voices, and Mood",
+      "problem": "Videos still look like simple cartoons. Characters do not act the story, backgrounds ignore location, and audio never matches age or emotion.",
+      "root_cause": "Pipeline lacks a story-to-scene planner, motion-capable character generator, role-based voice casting, and mood-aware music selection.",
+      "symptoms": [
+        "Every scene reuses generic walking loop regardless of action",
+        "Dialog is single voice per scene, no speaker differentiation",
+        "Background photo chosen randomly instead of story setting",
+        "Music is same sine tone even for happy/sad/adventure"
+      ],
+      "solution": "Design a cinematic pipeline: parse narrative into structured beats, generate per-character motion visuals (LoRA/AnimateDiff), cast voices by age+gender, and select/compose music cues from mood metadata. Provide Rahbar with a phased training plan covering planner, visuals, audio, and QA.",
+      "code_pattern": "\n# Planner output example\n{\n  \"scene\": 1,\n  \"location\": \"gurdwara_sahib\",\n  \"characters\": [\n    {\"id\": \"amrit_mom\", \"role\": \"mother\", \"action\": \"fold_hands\", \"voice\": \"female_40_pa\"},\n    {\"id\": \"amrit_child\", \"role\": \"kid\", \"action\": \"run_playful\", \"voice\": \"child_10_pa\"}\n  ],\n  \"mood\": \"devotional_happy\",\n  \"music\": {\"style\": \"raag_asa\", \"tempo\": 90}\n}",
+      "importance": "CRITICAL",
+      "lesson": "Rahbar must think like a film unit: plan scene→cast→motion→audio, then render."
+    }
+  ],
+  "patterns_to_remember": {
+    "process_debugging": {
+      "check_cpu": "ps aux | grep <process> shows CPU usage",
+      "check_state": "Status column shows T/S/R (stopped/sleeping/running)",
+      "check_output": "tail -f logfile to see what process is doing",
+      "check_errors": "Look for exceptions in logs"
+    },
+    "testing_workflow": {
+      "step1": "Write minimal test case",
+      "step2": "Run test case manually",
+      "step3": "Verify it works",
+      "step4": "Only then automate",
+      "step5": "Scale up gradually"
+    },
+    "code_architecture": {
+      "simple_first": "Build simplest version that works",
+      "add_features": "Add one feature at a time",
+      "test_each": "Test after each addition",
+      "dont_assume": "Verify every assumption"
+    }
+  },
+  "future_improvements": [
+    {
+      "id": 1,
+      "task": "Fix autonomous_learning_agent.py config loading",
+      "priority": "URGENT",
+      "complexity": "LOW",
+      "estimated_time": "30 minutes",
+      "approach": "Add config file loading logic in main() function"
+    },
+    {
+      "id": 2,
+      "task": "Add process health monitoring to orchestrator",
+      "priority": "HIGH",
+      "complexity": "MEDIUM",
+      "estimated_time": "1 hour",
+      "approach": "Check CPU%, state, and restart if stuck"
+    },
+    {
+      "id": 3,
+      "task": "Create working agent that actually produces videos",
+      "priority": "URGENT",
+      "complexity": "LOW",
+      "estimated_time": "30 minutes",
+      "approach": "Use simple_working_agent.py as template"
+    },
+    {
+      "id": 4,
+      "task": "Test video creation end-to-end before automation",
+      "priority": "CRITICAL",
+      "complexity": "LOW",
+      "estimated_time": "15 minutes",
+      "approach": "Run python3 simple_working_agent.py --videos 2"
+    },
+    {
+      "id": 5,
+      "task": "Fix merge_audio_video to layer narration and background music",
+      "priority": "CRITICAL",
+      "complexity": "MEDIUM",
+      "estimated_time": "45 minutes",
+      "approach": "Refactor to overlay narration tracks, build a loopable music bed, normalise volume, then mux with ffmpeg without -shortest clipping narration."
+    },
+    {
+      "id": 6,
+      "task": "Train lightweight character generator on photo dataset",
+      "priority": "HIGH",
+      "complexity": "HIGH",
+      "estimated_time": "1-2 days",
+      "approach": "Extract clothing palettes and facial features from training_photos to fine-tune a ControlNet/LoRA that outputs animated-friendly Punjabi characters without reusing raw photos."
+    },
+    {
+      "id": 7,
+      "task": "Build story-to-scene planner",
+      "priority": "CRITICAL",
+      "complexity": "HIGH",
+      "estimated_time": "1 day",
+      "approach": "Parse story text into JSON beats (location, mood, characters, actions, props) so renderer, TTS, and music modules receive structured directives."
+    },
+    {
+      "id": 8,
+      "task": "Create Punjabi voice roster",
+      "priority": "CRITICAL",
+      "complexity": "MEDIUM",
+      "estimated_time": "6 hours",
+      "approach": "Collect/fine-tune multi-speaker TTS voices (age, gender, tone) and map planner characters to voice IDs; support Punjabi, English, Hinglish."
+    },
+    {
+      "id": 9,
+      "task": "Implement mood-aware music engine",
+      "priority": "HIGH",
+      "complexity": "MEDIUM",
+      "estimated_time": "1 day",
+      "approach": "Tag library/stems by mood (happy, tense, devotional) and auto-select or generate tracks to match planner metadata."
+    },
+    {
+      "id": 10,
+      "task": "Tag background library by location",
+      "priority": "HIGH",
+      "complexity": "LOW",
+      "estimated_time": "4 hours",
+      "approach": "Run CLIP/BLIP tagging on training_photos to classify scenes (gurdwara, field, home) and pick context-aware backdrops."
+    },
+    {
+      "id": 11,
+      "task": "Integrate motion control (AnimateDiff/ControlNet)",
+      "priority": "HIGH",
+      "complexity": "HIGH",
+      "estimated_time": "2 days",
+      "approach": "Generate action-specific keyframes using motion models so characters can run, play cricket, swim, etc., matching planner actions."
+    }
+  ],
+  "code_templates": {
+    "simple_agent_pattern": "\nclass SimpleAgent:\n    def __init__(self):\n        self.maker = RealisticMovieMaker()\n        self.scenarios = [list of scenarios]\n    \n    def create_one(self, index):\n        scenario = self.scenarios[index]\n        return self.maker.create_movie(scenario['story'], name)\n    \n    def run_batch(self, count):\n        for i in range(count):\n            self.create_one(i)\n",
+    "process_health_check": "\ndef is_process_healthy(pid):\n    try:\n        proc = psutil.Process(pid)\n        cpu = proc.cpu_percent(interval=1.0)\n        status = proc.status()\n        \n        if cpu == 0.0 and status in ['stopped', 'zombie']:\n            return False\n        return True\n    except:\n        return False\n",
+    "config_loader": "\ndef load_agent_config(config_file):\n    if not config_file or not Path(config_file).exists():\n        return None\n    \n    with open(config_file, 'r') as f:\n        config = json.load(f)\n    \n    return config\n"
+  },
+  "rahbar_ai_tasks": [
+    "Read this learning data",
+    "Understand what went wrong",
+    "Generate fixed version of autonomous_learning_agent.py",
+    "Create process monitoring system",
+    "Build simple working agent",
+    "Test everything before deployment",
+    "Report back with results",
+    "Refactor realistic_movie_maker.merge_audio_video to mix narration with the music bed",
+    "Verify RealisticRenderer uses scenario-based characters instead of raw training photos",
+    "Design story-to-scene planner JSON schema and sample output",
+    "Propose multi-speaker Punjabi voice roster and integration steps",
+    "Outline mood-aware music selection pipeline",
+    "Recommend motion model (AnimateDiff/ControlNet) training strategy"
+  ],
+  "auto_healing_lessons": [
+    {
+      "timestamp": "2025-12-04T19:49:32.549089",
+      "problem": {
+        "type": "no_output",
+        "severity": "HIGH",
+        "description": "Agents configured but no videos created",
+        "auto_fixable": true
+      },
+      "fix_attempted": true,
+      "fix_successful": false,
+      "lesson": "Encountered no_output, fix failed"
+    },
+    {
+      "timestamp": "2025-12-05T21:01:14.076600",
+      "problem": {
+        "type": "no_output",
+        "severity": "HIGH",
+        "description": "Agents configured but no videos created",
+        "auto_fixable": true
+      },
+      "fix_attempted": true,
+      "fix_successful": true,
+      "lesson": "Test simple_working_agent first before complex orchestrator"
+    },
+    {
+      "timestamp": "2025-12-06T11:09:32.525084",
+      "problem": {
+        "type": "no_output",
+        "severity": "HIGH",
+        "description": "Agents configured but no videos created",
+        "auto_fixable": true
+      },
+      "fix_attempted": true,
+      "fix_successful": true,
+      "lesson": "Test simple_working_agent first before complex orchestrator"
+    }
+  ]
+}

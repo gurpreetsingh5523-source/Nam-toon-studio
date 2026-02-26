@@ -1,0 +1,23 @@
+[
+  {
+    "violation_type": "forbidden_operation",
+    "operation_attempted": "change_naam_anchor",
+    "forbidden_type": "change_naam_anchor",
+    "timestamp": "2025-11-04T14:00:12.800930",
+    "action_taken": "operation_blocked"
+  },
+  {
+    "violation_type": "forbidden_operation",
+    "operation_attempted": "remove_amrit_authority",
+    "forbidden_type": "remove_amrit_authority",
+    "timestamp": "2025-11-04T14:00:12.801058",
+    "action_taken": "operation_blocked"
+  },
+  {
+    "violation_type": "forbidden_operation",
+    "operation_attempted": "disable_dronema_protection",
+    "forbidden_type": "disable_dronema_protection",
+    "timestamp": "2025-11-04T14:00:12.801184",
+    "action_taken": "operation_blocked"
+  }
+]

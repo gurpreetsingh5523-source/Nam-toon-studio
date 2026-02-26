@@ -1,0 +1,12 @@
+{
+  "agent_name": "agent_4_tech",
+  "patterns": [
+    {
+      "id": "computer_learning",
+      "text": "[SCENE 1: Computer]\nਕੰਪਿਊਟਰ ਸਿੱਖਣਾ ਬਹੁਤ ਜ਼ਰੂਰੀ ਹੈ।\nLearning computer is important.",
+      "type": "scenario"
+    }
+  ],
+  "max_videos": 20,
+  "started_at": "2025-12-04T19:35:18.755246"
+}

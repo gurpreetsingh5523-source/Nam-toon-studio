@@ -1,0 +1,15 @@
+{
+  "brain_id": "amrit_main",
+  "trained_at": "2025-12-06T11:07:16.951603",
+  "training_type": "FULL_OVERNIGHT_TRAINING",
+  "training_data": {
+    "photos": 5540,
+    "audio": 2176,
+    "videos": 0,
+    "pdfs": 0,
+    "text_files": 0,
+    "source": "My Passport (Complete)"
+  },
+  "status": "trained_on_full_dataset",
+  "capabilities": "Enhanced with complete Sikhi knowledge base"
+}

@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-12-04T20:17:00",
+  "lesson_id": 9,
+  "title": "Video Diversity Problem Fixed",
+  "problem": "Videos were repetitive - only 5 scenarios repeating",
+  "root_cause": "simple_working_agent.py had only 5 scenarios (spiritual, village, family, gurdwara, learning)",
+  "solution": "Expanded to 25 diverse scenarios across 5 categories",
+  "categories": {
+    "spiritual": ["morning_prayer", "gurdwara_darshan", "langar_seva", "path_sahib", "simran_time"],
+    "family": ["family_dinner", "kids_playing", "wedding_celebration", "birthday_party", "homework_help"],
+    "village": ["farming_morning", "village_well", "cattle_care", "harvest_festival", "village_school"],
+    "learning": ["science_experiment", "punjabi_lesson", "coding_class", "music_practice", "history_lesson"],
+    "modern": ["startup_idea", "sports_training"]
+  },
+  "impact": "Now each video is unique with different story and content",
+  "importance": "CRITICAL",
+  "lesson": "Always provide variety in training data to avoid repetition",
+  "code_pattern": "Create large pool of diverse scenarios, use random selection",
+  "future_improvements": [
+    {
+      "task": "Add 50+ more scenarios",
+      "priority": "HIGH"
+    },
+    {
+      "task": "Generate scenarios dynamically using AI",
+      "priority": "MEDIUM"
+    },
+    {
+      "task": "Track which scenarios used recently, avoid repetition",
+      "priority": "HIGH"
+    }
+  ]
+}
