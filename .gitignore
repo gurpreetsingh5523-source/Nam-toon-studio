@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Dynamic build residues
+images/scene_base.png
+audio/dialogue_*.mp3
+audio/dialogue_*.wav
+audio/birds.wav
+audio/final_mix_temp.wav
+audio/bg_loop_temp.wav
+audio/clip_*_tmp.wav
+audio/extracted_final.wav
+colab/scenes.json
+AmritCore_FINAL_STUDIO_LAUNCH.mp4
+AmritCore_DEBUG_watermarked.mp4
+launchd_err.log
+launchd_out.log
