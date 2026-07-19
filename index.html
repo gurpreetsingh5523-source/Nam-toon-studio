@@ -3,100 +3,311 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ਅੰਮ੍ਰਿਤ ਕੋਰ — Naam Toon Studio</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <title>Nam Toon Studio — Multi-Track Movie Suite</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;600;800&family=Noto+Sans+Gurmukhi:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#1C1C1C">
 </head>
 <body>
-
     <div id="studio-app">
-        <aside id="visual-panel" class="closed-panel">
-            <h2>🖼️ ਦ੍ਰਿਸ਼ ਅਤੇ ਕਿਰਦਾਰ (Visuals)</h2>
-            <button class="toggle-btn" data-panel="visual">➡️</button> <div class="panel-content">
+        <!-- Sidebar Panel Left (Tracks & Character Assets Library) -->
+        <aside id="character-panel">
+            <h2>🎨 AI Assets Creator</h2>
+            <button class="toggle-btn" data-panel="character">⬅️</button>
+            <div class="panel-content">
                 <div class="panel-group">
-                    <h3>ਕਿਰਦਾਰ (Toon)</h3>
-                    <input type="file" id="character-upload" accept="image/*" disabled>
-                    <p>ਹਰਕਤ (Animation Logic):</p>
-                    <div class="control-grid">
-                        <button class="action-btn" data-action="walk">ਤੁਰੋ</button>
-                        <button class="action-btn" data-action="sit">ਬੈਠੋ</button>
-                        <button class="action-btn" data-action="jump">ਛਾਲ ਮਾਰੋ</button>
-                        <button class="action-btn" data-action="gaze">ਵੇਖੋ</button>
+                    <h3>🏞️ AI Background Generator</h3>
+                    <p>Enter Background Prompt:</p>
+                    <div style="display: flex; gap: 6px; flex-direction: column;">
+                        <textarea id="background-prompt-input" rows="2" style="width: 100%; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; color: white; padding: 6px; font-size: 0.8rem; outline: none; resize: none;" placeholder="Type background scene (e.g. Village Well)...">Village Well (ਤੂਤਾਂ ਵਾਲਾ ਖੂਹ)</textarea>
+                        <button id="generate-scene-btn" class="action-btn secondary-btn" style="width: 100%; font-size: 0.75rem; padding: 4px; margin: 0;">🔄 Generate Scene</button>
+                        
+                        <input type="file" id="bg-upload-input" accept="image/*" style="display: none;">
+                        <button id="bg-upload-btn" class="action-btn secondary-btn" style="width: 100%; font-size: 0.75rem; padding: 4px; margin: 0; background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.3); color: #34d399;">📷 Upload Custom BG Photo</button>
                     </div>
                 </div>
                 
-                <div class="panel-group">
-                    <h3>ਬੈਕਗ੍ਰਾਊਂਡ</h3>
-                    <button class="action-btn" data-action="bg-upload">ਤਸਵੀਰ ਅਪਲੋਡ ਕਰੋ</button>
-                    <p>ਸੈਟਿੰਗ (AI Presets):</p>
-                    <select id="background-preset">
-                        <option value="khu">ਤੂਤਾਂ ਵਾਲਾ ਖੂਹ</option>
-                        <option value="talab">ਪਿੰਡ ਦਾ ਤਲਾਅ</option>
-                        <option value="field">ਕਣਕ ਦਾ ਖੇਤ</option>
-                    </select>
+                <div class="panel-group" style="margin-top: 20px;">
+                    <h3>🤖 AI Character Creator</h3>
+                    <div style="display: flex; gap: 6px; flex-direction: column; margin-bottom: 12px;">
+                        <input type="text" id="ai-char-prompt" placeholder="Type character descriptor (e.g. Old Farmer)..." style="width: 100%; padding: 6px 10px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; color: white; font-size: 0.8rem; outline: none;">
+                        <button id="ai-char-generate-btn" class="action-btn secondary-btn" style="width: 100%; font-size: 0.75rem; padding: 4px; margin: 0; background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.3); color: #60a5fa;">✨ Create AI Character</button>
+                    </div>
+                    <p style="font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 6px;">Character Tracks list:</p>
+                    <div id="sidebar-character-list" style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 12px;">
+                        <!-- Dynamically populated character track profiles -->
+                    </div>
+                    <button id="add-track-btn-sidebar" class="action-btn secondary-btn" style="width: 100%;">➕ Add Character Track</button>
                 </div>
             </div>
         </aside>
 
+        <!-- Center Core (Main Editor View) -->
         <main id="master-core">
             <header>
-                <h1>ਅੰਮ੍ਰਿਤ ਕੋਰ — Naam Toon Studio</h1>
+                <h1>Nam Toon Studio — Movie Production Suite 🎬</h1>
             </header>
 
-            <div id="preview-screen">
-                <div id="intro-visual">
-                    <h1 class="logo-text">ਸਤਿ ਕਰਤਾਰ</h1>
-                    <span class="flower-icon">🌺</span>
-                </div>
-                <div id="video-display" style="display: none;"></div>
-            </div>
+            <!-- Top Workspace Container (Preview + AI Chat Prompt side-by-side) -->
+            <div id="top-workspace">
+                <!-- Left: Program Monitor Screen -->
+                <div id="preview-screen">
+                    
+                    <!-- Dynamic Character Avatars layer (JavaScript populates speaking avatars here) -->
+                    <div id="avatar-container" style="position: absolute; bottom: 80px; left: 0; width: 100%; display: flex; justify-content: space-around; padding: 0 40px; z-index: 2; pointer-events: none;">
+                        <!-- Loaded dynamically -->
+                    </div>
 
-            <div id="control-area">
-                <h2>🧠 1. ਕਹਾਣੀ ਦਾ ਦਿਮਾਗ਼</h2>
-                <textarea id="story-input" rows="8" placeholder="ਇੱਥੇ PDF ਤੋਂ ਕਾਪੀ ਕੀਤਾ ਪਾਠ ਜਾਂ ਡਾਇਲਾਗ ਦਰਜ ਕਰੋ... (AI ਵਿਸ਼ਲੇਸ਼ਣ ਲਈ)"></textarea>
-                
-                <div class="naam-pulse-area">
-                    <div class="kund">
-                        <div id="glow" class="pulse-visual">
-                            <p id="heartbeat">ਸੁਰਤ: <span id="hb-count">0</span></p>
-                            <button id="pulse" class="action-btn">ਨਾਮ ਪਲਸ (ਸਿਮਰਨ)</button>
+                    <!-- Dynamic Subtitle bubble -->
+                    <div id="subtitle-bubble" style="position: absolute; bottom: 20px; left: 5%; width: 90%; background: rgba(0,0,0,0.8); border: 1px solid rgba(255,255,255,0.15); border-radius: 12px; padding: 10px 16px; text-align: center; color: #fbbf24; font-size: 0.95rem; font-weight: bold; z-index: 3; display: none; text-shadow: 1px 1px 2px black;">
+                        Subtitles here...
+                    </div>
+
+                    <!-- Flashing SFX HUD overlay -->
+                    <div id="sfx-overlay" style="position: absolute; top: 20px; right: 20px; background: rgba(16, 185, 129, 0.9); border-radius: 8px; padding: 6px 12px; display: none; align-items: center; gap: 8px; z-index: 3; color: white; font-size: 0.8rem; font-weight: bold;">
+                        <span id="sfx-text-hud">🔊 SFX</span>
+                    </div>
+
+                    <div id="intro-visual" style="z-index: 1; display: none;">
+                        <h1 class="logo-text">STUDIO MONITOR</h1>
+                        <span class="flower-icon">🎬</span>
+                    </div>
+
+                    <!-- AI Brainstorm Chat Interface overlay -->
+                    <div id="ai-chat-board" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; background: #050508; z-index: 2;">
+                        <header style="background: rgba(255,255,255,0.02); border-bottom: 1px solid rgba(255,255,255,0.05); padding: 8px 16px; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0;">
+                            <h3 style="margin: 0; font-size: 0.85rem; color: var(--accent-gold); font-weight: 800; display: flex; align-items: center; gap: 6px;">💬 AI Brainstorming Studio</h3>
+                            <button id="switch-monitor-btn" class="action-btn secondary-btn" style="width: auto; padding: 2px 8px; font-size: 0.75rem; margin: 0;">📺 Preview Monitor</button>
+                        </header>
+                        
+                        <div id="chat-messages-container" style="flex-grow: 1; overflow-y: auto; padding: 12px; display: flex; flex-direction: column; gap: 10px; font-size: 0.8rem; scroll-behavior: smooth;">
+                            <!-- Populated dynamically via app.js -->
+                        </div>
+                        
+                        <div id="chat-input-bar" style="padding: 10px; background: rgba(0,0,0,0.4); border-top: 1px solid rgba(255,255,255,0.05); display: flex; gap: 8px; align-items: center; flex-shrink: 0;">
+                            <input type="text" id="chat-input-field" placeholder="Hi there! How can I help you build your story today?..." style="flex-grow: 1; padding: 8px 12px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; color: white; font-size: 0.8rem; outline: none;">
+                            <button id="chat-voice-btn" class="action-btn" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8); width: auto; padding: 6px 12px; margin: 0; border-radius: 20px; font-size: 0.8rem; display: flex; align-items: center; gap: 4px;">🎤 ਮਾਈਕ</button>
+                            <button id="chat-send-btn" class="action-btn" style="background: linear-gradient(135deg, #a855f7, #7e22ce); width: auto; padding: 6px 14px; margin: 0; border-radius: 20px; font-size: 0.8rem;">ਭੇਜੋ ➡️</button>
                         </div>
                     </div>
-                    <ul id="events"></ul>
-                </div>
-                <div id="input-options">
-                    <button class="upload-btn" data-input="file">📂 PDF/File</button>
-                    <button class="upload-btn" data-input="camera">📷 ਕੈਮਰਾ (Vision)</button>
+
+                    <!-- Interactive Video Player -->
+                    <video id="video-player" controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; display: none; z-index: 4;"></video>
                 </div>
 
-                <button id="process-story" class="big-run-btn">🚀 ਸਟੂਡੀਓ ਪ੍ਰੋਸੈੱਸ ਸ਼ੁਰੂ ਕਰੋ (AI ਨੂੰ ਚਲਾਓ)</button>
+                <!-- Right: Prompt Inputs -->
+                <div id="control-area">
+                    <div>
+                        <!-- AI Script Generator Panel -->
+                        <div class="panel-group" style="border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 12px; margin-bottom: 12px; background: rgba(255,255,255,0.015); border-top: none;">
+                            <h3 style="margin-top:0; color:var(--accent-gold); font-size:0.95rem; display: flex; align-items: center; gap: 6px;">🪄 AI Script Writer</h3>
+                            <p style="margin: 3px 0; font-size: 0.75rem;">Theme:</p>
+                            <select id="ai-theme" style="margin-bottom: 8px; padding: 6px; font-size: 0.8rem;">
+                                <option value="Drama">Drama / Emotional Story</option>
+                                <option value="Comedy">Comedy / Fun Dialogues</option>
+                                <option value="Adventure">Adventure / Action Story</option>
+                            </select>
+
+                            <p style="margin: 3px 0; font-size: 0.75rem;">LLM Model:</p>
+                            <select id="ai-model" style="margin-bottom: 8px; padding: 6px; font-size: 0.8rem;">
+                                <option value="Offline Templates">Offline Preset Rules (No LLM)</option>
+                                <option value="llama3.2">Ollama - Llama 3.2 (Local)</option>
+                                <option value="qwen2.5">Ollama - Qwen 2.5 (Local)</option>
+                                <option value="mistral">Ollama - Mistral (Local)</option>
+                            </select>
+                            
+                            <input type="text" id="ai-prompt" placeholder="Type plot idea..." style="width:100%; padding:8px; background:rgba(0,0,0,0.3); border:1px solid rgba(255,255,255,0.1); border-radius:6px; color:white; font-size:0.8rem; margin-bottom: 8px; outline:none;">
+                            
+                            <button id="ai-generate-btn" class="action-btn" style="background:linear-gradient(135deg, #a855f7, #7e22ce); box-shadow: 0 4px 10px rgba(168, 85, 247, 0.2); font-size: 0.8rem; padding: 8px;">🪄 Generate Script with AI</button>
+                        </div>
+
+                        <h2 style="font-size: 1rem; margin-top: 10px;">🧠 Storyboard & Dialogue Inputs</h2>
+                        <textarea id="story-input" rows="4" placeholder="Enter script or dialog lines..."></textarea>
+                    </div>
+
+                    <div>
+                        <div class="naam-pulse-area" style="display: flex; align-items: center; justify-content: space-between; margin-top: 10px;">
+                            <div class="kund">
+                                <div id="glow" class="pulse-visual" style="padding: 5px;">
+                                    <p id="heartbeat" style="margin: 0; font-size: 0.75rem;">Pulse Count: <span id="hb-count">0</span></p>
+                                    <button id="pulse" class="action-btn pulse-btn" style="padding: 4px 8px; font-size: 0.75rem; width: auto;">Simulate Pulse</button>
+                                </div>
+                            </div>
+                            <ul id="events" style="margin: 0; font-size: 0.7rem; max-height: 45px; overflow: hidden; padding-left: 15px;"></ul>
+                        </div>
+                        
+                        <div id="input-options" style="display: flex; gap: 8px; margin-top: 8px;">
+                            <button class="upload-btn" data-input="file" style="padding: 6px; font-size: 0.75rem;">📂 Import Script File</button>
+                            <button class="upload-btn" data-input="camera" style="padding: 6px; font-size: 0.75rem;">📷 Import Camera Frame</button>
+                        </div>
+
+                        <div class="panel-group" style="border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 12px; margin-top: 12px; background: rgba(255,255,255,0.015);">
+                            <h3 style="margin-top:0; color:var(--accent-glow); font-size:0.95rem; display: flex; align-items: center; gap: 6px;">⚡ AI Post-Production</h3>
+                            
+                            <label style="display: flex; align-items: center; gap: 8px; font-size: 0.8rem; margin-bottom: 6px; cursor: pointer;">
+                                <input type="checkbox" id="ai-voice-cloning" checked> 🗣️ Voice Cloning & Dubbing
+                            </label>
+                            
+                            <label style="display: flex; align-items: center; gap: 8px; font-size: 0.8rem; margin-bottom: 6px; cursor: pointer;">
+                                <input type="checkbox" id="ai-subtitle-generation" checked> 💬 Auto-Generate Subtitles
+                            </label>
+
+                            <label style="display: flex; align-items: center; gap: 8px; font-size: 0.8rem; margin-bottom: 8px; cursor: pointer;">
+                                <input type="checkbox" id="ai-audio-enhancement" checked> 🔊 AI Audio Enhance & Ducking
+                            </label>
+
+                            <p style="margin: 3px 0; font-size: 0.75rem;">AI Color Grading (LUTs):</p>
+                            <select id="ai-color-grading" style="margin-bottom: 8px; padding: 6px; font-size: 0.8rem; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; color: white; width: 100%;">
+                                <option value="Standard">Standard (No Filter)</option>
+                                <option value="Cinematic">Cinematic Moody Boost</option>
+                                <option value="Sunset">Sunset Punjabi Glow</option>
+                                <option value="Vintage">Vintage Black & White</option>
+                            </select>
+                        </div>
+
+                        <button id="process-story" class="big-run-btn" style="padding: 12px; font-size: 0.95rem; margin-top: 12px; background: linear-gradient(135deg, #0052d9, #2f80ed); border: none; box-shadow: 0 4px 15px rgba(47, 128, 237, 0.3);">⚡ One-Click AI Compile</button>
+                    </div>
+
+                    <!-- Live Compiler Log Console -->
+                    <div id="console-box" style="display: none; margin-top: 8px;">
+                        <h3 style="font-size: 0.8rem; margin: 4px 0;">🖥️ Compiler Console Logs</h3>
+                        <pre id="console-logs" style="max-height: 80px; font-size: 0.7rem; padding: 4px;"></pre>
+                    </div>
+                </div>
             </div>
 
-            <div id="status-box">
-                <p id="status-message">ਸਥਿਤੀ: ਉਡੀਕ (ਕਿਰਪਾ ਕਰਕੇ ਨਵਾਂ ਪਾਠ ਦਰਜ ਕਰੋ)</p>
+            <!-- Bottom Workspace: Timeline Mixer Grid -->
+            <div id="timeline-container">
+                <div class="timeline-header">
+                    <h3>⏱️ Multi-Track timeline Mixer</h3>
+                    <div class="timeline-controls">
+                        <!-- Playback Controls -->
+                        <div class="playback-controls" style="display: flex; gap: 8px; margin-right: 15px;">
+                            <button id="play-btn" class="action-btn secondary-btn" style="width: auto; padding: 4px 12px; font-size: 0.8rem;">⏯️ Play/Pause</button>
+                            <button id="stop-btn" class="action-btn secondary-btn" style="width: auto; padding: 4px 12px; background: rgba(239,68,68,0.1); border-color: rgba(239,68,68,0.3); font-size: 0.8rem;">⏹️ Stop</button>
+                            <button id="rewind-btn" class="action-btn secondary-btn" style="width: auto; padding: 4px 12px; font-size: 0.8rem;">⏮️ Rewind</button>
+                        </div>
+                        
+                        <!-- Global Voiceover Record Controls (Always available!) -->
+                        <div class="global-record-controls" style="display: flex; align-items: center; gap: 8px; margin-right: 15px; border-right: 1px solid rgba(255,255,255,0.1); padding-right: 15px;">
+                            <span style="font-size: 0.8rem; color: var(--text-secondary);">Rec Track:</span>
+                            <select id="global-rec-track" style="width: auto; padding: 4px 8px; font-size: 0.8rem; margin: 0; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; color: white;">
+                                <!-- Populated dynamically based on registered character tracks -->
+                            </select>
+                            <button id="global-mic-record-btn" class="action-btn" style="background: linear-gradient(135deg, #dc2626, #b91c1c); box-shadow: 0 4px 10px rgba(220, 38, 38, 0.3); font-size: 0.8rem; padding: 4px 12px; margin: 0; width: auto;">🎤 Rec</button>
+                            <button id="global-mic-stop-btn" class="action-btn" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); font-size: 0.8rem; padding: 4px 12px; margin: 0; width: auto;" disabled>⏹️ Stop</button>
+                        </div>
+
+                        <!-- Dynamic Zoom Slider -->
+                        <div class="zoom-controls" style="display: flex; align-items: center; gap: 8px; margin-right: 15px;">
+                            <span style="font-size: 0.8rem; color: var(--text-secondary);">Zoom:</span>
+                            <input type="range" id="zoom-slider" min="15" max="150" value="40" style="width: 100px; margin: 0;">
+                        </div>
+
+                        <!-- Operations -->
+                        <button id="load-demo-btn" class="action-btn secondary-btn" style="width: auto; display: inline-block; background: rgba(59, 130, 246, 0.2); border-color: rgba(59, 130, 246, 0.4); font-size: 0.8rem; padding: 4px 12px;">Demo Template</button>
+                        <button id="add-block-btn" class="action-btn secondary-btn" style="width: auto; display: inline-block; font-size: 0.8rem; padding: 4px 12px;">+ Add Block</button>
+                        <button id="clear-timeline-btn" class="action-btn secondary-btn" style="width: auto; display: inline-block; background: rgba(220,38,38,0.2); border-color: rgba(220,38,38,0.4); font-size: 0.8rem; padding: 4px 12px;">Clear All</button>
+                    </div>
+                </div>
+
+                <!-- Time code display -->
+                <div class="timecode-display" style="display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--accent-gold); margin-bottom: 10px; padding: 6px; background: rgba(0,0,0,0.2); border-radius: 6px;">
+                    <span>Playhead Time: <strong id="current-playcode">00:00.00</strong></span>
+                    <span>Total Duration: <strong id="total-durationcode">00:00.00</strong></span>
+                </div>
+
+                <!-- Outer Scrollable Track Container -->
+                <div class="timeline-scroll-container" style="overflow-x: auto; position: relative; background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; width: 100%; max-width: 100%;">
+                    
+                    <!-- Grid Layout where tracks align -->
+                    <div class="timeline-workspace" id="timeline-workspace-el" style="position: relative; min-width: 100%; width: 1200px; padding-bottom: 10px;">
+                        
+                        <!-- Visual Red Playhead Line -->
+                        <div id="playhead">
+                            <div class="playhead-knob"></div>
+                        </div>
+
+                        <!-- Time Ruler inside scrolling workspace -->
+                        <div class="timeline-ruler" id="scrolling-ruler" style="margin-left: 120px; position: relative; height: 26px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 8px;">
+                            <!-- Ruler markings loaded dynamically -->
+                        </div>
+
+                        <!-- Dynamic Track Lanes Container -->
+                        <div class="timeline-tracks" id="timeline-tracks-container">
+                            <!-- Populated dynamically via app.js -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="status-box" style="margin-top: 15px;">
+                <p id="status-message">Status: Idle</p>
             </div>
         </main>
 
+        <!-- Audio Sidebar Panel Right -->
         <aside id="audio-panel" class="closed-panel">
-            <h2>🎧 ਆਵਾਜ਼ ਅਤੇ ਡਬਿੰਗ (Audio)</h2>
-            <button class="toggle-btn" data-panel="audio">➡️</button> <div class="panel-content">
-                <div class="panel-group">
-                    <h3>ਡਾਇਲਾਗ ਕੰਟਰੋਲ</h3>
-                    <p>ਕਿਰਦਾਰ ਦੀ ਵੌਲਿਊਮ:</p>
-                    <input type="range" id="dialogue-volume" min="0" max="100" value="80">
-                    <button class="action-btn" data-action="dub-start">🎤 ਬੋਲ ਕੇ ਡਬਿੰਗ ਕਰੋ</button>
+            <h2>🎧 Audio Mixer Settings</h2>
+            <button class="toggle-btn" data-panel="audio">➡️</button>
+            <div class="panel-content">
+                <div class="panel-group" id="block-inspector" style="display: none;">
+                    <h3>🔍 Block Inspector</h3>
+                    <p>Track / Character:</p>
+                    <select id="inspector-character">
+                        <!-- Populated dynamically -->
+                    </select>
+                    
+                    <p style="margin-top: 10px;">Dialogue Text / Sound Preset Name:</p>
+                    <textarea id="inspector-text" rows="3" style="width: 100%; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; color: white; padding: 6px; font-size: 0.85rem; outline: none; resize: none;"></textarea>
+                    
+                    <p style="margin-top: 10px;">Volume:</p>
+                    <input type="range" id="inspector-volume" min="0" max="150" value="100">
+                    
+                    <p style="margin-top: 10px;">Stereo Pan:</p>
+                    <input type="range" id="inspector-pan" min="-100" max="100" value="0">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--text-secondary);">
+                        <span>Left</span>
+                        <span>Center</span>
+                        <span>Right</span>
+                    </div>
+
+                    <p style="margin-top: 10px;">Start Time (seconds):</p>
+                    <input type="number" id="inspector-start-time" step="0.1" min="0" max="180" style="width: 100%; padding: 6px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; color: white; font-size: 0.85rem;">
+
+                    <p style="margin-top: 10px;">Mic Voiceover Recording:</p>
+                    <div style="display: flex; gap: 8px; margin-top: 5px;">
+                        <button id="block-mic-record-btn" class="action-btn" style="background: linear-gradient(135deg, #dc2626, #b91c1c); box-shadow: 0 4px 10px rgba(220, 38, 38, 0.3); font-size: 0.8rem; padding: 4px 12px; margin: 0; width: auto;">🎤 Rec</button>
+                        <button id="block-mic-stop-btn" class="action-btn" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); font-size: 0.8rem; padding: 4px 12px; margin: 0; width: auto;" disabled>⏹️ Stop</button>
+                    </div>
+
+                    <p style="margin-top: 15px;">🖼️ Block Custom Storyboard Photo:</p>
+                    <div style="display: flex; gap: 8px; margin-top: 5px; flex-direction: column;">
+                        <input type="file" id="block-image-upload-input" accept="image/*" style="display: none;">
+                        <button id="block-image-upload-btn" class="action-btn secondary-btn" style="width: 100%; font-size: 0.75rem; padding: 6px; margin: 0; background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.3); color: #60a5fa;">📷 Upload Photo for Block</button>
+                        <div id="block-image-preview-container" style="display: none; align-items: center; gap: 8px; margin-top: 5px; background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.05); padding: 4px; border-radius: 6px;">
+                            <img id="block-image-preview-thumb" style="width: 50px; height: 35px; object-fit: cover; border-radius: 4px;">
+                            <span id="block-image-filename-label" style="font-size: 0.7rem; color: #a3a3a3; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 120px;">custom_frame.png</span>
+                            <button id="block-image-clear-btn" style="background: none; border: none; color: #ef4444; cursor: pointer; font-size: 0.8rem; margin-left: auto;">❌</button>
+                        </div>
+                    </div>
+
+                    <button id="delete-block-btn" class="action-btn" style="background: #ef4444; box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3); margin-top: 15px;">🗑️ Delete Block</button>
+                </div>
+                <div class="panel-group" id="no-selection-message">
+                    <p style="text-align: center; font-style: italic; margin: 15px 0;">Select a block to inspect properties.</p>
                 </div>
                 
                 <div class="panel-group">
-                    <h3>ਸਪੈਸ਼ਲ ਇਫੈਕਟਸ (SFX)</h3>
-                    <p>ਆਵਾਜ਼ਾਂ ਦੀ 'ਅਲਮਾਰੀ':</p>
+                    <h3>Procedural Ambient preset</h3>
+                    <p>Background SFX preset:</p>
                     <select id="sfx-selector">
-                        <option value="peacock">ਮੋਰ ਦੀ ਆਵਾਜ਼</option>
-                        <option value="tinds">ਖੂਹ ਦੀਆਂ ਟਿੰਡਾਂ</option>
-                        <option value="flute">ਬੰਸਰੀ ਦੀ ਧੁਨ</option>
+                        <option value="birds">Nature Birds</option>
+                        <option value="peacock">Peacock Call</option>
+                        <option value="tinds">Water Well Splash</option>
+                        <option value="flute">Ambient Flute</option>
                     </select>
-                    <button class="action-btn" data-action="add-sfx">ਆਵਾਜ਼ ਜੋੜੋ</button>
                 </div>
             </div>
         </aside>
