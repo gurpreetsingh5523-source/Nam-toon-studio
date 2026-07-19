@@ -42,6 +42,7 @@ parser.add_argument("--audio-dir", type=str, default=None, help="Directory conta
 parser.add_argument("--record-mic", action="store_true", help="Interactive: record per-dialogue lines from microphone (optional dependency)")
 parser.add_argument("--open-editor", action="store_true", help="Open scene JSON in $EDITOR for manual edits before rendering")
 parser.add_argument("--master", action="store_true", help="Apply light mastering (compressor + limiter) to final mix")
+parser.add_argument("--sfx-preset", type=str, default="birds", choices=["birds", "peacock", "tinds", "flute"], help="Procedural background SFX preset")
 args = parser.parse_args()
 
 logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO, format="%(message)s")
@@ -65,6 +66,7 @@ AUDIO_DIR = args.audio_dir
 RECORD_MIC = args.record_mic
 OPEN_EDITOR = args.open_editor
 MASTER = args.master
+SFX_PRESET = getattr(args, 'sfx_preset', 'birds')
 
 # Create necessary folders (ensures stability)
 if not os.path.exists("audio"): os.makedirs("audio")
@@ -103,6 +105,11 @@ else:
 # Create empty list to store audio clips
 audio_clips = []
 
+voice_cloning = True
+subtitles = True
+color_grading = "Standard"
+keyframes = {}
+
 # If scenes JSON provided, load and convert to dialogues_scene1 format
 if SCENES_PATH:
     try:
@@ -110,7 +117,10 @@ if SCENES_PATH:
         sp = Path(SCENES_PATH)
         if sp.exists():
             data = json.loads(sp.read_text())
-            # Expecting {'scenes': [ { 'scene_id':..., 'dialogues': [ {character,text,volume}] , ... } ] }
+            voice_cloning = data.get('voice_cloning', True)
+            subtitles = data.get('subtitles', True)
+            color_grading = data.get('color_grading', 'Standard')
+            keyframes = data.get('keyframes', {})
             first = data.get('scenes', [])[0]
             if first:
                 dialogues_scene1 = first.get('dialogues', dialogues_scene1)
@@ -220,9 +230,13 @@ for i, dialogue in enumerate(dialogues_scene1):
     out_path = f"audio/dialogue_{i}.mp3"
     sample_path_wav = f"audio/sample_dialogue_{i}.wav"
 
-    # If user provided an audio override directory, check for per-dialogue files first
+    # Check for custom recorded audio override file
     override_path = None
-    if AUDIO_DIR and os.path.exists(AUDIO_DIR):
+    if dialogue.get("audio_file") and os.path.exists(dialogue["audio_file"]):
+        override_path = dialogue["audio_file"]
+        log.info(f"Using custom audio override for {dialogue.get('character')}[{i}]: {override_path}")
+
+    if not override_path and AUDIO_DIR and os.path.exists(AUDIO_DIR):
         # candidates: Character_i.wav, Character_i.mp3, Character.wav
         cand1 = os.path.join(AUDIO_DIR, f"{dialogue.get('character')}_{i}.wav")
         cand2 = os.path.join(AUDIO_DIR, f"{dialogue.get('character')}_{i}.mp3")
@@ -264,10 +278,39 @@ for i, dialogue in enumerate(dialogues_scene1):
 
     # Load the clip and add volume
     clip = AudioFileClip(load_path)
-    clip = volumex(clip, dialogue.get('volume', 1.0))
+    
+    track_name = dialogue.get('character')
+    default_vol = dialogue.get('volume', 1.0)
+    
+    def get_interpolated_volume(track, absolute_time, base_vol):
+        if 'keyframes' not in globals() or not keyframes or track not in keyframes:
+            return base_vol
+        kfs = keyframes[track]
+        if not kfs:
+            return base_vol
+        sorted_kfs = sorted(kfs, key=lambda x: x['time'])
+        if absolute_time <= sorted_kfs[0]['time']:
+            return sorted_kfs[0]['volume']
+        if absolute_time >= sorted_kfs[-1]['time']:
+            return sorted_kfs[-1]['volume']
+        for idx in range(len(sorted_kfs) - 1):
+            k1 = sorted_kfs[idx]
+            k2 = sorted_kfs[idx+1]
+            if k1['time'] <= absolute_time <= k2['time']:
+                ratio = (absolute_time - k1['time']) / (k2['time'] - k1['time'])
+                return k1['volume'] + ratio * (k2['volume'] - k1['volume'])
+        return base_vol
+
+    def vol_filter(gf, t):
+        absolute_time = dialogue.get('computed_start', 0.0) + t
+        vol = get_interpolated_volume(track_name, absolute_time, default_vol)
+        return vol * gf(t)
+
+    clip = clip.fl(vol_filter)
 
     # Optional per-character panning (best-effort; falls back on failure)
-    if PAN_WIDTH > 0.0:
+    custom_pan = dialogue.get('pan', None)
+    if custom_pan is not None or PAN_WIDTH > 0.0:
         try:
             # Robust approach: write clip to temp WAV and read samples reliably with wave
             import array as _array
@@ -291,8 +334,12 @@ for i, dialogue in enumerate(dialogues_scene1):
                 else:
                     arr_np = arr_np / 128.0
             mono = arr_np
-            # pan value between -1 (left) .. 1 (right) based on character index
-            pan = (i / max(1, len(dialogues_scene1)-1) - 0.5) * 2.0 * PAN_WIDTH
+            # resolve pan value
+            if custom_pan is not None:
+                pan = float(custom_pan)
+            else:
+                pan = (i / max(1, len(dialogues_scene1)-1) - 0.5) * 2.0 * PAN_WIDTH
+            
             left_gain = np.sqrt(0.5 * (1.0 - pan))
             right_gain = np.sqrt(0.5 * (1.0 + pan))
             left = mono * left_gain
@@ -307,8 +354,31 @@ for i, dialogue in enumerate(dialogues_scene1):
 if len(audio_clips) == 0:
     raise RuntimeError("No audio clips were produced or found.")
 
-final_dialogue_audio = concatenate_audioclips(audio_clips)
-total_duration = final_dialogue_audio.duration
+# Determine if we mix as a timeline composite or standard sequential concatenation
+has_timeline = any(dialogue.get('start_time') is not None for dialogue in dialogues_scene1)
+
+if has_timeline:
+    composite_clips = []
+    current_time = 0.0
+    for idx, dialogue in enumerate(dialogues_scene1):
+        c_clip = audio_clips[idx]
+        start_time = dialogue.get('start_time')
+        if start_time is not None:
+            start_time = float(start_time)
+            c_clip = c_clip.set_start(start_time)
+            current_time = max(current_time, start_time + c_clip.duration)
+        else:
+            c_clip = c_clip.set_start(current_time)
+            current_time += c_clip.duration
+        composite_clips.append(c_clip)
+    final_dialogue_audio = CompositeAudioClip(composite_clips)
+    total_duration = current_time
+    log.info(f"Timeline mode active: mixed {len(composite_clips)} clips dynamically")
+else:
+    final_dialogue_audio = concatenate_audioclips(audio_clips)
+    total_duration = final_dialogue_audio.duration
+    log.info("Sequential concatenation mode active")
+
 log.info(f"Final dialogue audio duration: {total_duration:.2f}s")
 for idx, ac in enumerate(audio_clips):
     try:
@@ -323,18 +393,72 @@ try:
 except Exception as e:
     log.debug(f"audio_normalize failed: {e}")
 
-# Create SFX (for background) — write a WAV (was .mp3 mismatch)
-background_fx_path = "audio/birds.wav"
+# Create SFX (for background) — write a WAV
+background_fx_path = f"audio/{SFX_PRESET}.wav"
 sample_rate = 44100
-duration = 4.0  # 4 seconds
-samples = np.zeros(int(duration * sample_rate))
+duration = 8.0  # 8 seconds loop
+t = np.linspace(0, duration, int(duration * sample_rate), False)
+samples = np.zeros_like(t)
+
+if SFX_PRESET == 'birds':
+    # High frequency chirps + noise
+    noise = 0.005 * np.random.normal(size=t.shape)
+    chirps = np.zeros_like(t)
+    for start_t in [0.5, 1.2, 2.0, 3.5, 4.2, 5.0, 6.5, 7.2]:
+        idx_start = int(start_t * sample_rate)
+        idx_end = idx_start + int(0.2 * sample_rate)
+        if idx_end < len(t):
+            t_chirp = t[idx_start:idx_end] - start_t
+            sweep = np.sin(2 * np.pi * (2500 + 7500 * t_chirp) * t_chirp)
+            env = np.sin(np.pi * (t_chirp / 0.2))
+            chirps[idx_start:idx_end] += 0.05 * sweep * env
+    samples = chirps + noise
+
+elif SFX_PRESET == 'peacock':
+    peacock = np.zeros_like(t)
+    for start_t in [1.0, 3.5, 6.0]:
+        idx_start = int(start_t * sample_rate)
+        idx_end = idx_start + int(0.8 * sample_rate)
+        if idx_end < len(t):
+            t_call = t[idx_start:idx_end] - start_t
+            sweep = np.sin(2 * np.pi * (800 + 400 * np.sin(np.pi * t_call / 0.8)) * t_call)
+            env = np.exp(-4 * t_call) * (1 - np.exp(-40 * t_call))
+            peacock[idx_start:idx_end] += 0.1 * sweep * env
+    samples = peacock + 0.003 * np.random.normal(size=t.shape)
+
+elif SFX_PRESET == 'tinds':
+    creak = np.sin(2 * np.pi * 50 * t) * (0.04 * (1.0 + np.sin(2 * np.pi * 1.5 * t))) * np.random.normal(size=t.shape)
+    splash = np.zeros_like(t)
+    for start_t in [0.0, 2.0, 4.0, 6.0]:
+        idx_start = int(start_t * sample_rate)
+        idx_end = idx_start + int(0.6 * sample_rate)
+        if idx_end < len(t):
+            t_splash = t[idx_start:idx_end] - start_t
+            splash_noise = 0.015 * np.random.normal(size=t_splash.shape)
+            env = np.exp(-3 * t_splash)
+            splash[idx_start:idx_end] += splash_noise * env
+    samples = creak + splash
+
+elif SFX_PRESET == 'flute':
+    flute = np.zeros_like(t)
+    notes = [432.0, 486.0, 576.0, 486.0, 648.0, 576.0, 729.0, 648.0]
+    note_duration = 1.0
+    for idx, freq in enumerate(notes):
+        start_t = idx * note_duration
+        idx_start = int(start_t * sample_rate)
+        idx_end = idx_start + int(note_duration * sample_rate)
+        if idx_end < len(t):
+            t_note = t[idx_start:idx_end] - start_t
+            sine = np.sin(2 * np.pi * freq * t_note)
+            breath = 0.02 * np.random.normal(size=t_note.shape) * np.sin(2 * np.pi * 5 * t_note)
+            env = np.sin(np.pi * t_note / note_duration) ** 2
+            flute[idx_start:idx_end] += 0.08 * (sine + breath) * env
+    samples = flute
 
 # If user asked for dream effects we build a simple ambient texture (sine pad + noise)
 if DREAM:
-    t = np.linspace(0, duration, int(duration * sample_rate), False)
     pad = 0.08 * np.sin(2 * np.pi * 220.0 * t) * (1.0 - 0.5 * np.sin(2 * np.pi * 0.1 * t))
-    noise = 0.01 * np.random.normal(size=pad.shape)
-    samples = pad + noise
+    samples = samples + pad
 
 # Save as WAV file
 with wave.open(background_fx_path, 'wb') as f:
@@ -349,49 +473,218 @@ log.info(f"Background audio created: {background_fx_path}")
 _log_file_info(background_fx_path)
 
 # --- Step 3: Final Assembly ---
-# Create a subtle Ken-Burns / zoom animation on the base image for the full dialogue duration
-# Create a simple zoom/pan animation by generating frames with PIL (avoids PIL.ANTIALIAS issue)
-base_img = Image.open(AI_IMAGE_PATH).convert('RGB')
-width, height = 1920, 1080
+# Pre-calculate computed start and end times for each dialogue item based on loaded clips
+current_time_acc = 0.0
+for idx, dialogue in enumerate(dialogues_scene1):
+    start = dialogue.get('start_time')
+    if start is not None:
+        start = float(start)
+    else:
+        start = current_time_acc
+    
+    try:
+        dur = audio_clips[idx].duration
+        if dur is None or dur <= 0:
+            dur = 3.0
+    except Exception:
+        dur = 3.0
+        
+    dialogue['computed_start'] = start
+    dialogue['computed_end'] = start + dur
+    current_time_acc = max(current_time_acc, start + dur)
 
-def make_frame(t, base=base_img, duration=total_duration):
+total_duration = current_time_acc
+log.info(f"Assembling video storyboard: total duration computed as {total_duration:.2f}s")
+
+# Load Gurmukhi font for subtitles
+from PIL import ImageDraw, ImageFont
+font_path = "/System/Library/Fonts/Supplemental/Gurmukhi.ttf"
+try:
+    font = ImageFont.truetype(font_path, 40)
+    sfx_font = ImageFont.truetype(font_path, 26)
+except Exception:
+    font = ImageFont.load_default()
+    sfx_font = ImageFont.load_default()
+
+# Find all unique characters in dialogues to load avatars dynamically
+unique_chars = sorted(list(set(
+    d.get('character') for d in dialogues_scene1 
+    if d.get('character') and d.get('character') not in ('SFX', 'BGM')
+)))
+
+avatars = {}
+for char_name in unique_chars:
+    loaded = False
+    for ext in (".jpg", ".png", ".jpeg"):
+        img_path = f"images/{char_name.lower()}{ext}"
+        if os.path.exists(img_path):
+            try:
+                im = Image.open(img_path).convert('RGBA')
+                im = im.resize((180, 180), Image.Resampling.LANCZOS if hasattr(Image, 'Resampling') else Image.LANCZOS)
+                avatars[char_name] = im
+                loaded = True
+                log.info(f"Loaded custom avatar for '{char_name}' from {img_path}")
+                break
+            except Exception as e:
+                log.warning(f"Failed to load avatar for {char_name}: {e}")
+                
+    # If no custom image exists, generate a dynamic letter avatar!
+    if not loaded:
+        try:
+            avatar_im = Image.new('RGBA', (180, 180), (0, 0, 0, 0))
+            adraw = ImageDraw.Draw(avatar_im)
+            
+            import hashlib
+            h = hashlib.md5(char_name.encode('utf-8')).hexdigest()
+            r = int(h[0:2], 16) % 180 + 40
+            g = int(h[2:4], 16) % 180 + 40
+            b = int(h[4:6], 16) % 180 + 40
+            
+            adraw.ellipse([5, 5, 175, 175], fill=(r, g, b, 255), outline=(255, 255, 255, 255), width=3)
+            
+            letter = char_name[0].upper()
+            try:
+                lfont = ImageFont.truetype(font_path, 80)
+            except Exception:
+                lfont = ImageFont.load_default()
+                
+            try:
+                lbox = adraw.textbbox((0, 0), letter, font=lfont)
+                lw = lbox[2] - lbox[0]
+                lh = lbox[3] - lbox[1]
+            except Exception:
+                lw = 40
+                lh = 60
+                
+            adraw.text((90 - lw // 2, 90 - lh // 2 - 5), letter, font=lfont, fill=(255, 255, 255, 255))
+            avatars[char_name] = avatar_im
+            log.info(f"Generated default avatar for '{char_name}'")
+        except Exception as ex:
+            log.warning(f"Failed to generate default avatar for {char_name}: {ex}")
+
+# Calculate distributed horizontal positions for each unique character
+num_chars = len(unique_chars)
+avatar_positions = {}
+width, height = 1920, 1080
+for idx, name in enumerate(unique_chars):
+    margin = 250
+    if num_chars > 1:
+        pos_x = margin + idx * (width - margin * 2) // (num_chars - 1)
+    else:
+        pos_x = width // 2
+    avatar_positions[name] = pos_x - 90  # center-align offset
+
+base_img = Image.open(AI_IMAGE_PATH).convert('RGB')
+
+def make_frame(t, base=None, duration=total_duration):
+    # Identify active dialogue and SFX
+    active_dialogue = None
+    for d in dialogues_scene1:
+        if d.get('character') in ('SFX', 'BGM'):
+            continue
+        if d.get('computed_start', 0.0) <= t <= d.get('computed_end', 0.0):
+            active_dialogue = d
+            break
+
+    # Determine which base image to use (check if active block has custom image_file)
+    current_base = base_img
+    if active_dialogue and active_dialogue.get("image_file"):
+        img_path = active_dialogue.get("image_file").split("?")[0]
+        if img_path.startswith("/"):
+            img_path = img_path[1:]
+        local_path = os.path.join(img_path)
+        if os.path.exists(local_path):
+            try:
+                current_base = Image.open(local_path).convert('RGB')
+            except Exception as e:
+                print(f"Error loading custom block image {local_path}: {e}")
+
     # scale from 1.00 -> 1.08 across the duration
     scale = 1.0 + 0.08 * (t / max(duration, 1.0))
-    new_w = int(base.width * scale)
-    new_h = int(base.height * scale)
-    # Resample with LANCZOS if available
+    new_w = int(current_base.width * scale)
+    new_h = int(current_base.height * scale)
+    
     resample = getattr(Image, 'Resampling', None)
-    if resample:
-        resample = Image.Resampling.LANCZOS
-    else:
-        resample = Image.LANCZOS
-    resized = base.resize((new_w, new_h), resample)
-    # center-crop to target size
+    resample = Image.Resampling.LANCZOS if resample else Image.LANCZOS
+    resized = current_base.resize((new_w, new_h), resample)
+    
     left = max(0, (new_w - width) // 2)
     top = max(0, (new_h - height) // 2)
     box = (left, top, left + width, top + height)
     frame = resized.crop(box)
-    # overlay portraits if any
-    try:
-        if portraits:
-            x_margin = 20
-            y_margin = 20
-            p_w, p_h = 256, 256
-            items = list(portraits.items())
-            for idx, (name, im) in enumerate(items):
-                col = idx % 2
-                row = idx // 2
-                pos_x = x_margin + col * (width - p_w - x_margin*2)
-                pos_y = height - y_margin - p_h - row * (p_h + 10)
-                try:
-                    frame.paste(im, (int(pos_x), int(pos_y)), im)
-                except Exception:
-                    try:
-                        frame.paste(im.convert('RGB'), (int(pos_x), int(pos_y)))
-                    except Exception:
-                        pass
-    except Exception:
-        pass
+
+    # Apply Color Grading Filter
+    cg = color_grading.lower() if 'color_grading' in globals() else "standard"
+    if cg == "cinematic":
+        from PIL import ImageEnhance
+        enhancer = ImageEnhance.Contrast(frame)
+        frame = enhancer.enhance(1.3)
+        enhancer_brightness = ImageEnhance.Brightness(frame)
+        frame = enhancer_brightness.enhance(0.95)
+    elif cg == "sunset":
+        r, g, b_ch = frame.split()
+        r = r.point(lambda i: min(255, int(i * 1.18)))
+        g = g.point(lambda i: min(255, int(i * 1.03)))
+        b_ch = b_ch.point(lambda i: int(i * 0.82))
+        frame = Image.merge('RGB', (r, g, b_ch))
+    elif cg == "vintage":
+        frame = frame.convert('L').convert('RGB')
+            
+    active_sfx = None
+    for d in dialogues_scene1:
+        if d.get('character') == 'SFX':
+            if d.get('computed_start', 0.0) <= t <= d.get('computed_end', 0.0):
+                active_sfx = d
+                break
+
+    # Render dynamic UI/subtitles
+    draw = ImageDraw.Draw(frame, 'RGBA')
+    
+    # 1. Draw character avatars dynamically
+    for char_name in unique_chars:
+        if char_name in avatars and char_name in avatar_positions:
+            pos_x = avatar_positions[char_name]
+            wrapper = Image.new('RGBA', (180, 180), (0,0,0,0))
+            wrapper.paste(avatars[char_name], (0,0))
+            
+            if active_dialogue and active_dialogue.get('character') == char_name:
+                glow_layer = Image.new('RGBA', (190, 190), (0,0,0,0))
+                gd = ImageDraw.Draw(glow_layer)
+                gd.ellipse([0, 0, 190, 190], fill=(251, 191, 36, 180))
+                frame.paste(glow_layer, (pos_x - 5, 695), glow_layer)
+                frame.paste(wrapper, (pos_x, 700), wrapper)
+            else:
+                dimmed = wrapper.copy()
+                alpha = dimmed.split()[3]
+                alpha = alpha.point(lambda p: int(p * 0.4))
+                dimmed.putalpha(alpha)
+                frame.paste(dimmed, (pos_x, 700), dimmed)
+
+    # 2. Render Subtitle speech bubbles
+    if active_dialogue and subtitles:
+        text_val = f"{active_dialogue.get('character')}: {active_dialogue.get('text')}"
+        draw.rounded_rectangle([200, 920, 1720, 1020], radius=15, fill=(0, 0, 0, 190), outline=(251, 191, 36, 150), width=2)
+        try:
+            bbox = draw.textbbox((0, 0), text_val, font=font)
+            text_w = bbox[2] - bbox[0]
+            text_h = bbox[3] - bbox[1]
+        except Exception:
+            text_w = len(text_val) * 18
+            text_h = 40
+        tx = 960 - text_w // 2
+        ty = 970 - text_h // 2
+        
+        # outline shadow
+        for ox, oy in [(-2,-2), (2,-2), (-2,2), (2,2)]:
+            draw.text((tx+ox, ty+oy), text_val, font=font, fill=(0,0,0,255))
+        draw.text((tx, ty), text_val, font=font, fill=(251, 191, 36, 255))
+
+    # 3. Render SFX notification
+    if active_sfx:
+        sfx_name = active_sfx.get('text', 'sound')
+        draw.rounded_rectangle([1580, 40, 1880, 95], radius=10, fill=(16, 185, 129, 230))
+        draw.text((1600, 50), f"🔊 SFX: {sfx_name.upper()}", font=sfx_font, fill=(255, 255, 255, 255))
+        
     return np.array(frame)
 
 clip1 = VideoClip(make_frame, duration=total_duration).set_fps(24)
