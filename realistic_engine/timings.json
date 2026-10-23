@@ -1,0 +1,387 @@
+[
+ {
+  "i": 0,
+  "host": 1,
+  "scene": "void_hunter",
+  "start": 0.0,
+  "end": 14.523,
+  "dur": 14.523,
+  "captions": [
+   {
+    "text": "The breath had been hunting for six hundred years.",
+    "start": 0.0,
+    "end": 2.322
+   },
+   {
+    "text": "Not with claws, not with teeth, but with patience, with mathematics, and with the cold, surgical understanding that every species,",
+    "start": 2.622,
+    "end": 10.505
+   },
+   {
+    "text": "no matter how advanced, still answered a cry for help.",
+    "start": 10.805,
+    "end": 13.673
+   }
+  ]
+ },
+ {
+  "i": 1,
+  "host": 2,
+  "scene": "graveyard",
+  "start": 14.523,
+  "end": 31.099,
+  "dur": 16.576,
+  "captions": [
+   {
+    "text": "Forty-three species had heard a scream in the dark and pressed toward it instead of away.",
+    "start": 14.523,
+    "end": 19.26
+   },
+   {
+    "text": "Forty-three species had become biological fuel for the Breath Empire.",
+    "start": 19.56,
+    "end": 23.554
+   },
+   {
+    "text": "The trap was elegant in its cruelty.",
+    "start": 23.854,
+    "end": 26.071
+   },
+   {
+    "text": "A derelict ship broadcasting a distress beacon looping in the void.",
+    "start": 26.371,
+    "end": 30.249
+   }
+  ]
+ },
+ {
+  "i": 2,
+  "host": 1,
+  "scene": "arrival",
+  "start": 31.099,
+  "end": 49.256,
+  "dur": 18.157,
+  "captions": [
+   {
+    "text": "They broadcasted this fake S O S into the dead zone of Sector ninety seven Bravo, waiting to lure their forty-fourth victim.",
+    "start": 31.099,
+    "end": 37.693
+   },
+   {
+    "text": "But when a single, unidentifiable warship dropped out of the void,",
+    "start": 37.993,
+    "end": 41.581
+   },
+   {
+    "text": "the apex predators of the galaxy didn't realize they had just invited the universe's ultimate survivors onto their ship.",
+    "start": 41.881,
+    "end": 48.406
+   }
+  ]
+ },
+ {
+  "i": 3,
+  "host": 2,
+  "scene": "deathworld",
+  "start": 49.256,
+  "end": 66.344,
+  "dur": 17.089,
+  "captions": [
+   {
+    "text": "In the wider galaxy, responding to a distress beacon is seen as a weakness that predators exploit.",
+    "start": 49.256,
+    "end": 54.852
+   },
+   {
+    "text": "When trauma reaches a certain threshold, alien species go into shock or surrender.",
+    "start": 55.152,
+    "end": 60.028
+   },
+   {
+    "text": "But humans, born of a deathworld, do not possess a biological surrender reflex.",
+    "start": 60.328,
+    "end": 65.494
+   }
+  ]
+ },
+ {
+  "i": 4,
+  "host": 1,
+  "scene": "hud_signal",
+  "start": 66.344,
+  "end": 81.552,
+  "dur": 15.208,
+  "captions": [
+   {
+    "text": "When the United Earth Ship Ironclad received the Breath's distress signal, Sergeant Major Chen Wei knew it was a fake.",
+    "start": 66.344,
+    "end": 72.788
+   },
+   {
+    "text": "The compression frequency was structurally wrong.",
+    "start": 73.088,
+    "end": 75.886
+   },
+   {
+    "text": "Every logical military doctrine dictated that they turn around and ignore the signal.",
+    "start": 76.186,
+    "end": 80.702
+   }
+  ]
+ },
+ {
+  "i": 5,
+  "host": 2,
+  "scene": "turn_toward",
+  "start": 81.552,
+  "end": 92.977,
+  "dur": 11.425,
+  "captions": [
+   {
+    "text": "But humans answer a trap knowing it's a trap, simply because someone has to answer a cry for help.",
+    "start": 81.552,
+    "end": 87.16
+   },
+   {
+    "text": "They walked into the ambush knowing they were the prey, which instantly made them the hunters.",
+    "start": 87.46,
+    "end": 92.127
+   }
+  ]
+ },
+ {
+  "i": 6,
+  "host": 1,
+  "scene": "decloak",
+  "start": 92.977,
+  "end": 108.545,
+  "dur": 15.568,
+  "captions": [
+   {
+    "text": "The Breath sprang their trap with terrible precision.",
+    "start": 92.977,
+    "end": 95.45
+   },
+   {
+    "text": "Cloaked carriers the size of mountains decloaked in the dark.",
+    "start": 95.75,
+    "end": 99.001
+   },
+   {
+    "text": "Elite shock troops, seven feet tall and evolved for zero gravity combat, poured into the derelict ship expecting the humans to panic and huddle.",
+    "start": 99.301,
+    "end": 107.695
+   }
+  ]
+ },
+ {
+  "i": 7,
+  "host": 2,
+  "scene": "corridor",
+  "start": 108.545,
+  "end": 129.59,
+  "dur": 21.046,
+  "captions": [
+   {
+    "text": "Instead, they met twenty-two humans in black armor moving with a speed and unpredictability that broke every tactical model the Breath had ever built.",
+    "start": 108.545,
+    "end": 117.055
+   },
+   {
+    "text": "Humans don't huddle, they flank.",
+    "start": 117.355,
+    "end": 119.143
+   },
+   {
+    "text": "They fight in tight corridors with plasma cutters and an absolute refusal to hesitate.",
+    "start": 119.443,
+    "end": 124.179
+   },
+   {
+    "text": "In four minutes, the elite alien shock troops were completely decimated.",
+    "start": 124.479,
+    "end": 128.74
+   }
+  ]
+ },
+ {
+  "i": 8,
+  "host": 1,
+  "scene": "core",
+  "start": 129.59,
+  "end": 147.817,
+  "dur": 18.226,
+  "captions": [
+   {
+    "text": "While alien empires focus on honorable combat and fleet formations, humanity focuses on the unglamorous mechanics of survival and logistics.",
+    "start": 129.59,
+    "end": 138.774
+   },
+   {
+    "text": "To humans, an enemy army without eyes or ears defeats itself.",
+    "start": 139.074,
+    "end": 143.161
+   },
+   {
+    "text": "The human strike team didn't blow up the derelict ship's power core.",
+    "start": 143.461,
+    "end": 146.967
+   }
+  ]
+ },
+ {
+  "i": 9,
+  "host": 2,
+  "scene": "broadcast",
+  "start": 147.817,
+  "end": 162.525,
+  "dur": 14.709,
+  "captions": [
+   {
+    "text": "They wired it directly into the communications array and turned the alien's own trap into a massive beacon,",
+    "start": 147.817,
+    "end": 153.575
+   },
+   {
+    "text": "broadcasting the exact coordinates of the ambush to every human ship in the sector.",
+    "start": 153.875,
+    "end": 158.601
+   },
+   {
+    "text": "They turned the hunter's blind into a killing ground.",
+    "start": 158.901,
+    "end": 161.675
+   }
+  ]
+ },
+ {
+  "i": 10,
+  "host": 1,
+  "scene": "swarm",
+  "start": 162.525,
+  "end": 187.567,
+  "dur": 25.041,
+  "captions": [
+   {
+    "text": "Humans win impossible wars not through overwhelming firepower, but by systematically dismantling the enemy's infrastructure.",
+    "start": 162.525,
+    "end": 169.712
+   },
+   {
+    "text": "In other battles, humans deployed millions of tiny, non-explosive drone gnats just to blind and deafen an entire armada.",
+    "start": 170.012,
+    "end": 177.93
+   },
+   {
+    "text": "Alien commanders watch in absolute horror as their unbeatable fleets go dark, one by one, stripped of their sensor arrays and communications.",
+    "start": 178.23,
+    "end": 186.717
+   }
+  ]
+ },
+ {
+  "i": 11,
+  "host": 2,
+  "scene": "buried",
+  "start": 187.567,
+  "end": 207.916,
+  "dur": 20.349,
+  "captions": [
+   {
+    "text": "This is the hidden history the human race keeps buried.",
+    "start": 187.567,
+    "end": 190.4
+   },
+   {
+    "text": "They play the role of peaceful diplomats because they are hiding a deeply traumatizing, apocalyptic past.",
+    "start": 190.7,
+    "end": 196.679
+   },
+   {
+    "text": "When pushed to the brink by an arrogant empire, humans reactivate ancient,",
+    "start": 196.979,
+    "end": 201.274
+   },
+   {
+    "text": "brutal technologies and wartime protocols originally developed to fight extinction level threats.",
+    "start": 201.574,
+    "end": 207.066
+   }
+  ]
+ },
+ {
+  "i": 12,
+  "host": 1,
+  "scene": "admiral",
+  "start": 207.916,
+  "end": 222.88,
+  "dur": 14.964,
+  "captions": [
+   {
+    "text": "They don't fight for glory or honor, but with precise, principled wrath to fix a broken universe.",
+    "start": 207.916,
+    "end": 213.477
+   },
+   {
+    "text": "When Sergeant Major Chen looked into the eyes of the alien admiral, he didn't seek vengeance or political arbitration.",
+    "start": 213.777,
+    "end": 220.198
+   },
+   {
+    "text": "He simply delivered a promise.",
+    "start": 220.498,
+    "end": 222.03
+   }
+  ]
+ },
+ {
+  "i": 13,
+  "host": 2,
+  "scene": "promise",
+  "start": 222.88,
+  "end": 235.373,
+  "dur": 12.493,
+  "captions": [
+   {
+    "text": "You set a trap for whatever species was soft enough to answer a fake S O S,",
+    "start": 222.88,
+    "end": 227.327
+   },
+   {
+    "text": "and you caught the one species in this galaxy that answers a distress call and knows exactly what to do when it's a trap.",
+    "start": 227.627,
+    "end": 234.523
+   }
+  ]
+ },
+ {
+  "i": 14,
+  "host": 1,
+  "scene": "finale",
+  "start": 235.373,
+  "end": 254.387,
+  "dur": 19.014,
+  "captions": [
+   {
+    "text": "The galaxy thought compassion was a weakness and that peace meant fragility.",
+    "start": 235.373,
+    "end": 239.506
+   },
+   {
+    "text": "They were wrong.",
+    "start": 239.806,
+    "end": 240.41
+   },
+   {
+    "text": "Humanity's patience is not a limitation, it is a deliberate choice.",
+    "start": 240.71,
+    "end": 244.599
+   },
+   {
+    "text": "And on that day, in the cold dark between the stars, the galaxy finally remembered exactly who they had been so carelessly underestimating all along.",
+    "start": 244.899,
+    "end": 253.537
+   }
+  ]
+ }
+]
