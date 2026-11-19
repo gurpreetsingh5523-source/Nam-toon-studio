@@ -17,3 +17,17 @@ AmritCore_FINAL_STUDIO_LAUNCH.mp4
 AmritCore_DEBUG_watermarked.mp4
 launchd_err.log
 launchd_out.log
+
+# realistic engine (upgrade)
+realistic_engine/venv/
+realistic_engine/__pycache__/
+realistic_engine/frames/
+realistic_engine/out/*.mp4
+movies/**/*.mp4
+realistic_engine/voices/
+realistic_engine/audio/
+realistic_engine/shots/
+realistic_engine/depth/
+realistic_engine/clips/
+realistic_engine/out/
+movies/
