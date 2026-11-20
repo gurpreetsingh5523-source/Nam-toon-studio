@@ -2,3 +2,9 @@
 __pycache__/
 exports/
 generated/
+.desktop-venv/
+desktop/.media-build/
+desktop/media/
+desktop/output/
+build/
+dist/

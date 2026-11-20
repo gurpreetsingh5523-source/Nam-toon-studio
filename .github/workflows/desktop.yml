@@ -1,0 +1,109 @@
+name: Desktop packages
+on:
+  push:
+    branches: [desktop-v2.1.0]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: desktop-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  package:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-15, windows-2025, ubuntu-24.04]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        if: runner.os != 'Linux'
+        with:
+          python-version: '3.12'
+      - name: Install macOS build dependencies
+        if: runner.os == 'macOS'
+        run: |
+          brew list fribidi >/dev/null 2>&1 || brew install fribidi
+          command -v pkg-config || brew install pkgconf
+          echo "NAAM_FRIBIDI=$(brew --prefix fribidi)/lib/libfribidi.0.dylib" >> "$GITHUB_ENV"
+      - uses: msys2/setup-msys2@v2
+        if: runner.os == 'Windows'
+        with:
+          msystem: UCRT64
+          install: git make mingw-w64-ucrt-x86_64-gcc mingw-w64-ucrt-x86_64-nasm mingw-w64-ucrt-x86_64-pkgconf mingw-w64-ucrt-x86_64-fribidi
+      - name: Configure Windows installer tools
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $iscc = "${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe"
+          if (!(Test-Path $iscc)) {
+            choco install innosetup -y --no-progress
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          }
+          "INNO_ISCC=$iscc" | Out-File $env:GITHUB_ENV -Encoding utf8 -Append
+      - name: Install Ubuntu desktop dependencies
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-gi python3-venv gir1.2-webkit2-4.1 nasm pkg-config xvfb xauth
+          /usr/bin/python3 -m venv --system-site-packages .desktop-venv
+          echo "$PWD/.desktop-venv/bin" >> "$GITHUB_PATH"
+      - name: Install packaging dependencies
+        run: python -m pip install -r desktop/requirements.txt
+      - name: Build bundled media tools
+        if: runner.os != 'Windows'
+        run: bash desktop/build-media.sh
+      - name: Build bundled media tools on Windows
+        if: runner.os == 'Windows'
+        shell: msys2 {0}
+        run: |
+          bash desktop/build-media.sh
+          echo "NAAM_FRIBIDI=$(cygpath -w /ucrt64/bin/libfribidi-0.dll)" >> "$GITHUB_ENV"
+      - name: Freeze and package
+        run: python desktop/build.py
+      - name: Test the macOS ZIP
+        if: runner.os == 'macOS'
+        run: |
+          target="$RUNNER_TEMP/studio"
+          mkdir "$target"
+          ditto -x -k desktop/output/Naam-Toon-Studio-*-macOS-*.zip "$target"
+          app="$target/Naam Toon Studio.app"
+          codesign --verify --deep --strict "$app"
+          env -u DYLD_FALLBACK_LIBRARY_PATH PATH=/usr/bin:/bin "$app/Contents/MacOS/Naam Toon Studio" --self-test "$target/check"
+          cat "$target/check/result.txt"
+          test "$(cat "$target/check/result.txt")" = PASS
+          test -z "$(find "$target/check/exports" -mindepth 1 -type d -print)"
+      - name: Test the Windows installer
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $target = Join-Path $env:RUNNER_TEMP 'Naam Toon Studio'
+          $check = Join-Path $env:RUNNER_TEMP 'studio-check'
+          $setup = Get-Item desktop/output/*-Setup.exe
+          $install = Start-Process $setup.FullName -ArgumentList "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /DIR=`"$target`"" -Wait -PassThru
+          if ($install.ExitCode -ne 0) { throw "Installer failed with code $($install.ExitCode)" }
+          $env:PATH = "$env:SystemRoot\System32;$env:SystemRoot"
+          $run = Start-Process "$target\NaamToonStudio.exe" -ArgumentList "--self-test `"$check`"" -Wait -PassThru
+          if ($run.ExitCode -ne 0) { throw "Studio exited with code $($run.ExitCode)" }
+          Get-Content "$check\result.txt"
+          if ((Get-Content "$check\result.txt" -Raw).Trim() -ne 'PASS') { throw 'Desktop render failed' }
+          if (Get-ChildItem "$check\exports" -Directory) { throw 'Temporary render files remain' }
+      - name: Test the Ubuntu package
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get install -y ./desktop/output/*.deb
+          check="$RUNNER_TEMP/studio-check"
+          PATH=/usr/bin:/bin xvfb-run -a /opt/naam-toon-studio/NaamToonStudio --self-test "$check"
+          cat "$check/result.txt"
+          test "$(cat "$check/result.txt")" = PASS
+          test -z "$(find "$check/exports" -mindepth 1 -type d -print)"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: desktop-${{ runner.os }}
+          if-no-files-found: error
+          path: |
+            desktop/output/Naam-Toon-Studio-*
+            desktop/.media-build/ffmpeg-*.tar.xz
+            desktop/.media-build/x264-*.tar.gz

@@ -1,6 +1,7 @@
 """Local planning and media composition for Naam Toon."""
 import base64
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -54,7 +55,7 @@ def inventory():
     except ValueError:
         pass
     return {
-        "models": models, "missing": [tool for tool in TOOLS if not shutil.which(tool)],
+        "models": models, "missing": [tool for tool in TOOLS if not tool_path(tool)],
         "voices": available_voices(),
     }
 
@@ -161,8 +162,23 @@ def plan(request):
     return dict(scenes=result, backend=model)
 
 
+def tool_path(tool):
+    media = os.environ.get("NAAM_MEDIA_DIR")
+    if media and tool in TOOLS:
+        suffix = ".exe" if sys.platform == "win32" else ""
+        executable = Path(media) / (tool + suffix)
+        return str(executable) if executable.is_file() else None
+    return shutil.which(tool)
+
+
 def run(args, timeout=100):
-    result = subprocess.run([str(arg) for arg in args], capture_output=True, timeout=timeout)
+    tool, *arguments = args
+    executable = tool_path(tool)
+    if executable is None:
+        raise ValueError(f"{tool} is unavailable.")
+    flags = subprocess.CREATE_NO_WINDOW if sys.platform == "win32" else 0
+    result = subprocess.run([executable, *(str(arg) for arg in arguments)],
+                            capture_output=True, timeout=timeout, creationflags=flags)
     if result.returncode:
         error = result.stderr.decode(errors="replace").strip().splitlines()
         raise ValueError(error[-1][:220] if error else f"{args[0]} failed.")
@@ -248,7 +264,7 @@ def compose(project, destination, directory, progress, clip_resolver=None):
     size = SIZES.get(project.get("ratio", "16:9"))
     if not size:
         raise ValueError("Choose a supported output ratio.")
-    missing = [tool for tool in TOOLS if not shutil.which(tool)]
+    missing = [tool for tool in TOOLS if not tool_path(tool)]
     if missing:
         raise ValueError("Install " + ", ".join(missing) + " to render.")
     assets = get_assets(project, directory)

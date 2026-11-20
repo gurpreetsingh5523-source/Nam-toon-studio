@@ -3,7 +3,6 @@ import json
 import os
 import re
 import secrets
-import shutil
 import subprocess
 import tempfile
 import threading
@@ -13,9 +12,9 @@ import urllib.request
 import uuid
 from pathlib import Path
 
-from engine import ROOT, run
+from engine import ROOT, run, tool_path
 
-STORE = ROOT / "generated"
+STORE = Path(os.environ.get("NAAM_GENERATED_DIR", ROOT / "generated"))
 LOCK = threading.Lock()
 ID = re.compile(r"[a-f0-9]{32}")
 NODES = ("UNETLoader", "CLIPLoader", "VAELoader", "CLIPTextEncode",
@@ -115,7 +114,7 @@ def discover():
             problem_for_model = "Missing native nodes: " + ", ".join(missing)
         else:
             problem_for_model = problem
-        if not problem_for_model and not all(shutil.which(tool) for tool in ("ffmpeg", "ffprobe")):
+        if not problem_for_model and not all(tool_path(tool) for tool in ("ffmpeg", "ffprobe")):
             problem_for_model = "Install FFmpeg and ffprobe to import the result."
         result.append(dict(id=key, name=spec["name"], mode="text-to-video", fps=spec["fps"],
                            available=not problem_for_model, reason=problem_for_model,

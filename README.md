@@ -63,3 +63,28 @@ This release tested the live ComfyUI connection, both graph routes through model
 Presenter uses still portraits. Lip-sync, external stock search, PDF/URL ingestion, multimodel comparison and full nonlinear editing are outside this build.
 
 The workflow survey compared seven tools across source-grounded explainers, generative clips, script and media editing, presenters, animatics, local model workflows, and model switching: NotebookLM, Runway, Descript, HeyGen, Toon Boom Storyboard Pro, ComfyUI and Open WebUI.
+
+## Desktop builds
+
+The 2.1 desktop edition uses the same studio inside the platform's web view. Its
+packages include the Python runtime, Pillow, FFmpeg and FFprobe. The core
+storyboard and MP4 export work offline. Optional Ollama, ComfyUI, model weights
+and eSpeak NG are installed separately.
+
+- macOS Apple Silicon: extract the ZIP and open the app icon. Builds without
+  Developer ID signing and notarization can be blocked by Gatekeeper.
+- Windows x64: run the Setup EXE and open Naam Toon Studio in the Start menu.
+  The desktop window uses the system Microsoft Edge WebView2 runtime.
+- Ubuntu 24.04 x64: install the DEB with a graphical package installer that can
+  resolve dependencies, then open Naam Toon Studio from the app menu. It uses
+  the system GTK, WebKitGTK and GStreamer packages.
+
+The desktop window uses loopback port 18765 to keep autosaved projects
+available across restarts. Closing the window stops the local server. An
+in-progress MP4 export finishes and removes its temporary files before the
+process exits. The visible studio does not require a terminal.
+
+The [desktop workflow](.github/workflows/desktop.yml) builds the platform
+packages and checks that each opens the studio page, renders a Punjabi- and
+English-captioned MP4, downloads it, and exits with no temporary render
+directories. See [third-party notices](THIRD-PARTY.md) for media build sources.
