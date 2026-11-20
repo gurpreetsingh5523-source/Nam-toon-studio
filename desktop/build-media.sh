@@ -19,7 +19,7 @@ git -C x264 checkout --detach "$x264"
 cd "ffmpeg-$ffmpeg"
 PKG_CONFIG_PATH="$prefix/lib/pkgconfig" ./configure --prefix="$prefix" --pkg-config-flags=--static \
     --disable-autodetect --disable-shared --enable-static --enable-gpl --enable-libx264 \
-    --disable-network --disable-doc --disable-ffplay --disable-debug
+    --enable-zlib --disable-network --disable-doc --disable-ffplay --disable-debug
 suffix=""
 if [[ "${MSYSTEM:-}" == UCRT64 ]]; then
     suffix=".exe"
@@ -28,6 +28,12 @@ make -j4 "ffmpeg$suffix" "ffprobe$suffix"
 for tool in ffmpeg ffprobe; do
     cp "$tool$suffix" "$root/media/"
 done
+if [[ -n "$suffix" ]]; then
+    cp /ucrt64/bin/zlib1.dll "$root/media/"
+    if [[ -f /ucrt64/share/licenses/zlib/LICENSE ]]; then
+        cp /ucrt64/share/licenses/zlib/LICENSE "$root/media/zlib-LICENSE.txt"
+    fi
+fi
 cp COPYING.GPLv2 "$root/media/FFmpeg-GPL-2.0.txt"
 cp ../x264/COPYING "$root/media/x264-GPL-2.0.txt"
 git -C ../x264 archive --format=tar.gz --prefix=x264/ -o "$work/x264-$x264.tar.gz" HEAD

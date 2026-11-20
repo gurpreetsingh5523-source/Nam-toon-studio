@@ -32,7 +32,7 @@ jobs:
         if: runner.os == 'Windows'
         with:
           msystem: UCRT64
-          install: git make mingw-w64-ucrt-x86_64-gcc mingw-w64-ucrt-x86_64-nasm mingw-w64-ucrt-x86_64-pkgconf mingw-w64-ucrt-x86_64-fribidi
+          install: git make mingw-w64-ucrt-x86_64-gcc mingw-w64-ucrt-x86_64-nasm mingw-w64-ucrt-x86_64-pkgconf mingw-w64-ucrt-x86_64-fribidi mingw-w64-ucrt-x86_64-zlib
       - name: Configure Windows installer tools
         if: runner.os == 'Windows'
         shell: pwsh
@@ -47,7 +47,7 @@ jobs:
         if: runner.os == 'Linux'
         run: |
           sudo apt-get update
-          sudo apt-get install -y python3-gi python3-venv gir1.2-webkit2-4.1 nasm pkg-config xvfb xauth
+          sudo apt-get install -y python3-gi python3-venv gir1.2-webkit2-4.1 nasm pkg-config xvfb xauth zlib1g-dev
           /usr/bin/python3 -m venv --system-site-packages .desktop-venv
           echo "$PWD/.desktop-venv/bin" >> "$GITHUB_PATH"
       - name: Install packaging dependencies
